@@ -34,7 +34,8 @@ Rule for every module: real data, one headline model, one slider panel, one plai
 - **Data:** Anthropic Economic Index (task and occupation usage, geography), Microsoft's occupation applicability scores, O*NET occupation and task definitions.
 - **Method:** map every source to SOC occupation codes; rank correlation between measures; list the occupations where they disagree and why; use the Economic Index's automation-versus-augmentation shares and time-saved metrics by occupation.
 - **Controls:** occupation search, source toggle, country (the Economic Index covers 121 countries, including India).
-- **Known limits:** the Economic Index release has only two monthly windows (April and May 2026), so it is used as a cross-section, not as a time series. Diffusion over time comes from M3 instead. Each usage source covers one platform.
+- **Known limits:** the Economic Index release has only two monthly windows (April and May 2026), so it is used as a cross-section, not as a time series. Diffusion over time comes from M3 instead. Each usage source covers one platform. The occupation labels come from Anthropic's own classification of conversations, and some rank unexpectedly high (for example librarians and counter clerks), so occupation-level results carry that caveat.
+- **First look (2026-11-22, exploratory, not final):** the Microsoft applicability score and the Economic Index's usage share, across the 591 occupations that have both, have a Spearman rank correlation of about 0.45. Occupations with a Microsoft score of 0.3 or more hold about 11% of the wage bill.
 - **Drop if:** the Economic Index cannot be mapped to occupations. Then M2 compares the remaining measures only. (Its occupation codes use the SOC system and match the BLS and Microsoft files, so this is not expected.)
 
 ### M3. Adoption in the economy
