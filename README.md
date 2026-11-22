@@ -29,7 +29,7 @@ To re-fetch the raw data (about 370 MB, standard-library Python only): `python3 
 
 A module is kept only if its data has been confirmed. If the data is missing, the module or part of it is dropped, not guessed.
 
-## Planned layout
+## Layout
 
 ```
 docs/            research plan and method notes
@@ -41,7 +41,7 @@ pipeline/        scripts that fetch the raw data and turn it into processed tabl
 web/             the website (Next.js) with the economic models and the chatbot endpoint
 ```
 
-Planned stack (to be confirmed): Python for the data pipeline and statistics; a TypeScript web app deployed on Vercel; the model runs in the browser so sliders respond instantly; the chatbot calls a server-side endpoint that holds the API key (never in browser code or this repo).
+Stack: Python for the data pipeline and statistics; a TypeScript web app deployed on Vercel; the model runs in the browser so sliders respond instantly; the chatbot calls a server-side endpoint that holds the API key (never in browser code or this repo).
 
 ## Principles
 
