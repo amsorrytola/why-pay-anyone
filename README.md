@@ -10,6 +10,8 @@ This project answers it with real data, a task-based economic model and an inter
 
 Data stage (2026-11-22). Topic agreed with the industry supervisor. The raw data has been downloaded and opened; analysis and the website are not built yet. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules and what data each one needs, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain.
 
+Python setup: install [uv](https://docs.astral.sh/uv/), then `uv sync` creates the environment from `pyproject.toml` and `uv.lock` (pandas, statsmodels, scipy, pyarrow, openpyxl); run scripts with `uv run python pipeline/<script>.py`. Secrets go in `.env` (see `.env.example`); it is never committed.
+
 To re-fetch the raw data (about 370 MB, standard-library Python only): `python3 -I pipeline/fetch.py all` and `python3 -I pipeline/fetch_litellm_history.py` (needs the `gh` CLI). The BLS wage file must be downloaded in a browser because BLS blocks scripts; it is recorded in `data/manifest.json`.
 
 ## The six modules

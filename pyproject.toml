@@ -1,0 +1,16 @@
+[project]
+name = "why-pay-anyone-pipeline"
+version = "0.1.0"
+description = "Data pipeline and statistics for the Why Pay Anyone? project"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "statsmodels",
+    "openpyxl",
+    "pyarrow",
+]
+
+[tool.uv]
+package = false
