@@ -1,0 +1,5 @@
+model,month,page_input,page_output,page_blended,litellm_input,litellm_output,litellm_blended,matches,snapshot_url,note
+GPT-4,2024-01,30.0,60.0,37.5,30.0,60.0,37.5,True,https://web.archive.org/web/20240115225923/https://openai.com/pricing/,"OpenAI pricing page, 15 Jan 2024"
+GPT-4 Turbo (gpt-4-1106-preview),2024-01,10.0,30.0,15.0,10.0,30.0,15.0,True,https://web.archive.org/web/20240115225923/https://openai.com/pricing/,"OpenAI pricing page, 15 Jan 2024"
+GPT-3.5 Turbo (gpt-3.5-turbo-1106),2024-01,1.0,2.0,1.25,1.5,2.0,1.625,False,https://web.archive.org/web/20240115225923/https://openai.com/pricing/,"OpenAI pricing page, 15 Jan 2024 (page lists the 1106 version; Epoch's model is the June 2023 version)"
+GPT-4o mini (gpt-4o-mini),2024-09,0.15,0.6,0.26249999999999996,0.15,0.6,0.2625,True,https://web.archive.org/web/20240831171158/https://openai.com/api/pricing/,"OpenAI pricing page, 31 Aug 2024"

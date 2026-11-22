@@ -160,6 +160,87 @@
     "sha256": "3df404125443355a649dba3221271ae080cd1854b47606f38a7c32c1cc54e214",
     "url": "https://epoch.ai/data/polling/polling_on_ai_usage_oct_2026.csv"
   },
+  "fred_macro/A4002E1A156NBEA.csv": {
+    "bytes": 1585,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Wed, 30 Sep 2026 12:59:39 GMT",
+    "retrieved_utc": "2026-11-22T06:00:37Z",
+    "sha256": "9069523b6fdbdcc83c477df09ba90850013d38d5fa3a540f30ac2b7abd58b9dc",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=A4002E1A156NBEA"
+  },
+  "fred_macro/DFII10.csv": {
+    "bytes": 99651,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Fri, 20 Nov 2026 21:16:34 GMT",
+    "retrieved_utc": "2026-11-22T06:00:39Z",
+    "sha256": "6f96017732b2c7f15899839a0ce9c8e05e0007517d1ca160dcc890bf8e64505e",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFII10"
+  },
+  "fred_macro/PRS85006173.csv": {
+    "bytes": 6040,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Thu, 05 Nov 2026 13:38:55 GMT",
+    "retrieved_utc": "2026-11-22T06:00:36Z",
+    "sha256": "539a42531891578e462e04ae5b0302b4eb4a84a170d540d533061ca6b7a6efc7",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PRS85006173"
+  },
+  "fred_macro/PSAVERT.csv": {
+    "bytes": 12528,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Thu, 29 Oct 2026 12:43:55 GMT",
+    "retrieved_utc": "2026-11-22T06:00:37Z",
+    "sha256": "a64103dff45de44c674d0fbf63a29856ae91cff3e67dd2c06d74209b8abc5b87",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PSAVERT"
+  },
+  "fred_macro/WFRBSN09149.csv": {
+    "bytes": 2397,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Fri, 18 Sep 2026 19:40:38 GMT",
+    "retrieved_utc": "2026-11-22T06:08:05Z",
+    "sha256": "6e56b783d80693179586ad27b133e8216d24a72179fcf48c5def5f45772ef7e3",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WFRBSN09149"
+  },
+  "fred_macro/WFRBST01122.csv": {
+    "bytes": 4469,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Fri, 18 Sep 2026 19:40:28 GMT",
+    "retrieved_utc": "2026-11-22T06:08:04Z",
+    "sha256": "c7dc34df71d706055894576ca7e72d8e3ecc00f160bfa4436ab76ec7973f0720",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WFRBST01122"
+  },
+  "fred_macro/WFRBST01134.csv": {
+    "bytes": 4469,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Fri, 18 Sep 2026 19:40:27 GMT",
+    "retrieved_utc": "2026-11-22T06:00:38Z",
+    "sha256": "cc38d864a7dbf3868a3d8f6950bcf105baceb061231a6aed857a43698086ef7f",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WFRBST01134"
+  },
+  "fred_macro/WFRBSTP1300.csv": {
+    "bytes": 2366,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Fri, 18 Sep 2026 19:40:21 GMT",
+    "retrieved_utc": "2026-11-22T06:00:39Z",
+    "sha256": "c2b0f4f28ce17fc0de9ed8d9719e963080cdf6cf8af3fad6e047f1bf16970bed",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WFRBSTP1300"
+  },
+  "ilo_labour_share/ilo_labour_income_share_gdp.csv": {
+    "bytes": 58169,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T06:00:36Z",
+    "sha256": "e8a1a589dbc4f5f8fa199b34e34dbdca1d7d0774206086198e9330ee73b564bb",
+    "url": "https://sdmx.ilo.org/rest/data/ILO,DF_LAP_2GDP_NOC_RT/USA+IND+CHN+X01+X02+X03+X04+X05..?format=csvfilewithlabels&startPeriod=1990"
+  },
   "indeed_ai_tracker/AI_posting.csv": {
     "bytes": 795280,
     "etag": "\"013b24616b39de2d5b8fb54f341d256bdf15f30272d0a61367d8b083ad900f0c\"",
@@ -168,6 +249,204 @@
     "retrieved_utc": "2026-11-22T04:55:15Z",
     "sha256": "5e734aab0b0f2385ae3e6137f366ad6a5a10a3f9c175ee3ec6e91c0a7c7241b0",
     "url": "https://raw.githubusercontent.com/hiring-lab/ai-tracker/main/AI_posting.csv"
+  },
+  "indeed_ai_tracker/LICENSE.txt": {
+    "bytes": 18658,
+    "etag": "\"3dbe9a7621bdcc78a7c98b8559644eddd41f5a3000996acf835e0f4dd072d464\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T06:02:46Z",
+    "sha256": "f5b745ef98087f531e719ee8ca6a96809444573ecc7173c6fa68eaad39b3cc3f",
+    "url": "https://raw.githubusercontent.com/hiring-lab/ai-tracker/main/LICENSE"
+  },
+  "indeed_ai_tracker/README.md": {
+    "bytes": 3338,
+    "etag": "\"8826c1009867368c63cac374f1b9c8efa777e3c85f10f05cb135194a58da0d74\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T06:02:45Z",
+    "sha256": "04efdf95c2fdc1f172f9fa90f32b9adeb9dbb8196e83d5c08aea4900a3b1eafd",
+    "url": "https://raw.githubusercontent.com/hiring-lab/ai-tracker/main/README.md"
+  },
+  "indeed_job_postings_tracker/LICENSE.txt": {
+    "bytes": 18658,
+    "etag": "\"3dbe9a7621bdcc78a7c98b8559644eddd41f5a3000996acf835e0f4dd072d464\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:48Z",
+    "sha256": "f5b745ef98087f531e719ee8ca6a96809444573ecc7173c6fa68eaad39b3cc3f",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/LICENSE"
+  },
+  "indeed_job_postings_tracker/README.md": {
+    "bytes": 11124,
+    "etag": "\"857f34f75925dee006f30f4a844e47306fcf9ca0eef1f2436526748e9b29ee30\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:47Z",
+    "sha256": "bf296db63e6a9a97766c87ccf46f881fea2556dcf36ffcaec8290a2298ebb794",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/README.md"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_AU.csv": {
+    "bytes": 205854,
+    "etag": "\"0b97d3e9f01394ef37d5822aa9048226aa18517dd2e08f2002f7736cb67bd766\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:14Z",
+    "sha256": "3fba9cf6de351652055a63e3c2e3b31984f4c1863f4d072590da35105cc22d87",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/AU/aggregate_job_postings_AU.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_CA.csv": {
+    "bytes": 204768,
+    "etag": "\"3ec17869d1ef21b171503a4b398bafc0f5191c859e34db74f60767029fd4e639\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:15Z",
+    "sha256": "0893cc410b6b147e39220c9c25b4a6fd6693249602069a2ee565b1d5e98d0281",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/aggregate_job_postings_CA.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_DE.csv": {
+    "bytes": 205548,
+    "etag": "\"cb0134143ac9f06ed2eec788880a510276d534255639186358cfaf05a1619802\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:16Z",
+    "sha256": "c378f92f837ac5daf91f81bcd01febd01847399cec1940955b9032afa2ecf85b",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/DE/aggregate_job_postings_DE.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_EA.csv": {
+    "bytes": 205379,
+    "etag": "\"ec06b1ad54002fc309722f0dae2962d90a08cd1911c2483a604c912e696ba321\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:16Z",
+    "sha256": "cc2d77b4489e1fe1bd83702b3dbe4cffc4ea98f8d843f89b5273aea0a3cabe32",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/EA/aggregate_job_postings_EA.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_ES.csv": {
+    "bytes": 204820,
+    "etag": "\"f290ee9f3e06e89b33339f1811aab1ede3efccb48b8726f47302fccd01c14221\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:17Z",
+    "sha256": "53be7caf4c63ca613c384c4555a87a30dec2b0465b72c9d6af3e425a02debf56",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_FR.csv": {
+    "bytes": 204420,
+    "etag": "\"53805251885ab1dd04c248c9af9c56aebf5c39e23bc4a5c40dfe79d2f7bcf22f\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:20Z",
+    "sha256": "ab1873dd2cef837504c473299356d5d53390dc620d6a661cf659c0c28a38e10f",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/FR/aggregate_job_postings_FR.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_GB.csv": {
+    "bytes": 202083,
+    "etag": "\"2aace889caf31831fa6c3d17268c88c4990edf7ce797d0db74136e0969e0130c\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:22Z",
+    "sha256": "dcf418ebf24c7b01368780d589d168b3eff3a3b049e1d10e6f64a6d9098b115e",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/GB/aggregate_job_postings_GB.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_IE.csv": {
+    "bytes": 204899,
+    "etag": "\"771eba5ecc061d8852528bb501b32aa46400d54b5a5262472d47a51e08e5a31c\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:23Z",
+    "sha256": "a261c6521cef8fe475bf75f4ce9f393b3da37d2edaec4b18d69591a5d73a38b8",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IE/aggregate_job_postings_IE.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_IT.csv": {
+    "bytes": 205273,
+    "etag": "\"d535c2c38faba76950c770c51052d8344386890ab06bbd00f86cc311c804eb29\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:24Z",
+    "sha256": "a160ad5651462c49be3fb7c5bb674a9814887ca831fc0f70973181f84848a52d",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IT/aggregate_job_postings_IT.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_NL.csv": {
+    "bytes": 205239,
+    "etag": "\"edb4ba364d0eba32914526bd38196cc311b3e09734768de342ec097470918a16\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:25Z",
+    "sha256": "ab097e51a285ca5128c28ef6c9220bcff3cfcc0b30a25e23afc2c705968ab3d6",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/NL/aggregate_job_postings_NL.csv"
+  },
+  "indeed_job_postings_tracker/aggregate_job_postings_US.csv": {
+    "bytes": 205567,
+    "etag": "\"804b1b264fbad64ab84abb76e1d189c6cd16c950ab39e472aa3d72d49878623b\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:26Z",
+    "sha256": "4087dc63e3686d4b2b8a309e76138cd377b59e9a5d7347e18a62d4ec731fb47b",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/aggregate_job_postings_US.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_AU.csv": {
+    "bytes": 12243383,
+    "etag": "\"b2263dd6481cb067178514603831c9638f17466ceac4b2e28e2bd7c47fc723fb\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:30Z",
+    "sha256": "3cce54b576e797131eb827b122ed3ef0878057a952ffa0b9286e3d381beb8b51",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/AU/job_postings_by_sector_AU.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_CA.csv": {
+    "bytes": 12341268,
+    "etag": "\"f404e3a3714ec89164299488c7039b9a0559d2068df29ee9e8b7a27c684cb237\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:32Z",
+    "sha256": "9d9b07d16f4b5831194d0aabd292ccad9b6188c39b79a192b47eab402e805b84",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/job_postings_by_sector_CA.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_DE.csv": {
+    "bytes": 11689702,
+    "etag": "\"88af8bde07bce5809557dcce173a706fca9d74d532f582138ba877a38a4250e4\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:35Z",
+    "sha256": "4b3a0ba267c128fba785997923b801f3a95b3ddea3fbea4c338e2150b1f096c0",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/DE/job_postings_by_sector_DE.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_FR.csv": {
+    "bytes": 8859432,
+    "etag": "\"26533d4731933b17af2a7845d747e61aca6bcb2d2c289c2ec414af78157a0697\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:38Z",
+    "sha256": "9d7ce5aecd8269931a273ae5a13583adbcebc1a2bca0960980b7e0ab647e347a",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/FR/job_postings_by_sector_FR.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_GB.csv": {
+    "bytes": 12681303,
+    "etag": "\"6230dc79b8e998718c61b5c770a16071b6ca5ce9c2fd0f14c41529561c77971a\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:42Z",
+    "sha256": "3f1139d652379b972dcc557844461c1982842920eeda8e0f37ed27e913ab2071",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/GB/job_postings_by_sector_GB.csv"
+  },
+  "indeed_job_postings_tracker/job_postings_by_sector_US.csv": {
+    "bytes": 12275534,
+    "etag": "\"d6a770321c012b1865da97dd72db28a8eb4ec1541752f75b5d5a33b188891fe5\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:45Z",
+    "sha256": "aff050a6983bc8d31619f69c3e36f03bc7f3bf7cea56f1a8ae25bee097e001a5",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/job_postings_by_sector_US.csv"
+  },
+  "indeed_job_postings_tracker/sector-job-title-examples.csv": {
+    "bytes": 2515,
+    "etag": "\"acabc020958a47d67b12d81fa5d80e9454c3a630862da87dd4e0086d6b2daeba\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T05:57:46Z",
+    "sha256": "50124270d2c29b74451fced1180179a26edc5561704c131e8d04455259459558",
+    "url": "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/sector-job-title-examples.csv"
   },
   "litellm_price_history/2023-09_42cc4e2.json": {
     "bytes": 15470,
@@ -559,5 +838,312 @@
     "retrieved_utc": "2026-11-22T05:29:52Z",
     "sha256": "11bc1a96141d05690543296127ec117faef4354574ab04a15e612637c9574fce",
     "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5919"
+  },
+  "pwt/pwt110.xlsx": {
+    "bytes": 5839841,
+    "etag": "\"f051c9340d641d6ad8494d6137a25f1e\"",
+    "http_status": 200,
+    "last_modified": "Fri, 10 Oct 2025 11:48:43 GMT",
+    "retrieved_utc": "2026-11-22T06:00:27Z",
+    "sha256": "7b337e94f39dfe304bc459e433f8ce0624496c812707ae0c924888f5142b3ab3",
+    "url": "https://dataverse.nl/api/access/datafile/554105"
+  },
+  "pwt/pwt110_user_guide_to_data_files.pdf": {
+    "bytes": 119363,
+    "etag": "\"d56522e14917407be1bf18b37c6a2812\"",
+    "http_status": 200,
+    "last_modified": "Tue, 07 Oct 2025 08:18:55 GMT",
+    "retrieved_utc": "2026-11-22T06:00:30Z",
+    "sha256": "93acc1c1c451809d1668ce6e9dc3b7f17d90ba36f08a661e82016f5c2da87cc2",
+    "url": "https://dataverse.nl/api/access/datafile/554025"
+  },
+  "pwt/pwt110_whatsnew.pdf": {
+    "bytes": 394645,
+    "etag": "\"a35f913b3860c9f778508bea35571891\"",
+    "http_status": 200,
+    "last_modified": "Tue, 07 Oct 2025 08:18:55 GMT",
+    "retrieved_utc": "2026-11-22T06:00:32Z",
+    "sha256": "d6b2fb6b15d62ae0f465809191b9840fe325891efe98a34f3d2a8a19d69ac97c",
+    "url": "https://dataverse.nl/api/access/datafile/554031"
+  },
+  "worldbank/IT.NET.USER.ZS.json": {
+    "bytes": 250076,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 01:52:53 GMT",
+    "retrieved_utc": "2026-11-22T05:58:03Z",
+    "sha256": "2ca0a8724067917b975eb44b76f4fa3c92e803eddd1d3d881e75f7a6234713fb",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/IT.NET.USER.ZS?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/IT.NET.USER.ZS_meta.json": {
+    "bytes": 629,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sat, 21 Nov 2026 13:15:48 GMT",
+    "retrieved_utc": "2026-11-22T05:58:04Z",
+    "sha256": "6e6fc76f94bda17bd30c3303f1e8965698c93d344c26a556ea6ee18a86c3cc32",
+    "url": "https://api.worldbank.org/v2/indicator/IT.NET.USER.ZS?format=json"
+  },
+  "worldbank/LICENCE_NOTE.txt": {
+    "bytes": 1032,
+    "etag": null,
+    "http_status": null,
+    "last_modified": null,
+    "note": "written by this script from the licence pages read on 2026-11-22: CC BY 4.0 for World Bank datasets",
+    "retrieved_utc": "2026-11-22T05:58:17Z",
+    "sha256": "a8688bd3b30d4ae4e08b96fa8cc27686831c6d55cbf1c1c0d0f90517534885ff",
+    "url": "https://datacatalog.worldbank.org/public-licenses"
+  },
+  "worldbank/NY.GDP.PCAP.PP.KD.json": {
+    "bytes": 264440,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:01 GMT",
+    "retrieved_utc": "2026-11-22T05:58:01Z",
+    "sha256": "f02163bc9d7d1264adddfaf63b935f5724de3c97640ad63a017744e2116f7f0f",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.PP.KD?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/NY.GDP.PCAP.PP.KD_meta.json": {
+    "bytes": 2444,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sat, 21 Nov 2026 12:42:28 GMT",
+    "retrieved_utc": "2026-11-22T05:58:02Z",
+    "sha256": "55af4b25be9dc57c2865bc4a208710e7405b00306f8381038d884841d3b1e686",
+    "url": "https://api.worldbank.org/v2/indicator/NY.GDP.PCAP.PP.KD?format=json"
+  },
+  "worldbank/SE.TER.ENRR.json": {
+    "bytes": 237196,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:05 GMT",
+    "retrieved_utc": "2026-11-22T05:58:06Z",
+    "sha256": "0cb4772d48f65e2b96669b9a4cbe77b1f220a97d40eae14e08d3de7d0e8859ad",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SE.TER.ENRR?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/SE.TER.ENRR_meta.json": {
+    "bytes": 1034,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:06 GMT",
+    "retrieved_utc": "2026-11-22T05:58:07Z",
+    "sha256": "39dc6d7475cb76cbf8862c283aad1b51ba7f58fca4055e1ed14fbccae7341386",
+    "url": "https://api.worldbank.org/v2/indicator/SE.TER.ENRR?format=json"
+  },
+  "worldbank/SL.AGR.EMPL.ZS.json": {
+    "bytes": 283161,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:09 GMT",
+    "retrieved_utc": "2026-11-22T05:58:10Z",
+    "sha256": "7554e3a208d28e12d5f1772e9e537ff36cee3a2691c4310529c770663b8c7e6c",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SL.AGR.EMPL.ZS?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/SL.AGR.EMPL.ZS_meta.json": {
+    "bytes": 1031,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sat, 21 Nov 2026 22:22:30 GMT",
+    "retrieved_utc": "2026-11-22T05:58:11Z",
+    "sha256": "c57a5d67bf62cb9f83bf1a34ef6f0acc9c20edc0ca810e3da24c5cdc9b69c6d1",
+    "url": "https://api.worldbank.org/v2/indicator/SL.AGR.EMPL.ZS?format=json"
+  },
+  "worldbank/SL.SRV.EMPL.ZS.json": {
+    "bytes": 279922,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:07 GMT",
+    "retrieved_utc": "2026-11-22T05:58:08Z",
+    "sha256": "bd97edc17fbf86aec04e373e4d306ab956edd0142bce0cdb883b4d2f83e94878",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SL.SRV.EMPL.ZS?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/SL.SRV.EMPL.ZS_meta.json": {
+    "bytes": 1118,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:08 GMT",
+    "retrieved_utc": "2026-11-22T05:58:09Z",
+    "sha256": "ab6a368a1a423e212210adbe97e341513942e3c3bf1c589fee59cb988dc4c86a",
+    "url": "https://api.worldbank.org/v2/indicator/SL.SRV.EMPL.ZS?format=json"
+  },
+  "worldbank/SP.POP.1564.TO.ZS.json": {
+    "bytes": 259197,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:12 GMT",
+    "retrieved_utc": "2026-11-22T05:58:12Z",
+    "sha256": "58c4136fe3fe7255297f1bfe24dfa1433ac41a9041f665d2befb25e5add3508b",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.1564.TO.ZS?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/SP.POP.1564.TO.ZS_meta.json": {
+    "bytes": 610,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:13 GMT",
+    "retrieved_utc": "2026-11-22T05:58:13Z",
+    "sha256": "492a7b2bdee2f0ac5e3ec87082a5f28dfbff99133349dd78624c7acbf607d7ce",
+    "url": "https://api.worldbank.org/v2/indicator/SP.POP.1564.TO.ZS?format=json"
+  },
+  "worldbank/SP.POP.TOTL.json": {
+    "bytes": 214159,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 05:58:14 GMT",
+    "retrieved_utc": "2026-11-22T05:58:15Z",
+    "sha256": "5a657759036076eee15a0395512720481d365a3936285d3ebb1bddc3e5d75448",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2022:2025"
+  },
+  "worldbank/SP.POP.TOTL_meta.json": {
+    "bytes": 1099,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sat, 21 Nov 2026 06:54:58 GMT",
+    "retrieved_utc": "2026-11-22T05:58:16Z",
+    "sha256": "2f8491efc00bf2c0995112ff8e87aba69e5e9d22d0880b22f7e3a4ec757ba05c",
+    "url": "https://api.worldbank.org/v2/indicator/SP.POP.TOTL?format=json"
+  },
+  "worldbank/countries.json": {
+    "bytes": 113954,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sat, 21 Nov 2026 12:53:46 GMT",
+    "retrieved_utc": "2026-11-22T05:58:00Z",
+    "sha256": "c9acf3932785191a649cbc04c3056af4cf64a236e5c3b49d49be25ddb0440bce",
+    "url": "https://api.worldbank.org/v2/country?format=json&per_page=400"
+  },
+  "worldbank_macro/FR.INR.RINR.json": {
+    "bytes": 53921,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:54 GMT",
+    "retrieved_utc": "2026-11-22T06:00:55Z",
+    "sha256": "498124ee75bf7bae5dcac3d2f165e290e4101ced3809b4b46d3d6df83cc40759",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/FR.INR.RINR?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/GC.TAX.TOTL.GD.ZS.json": {
+    "bytes": 55454,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:55 GMT",
+    "retrieved_utc": "2026-11-22T06:00:56Z",
+    "sha256": "cdce0b12a15790a8a74f93945945d21ff3263c6d75227b77c717ddd04196f1e5",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NE.CON.GOVT.ZS.json": {
+    "bytes": 65532,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:48 GMT",
+    "retrieved_utc": "2026-11-22T06:00:48Z",
+    "sha256": "b428656b8410b15a45a8c96e89e6f2375a55e2351926f81a9c597a9d8bf62b50",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NE.CON.GOVT.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NE.CON.PRVT.ZS.json": {
+    "bytes": 66314,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:47 GMT",
+    "retrieved_utc": "2026-11-22T06:00:47Z",
+    "sha256": "5c6fd900cb5a8bdf4afccd2db800d732ee23d446d7e32e8bee425295927d1b8d",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NE.CON.PRVT.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NE.GDI.FTOT.ZS.json": {
+    "bytes": 60517,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:46 GMT",
+    "retrieved_utc": "2026-11-22T06:00:47Z",
+    "sha256": "b4accf5bd1684193eee8fef7bc1a2b92dc1b3a05cd180601e96f1d724f231564",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NE.GDI.FTOT.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NE.GDI.TOTL.ZS.json": {
+    "bytes": 58924,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:45 GMT",
+    "retrieved_utc": "2026-11-22T06:00:46Z",
+    "sha256": "a64388f2828049b8aa0772f0eea5e97c1b5b953c2d4171e4da33b1d6502d0006",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NE.GDI.TOTL.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GDP.MKTP.CD.json": {
+    "bytes": 54555,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:50 GMT",
+    "retrieved_utc": "2026-11-22T06:00:50Z",
+    "sha256": "f18290ee2fec1f6918e096ea0c191f70e10ed9ed3a9bc88756ec6682b6db167b",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GDP.MKTP.CD?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GDP.MKTP.KD.ZG.json": {
+    "bytes": 56541,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:41 GMT",
+    "retrieved_utc": "2026-11-22T06:00:41Z",
+    "sha256": "8ef122a52f0d3befbf51ba8ca2121389760ceb00a883a8b98e9846a7a707a0d9",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GDP.MKTP.PP.KD.json": {
+    "bytes": 60131,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:49 GMT",
+    "retrieved_utc": "2026-11-22T06:00:49Z",
+    "sha256": "b53af98049356746f5572bc8f81a4ee3e443cdd016d9c56d3eac374e14251976",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GDP.MKTP.PP.KD?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GDP.PCAP.KD.ZG.json": {
+    "bytes": 59471,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:42 GMT",
+    "retrieved_utc": "2026-11-22T06:00:42Z",
+    "sha256": "006fb3799ccf82db35e3d403b3e1f4dadcbaa6800b10d7632cd24e12cd46ec5c",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GDP.PCAP.KD.ZG?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GDS.TOTL.ZS.json": {
+    "bytes": 58670,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:43 GMT",
+    "retrieved_utc": "2026-11-22T06:00:43Z",
+    "sha256": "96e2ebc709ecd882ac2ebac7836db06aff96a3e8b784a0443f9ea3cd7afe9129",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GDS.TOTL.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/NY.GNS.ICTR.ZS.json": {
+    "bytes": 55722,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:44 GMT",
+    "retrieved_utc": "2026-11-22T06:00:44Z",
+    "sha256": "d63555468d203035a678932362b294aa4284492b4f2851d55fcae70441849ac0",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/NY.GNS.ICTR.ZS?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/SL.TLF.TOTL.IN.json": {
+    "bytes": 52595,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:53 GMT",
+    "retrieved_utc": "2026-11-22T06:00:54Z",
+    "sha256": "3536117a222fb817d193a0cffef2c45c5bb7021aadc5bca0419bdb55cf6f842c",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/SL.TLF.TOTL.IN?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/SP.POP.GROW.json": {
+    "bytes": 56867,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:52 GMT",
+    "retrieved_utc": "2026-11-22T06:00:53Z",
+    "sha256": "3d0b36ad8f7e0fc1571e0a805976823d025fb478f784367131af5614d02b79f4",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/SP.POP.GROW?format=json&per_page=20000&date=1960:2026"
+  },
+  "worldbank_macro/SP.POP.TOTL.json": {
+    "bytes": 52241,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": "Sun, 22 Nov 2026 06:00:51 GMT",
+    "retrieved_utc": "2026-11-22T06:00:52Z",
+    "sha256": "e1eb1c30dc0999b8b8aa34c7d9fb0eb861ef094c7c756e6c637860634953c5f3",
+    "url": "https://api.worldbank.org/v2/country/USA;IND;CHN;WLD/indicator/SP.POP.TOTL?format=json&per_page=20000&date=1960:2026"
   }
 }
