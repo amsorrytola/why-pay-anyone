@@ -8,7 +8,9 @@ This project answers it with real data, a task-based economic model and an inter
 
 ## Status
 
-Data stage (2026-11-22). Topic agreed with the industry supervisor. The raw data has been downloaded and opened; analysis and the website are not built yet. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules and what data each one needs, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain.
+**Live site:** https://why-pay-anyone.vercel.app
+
+Status (2026-11-22): the data is downloaded and opened, the analyses for M1 to M6 and the India lens (published data only) are done, and the website is built and deployed. Still to do: the India microdata analysis (PLFS, needs the student's account), a cross-check of prices against more providers, and the supervisor's review. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules, the results so far and their limits, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain. The website is in [web/](web/).
 
 Python setup: install [uv](https://docs.astral.sh/uv/), then `uv sync` creates the environment from `pyproject.toml` and `uv.lock` (pandas, statsmodels, scipy, pyarrow, openpyxl); run scripts with `uv run python pipeline/<script>.py`. Secrets go in `.env` (see `.env.example`); it is never committed.
 
@@ -35,8 +37,8 @@ data/raw/        downloaded source files (not committed; re-fetched by the pipel
 data/processed/  small derived tables the website reads (committed, each with its source)
 data/SOURCES.md  data registry: source, licence, files, status
 data/manifest.json  URL, size, SHA-256 and retrieval time of every raw file
-pipeline/        scripts that fetch the raw data (done) and turn it into processed tables (to be added)
-web/             the website, with the chatbot endpoint (to be added)
+pipeline/        scripts that fetch the raw data and turn it into processed tables and website data
+web/             the website (Next.js) with the economic models and the chatbot endpoint
 ```
 
 Planned stack (to be confirmed): Python for the data pipeline and statistics; a TypeScript web app deployed on Vercel; the model runs in the browser so sliders respond instantly; the chatbot calls a server-side endpoint that holds the API key (never in browser code or this repo).

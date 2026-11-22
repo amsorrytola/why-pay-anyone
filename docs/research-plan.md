@@ -91,3 +91,12 @@ The only AI feature. It answers questions about the concepts, methods, data and 
 
 ## What would change the plan
 Any source that turns out to be unavailable, unlicensed for public display or too thin removes the part of a module that needs it. Each such change is recorded in `data/SOURCES.md` and in the module's section above.
+
+## Results so far (2026-11-22)
+Full write-ups with methods, numbers and limits:
+- M1 and M5: the first-look bullets in their sections above, and `data/processed/README.md`.
+- M2: [findings-m2.md](findings-m2.md). The two exposure measures agree moderately across occupations (rank correlation 0.45) and strongly across job families (0.80).
+- M3: [findings-m3.md](findings-m3.md). Firm use of AI rose from 17% to 25% over the year the survey question exists. Postings in the third of job categories most exposed to AI are about 24% lower than in the least exposed third since 2022, but the gap began opening before ChatGPT's launch, so it is a pattern, not proof of cause.
+- M4: [model-m4.md](model-m4.md). A task-based model; with free adoption of AI where it is cheaper, real pay does not fall in the model, the labour share does, and the price of AI binds only when it is high.
+- M6: [findings-m6.md](findings-m6.md) and [model-m6.md](model-m6.md). Three linked models, calibrated to Penn World Table and Epoch data; the welfare-best automation tax depends heavily on assumptions.
+- India Stage A: [findings-india-a.md](findings-india-a.md). India's usage per person is about 71% of what its income predicts, inside normal scatter, and the gap vanishes once the services share of jobs is controlled. Stage B (PLFS microdata) has not been done.
