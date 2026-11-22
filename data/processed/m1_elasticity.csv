@@ -1,0 +1,3 @@
+specification,elasticity,se,ci_low,ci_high,n_obs,n_models,models_with_price_change
+"model and month fixed effects, all models with 6+ months",-0.4695,0.2871,-1.0323,0.0933,581,58,27
+"same, models whose price changed at least once",-0.3761,0.2994,-0.9628,0.2107,265,27,27
