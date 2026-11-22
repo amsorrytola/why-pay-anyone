@@ -1,0 +1,15 @@
+# Raw downloads are large and re-fetchable; the manifest (data/manifest.json) records how to get them again.
+data/raw/
+
+# Secrets: never commit keys. The chatbot key lives in the host's environment variables.
+.env
+.env.*
+!.env.example
+
+# Tooling
+node_modules/
+.venv/
+__pycache__/
+.next/
+.vercel/
+.DS_Store

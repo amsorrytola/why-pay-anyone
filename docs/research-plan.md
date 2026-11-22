@@ -1,0 +1,77 @@
+# Research plan
+
+Status: draft v1, 2026-11-22. Data statuses are as of the audit on 2026-11-21 and are updated in [../data/SOURCES.md](../data/SOURCES.md).
+
+## Main research question
+
+> Given how fast the price of AI capability is falling and where AI is already used, how much of the wage bill is exposed to a falling "wage ceiling", and what does a task-based model imply for wages, the labour share, demand and who captures the gains?
+
+The idea behind the question: for any task an AI can do, the wage a person can earn is capped by what the AI substitute costs. As that cost falls, the cap falls. Whether people still get paid depends on (a) comparative advantage while compute is scarce, (b) new tasks that cheaper intelligence creates, (c) whether demand holds up when wage income falls, and (d) who owns the agents.
+
+## How the five lenses map to the modules
+
+| Lens | Economics | Module |
+|---|---|---|
+| Comparative advantage | Ricardo, opportunity cost, scarcity of compute | M4 |
+| Wage ceiling | Acemoglu–Restrepo task model, CES, derived demand | M4 |
+| Demand side | Say's law vs Keynes, marginal propensity to consume, labour share | M6 |
+| New tasks and Jevons | Jevons paradox, reinstatement, Baumol | M1, M4 |
+| Who owns the agents | Market power, Cournot/Bertrand, HHI, Coase, UBI, automation tax | M5, M6 |
+
+## Modules
+
+Rule for every module: real data, one headline model, one slider panel, one plain-English takeaway. If the data for a part is not available, that part is dropped.
+
+### M1. Price of intelligence
+- **Question:** how fast has the price of reaching a fixed capability level fallen, and when the price falls, does total spending rise (elasticity above 1) or fall?
+- **Data:** Epoch AI benchmark data (capability); a price history compiled from the LiteLLM price-file git history, provider pricing pages (Wayback Machine) and the OpenRouter models API; OpenRouter daily token volumes (needs an API key) for the elasticity part.
+- **Method:** for each benchmark threshold, the cheapest model that clears it at each date gives a price-of-capability series; a chained (Fisher) price index; a log-linear trend and a Wright's-law fit; elasticity of volume with respect to price.
+- **Controls:** benchmark, capability threshold, date range.
+- **Drop if:** a price history cannot be cross-checked from at least two sources for the models used. Then M1 shows only today's price cross-section, with no claim about the speed of decline. The elasticity part is dropped without OpenRouter volume data.
+
+### M2. Where AI is used
+- **Question:** which occupations does AI touch most, and do independent measures agree?
+- **Data:** Anthropic Economic Index (task and occupation usage, geography), Microsoft's occupation applicability scores, O*NET occupation and task definitions.
+- **Method:** map every source to SOC occupation codes; rank correlation between measures; list the occupations where they disagree and why; a diffusion (S-curve) fit on the time dimension of the Economic Index.
+- **Controls:** occupation search, source toggle, region and date.
+- **Drop if:** the Economic Index cannot be mapped to occupations. Then M2 compares the remaining measures only.
+
+### M3. Adoption in the economy
+- **Question:** is firm-level AI adoption showing up in hiring, and in which sectors first?
+- **Data:** US Census Business Trends and Outlook Survey (firm AI use by sector, state and size), Indeed AI postings tracker and job-postings tracker.
+- **Method:** adoption curves; event study and difference-in-differences comparing high-exposure and low-exposure sectors around the dates adoption accelerates.
+- **Controls:** sector, state, date range.
+- **Known limits:** BTOS changed its AI question wording in November 2025, so the series has a break. Indeed covers nine countries (not India).
+- **Drop if:** the BTOS files do not carry AI use by sector.
+
+### M4. The labour model ("why pay anyone?")
+- **Question:** for a task that AI can also do, what happens to the human wage and employment as the AI price falls, the share of automatable tasks rises, or compute is scarce?
+- **Data:** O*NET tasks and work activities; BLS Occupational Employment and Wage Statistics for employment and wages; exposure scores from M2.
+- **Method:** a task-based model with CES aggregation. The human wage for an exposed task is the lesser of the human productivity-adjusted wage and the AI cost per task. Compute scarcity makes the AI cost rise with the share of tasks automated (comparative advantage). New tasks enter at a rate set by a slider.
+- **Controls:** AI price, compute scarcity, share of tasks automatable, elasticity of substitution, demand response, new-task rate. Presets such as "AI price falls tenfold".
+- **Drop if:** wage data cannot be obtained. The calibrated version would then be dropped and only the stylised model kept, labelled as illustrative.
+
+### M5. Market structure and power
+- **Question:** who sells the intelligence, how concentrated is the market, and how does it behave over time?
+- **Data:** OpenRouter daily token share by model and author (needs an API key); Epoch AI data on companies, chips and compute.
+- **Method:** Herfindahl–Hirschman index over time; Cournot and Bertrand benchmarks calibrated to the number of firms and costs; price competition among providers.
+- **Controls:** provider shares, number of firms, cost assumptions.
+- **Drop if:** daily shares cannot be obtained. Concentration would then be shown from Epoch's company data only if that data supports it; otherwise only the theory panel stays.
+
+### M6. Macro and policy
+- **Question:** what does falling intelligence cost, and the way its gains are shared, imply for growth, the labour share and policies such as UBI and an automation tax?
+- **Data:** Epoch AI chip and data-centre data (compute stock); World Bank macro series; a labour-share series (source to be confirmed).
+- **Method:** a Solow growth model with AI capital and an endogenous-growth variant (Romer; Trammell and Korinek on transformative AI); labour share and Piketty's r versus g; a welfare comparison of UBI and an automation tax.
+- **Controls:** policy rates, growth parameters, ownership of AI capital.
+- **Drop if:** no labour-share series can be sourced. The labour share would then be a model output only, with no data comparison.
+
+## India lens (bounded, in two stages)
+- **Stage A (published results, no microdata):** use published IMF results on exposure in India versus advanced economies, a cross-country regression of AI usage per capita on income using the Anthropic Economic Index country data (India's residual), and published India studies for context. Needs India to appear in the Economic Index country data (not yet confirmed).
+- **Stage B (needs PLFS microdata):** map India's occupations (NCO-2015) to the exposure scores and compute exposure-weighted employment and wage bill by sector, state, formality, gender and education; feed India-specific parameters into M4. Needs free registration and a data-access agreement on microdata.gov.in, and a workable occupation crosswalk.
+- If Stage B access fails, India stays at Stage A.
+
+## The chatbot
+The only AI feature. It answers questions about the concepts, methods, data and results, using this project's own documentation as context, and can be told the current slider values. It does not use tools or act as an agent. The key sits on the server; limits on requests and spend apply.
+
+## What would change the plan
+Any source that turns out to be unavailable, unlicensed for public display or too thin removes the part of a module that needs it. Each such change is recorded in `data/SOURCES.md` and in the module's section above.
