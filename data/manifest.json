@@ -543,5 +543,12 @@
     "retrieved_utc": "2026-11-22T04:55:16Z",
     "sha256": "7b7f878e0eae99076cb161e01f99d1529fd88260ac9ecf31630027ca944d4800",
     "url": "https://openrouter.ai/api/v1/models"
+  },
+  "plfs_2025_docs/FV_Data_LayoutPLFS_2025.xlsx": {
+    "bytes": 70514,
+    "method": "documentation file downloaded in the browser pane while logged in (study 284, PLFS Calendar Year 2025), then moved here",
+    "retrieved_utc": "2026-11-22T05:29:52Z",
+    "sha256": "11bc1a96141d05690543296127ec117faef4354574ab04a15e612637c9574fce",
+    "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5919"
   }
 }
