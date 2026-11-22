@@ -26,6 +26,20 @@
     "sha256": "1a01eeb7d34250b192aa9c906098bea1db971644e6bdb04497d87b7a4ed141a5",
     "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/main/release_2026_06_26/data_documentation.md"
   },
+  "bls_isco_soc/ISCO_SOC_Crosswalk.xls": {
+    "bytes": 311296,
+    "method": "downloaded in the browser pane (BLS blocks scripts), then moved here",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "0936c78c4ab2cb0b61d7cfe3dcf0f94d943a4e30b11dade1f11676307e2c0aae",
+    "url": "https://www.bls.gov/soc/ISCO_SOC_Crosswalk.xls"
+  },
+  "bls_isco_soc/soc_2010_to_2018_crosswalk.xlsx": {
+    "bytes": 46630,
+    "method": "downloaded in the browser pane (BLS blocks scripts), then moved here",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "f3a847561562d3e5a30eb848f2902a5f7b02e9c48b3d7f2cc8879899fbc242a7",
+    "url": "https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx"
+  },
   "bls_oews/oesm25nat.zip": {
     "bytes": 279525,
     "last_modified": "Fri, 15 May 2026 13:12:23 GMT",
@@ -231,6 +245,13 @@
     "retrieved_utc": "2026-11-22T06:00:39Z",
     "sha256": "c2b0f4f28ce17fc0de9ed8d9719e963080cdf6cf8af3fad6e047f1bf16970bed",
     "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WFRBSTP1300"
+  },
+  "ilo_isco08/ISCO-08_EN.csv": {
+    "bytes": 224299,
+    "method": "downloaded with a script (ILOSTAT metadata file; occupation titles only)",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "9afc6377d6ed6738d59aa0476777042e180397400d7dcd932e084045228b4d49",
+    "url": "https://www.ilo.org/ilostat-files/ISCO/newdocs-08-2021/ISCO-08/ISCO-08%20EN.csv"
   },
   "ilo_labour_share/ilo_labour_income_share_gdp.csv": {
     "bytes": 58169,
@@ -832,12 +853,40 @@
     "sha256": "78ee4b09b73f3215c886887724159f5d95b923a3d3436dcb07b1bdd7b0bcab41",
     "url": "https://openrouter.ai/api/v1/datasets/rankings-daily?start_date=2025-01-01&end_date=2026-11-21 (fetched in 60-day chunks)"
   },
+  "plfs_2025/Data_in_CSV.zip": {
+    "bytes": 33254129,
+    "method": "unit-level microdata (CSV, first-visit households and persons) downloaded in the browser pane after the Data Access Agreement was accepted; never committed (data/raw is ignored), never shared",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "759ad329ccc7d28acfcc12ebf67f0f97e9cbaafa83309ac4957f85949d1296fd",
+    "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/6608"
+  },
   "plfs_2025_docs/FV_Data_LayoutPLFS_2025.xlsx": {
     "bytes": 70514,
     "method": "documentation file downloaded in the browser pane while logged in (study 284, PLFS Calendar Year 2025), then moved here",
     "retrieved_utc": "2026-11-22T05:29:52Z",
     "sha256": "11bc1a96141d05690543296127ec117faef4354574ab04a15e612637c9574fce",
     "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5919"
+  },
+  "plfs_2025_docs/Indian_States_and_UTs_CodeName.xlsx": {
+    "bytes": 9395,
+    "method": "documentation file downloaded in the browser pane while logged in",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "5c246ed07a4582b3965854d5a887eb87669610245fd316b3cf62e063f38fc05f",
+    "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5921"
+  },
+  "plfs_2025_docs/README2025.docx": {
+    "bytes": 31547,
+    "method": "documentation file downloaded in the browser pane while logged in; states Final Weight = MULT / 100",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "523269a809ac01f9fc2c94a701a10541f0dd57af3abab72b5c37aa6a95195e9e",
+    "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5924"
+  },
+  "plfs_2025_docs/Schedule10_4_FIRSTVISIT_July-Dec_2025.pdf": {
+    "bytes": 566317,
+    "method": "survey schedule (code lists for contract, social security, earnings) downloaded in the browser pane while logged in",
+    "retrieved_utc": "2026-11-22T09:19:05Z",
+    "sha256": "5a62664f4035ba4f87fb99fbd23239c9ae940d8ac81f03622163c45df75d4e1f",
+    "url": "https://microdata.gov.in/NADA/index.php/catalog/284/download/5925"
   },
   "pwt/pwt110.xlsx": {
     "bytes": 5839841,

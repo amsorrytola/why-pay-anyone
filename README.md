@@ -10,7 +10,7 @@ This project answers it with real data, a task-based economic model and an inter
 
 **Live site:** https://why-pay-anyone.vercel.app
 
-Status (2026-11-22): the data is downloaded and opened, the analyses for M1 to M6 and the India lens (published data only) are done, and the website is built and deployed. Still to do: the India microdata analysis (PLFS, needs the student's account), a cross-check of prices against more providers, and the supervisor's review. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules, the results so far and their limits, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain. The website is in [web/](web/).
+Status (2026-11-22): the data is downloaded and opened, the analyses for M1 to M6 and both parts of the India lens (usage data, and the PLFS 2025 occupation analysis) are done, and the website is built and deployed. Still to do: a cross-check of prices against more providers, and the supervisor's review. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules, the results so far and their limits, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain. The website is in [web/](web/).
 
 Python setup: install [uv](https://docs.astral.sh/uv/), then `uv sync` creates the environment from `pyproject.toml` and `uv.lock` (pandas, statsmodels, scipy, pyarrow, openpyxl); run scripts with `uv run python pipeline/<script>.py`. Secrets go in `.env` (see `.env.example`); it is never committed.
 

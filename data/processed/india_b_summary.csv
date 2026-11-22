@@ -1,0 +1,79 @@
+measure,scope,label,value
+ms,all,mean percentile of Indian workers (US workers = 50),28.4101
+ms,all,"share of Indian workers above the US top-third line, percent (US = 33.3)",6.2645
+ms,all,"share of Indian workers below the US bottom-third line, percent (US = 33.3)",70.5976
+ms,all,"share of Indian workers above the US median line, percent (US = 50)",18.9779
+ms,all,"share of Indian workers above the US 80th-percentile line, percent (US = 20)",3.1422
+ms,all,"share of Indian workers whose occupation has a score, percent",99.9743
+ms,sex:women,mean percentile,25.2633
+ms,sex:women,"share above the US top-third line, percent",4.8343
+ms,sex:men,mean percentile,29.7814
+ms,sex:men,"share above the US top-third line, percent",6.8871
+ms,sector:rural,mean percentile,23.3557
+ms,sector:rural,"share above the US top-third line, percent",3.0129
+ms,sector:urban,mean percentile,40.4833
+ms,sector:urban,"share above the US top-third line, percent",14.0314
+ms,status:self,mean percentile,29.2692
+ms,status:self,"share above the US top-third line, percent",3.0747
+ms,status:family,mean percentile,23.9977
+ms,status:family,"share above the US top-third line, percent",0.8248
+ms,status:regular,mean percentile,44.2739
+ms,status:regular,"share above the US top-third line, percent",19.1876
+ms,status:casual,mean percentile,10.1308
+ms,status:casual,"share above the US top-third line, percent",0.3377
+ms,education:graduate_or_above,mean percentile,50.8185
+ms,education:graduate_or_above,"share above the US top-third line, percent",26.3911
+ms,education:below_graduate,mean percentile,24.3887
+ms,education:below_graduate,"share above the US top-third line, percent",2.6525
+aei,all,mean percentile of Indian workers (US workers = 50),54.1299
+aei,all,"share of Indian workers above the US top-third line, percent (US = 33.3)",24.0215
+aei,all,"share of Indian workers below the US bottom-third line, percent (US = 33.3)",21.9846
+aei,all,"share of Indian workers above the US median line, percent (US = 50)",57.9546
+aei,all,"share of Indian workers above the US 80th-percentile line, percent (US = 20)",14.9159
+aei,all,"share of Indian workers whose occupation has a score, percent",79.1992
+aei,sex:women,mean percentile,54.5141
+aei,sex:women,"share above the US top-third line, percent",28.9363
+aei,sex:men,mean percentile,53.9495
+aei,sex:men,"share above the US top-third line, percent",21.7273
+aei,sector:rural,mean percentile,51.9969
+aei,sector:rural,"share above the US top-third line, percent",18.1512
+aei,sector:urban,mean percentile,59.1298
+aei,sector:urban,"share above the US top-third line, percent",37.7819
+aei,status:self,mean percentile,60.0227
+aei,status:self,"share above the US top-third line, percent",27.0904
+aei,status:family,mean percentile,57.3509
+aei,status:family,"share above the US top-third line, percent",11.8696
+aei,status:regular,mean percentile,55.9565
+aei,status:regular,"share above the US top-third line, percent",37.2664
+aei,status:casual,mean percentile,30.061
+aei,status:casual,"share above the US top-third line, percent",2.846
+aei,education:graduate_or_above,mean percentile,64.4193
+aei,education:graduate_or_above,"share above the US top-third line, percent",45.9254
+aei,education:below_graduate,mean percentile,51.876
+aei,education:below_graduate,"share above the US top-third line, percent",19.2233
+ms_eq,all,mean percentile of Indian workers (US workers = 50),30.4735
+ms_eq,all,"share of Indian workers above the US top-third line, percent (US = 33.3)",7.5593
+ms_eq,all,"share of Indian workers below the US bottom-third line, percent (US = 33.3)",67.6199
+ms_eq,all,"share of Indian workers above the US median line, percent (US = 50)",20.1694
+ms_eq,all,"share of Indian workers above the US 80th-percentile line, percent (US = 20)",3.4483
+ms_eq,all,"share of Indian workers whose occupation has a score, percent",99.9743
+ms_eq,sex:women,mean percentile,28.9161
+ms_eq,sex:women,"share above the US top-third line, percent",5.8351
+ms_eq,sex:men,mean percentile,31.1517
+ms_eq,sex:men,"share above the US top-third line, percent",8.3103
+ms_eq,sector:rural,mean percentile,25.6272
+ms_eq,sector:rural,"share above the US top-third line, percent",3.7568
+ms_eq,sector:urban,mean percentile,42.0497
+ms_eq,sector:urban,"share above the US top-third line, percent",16.6423
+ms_eq,status:self,mean percentile,30.5488
+ms_eq,status:self,"share above the US top-third line, percent",4.0667
+ms_eq,status:family,mean percentile,24.112
+ms_eq,status:family,"share above the US top-third line, percent",1.2397
+ms_eq,status:regular,mean percentile,46.3356
+ms_eq,status:regular,"share above the US top-third line, percent",22.5733
+ms_eq,status:casual,mean percentile,15.0157
+ms_eq,status:casual,"share above the US top-third line, percent",0.2473
+ms_eq,education:graduate_or_above,mean percentile,51.4773
+ms_eq,education:graduate_or_above,"share above the US top-third line, percent",28.8422
+ms_eq,education:below_graduate,mean percentile,26.7041
+ms_eq,education:below_graduate,"share above the US top-third line, percent",3.7399

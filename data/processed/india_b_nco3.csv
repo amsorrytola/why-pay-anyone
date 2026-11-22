@@ -1,0 +1,127 @@
+nco3,n_workers_sample,share_of_workers_pct,female_share_pct,rural_share_pct,self_share_pct,family_share_pct,regular_share_pct,casual_share_pct,n_regular_earners,median_monthly_pay_regular,label,major,major_label,ms_score,ms_pct,aei_ratio,aei_pct,n_soc_matched,n_soc_ms,n_soc_aei
+611,91110.0,20.6737,29.6128,95.9033,64.0245,34.3036,0.6824,0.9895,656.0,10000.0,Market Gardeners and Crop Growers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.0843,20.0686,0.1959,57.1627,4.0,4.0,2.0
+931,32914.0,8.4066,12.8042,81.6769,1.1233,0.1123,2.4568,96.3076,1010.0,15000.0,Mining and Construction Labourers,9,Elementary Occupations,0.0314,4.6387,,,12.0,10.0,
+921,25808.0,7.7297,49.9631,94.3336,1.1978,1.0119,3.1984,94.5919,860.0,7300.0,"Agricultural, Forestry and Fishery Labourers",9,Elementary Occupations,0.0466,7.1073,0.0247,26.3383,7.0,4.0,4.0
+522,42444.0,7.2247,20.1389,50.94,60.8137,14.6602,23.8133,0.7128,9190.0,12000.0,Shop Salespersons ,5,Services And Sales Workers,0.2003,65.6455,0.1229,49.0169,4.0,4.0,4.0
+612,20854.0,4.8571,74.9751,92.6953,83.2662,15.5432,0.9714,0.2191,206.0,10000.0,Animal Producers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.06,13.9014,0.5561,78.4057,2.0,2.0,1.0
+613,18894.0,3.9568,45.9762,96.7946,57.3299,41.9161,0.223,0.531,43.0,10000.0,Mixed Crop and Animal Producers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.0701,16.4327,,,3.0,3.0,
+832,14849.0,3.0731,2.6362,54.4243,66.0118,0.9085,27.4821,5.5976,4186.0,15000.0,"Car, Van and Motorcycle Drivers",8,Plant and Machine Operators and Assemblers,0.1101,27.7725,,,7.0,6.0,
+753,10686.0,2.2284,57.1663,51.4584,69.1945,6.8252,20.3368,3.6435,1778.0,12500.0,Garment and Related Trades Workers,7,Craft and Related Trades Workers,0.1017,22.9746,1.2527,89.4578,10.0,9.0,7.0
+932,8703.0,2.0907,26.1962,55.5377,4.2441,1.3325,65.0001,29.4233,6058.0,12500.0,Manufacturing Labourers,9,Elementary Occupations,0.0636,14.7808,0.004,19.0393,7.0,6.0,6.0
+631,8447.0,2.0144,51.4948,96.9473,64.5814,35.3643,0.0,0.0543,3.0,,Subsistence Crop Farmers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.0478,7.216,0.1171,48.8135,1.0,1.0,1.0
+711,8255.0,1.9126,5.3581,74.5984,39.8583,2.4453,8.5232,49.1733,652.0,15000.0,Building Frame and Related Trades Workers,7,Craft and Related Trades Workers,0.0763,19.0601,0.0684,39.9648,11.0,11.0,5.0
+911,6856.0,1.6735,71.3858,34.272,2.5445,1.2632,88.3832,7.8092,5960.0,8000.0,"Domestic, Hotel and Office Cleaners and Helpers",9,Elementary Occupations,0.0752,18.0435,,,3.0,3.0,
+112,6917.0,1.3057,10.7962,33.0988,89.1992,5.8938,4.907,0.0,358.0,53068.6914,Managing Directors and Chief Executives,1,Managers,0.1124,30.4412,0.1531,55.3504,2.0,2.0,2.0
+833,5979.0,1.262,1.8911,71.4217,19.1395,0.8462,66.3725,13.6419,3837.0,16000.0,Heavy Truck and Bus Drivers,8,Plant and Machine Operators and Assemblers,0.1407,43.3076,0.0,9.5196,5.0,5.0,4.0
+521,6136.0,1.2451,20.9797,49.6329,81.7543,10.1769,7.07,0.9988,413.0,15000.0,Street and Market Salespersons,5,Services And Sales Workers,0.1187,33.8227,1.8082,91.7516,2.0,2.0,2.0
+731,5572.0,1.1513,39.6357,54.6541,48.1162,16.6788,24.4801,10.7249,975.0,15000.0,Handicraft Workers,7,Craft and Related Trades Workers,0.1246,37.8219,0.3321,63.3328,15.0,13.0,7.0
+512,5089.0,1.1383,50.4822,51.7915,20.4559,5.6804,66.0328,7.8309,3143.0,8000.0,Cooks,5,Services And Sales Workers,0.1362,39.7182,0.0363,29.1739,6.0,5.0,5.0
+541,5917.0,1.128,6.9575,41.7629,0.0718,0.0119,99.3195,0.5969,5827.0,16000.0,Protective Services Workers,5,Services And Sales Workers,0.1275,38.4221,0.1606,56.232,20.0,19.0,13.0
+723,5577.0,1.071,3.5054,52.3376,42.0209,4.0051,48.1737,5.8002,2538.0,15000.0,Machinery Mechanics and Repairers,7,Craft and Related Trades Workers,0.1034,23.0255,0.0819,41.5342,20.0,20.0,10.0
+234,7015.0,1.0609,57.9886,56.326,5.2291,0.4283,94.3426,0.0,6628.0,22000.0,Primary School and Early Childhood Teachers,2,Professionals,0.1808,59.4142,0.0479,33.7531,4.0,4.0,4.0
+751,4445.0,1.003,59.1818,65.2751,68.1972,8.3979,15.4566,7.9482,637.0,12000.0,Food Processing and Related Trades Workers,7,Craft and Related Trades Workers,0.1133,30.7502,,,13.0,12.0,
+933,4071.0,0.9766,4.2874,56.0869,10.3049,0.4649,34.0042,55.226,1372.0,13500.0,Transport and Storage Labourers,9,Elementary Occupations,0.0819,19.7509,0.0146,25.2266,8.0,6.0,3.0
+713,3917.0,0.9139,3.8528,57.2438,27.4288,1.4683,8.5635,62.5394,353.0,15000.0,"Painters, Building Structure Cleaners and Related Trades Workers",7,Craft and Related Trades Workers,0.0756,18.0435,0.0403,30.2455,4.0,3.0,3.0
+741,4742.0,0.9056,2.7325,53.5024,42.8286,3.0289,39.2677,14.8748,1942.0,18000.0,Electrical Equipment Installers and Repairers,7,Craft and Related Trades Workers,0.1373,40.5371,0.0994,46.1638,16.0,16.0,12.0
+524,3984.0,0.869,13.9564,40.4783,35.8614,6.2669,55.1815,2.6902,2282.0,15000.0,Other Sales Workers,5,Services And Sales Workers,0.1695,54.7563,1.3047,89.4671,9.0,8.0,8.0
+712,3562.0,0.8041,4.6487,66.9894,44.122,2.4846,10.438,42.9555,411.0,16500.0,Building Finishers and Related Trades Workers,7,Craft and Related Trades Workers,0.0926,21.2321,0.0089,22.0138,15.0,15.0,8.0
+233,5066.0,0.7665,44.7561,46.1383,4.9753,0.3294,94.6953,0.0,4742.0,38000.0,Secondary Education Teachers,2,Professionals,0.1764,56.6203,0.0,9.5196,1.0,1.0,1.0
+411,4547.0,0.7089,22.6387,39.551,0.3979,0.3886,98.9239,0.2897,4449.0,25000.0,General Office Clerks,4,Clerical Support Workers,0.2421,74.5622,0.4564,71.0607,2.0,2.0,2.0
+251,2349.0,0.6921,27.7839,10.4727,1.4218,0.2211,98.3571,0.0,2271.0,45000.0,Software and Applications Developers and Analysts,2,Professionals,0.2645,82.7437,6.441,96.7426,10.0,10.0,10.0
+632,3308.0,0.6502,87.8974,94.706,84.9824,15.0176,0.0,0.0,,,Subsistence Livestock Farmers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.1439,44.4309,0.0,9.5196,1.0,1.0,1.0
+721,2996.0,0.629,2.9993,55.2672,26.8018,4.4193,50.9953,17.7836,1401.0,15000.0,"Sheet and Structural Metal Workers, Moulders and Welders, and Related Workers",7,Craft and Related Trades Workers,0.0685,15.038,,,11.0,11.0,
+514,3023.0,0.6207,28.5501,60.1608,69.9046,8.179,19.473,2.4434,535.0,10000.0,"Hairdressers, Beauticians and Related Workers",5,Services And Sales Workers,0.1219,36.9866,0.2209,57.7597,8.0,8.0,8.0
+815,1904.0,0.4973,25.3572,33.745,21.1384,6.565,64.6285,7.6682,1108.0,15000.0,"Textile, Fur and Leather Products Machine Operators",8,Plant and Machine Operators and Assemblers,0.0468,7.1073,,,7.0,6.0,
+241,2391.0,0.4826,23.9298,22.789,15.5779,1.7168,82.7053,0.0,1904.0,25300.0,Finance Professionals,2,Professionals,0.2284,70.4254,0.7165,81.6358,8.0,8.0,8.0
+413,2643.0,0.4683,26.6349,44.0194,18.5145,0.9687,80.329,0.1878,2080.0,15000.0,Keyboard Operators,4,Clerical Support Workers,0.3042,90.7009,11.3669,98.2849,2.0,2.0,2.0
+961,1962.0,0.4405,35.1644,38.2711,20.3651,3.0851,68.292,8.2578,1403.0,10000.0,Refuse Workers,9,Elementary Occupations,0.0353,5.3255,0.0,9.5196,2.0,1.0,1.0
+322,2727.0,0.4321,90.7637,71.3372,0.3911,0.0793,99.3661,0.1634,2655.0,10000.0,Nursing and Midwifery Associate Professionals,3,Technicians and Associate Professionals,0.0524,10.4338,0.1077,48.6086,4.0,4.0,3.0
+312,2197.0,0.4173,6.6838,44.4461,10.594,3.308,85.3124,0.7857,1791.0,22000.0,"Mining, Manufacturing and Construction Supervisors",3,Technicians and Associate Professionals,0.1737,56.1644,0.1831,57.1627,2.0,2.0,2.0
+633,1860.0,0.4067,63.617,96.3953,63.6444,35.2214,0.0,1.1342,1.0,,Subsistence Mixed Crop and Livestock Farmers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.0584,13.7831,0.1042,46.518,2.0,2.0,2.0
+441,2569.0,0.3995,19.0563,46.5009,0.948,0.0737,98.4157,0.5626,2504.0,18000.0,Other Clerical Support Workers,4,Clerical Support Workers,0.1838,60.8138,3.7384,94.4363,17.0,15.0,12.0
+332,2052.0,0.3833,10.9509,28.4113,54.1568,3.4566,41.8066,0.5801,828.0,21000.0,Sales and Purchasing Agents and Brokers,3,Technicians and Associate Professionals,0.3185,93.3262,0.8399,83.211,8.0,8.0,8.0
+121,1726.0,0.3413,13.6942,22.7155,40.3278,5.5253,54.1469,0.0,787.0,45000.0,Business Services and Administration Managers,1,Managers,0.1513,46.8631,0.7826,82.1668,15.0,15.0,15.0
+263,1872.0,0.332,8.8108,65.5256,61.8111,4.1796,33.7043,0.305,675.0,10000.0,Social and Religious Professionals,2,Professionals,0.2569,80.3503,3.8649,94.4662,22.0,19.0,19.0
+622,1149.0,0.3069,6.4883,78.6136,72.5423,11.7061,7.2828,8.4689,140.0,13500.0,"Fishery Workers, Hunters and Trappers",6,"Skilled Agricultural, Forestry and Fishery Workers",0.06,13.9014,0.5561,78.4057,2.0,2.0,1.0
+235,1757.0,0.3057,49.7408,48.2219,56.889,1.3048,41.8062,0.0,863.0,10000.0,Other Teaching Professionals,2,Professionals,0.248,77.0252,2.5933,93.1312,13.0,11.0,11.0
+515,1412.0,0.3034,32.422,44.6135,38.4523,8.3209,51.2235,2.0033,807.0,13000.0,Building and Housekeeping Supervisors,5,Services And Sales Workers,0.1114,30.3498,,,4.0,3.0,
+752,1472.0,0.291,3.2981,59.949,44.951,5.6094,26.7421,22.6975,381.0,15000.0,"Wood Treaters, Cabinet-makers and Related Trades Workers",7,Craft and Related Trades Workers,0.1174,33.7199,0.677,81.6358,7.0,7.0,3.0
+952,1261.0,0.2863,15.7395,50.534,88.8433,9.2614,1.5032,0.3922,25.0,,Street Vendors (excluding Food),9,Elementary Occupations,0.2566,80.3494,194.3662,99.9942,1.0,1.0,1.0
+834,1244.0,0.2844,2.0829,82.9121,29.5251,2.2685,50.0521,18.1544,592.0,15000.0,Mobile Plant Operators,8,Plant and Machine Operators and Assemblers,0.0987,22.5205,,,13.0,12.0,
+214,1321.0,0.2821,8.3504,21.2816,5.599,0.1847,94.2163,0.0,1228.0,45000.0,Engineering Professionals (excluding Electrotechnology),2,Professionals,0.2299,70.8045,1.78,91.4225,16.0,16.0,16.0
+962,1269.0,0.272,19.3764,44.1459,17.9786,0.8483,67.9246,13.2484,902.0,14000.0,Other Elementary Workers,9,Elementary Occupations,0.0873,20.5538,0.2145,57.7597,14.0,13.0,11.0
+122,1175.0,0.2669,10.9162,18.9555,8.2231,3.4849,88.2919,0.0,1010.0,35000.0,"Sales, Marketing and Development Managers",1,Managers,0.1696,54.7563,1.7404,91.4156,7.0,7.0,7.0
+818,1097.0,0.2515,13.8343,63.9546,4.3308,1.0165,76.3596,18.2931,945.0,15000.0,Other Stationary Plant and Machine Operators,8,Plant and Machine Operators and Assemblers,0.0486,7.3063,,,12.0,12.0,
+421,1320.0,0.2498,17.2815,44.8606,8.4747,1.1217,90.2777,0.1259,1149.0,18000.0,"Tellers, Money Collectors and Related Clerks",4,Clerical Support Workers,0.2296,70.8045,0.2653,59.7478,11.0,8.0,7.0
+243,1093.0,0.2427,14.5915,21.733,9.0696,0.9476,89.9829,0.0,950.0,25000.0,"Sales, Marketing and Public Relations Professionals",2,Professionals,0.326,93.7161,5.0173,95.9507,6.0,6.0,6.0
+816,1365.0,0.2422,17.1046,62.0819,45.1318,8.0669,40.6039,6.1974,463.0,13000.0,Food and Related Products Machine Operators,8,Plant and Machine Operators and Assemblers,0.0761,19.0444,0.0,9.5196,6.0,5.0,3.0
+231,1331.0,0.2266,43.7415,28.6396,1.0918,0.2262,98.682,0.0,1310.0,45000.0,University and Higher Education Teachers,2,Professionals,0.3059,91.818,2.8143,93.5343,37.0,35.0,35.0
+742,1274.0,0.2248,2.1756,43.1621,44.2789,2.7557,49.7758,3.1895,593.0,15000.0,Electronics and Telecommunications Installers and Repairers,7,Craft and Related Trades Workers,0.1445,44.5031,0.3429,63.813,11.0,11.0,10.0
+431,1110.0,0.2217,23.8562,37.2524,1.3277,0.8711,97.7164,0.0848,1058.0,20000.0,Numerical Clerks,4,Clerical Support Workers,0.2494,77.2128,0.7986,82.7252,9.0,8.0,8.0
+261,1334.0,0.2184,15.4532,24.4554,75.6338,1.2665,23.0997,0.0,287.0,30000.0,Legal Professionals,2,Professionals,0.1756,56.2493,1.3535,89.6731,4.0,4.0,4.0
+132,999.0,0.1991,5.9172,22.375,23.5971,3.3157,73.0872,0.0,646.0,43112.8698,"Manufacturing, Mining, Construction and Distribution Managers",1,Managers,0.165,52.7691,0.83,82.9383,7.0,7.0,7.0
+142,1085.0,0.1928,8.1408,24.3374,63.417,7.7725,28.8105,0.0,262.0,25000.0,Retail and Wholesale Trade Managers,1,Managers,0.1098,26.6313,0.091,44.1829,1.0,1.0,1.0
+343,902.0,0.1905,11.5889,41.5105,44.395,3.0143,39.8862,12.7045,361.0,25000.0,"Artistic, Cultural and Culinary Associate Professionals",3,Technicians and Associate Professionals,0.14,43.2709,1.477,89.7791,17.0,12.0,10.0
+912,908.0,0.1899,29.4482,38.3462,50.4538,15.4398,28.838,5.2684,241.0,11000.0,"Vehicle, Window, Laundry and Other Hand Cleaning Workers",9,Elementary Occupations,0.0969,22.0984,,,5.0,4.0,
+333,1021.0,0.1855,7.4673,28.8259,73.4127,4.8398,21.6448,0.1027,235.0,20000.0,Business Services Agents,3,Technicians and Associate Professionals,0.2017,66.2518,0.5644,78.4165,18.0,17.0,16.0
+513,858.0,0.185,10.26,45.7913,3.2517,2.5416,69.7306,24.4761,600.0,12000.0,Waiters and Bartenders,5,Services And Sales Workers,0.2295,70.8045,0.0819,41.5342,3.0,3.0,3.0
+221,1037.0,0.1826,32.5927,23.4105,44.168,3.151,52.6811,0.0,535.0,61610.9322,Medical Doctors,2,Professionals,0.1249,37.8424,2.2354,92.3989,17.0,16.0,16.0
+722,677.0,0.1769,11.4995,51.9104,40.1017,15.1921,39.9152,4.7909,266.0,16000.0,"Blacksmiths, Toolmakers and Related Trades Workers",7,Craft and Related Trades Workers,0.1438,44.3806,0.0923,45.5347,20.0,19.0,7.0
+531,947.0,0.1728,95.4827,55.1477,3.4942,0.0569,92.8795,3.5694,899.0,8000.0,Child Care Workers and Teachers’ Aides,5,Services And Sales Workers,0.1934,63.9979,0.2746,60.6848,3.0,3.0,3.0
+222,1009.0,0.169,77.4546,43.3536,2.2484,0.0751,97.6304,0.0461,959.0,18000.0,Nursing and Midwifery Professionals,2,Professionals,0.1229,37.3078,0.0971,46.0427,4.0,4.0,4.0
+941,715.0,0.1632,41.5245,43.3222,17.0051,22.6539,45.6896,14.6514,270.0,12000.0,Food Preparation Assistants,9,Elementary Occupations,0.1136,30.9892,0.0115,24.2825,6.0,5.0,5.0
+814,664.0,0.1584,11.1836,38.9591,12.7389,3.0074,79.0254,5.2283,501.0,15256.0951,"Rubber, Plastic and Paper Products Machine Operators",8,Plant and Machine Operators and Assemblers,0.0891,20.6448,,,20.0,19.0,
+321,764.0,0.1559,35.9411,39.5494,11.0381,0.5442,88.4177,0.0,637.0,18000.0,Medical and Pharmaceutical Technicians,3,Technicians and Associate Professionals,0.1402,43.2709,0.3664,66.026,10.0,10.0,6.0
+143,679.0,0.1496,17.1563,20.8594,20.5449,3.0261,76.429,0.0,480.0,35000.0,Other Services Managers,1,Managers,0.1707,54.8216,0.6202,80.8035,5.0,5.0,5.0
+134,734.0,0.1416,21.2163,23.1068,10.7067,1.129,88.1644,0.0,648.0,47811.1721,Professional Services Managers,1,Managers,0.1349,39.4564,0.4714,75.6557,12.0,11.0,11.0
+621,603.0,0.1399,22.5016,85.2624,31.5372,4.985,24.9815,38.4963,195.0,11143.0116,Forestry and Related Workers,6,"Skilled Agricultural, Forestry and Fishery Workers",0.0409,5.9077,0.4572,71.0607,6.0,5.0,2.0
+422,669.0,0.1363,53.4234,22.4827,5.7468,0.4606,93.2797,0.5128,588.0,15000.0,Client Information Workers,4,Clerical Support Workers,0.3378,94.894,0.4238,70.0654,14.0,12.0,12.0
+813,604.0,0.1358,11.0932,54.3111,17.2959,2.2007,76.0975,4.4059,427.0,17800.0,Chemical and Photographic Products Plant and Machine Operators,8,Plant and Machine Operators and Assemblers,0.0937,21.8196,0.0,9.5196,4.0,4.0,2.0
+265,641.0,0.1326,16.1362,40.9703,70.4001,6.867,17.6686,5.0643,107.0,15000.0,Creative and Performing Artists,2,Professionals,0.194,63.9979,9.1385,97.6729,15.0,13.0,12.0
+511,665.0,0.1323,11.9196,47.6796,10.987,1.4088,82.3335,5.2707,490.0,20000.0,"Travel Attendants, Conductors and Guides",5,Services And Sales Workers,0.2679,82.9252,0.2894,61.3206,4.0,4.0,4.0
+216,560.0,0.1316,23.2165,17.559,29.426,2.9027,67.6712,0.0,362.0,31215.8738,"Architects, Planners, Surveyors and Designers",2,Professionals,0.2129,68.1679,4.3731,94.9287,10.0,9.0,9.0
+242,572.0,0.1247,42.3763,18.2409,4.71,1.7287,93.1529,0.4084,539.0,35000.0,Administration Professionals,2,Professionals,0.2348,71.6194,0.481,75.9202,9.0,9.0,9.0
+226,693.0,0.1216,38.6381,40.8504,32.3589,1.3309,66.3103,0.0,456.0,20000.0,Other Health Professionals,2,Professionals,0.1642,52.354,1.1699,88.4146,22.0,21.0,19.0
+432,560.0,0.1179,8.6139,40.5529,1.6131,0.3088,96.0228,2.0552,518.0,18000.0,Material Recording and Transport Clerks,4,Clerical Support Workers,0.1431,43.9437,0.085,41.6757,5.0,5.0,5.0
+335,696.0,0.1134,15.3204,38.6293,0.7753,0.0,99.2247,0.0,679.0,50000.0,Government Regulatory Associate Professionals,3,Technicians and Associate Professionals,0.1802,58.7441,0.4941,76.1687,8.0,8.0,8.0
+331,548.0,0.1087,17.3239,34.7558,25.0338,1.3734,73.1196,0.4732,406.0,20000.0,Financial and Mathematical Associate Professionals,3,Technicians and Associate Professionals,0.2433,74.5967,2.2134,92.3665,11.0,11.0,11.0
+311,539.0,0.1087,9.3264,34.0042,4.0921,0.0666,95.8413,0.0,526.0,35000.0,Physical and Engineering Science Technicians,3,Technicians and Associate Professionals,0.1655,52.8391,2.7181,93.2032,26.0,25.0,23.0
+351,432.0,0.1038,20.3575,29.4168,13.0427,2.685,82.7576,1.5147,335.0,32000.0,Information and Communications Technology Operations and User Support Technicians,3,Technicians and Associate Professionals,0.3066,91.8265,11.0514,98.1407,6.0,6.0,6.0
+516,511.0,0.1021,25.8247,43.3097,41.0115,3.5054,50.3474,5.1357,266.0,12000.0,Other Personal Services Workers,5,Services And Sales Workers,0.2217,69.4039,0.4844,76.1319,16.0,14.0,13.0
+821,380.0,0.0995,10.6881,41.8785,13.0622,2.0117,82.9469,1.9791,301.0,16000.0,Assemblers,8,Plant and Machine Operators and Assemblers,0.0834,19.9658,,,5.0,5.0,
+334,659.0,0.099,35.0012,42.7237,3.0672,0.7972,96.0813,0.0543,638.0,32000.0,Administrative and Specialized Secretaries,3,Technicians and Associate Professionals,0.2236,69.9494,0.3749,66.2997,6.0,6.0,6.0
+812,416.0,0.0979,2.137,44.5864,6.023,1.6526,90.899,1.4255,344.0,17000.0,Metal Processing and Finishing Plant Operators,8,Plant and Machine Operators and Assemblers,0.0809,19.6343,0.0,9.5196,8.0,8.0,3.0
+141,602.0,0.0963,7.9095,34.8495,35.1741,2.9334,61.8925,0.0,297.0,25000.0,Hotel and Restaurant Managers,1,Managers,0.105,23.5698,0.8575,83.3529,2.0,2.0,2.0
+523,480.0,0.0953,21.937,37.7838,4.9063,3.7793,90.5112,0.8032,419.0,19354.4531,Cashiers and Ticket Clerks,5,Services And Sales Workers,0.2968,85.6456,0.4548,71.0607,2.0,2.0,2.0
+732,520.0,0.0944,7.6827,23.932,32.432,5.2467,58.8343,3.4869,266.0,15000.0,Printing Trades Workers,7,Craft and Related Trades Workers,0.1099,27.7725,4.103,94.9172,4.0,4.0,4.0
+313,480.0,0.0911,7.0613,47.7424,2.7288,1.7695,94.5967,0.905,450.0,20000.0,Process Control Technicians,3,Technicians and Associate Professionals,0.1945,64.099,0.4574,71.0607,13.0,13.0,8.0
+111,517.0,0.0812,30.5003,46.6644,0.1878,0.0,99.8122,0.0,501.0,38000.0,Legislators and Senior Officials,1,Managers,0.1324,39.4021,0.3558,65.565,9.0,9.0,9.0
+325,422.0,0.077,41.8319,42.1988,9.8304,0.2204,89.6621,0.2871,362.0,18000.0,Other Health Associate Professionals,3,Technicians and Associate Professionals,0.0849,20.1117,0.5688,78.4165,28.0,28.0,22.0
+811,382.0,0.0733,13.2516,67.5106,9.6156,2.0106,57.2676,31.1061,263.0,16000.0,Mining and Mineral Processing Plant Operators,8,Plant and Machine Operators and Assemblers,0.0611,13.9583,,,20.0,17.0,
+133,265.0,0.066,23.8646,23.4131,12.1274,0.0,87.8726,0.0,232.0,57894.5159,Information and Communications Technology Services Managers,1,Managers,0.1519,47.0816,1.0202,86.2457,1.0,1.0,1.0
+532,324.0,0.0623,53.4067,35.2434,7.704,1.0314,88.7516,2.513,294.0,12000.0,Personal Care Workers in Health Services,5,Services And Sales Workers,0.0549,12.6278,0.3443,63.813,12.0,12.0,8.0
+352,314.0,0.0599,15.1327,29.0322,18.9154,1.3268,74.4928,5.2649,210.0,21000.0,Telecommunications and Broadcasting Technicians,3,Technicians and Associate Professionals,0.1806,59.404,2.6722,93.1722,8.0,6.0,5.0
+252,217.0,0.057,21.9179,20.8266,9.9666,0.2293,89.8041,0.0,181.0,30000.0,Database and Network Professionals,2,Professionals,0.2391,71.9654,7.9756,97.1668,9.0,9.0,9.0
+754,280.0,0.0548,32.1948,59.2261,30.4648,7.0496,43.9072,18.5784,143.0,15000.0,Other Craft and Related Workers,7,Craft and Related Trades Workers,0.1005,22.9746,0.348,64.3501,8.0,8.0,4.0
+951,248.0,0.0535,12.6017,42.33,71.1036,7.3702,16.9746,4.5517,54.0,12246.4909,Street and Related Services Workers,9,Elementary Occupations,0.1275,38.4231,,,2.0,1.0,
+342,265.0,0.0519,17.9051,33.7825,34.688,2.0625,62.8567,0.3928,183.0,18000.0,Sports and Fitness Workers,3,Technicians and Associate Professionals,0.1815,59.4469,0.4339,70.3018,8.0,8.0,8.0
+224,279.0,0.0516,17.5787,61.4462,48.0218,1.1531,50.8251,0.0,160.0,16000.0,Paramedical Practitioners,2,Professionals,0.0511,10.2019,0.2877,61.1751,1.0,1.0,1.0
+831,265.0,0.0504,6.6952,43.4976,26.4164,0.0,71.4812,2.1023,216.0,48000.0,Locomotive Engine Drivers and Related Workers,8,Plant and Machine Operators and Assemblers,0.1194,34.4881,,,7.0,6.0,
+215,212.0,0.0467,11.7164,17.2706,0.5389,0.0,99.4611,0.0,214.0,45000.0,Electrotechnology Engineers,2,Professionals,0.1949,65.0656,4.5311,94.9805,3.0,3.0,3.0
+341,233.0,0.0452,24.4867,50.8293,39.2879,3.6895,51.3652,5.6574,135.0,18537.641,"Legal, Social and Religious Associate Professionals",3,Technicians and Associate Professionals,0.1568,47.795,0.5057,76.4784,9.0,7.0,6.0
+817,165.0,0.0443,3.5633,66.3358,19.5592,3.1415,43.645,33.6543,77.0,16000.0,Wood Processing and Papermaking Plant Operators,8,Plant and Machine Operators and Assemblers,0.0921,21.2314,,,3.0,3.0,
+264,224.0,0.0365,14.8612,27.37,34.8674,1.4497,63.6829,0.0,149.0,25000.0,"Authors, Journalists and Linguists",2,Professionals,0.3997,97.3523,50.9777,99.7996,6.0,6.0,6.0
+412,227.0,0.0348,20.4748,48.7885,0.0,0.0,100.0,0.0,230.0,31507.535,Secretaries (general),4,Clerical Support Workers,0.2565,79.7924,0.5147,77.1841,1.0,1.0,1.0
+232,215.0,0.0346,33.2379,46.0422,14.3887,0.4289,85.1824,0.0,187.0,18000.0,Vocational Education Teachers,2,Professionals,0.1831,60.7861,2.5016,93.1264,3.0,3.0,3.0
+223,187.0,0.0313,21.0402,48.4396,59.4038,2.6978,37.8984,0.0,64.0,30000.0,Traditional and Complementary Medicine Professionals,2,Professionals,0.1168,33.095,1.919,91.9414,2.0,2.0,2.0
+634,50.0,0.0257,81.4776,90.1799,94.5855,5.4145,0.0,0.0,,,,,,,,,,,,
+225,118.0,0.0215,12.4114,76.3092,57.6116,0.0,42.3884,0.0,61.0,40433.0933,Veterinarians,2,Professionals,0.1554,47.447,0.278,60.8476,1.0,1.0,1.0
+324,110.0,0.0185,15.5559,63.6406,17.1015,0.0,82.8985,0.0,95.0,27408.1766,Veterinary Technicians and Assistants,3,Technicians and Associate Professionals,0.0525,10.4338,0.1216,49.0169,2.0,2.0,2.0
+131,96.0,0.0168,13.4221,52.1736,50.9803,4.4909,44.5288,0.0,52.0,35000.0,"Production Managers in Agriculture, Forestry and Fisheries",1,Managers,0.076,19.0423,4.7835,95.1342,1.0,1.0,1.0
+835,90.0,0.0157,13.3379,65.6736,53.8591,6.1465,31.3518,8.6426,48.0,45328.8889,Ships’ Deck Crews and Related Workers,8,Plant and Machine Operators and Assemblers,0.0581,13.7672,,,2.0,2.0,
+262,87.0,0.014,49.8578,43.0417,11.6605,0.0,88.3395,0.0,78.0,30000.0,"Librarians, Archivists and Curators ",2,Professionals,0.2549,78.8699,43.3887,99.64,3.0,3.0,3.0
+211,82.0,0.014,17.0102,23.2591,2.1671,0.0,97.8329,0.0,84.0,32107.1605,Physical and Earth Science Professionals,2,Professionals,0.2317,70.8607,3.6049,94.2499,7.0,7.0,7.0
+323,74.0,0.0124,20.1938,61.1385,36.056,2.5051,61.4388,0.0,49.0,20623.0556,Traditional and Complementary Medicine Associate Professionals,3,Technicians and Associate Professionals,0.1765,56.9797,1.0634,87.032,3.0,3.0,2.0
+315,58.0,0.0114,9.9776,13.7874,0.0,0.0,100.0,0.0,59.0,90000.0,Ship and Aircraft Controllers and Technicians,3,Technicians and Associate Professionals,0.1462,45.4512,,,6.0,6.0,
+314,46.0,0.0087,31.0226,45.9344,1.3684,0.0,98.6316,0.0,43.0,18000.0,Life Science Technicians and Related Associate Professionals,3,Technicians and Associate Professionals,0.097,22.1131,2.6949,93.1722,5.0,5.0,5.0
+213,47.0,0.007,28.5152,15.0443,9.7933,0.0,90.2067,0.0,44.0,39790.0509,Life Science Professionals,2,Professionals,0.1976,65.1283,2.8664,93.5469,14.0,13.0,12.0

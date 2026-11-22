@@ -1,0 +1,4 @@
+third,n_workers_sample,share_of_workers_pct,women_share_pct,rural_share_pct,graduate_share_pct,regular_wage_share_pct,self_employed_share_pct,casual_share_pct,unpaid_family_share_pct,regular_no_written_contract_pct,regular_no_social_security_pct,n_regular_earners,regular_pay_median,regular_pay_mean,n_self_earners,self_income_median,third_lower_cut,third_upper_cut
+low,141876,34.977,40.918,82.166,3.951,14.846,26.117,48.905,10.131,68.149,63.262,23201,12000.0,13067.075,42703,6000.0,0.0,18.043
+middle,148176,32.813,24.34,81.481,7.779,11.319,58.234,7.633,22.814,71.636,65.082,16866,15000.0,16427.796,80480,12500.0,18.043,27.773
+high,170755,32.21,25.024,46.613,35.024,50.372,39.945,2.935,6.749,51.366,44.474,83715,18000.0,27224.28,68463,15000.0,27.773,100.0

@@ -1,0 +1,5 @@
+outcome,spec,coef_per_full_range,se,ci_low,ci_high,pct_change_25_to_75,n
+"log monthly pay, regular wage workers",none,1.0068,0.0185,0.9705,1.0431,65.4344,123782
+"log monthly pay, regular wage workers",sex_age_sector,0.9291,0.0167,0.8963,0.9619,59.1302,123782
+"log monthly pay, regular wage workers",plus_education,0.1055,0.0146,0.0769,0.1341,5.4162,123782
+"log monthly pay, regular wage workers",plus_education_state,0.093,0.0142,0.0651,0.1209,4.7604,123782

@@ -261,17 +261,17 @@ const SOURCES: Source[] = [
   },
   {
     id: "bls-crosswalk",
-    name: "BLS ISCO to SOC crosswalk",
+    name: "BLS crosswalks: ISCO-08 to SOC 2010, and SOC 2010 to SOC 2018",
     publisher: "US Bureau of Labor Statistics",
     where: "bls.gov",
-    href: "https://www.bls.gov/",
-    what: "A table linking international occupation codes (ISCO) to US occupation codes (SOC).",
-    usedFor: "Planned for the India lens, stage B. Not obtained: it needs a browser download.",
-    modules: "none",
-    licence: "US government data",
-    status: "notobtained",
-    feeds: [],
-    reason: "Needs a browser download that has not been done, and is only needed for the India stage that depends on PLFS microdata.",
+    href: "https://www.bls.gov/soc/soccrosswalks.htm",
+    what: "Tables linking international occupation codes (ISCO-08) to US occupation codes (SOC 2010), and the 2010 SOC to the 2018 SOC that the exposure scores use. Occupation titles for the three-digit ISCO groups come from the International Labour Organization's ISCO-08 structure file (ILOSTAT).",
+    usedFor: "Matches India's occupation codes to US occupations so each Indian occupation group gets an exposure score (India, Part 2).",
+    modules: "India",
+    licence: "US government data (BLS); ISCO-08 titles from the ILO (ILOSTAT, CC BY 4.0 like the other ILO series used here)",
+    cite: "Source: U.S. Bureau of Labor Statistics, SOC crosswalks; International Labour Organization, ISCO-08.",
+    status: "used",
+    feeds: ["india_b_exposure_by_isco3.csv"],
   },
   {
     id: "worldbank",
@@ -372,17 +372,17 @@ const SOURCES: Source[] = [
   },
   {
     id: "plfs",
-    name: "India Periodic Labour Force Survey (PLFS) microdata",
-    publisher: "Ministry of Statistics and Programme Implementation, Government of India",
+    name: "India Periodic Labour Force Survey (PLFS), calendar year 2025, first-visit unit-level data",
+    publisher: "Ministry of Statistics and Programme Implementation (MoSPI), National Statistics Office, Government of India",
     where: "microdata.gov.in",
-    href: "https://microdata.gov.in/",
-    what: "Household microdata with occupation (3-digit NCO), industry, sex, age, education, contract type and earnings. Only the data layout file has been downloaded; the microdata has not.",
-    usedFor: "Not used. It would allow India's occupations to be mapped to exposure scores in stage B of the India lens.",
-    modules: "none",
-    licence: "Government of India data-access agreement: non-commercial use, no sharing of unit-level data, cite the source, send MoSPI a copy of publications",
-    status: "notused",
-    feeds: [],
-    reason: "Access needs a free account and a signed data-access agreement, which has not been done. The terms also bar sharing the unit-level files, so they could never be placed in this public repository.",
+    href: "https://microdata.gov.in/NADA/index.php/catalog/284",
+    what: "Household survey microdata: 1,148,634 persons in 270,472 households over January to December 2025, with occupation (3-digit NCO-2015), industry, sex, age, education, type of work, contract, social security and earnings, and a sampling multiplier. Access was granted after accepting the Data Access Agreement.",
+    usedFor: "India, Part 2: the occupation mix of 460,857 working people, and pay and informality by exposure group. Only aggregated tables are published; the unit-level files stay on the student's computer, outside the repository.",
+    modules: "India",
+    licence: "Government of India data-access agreement: non-commercial use, data limited to the applicant, no identification of anyone, cite the source, send MoSPI a copy of publications",
+    cite: "Source: Periodic Labour Force Survey, Calendar Year 2025 (Jan-Dec25), first-visit unit-level data. Ministry of Statistics and Programme Implementation, National Statistics Office, Government of India; Microdata Library, catalog 284. Own calculations.",
+    status: "used",
+    feeds: ["india_b_nco3.csv", "india_b_cells.csv", "india_b_thirds.csv", "india_b_summary.csv", "india_b_regressions.csv", "india_b_major_groups.csv", "india_b_checks.csv"],
   },
   {
     id: "aa",
@@ -433,7 +433,7 @@ const LIMITS_MORE: string[] = [
   "The M1 elasticity of usage with respect to price is imprecise (about -0.47, 95% interval -1.03 to +0.09). Growth in spending fits Jevons-type behaviour, but new users and new uses drive it too, so it is not proof.",
   "The M5 host-price and event-study results are associations, not proven causes. Concentration is measured over OpenRouter's top 50 models, and revenue concentration is not computed because Epoch's revenue data is too thin.",
   "In M6 the compute stock counts chips shipped, with no retirements, so it is an upper bound on installed compute. The Penn World Table and ILO labour shares differ in level because they are built differently, and India's Penn World Table series is partly imputed.",
-  "Indeed's trackers do not cover India. The India page uses published data only: the PLFS microdata has not been obtained.",
+  "Indeed's trackers do not cover India. India Part 1 uses Claude.ai usage and published figures; Part 2 uses PLFS 2025 with exposure scores built from US data, matched through occupation crosswalks that treat India's three-digit codes as the international ones.",
   "US wages and employment (BLS, May 2025) are applied to occupations whose usage is measured worldwide. India's wages are not modelled.",
 ];
 
@@ -815,8 +815,8 @@ export default function DataPage() {
         <div className="mt-5">
           <Caveat title="India lens">
             <p>
-              Stage A uses published data only. It compares Claude.ai usage per capita across countries with income (World Bank), also allowing for internet use and the share of jobs in services, measures India&apos;s gap from the fitted line and from peer countries, compares India&apos;s
-              occupation mix with the world&apos;s, and sets published exposure figures beside these. See docs/findings-india-a.md. Stage B would use PLFS microdata and has not been done (see the sources above).{" "}
+              Part 1 (Stage A) uses published data only. It compares Claude.ai usage per capita across countries with income (World Bank), also allowing for internet use and the share of jobs in services, measures India&apos;s gap from the fitted line and from peer countries, compares India&apos;s
+              occupation mix with the world&apos;s, and sets published exposure figures beside these. See docs/findings-india-a.md. Part 2 (Stage B) weights US-based exposure scores by who works in each occupation, using the PLFS 2025 microdata, and reports pay and informality by exposure group; see docs/findings-india-b.md.{" "}
               <Link href="/india">Open the India page</Link>.
             </p>
           </Caveat>

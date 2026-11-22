@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import { PageHead, Section, Segmented, Takeaway, Caveat, Figure, Stat } from "@/components/ui";
 import { Scatter, useWidth, type Pt } from "@/components/charts";
-import { usePageState } from "@/components/chat-context";
+import { usePageState, type PageState } from "@/components/chat-context";
+import IndiaB from "@/components/india-b";
 import { C } from "@/components/Concept";
 import countryData from "@/data/india_a_country_data.json";
 import summaryData from "@/data/india_a_india_summary.json";
@@ -89,6 +90,7 @@ function Dumbbell(props: { rows: { label: string; a: number; b: number }[]; aLab
 
 export default function IndiaPage() {
   const [model, setModel] = useState("B0");
+  const [partTwo, setPartTwo] = useState<PageState>({});
   const s = SUMMARY.find((m) => m.model.startsWith(model)) ?? SUMMARY[0];
   const b0 = REG.filter((r) => r.model.startsWith("B0"));
   const a = b0.find((r) => r.term === "Intercept")?.coef ?? 0;
@@ -117,7 +119,7 @@ export default function IndiaPage() {
     return [...line, pred, ...base];
   }, [a, bcoef, india, s]);
 
-  usePageState("india", { "model": s.model, "India usage index": s.actual_index, "predicted by model": s.predicted_index, "India vs prediction": +s.actual_over_predicted.toFixed(2), "rank among countries": s.rank_of_residual_1_is_highest, "countries": s.n });
+  usePageState("india", { ...partTwo, "model": s.model, "India usage index": s.actual_index, "predicted by model": s.predicted_index, "India vs prediction": +s.actual_over_predicted.toFixed(2), "rank among countries": s.rank_of_residual_1_is_highest, "countries": s.n });
 
   const dumb = useMemo(
     () =>
@@ -137,11 +139,13 @@ export default function IndiaPage() {
   return (
     <>
       <PageHead
-        title="How does India use AI, compared with what its income predicts?"
-        question="Richer countries use AI more. Is India above or below the line that income alone would draw, and does it use AI differently from the rest of the world?"
+        title="India: who uses AI, and whose jobs does it touch?"
+        question="Part 1 asks whether India uses AI more or less than its income predicts. Part 2 uses India's own labour survey to count how many workers hold jobs that AI is exposed to."
       />
 
       <Section>
+        <h2 className="mb-3">Part 1. How does India use AI, compared with what its income predicts?</h2>
+        <p className="mb-4 max-w-[68ch]">Richer countries use AI more. Is India above or below the line that income alone would draw, and does it use AI differently from the rest of the world?</p>
         <div className="mb-4 flex flex-wrap items-center gap-x-6 gap-y-3">
           <Segmented label="What the prediction takes into account" options={MODELS} value={model} onChange={setModel} />
         </div>
@@ -256,10 +260,9 @@ export default function IndiaPage() {
             <p className="ui text-[0.95rem] text-ink-soft">No published figure for India has been verified against its source yet, so none is shown. Nothing is quoted from memory.</p>
           )}
         </Figure>
-        <Caveat title="What comes next, and what is missing">
+        <Caveat title="What Part 1 can and cannot say">
           <p>
-            The deeper India analysis would use India&apos;s Periodic Labour Force Survey microdata to weight AI exposure by who actually works in each occupation, sector, state and formality status. That needs a free account and an
-            agreement with the statistics ministry. It has not been done yet, so this page shows only what the usage data and published studies support.
+            Part 1 shows how much people in India use one AI product, not which jobs are exposed. Part 2 below answers the exposure question with India&apos;s Periodic Labour Force Survey.
           </p>
           <p>
             Concepts: <C id="digital-divide">digital divide</C>, income elasticity of demand, <C id="lewis">the Lewis dual-economy model</C> and services-led growth, offshoring.
@@ -267,10 +270,12 @@ export default function IndiaPage() {
         </Caveat>
       </Section>
 
+      <IndiaB onState={setPartTwo} />
+
       <Section>
         <Caveat title="Read with care">
           <ul className="ui list-disc space-y-1.5 pl-5 text-[0.95rem]">
-            <li>The index measures use of one company&apos;s products. English-language, student and developer use may weigh more in India than the working population.</li>
+            <li>Part 1: the index measures use of one company&apos;s products. English-language, student and developer use may weigh more in India than the working population.</li>
             <li>Two months of data. Income is measured in purchasing-power dollars in the latest year with data, which differs by country.</li>
             <li>A country falling below a line is a description, not a failure: the line is just the average of the other countries.</li>
           </ul>

@@ -10,6 +10,7 @@ dependencies = [
     "statsmodels",
     "openpyxl",
     "pyarrow",
+    "xlrd>=2.0.2",
 ]
 
 [tool.uv]
