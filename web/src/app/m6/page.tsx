@@ -234,7 +234,7 @@ export default function M6Page() {
         </Caveat>
         <Caveat title="Concepts used">
           <p>
-            <C id="solow">Solow growth</C>, <C id="ces">CES production</C>, <C id="endogenous-growth">endogenous growth</C> (ideas production), <C id="labour-share">labour share</C>, <C id="piketty">return on capital against growth</C>, <C id="says-law">Say&apos;s law</C> versus Keynes, <C id="propensity-to-consume">marginal propensity to consume</C>, <C id="automation-tax">automation tax</C>, <C id="ubi">basic income</C> and <C id="welfare">welfare</C>.
+            <C id="solow">Solow growth</C>, <C id="ces">CES production</C>, <C id="endogenous-growth">endogenous growth</C> (ideas production), <C id="labour-share">labour share</C>, <C id="piketty">return on capital against growth</C>, <C id="says-law">Say&apos;s law</C> versus Keynes, <C id="propensity-to-consume">marginal propensity to consume</C>, <C id="automation-tax">automation tax</C>, <C id="ubi">basic income</C> and <C id="welfare">welfare</C>. The <C id="gini">Gini coefficient</C> is the usual one-number measure of inequality; here we show income shares between workers and owners instead.
           </p>
         </Caveat>
       </Section>

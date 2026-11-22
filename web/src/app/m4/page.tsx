@@ -5,6 +5,7 @@ import { PageHead, Section, Slider, Toggle, PresetBar, Takeaway, Caveat, Figure,
 import { CeilingChart } from "@/components/Ceiling";
 import { HBars } from "@/components/charts";
 import { usePageState } from "@/components/chat-context";
+import { C } from "@/components/Concept";
 import { M4_DEFAULTS, M4_PARAMS, M4_PRESETS, simulateM4, type M4Params } from "@/models/m4";
 import { mult, pct0, usd } from "@/lib/format";
 import occupations from "@/data/occupations.json";
@@ -240,7 +241,8 @@ export default function M4Page() {
             One kind of worker and one wage, so it says nothing about who within the workforce loses. Full employment unless the demand switch is on. No transition costs, no learning, no unions or laws. The real-pay number compares two worlds, not two years. Treat every result as a scenario for thinking, not a forecast.
           </p>
           <p>
-            Concepts used: comparative advantage, the task-based model, elasticity of substitution, the labour share, Say&apos;s law versus Keynes, marginal propensity to consume, automation tax and basic income.
+            Concepts used: <C id="comparative-advantage">comparative advantage</C>, <C id="task-framework">the task-based model</C>, <C id="substitutes-complements">elasticity of substitution</C>, <C id="labour-share">the labour share</C>, <C id="says-law">Say&apos;s law versus Keynes</C>, <C id="propensity-to-consume">marginal propensity to consume</C>, <C id="automation-tax">automation tax</C> and <C id="ubi">basic income</C>.
+            When tasks are complements, the tasks that stay with people take a growing share of spending as AI tasks get cheaper, which is <C id="baumol">Baumol&apos;s cost disease</C>. The <C id="lump-of-labour">lump-of-labour fallacy</C> is the mistake of treating the number of tasks as fixed; the new-tasks dial lets it grow. <C id="technological-unemployment">Keynes&apos;s technological unemployment</C> and <C id="engel">Engel&apos;s law</C> (spending shifts toward new things as incomes rise) are the background to the demand and new-tasks dials; they are explained here, not modelled.
           </p>
         </Caveat>
       </Section>

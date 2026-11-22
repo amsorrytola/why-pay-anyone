@@ -569,11 +569,11 @@ export const CONCEPTS: Concept[] = [
     short: "Lorenz curve and Gini",
     modules: ["M4", "M6"],
     era: "classic",
-    kind: "modelled",
+    kind: "explained",
     definition:
       "The Lorenz curve plots the cumulative share of income against the cumulative share of people, ordered from poorest to richest. The Gini coefficient summarises how far it is from perfect equality, from 0 (everyone equal) to 1 (one person has it all).",
     example: "M4 splits income between workers and AI owners; because owners are far fewer, a larger owner share of income points to a higher Gini.",
-    page: "/m4",
+    page: "/m6",
     related: ["labour-share", "piketty", "welfare", "ubi"],
   },
   {
@@ -698,7 +698,7 @@ export const CONCEPTS: Concept[] = [
     short: "Coase's theory of the firm",
     modules: ["M5"],
     era: "classic",
-    kind: "modelled",
+    kind: "explained",
     definition:
       "Coase argued in 1937 that firms exist because using the market has costs: finding partners, negotiating and enforcing contracts. A task is done inside a firm when that is cheaper than buying it, and bought when it is not.",
     example: "If AI cuts the cost of coordinating and checking work, M5 asks whether firms will do more themselves or buy more from AI providers.",

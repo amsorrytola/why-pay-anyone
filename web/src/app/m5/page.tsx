@@ -890,7 +890,7 @@ export default function M5Page() {
           </ul>
         </Caveat>
         <Caveat title="Concepts">
-          <p>HHI, Cournot competition, Bertrand competition, Lerner index, market power, entry and contestability, network effects.</p>
+          <p>HHI, Cournot competition, Bertrand competition, Lerner index, market power, entry and contestability, network effects. Also Coase&apos;s theory of the firm: cheaper AI lowers the cost of buying work from outside instead of doing it in-house, so firm boundaries may shift. This page does not test that.</p>
           <details className="ui text-[0.92rem]">
             <summary className="cursor-pointer font-semibold text-ink">What these mean</summary>
             <dl className="mt-2 space-y-1.5">

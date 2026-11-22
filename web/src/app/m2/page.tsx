@@ -134,7 +134,7 @@ export default function M2Page() {
           <Segmented label="What to plot on the vertical axis" options={METRICS} value={metric} onChange={setMetric} />
           <label className="ui flex items-center gap-2 text-[0.95rem]">
             Job family
-            <select value={String(group)} onChange={(e) => setGroup(e.target.value === "all" ? "all" : Number(e.target.value))} className="rounded border border-rule bg-surface px-2 py-1.5">
+            <select value={String(group)} onChange={(e) => setGroup(e.target.value === "all" ? "all" : Number(e.target.value))} className="max-w-[11rem] rounded border border-rule bg-surface px-2 py-1.5 sm:max-w-[16rem]">
               <option value="all">All</option>
               {GROUPS.map((g) => (
                 <option key={g.major_group} value={g.major_group}>
@@ -145,7 +145,7 @@ export default function M2Page() {
           </label>
           <label className="ui flex items-center gap-2 text-[0.95rem]">
             Find a job
-            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="e.g. translator" className="w-44 rounded border border-rule bg-surface px-2 py-1.5" />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="e.g. translator" className="w-36 rounded border border-rule bg-surface px-2 py-1.5 sm:w-44" />
           </label>
           <Toggle label="Size dots by jobs" checked={sizeByJobs} onChange={setSizeByJobs} />
         </div>
