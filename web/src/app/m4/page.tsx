@@ -6,7 +6,7 @@ import { CeilingChart } from "@/components/Ceiling";
 import { HBars } from "@/components/charts";
 import { usePageState } from "@/components/chat-context";
 import { M4_DEFAULTS, M4_PARAMS, M4_PRESETS, simulateM4, type M4Params } from "@/models/m4";
-import { mult, pct0, usd, int } from "@/lib/format";
+import { mult, pct0, usd } from "@/lib/format";
 import occupations from "@/data/occupations.json";
 import poc from "@/data/m1_price_of_capability.json";
 

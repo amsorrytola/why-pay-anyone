@@ -301,7 +301,7 @@ export function HBars(props: {
         {props.items.map((d, i) => (
           <g key={d.label} transform={`translate(0 ${i * rh})`}>
             <text x={lw - 8} y={rh / 2 + 4} textAnchor="end" fontSize={13} fill="var(--ink)" className="ui">
-              {d.label.length > 30 ? d.label.slice(0, 29) + "…" : d.label}
+              {d.label.length > Math.floor(lw / 6.6) ? d.label.slice(0, Math.max(6, Math.floor(lw / 6.6) - 1)) + "…" : d.label}
             </text>
             <rect x={lw} y={4} width={Math.max(1, x(Math.max(0, d.value)))} height={rh - 8} fill={d.color ?? "var(--ai)"} rx={2} />
             <text x={lw + Math.max(1, x(Math.max(0, d.value))) + 6} y={rh / 2 + 4} fontSize={12.5} fill="var(--ink-soft)" className="num">
