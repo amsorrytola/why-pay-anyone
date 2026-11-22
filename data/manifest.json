@@ -1,0 +1,547 @@
+{
+  "anthropic_economic_index_2026_06_26/aei_1p_api_2026-06-26.csv": {
+    "bytes": 77282477,
+    "etag": "\"5f588b8fa8c7b10ea29d86f45c36a1306ec56ca101df21f8e932665eb0bc621c\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:59:36Z",
+    "sha256": "62197f003e001945ad130c2f26f5e07f3fda45ff41644df91444b04fd524a19f",
+    "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/main/release_2026_06_26/data/aei_1p_api_2026-06-26.csv"
+  },
+  "anthropic_economic_index_2026_06_26/aei_claude_ai_2026-06-26.csv": {
+    "bytes": 219174671,
+    "etag": "\"fe6d21998bd5b9de2f938b0ae22138705c649b2102ca8e39dc4aa7bbf6c8cb9f\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:59:31Z",
+    "sha256": "f974b358bce0e5a8417510c61da4342234cd0de9d9d0b62acf4c6dbcf8ec7b68",
+    "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/main/release_2026_06_26/data/aei_claude_ai_2026-06-26.csv"
+  },
+  "anthropic_economic_index_2026_06_26/data_documentation.md": {
+    "bytes": 7397,
+    "etag": "\"3b4eb4d626df68bad2a910af2a8b0206e31ef9b5\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:59:37Z",
+    "sha256": "1a01eeb7d34250b192aa9c906098bea1db971644e6bdb04497d87b7a4ed141a5",
+    "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/main/release_2026_06_26/data_documentation.md"
+  },
+  "bls_oews/oesm25nat.zip": {
+    "bytes": 279525,
+    "last_modified": "Fri, 15 May 2026 13:12:23 GMT",
+    "method": "downloaded in the browser pane (BLS blocks scripts), then moved here",
+    "retrieved_utc": "2026-11-22T05:01:59Z",
+    "sha256": "b5855a37f3e03e779f6fbf173d3bbc94aeeff33426aef32fa95ce6d025bab1af",
+    "url": "https://www.bls.gov/oes/special-requests/oesm25nat.zip"
+  },
+  "census_btos/Employment Size Class.xlsx": {
+    "bytes": 637883,
+    "etag": "\"9bbbb-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:55:54Z",
+    "sha256": "bc2b38bf1b24720b47162c09e6f43657f2af2f20556f43cd8a5823393738b515",
+    "url": "https://www.census.gov/hfp/btos/downloads/Employment%20Size%20Class.xlsx"
+  },
+  "census_btos/National.xlsx": {
+    "bytes": 102064,
+    "etag": "\"18eb0-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:55:45Z",
+    "sha256": "3d640fdab345329e745da28d325e3e56dd09f0c74671895fb7f71123a1c8e72d",
+    "url": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+  },
+  "census_btos/Sector.xlsx": {
+    "bytes": 1802544,
+    "etag": "\"1b8130-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:55:48Z",
+    "sha256": "ef4e6fb825e40882e1f074d66300f6be40e134d3fa6875861d8e835111c8b973",
+    "url": "https://www.census.gov/hfp/btos/downloads/Sector.xlsx"
+  },
+  "census_btos/State.xlsx": {
+    "bytes": 4741179,
+    "etag": "\"48583b-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:55:57Z",
+    "sha256": "bab59e1a20b2007d292f37e952c67496527cc8ed6cf45f56c71fd7b7280c1bb7",
+    "url": "https://www.census.gov/hfp/btos/downloads/State.xlsx"
+  },
+  "census_btos/Subsector.xlsx": {
+    "bytes": 8626263,
+    "etag": "\"83a057-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:55:51Z",
+    "sha256": "5677330a7cc01cf05d81810532895d7f11017c116fcafbc04b09d3589c4013e5",
+    "url": "https://www.census.gov/hfp/btos/downloads/Subsector.xlsx"
+  },
+  "census_btos/Top 25 MSA.xlsx": {
+    "bytes": 2219085,
+    "etag": "\"21dc4d-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:56:00Z",
+    "sha256": "674cb1f862643062b98088d481327def2180ca1e1822608b233e6d53c3d7b9bf",
+    "url": "https://www.census.gov/hfp/btos/downloads/Top%2025%20MSA.xlsx"
+  },
+  "census_btos/URR.xlsx": {
+    "bytes": 173085,
+    "etag": "\"2a41d-6608ecdc31280\"",
+    "http_status": 200,
+    "last_modified": "Wed, 18 Nov 2026 15:38:34 GMT",
+    "retrieved_utc": "2026-11-22T04:56:02Z",
+    "sha256": "d1f2f4386b34f5217d9597094faff354b0fa609191feb71feda921634c7bbd4c",
+    "url": "https://www.census.gov/hfp/btos/downloads/URR.xlsx"
+  },
+  "epoch_ai/ai_chip_sales.zip": {
+    "bytes": 27834,
+    "etag": "\"1da0e48bbfd92aa4b927c0ad87b99d8d\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:58:08Z",
+    "sha256": "24e2942776f35987b4007d42c186d72502e8d7da85b86bd3f388c777bb42324a",
+    "url": "https://epoch.ai/data/ai_chip_sales.zip"
+  },
+  "epoch_ai/ai_companies.zip": {
+    "bytes": 45508,
+    "etag": "\"118a784cb466eb70729a926826341e06\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:57:07Z",
+    "sha256": "af8acb4b1985fcb000eba351ef81a0fd0228c0d2b34eb7a73b4ac14b4e7edea1",
+    "url": "https://epoch.ai/data/ai_companies.zip"
+  },
+  "epoch_ai/ai_models.zip": {
+    "bytes": 3387720,
+    "etag": "\"2e92735945bbfe87885c0c7771494b04\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:56:03Z",
+    "sha256": "f9d7df5d7beebd291611de29116ba94e543fe0490bca80bbbb0f80fed00f134f",
+    "url": "https://epoch.ai/data/ai_models.zip"
+  },
+  "epoch_ai/benchmark_data.zip": {
+    "bytes": 2326626,
+    "etag": "\"9280f1c7771358a05c00256885752d02\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:57:06Z",
+    "sha256": "8fe0ea476d7b26708eff36cf34ee3894871e78376faf8a8b2429558d1a7c9991",
+    "url": "https://epoch.ai/data/benchmark_data.zip"
+  },
+  "epoch_ai/chat_stats.xlsx": {
+    "bytes": 388632,
+    "etag": "\"7143b2775680f1b5932356a781641e2d\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:58:11Z",
+    "sha256": "0f017450771617e914246907e0d194b6ef394fabb8b0bc59e7f662a6c0a3811f",
+    "url": "https://epoch.ai/data/chat_stats/chat_stats.xlsx"
+  },
+  "epoch_ai/data_centers.zip": {
+    "bytes": 118778,
+    "etag": "\"cfc9a9587b347f529eee6f19cbf6308d\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:58:09Z",
+    "sha256": "8e88f5534a84c489cb8f3d5f0895234cf31643867f738261d554856590565fba",
+    "url": "https://epoch.ai/data/data_centers/data_centers.zip"
+  },
+  "epoch_ai/polling_on_ai_usage_oct_2026.csv": {
+    "bytes": 388391,
+    "etag": "\"519e2cc396aeea93c4eec58380ca1130\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:59:12Z",
+    "sha256": "3df404125443355a649dba3221271ae080cd1854b47606f38a7c32c1cc54e214",
+    "url": "https://epoch.ai/data/polling/polling_on_ai_usage_oct_2026.csv"
+  },
+  "indeed_ai_tracker/AI_posting.csv": {
+    "bytes": 795280,
+    "etag": "\"013b24616b39de2d5b8fb54f341d256bdf15f30272d0a61367d8b083ad900f0c\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:15Z",
+    "sha256": "5e734aab0b0f2385ae3e6137f366ad6a5a10a3f9c175ee3ec6e91c0a7c7241b0",
+    "url": "https://raw.githubusercontent.com/hiring-lab/ai-tracker/main/AI_posting.csv"
+  },
+  "litellm_price_history/2023-09_42cc4e2.json": {
+    "bytes": 15470,
+    "commit": "42cc4e2464266a05d793f9b6e50610b4c335f07c",
+    "commit_date": "2023-09-30T15:49:18Z",
+    "retrieved_utc": "2026-11-22T05:02:20Z",
+    "sha256": "034838b93fc6ae66e8799473de350a220d36952cf43ae38982840700515364cc",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/42cc4e2464266a05d793f9b6e50610b4c335f07c/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2023-10_78ea8e6.json": {
+    "bytes": 22171,
+    "commit": "78ea8e6c419c4dbab8e0daacfd4450457f8a7490",
+    "commit_date": "2023-10-30T15:45:26Z",
+    "retrieved_utc": "2026-11-22T05:02:22Z",
+    "sha256": "102331915c0d2e7306122ba4f102c0bafb29b3ddb3980076d62cebfec78f3df0",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/78ea8e6c419c4dbab8e0daacfd4450457f8a7490/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2023-11_8c1a9f1.json": {
+    "bytes": 29485,
+    "commit": "8c1a9f1c4eeba21cd535e45cf8c7600b98635fce",
+    "commit_date": "2023-11-30T22:41:19Z",
+    "retrieved_utc": "2026-11-22T05:02:23Z",
+    "sha256": "5d2a882a690d5582ea39cc4b9cad80fa44aacafad5025dc8774ae8782ea55eff",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/8c1a9f1c4eeba21cd535e45cf8c7600b98635fce/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2023-12_d089157.json": {
+    "bytes": 49180,
+    "commit": "d0891579258023751f774ea61cb7c6005351abb8",
+    "commit_date": "2023-12-30T08:08:24Z",
+    "retrieved_utc": "2026-11-22T05:02:24Z",
+    "sha256": "3ee161d9c3657a5d545f0fca0ac0187814c3130d5f22cfc2ccf15357b847b612",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/d0891579258023751f774ea61cb7c6005351abb8/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-01_855d27d.json": {
+    "bytes": 60090,
+    "commit": "855d27d2e9b19a9debdd42bc68d547c318c9c6d9",
+    "commit_date": "2024-01-31T21:23:30Z",
+    "retrieved_utc": "2026-11-22T05:02:26Z",
+    "sha256": "01636a88659b992e4d096049145b27dcbefc4c707d28ae26ab5fcec01d516b51",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/855d27d2e9b19a9debdd42bc68d547c318c9c6d9/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-02_43b66d5.json": {
+    "bytes": 71461,
+    "commit": "43b66d562e2e9876bac1e57abe438d73c4006001",
+    "commit_date": "2024-02-29T16:33:34Z",
+    "retrieved_utc": "2026-11-22T05:02:27Z",
+    "sha256": "19635c55724b2afe9956ea0123897c6ae2a79ef60581ddf6dc47f783b3092a24",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/43b66d562e2e9876bac1e57abe438d73c4006001/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-03_89471ba.json": {
+    "bytes": 93474,
+    "commit": "89471ba4c5c8746c292cdc107c43badbd326fafd",
+    "commit_date": "2024-03-30T15:37:06Z",
+    "retrieved_utc": "2026-11-22T05:02:29Z",
+    "sha256": "2a08d8d0e929606a581b3d64219b4e7a1bf7426ce445adfe21d98e16e881f65c",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/89471ba4c5c8746c292cdc107c43badbd326fafd/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-04_398d503.json": {
+    "bytes": 109089,
+    "commit": "398d503590e2dc61fa1e0b31fe6cd6ed9500ee8a",
+    "commit_date": "2024-04-30T18:36:29Z",
+    "retrieved_utc": "2026-11-22T05:02:30Z",
+    "sha256": "ed2ea2aa62d69949f01b2b4b288144894529719e42df096053a92a4ab675fc74",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/398d503590e2dc61fa1e0b31fe6cd6ed9500ee8a/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-05_668c894.json": {
+    "bytes": 130063,
+    "commit": "668c894e9a33f62d2758754cd73e37e0629441b1",
+    "commit_date": "2024-05-31T22:44:19Z",
+    "retrieved_utc": "2026-11-22T05:02:31Z",
+    "sha256": "c44c2532487a967e709a08b52da5206e089236ae8a8e9e4d421aed2b502526ee",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/668c894e9a33f62d2758754cd73e37e0629441b1/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-06_05dfc63.json": {
+    "bytes": 154545,
+    "commit": "05dfc63b8848376f7adee7411ba08f9e220cf292",
+    "commit_date": "2024-06-29T20:25:27Z",
+    "retrieved_utc": "2026-11-22T05:02:34Z",
+    "sha256": "a2d4ac2a55ae331266fc7664526afb506ac7c54bc971fc7e15371ca3fa9a0aa9",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/05dfc63b8848376f7adee7411ba08f9e220cf292/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-07_8e24c3c.json": {
+    "bytes": 169408,
+    "commit": "8e24c3c945502b42216e366762ef522a92d637b7",
+    "commit_date": "2024-07-29T22:43:16Z",
+    "retrieved_utc": "2026-11-22T05:02:36Z",
+    "sha256": "b48f31d891825799d86a7b8204447b19970cef50770508e5dbf7f0d503143cf4",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/8e24c3c945502b42216e366762ef522a92d637b7/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-08_4bd85b9.json": {
+    "bytes": 196389,
+    "commit": "4bd85b9d83b75bd669328b2b743f8f1e5e5c66a9",
+    "commit_date": "2024-08-31T23:29:26Z",
+    "retrieved_utc": "2026-11-22T05:02:39Z",
+    "sha256": "af0c747e36deaceabcecacf61655180b0714d179cbb2ca68ac2697787a121ff5",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/4bd85b9d83b75bd669328b2b743f8f1e5e5c66a9/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-09_0b30e21.json": {
+    "bytes": 226672,
+    "commit": "0b30e212da36d5010f97ee6a965fda89691566c0",
+    "commit_date": "2024-09-28T05:52:57Z",
+    "retrieved_utc": "2026-11-22T05:02:41Z",
+    "sha256": "279c7aab1c618f6a9d1cd760e542a8222db45c9f6b5bec2daf9e383358c4508a",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/0b30e212da36d5010f97ee6a965fda89691566c0/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-10_e16f780.json": {
+    "bytes": 241210,
+    "commit": "e16f780b7c5340f4c3270ef770ad031f9f8e9739",
+    "commit_date": "2024-10-29T16:02:42Z",
+    "retrieved_utc": "2026-11-22T05:02:43Z",
+    "sha256": "8f9b73e479234236d94b6c881a865bea574505b7290d62eac6d493f385a14470",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/e16f780b7c5340f4c3270ef770ad031f9f8e9739/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-11_2d2931a.json": {
+    "bytes": 262212,
+    "commit": "2d2931a2153a919f9321d595a774a08e1b371979",
+    "commit_date": "2024-11-27T18:31:38Z",
+    "retrieved_utc": "2026-11-22T05:02:44Z",
+    "sha256": "ae4d6d078e0f1e4d8737e2304eecd1d2c5f0c9ce1a52dabd374d980a128b7151",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/2d2931a2153a919f9321d595a774a08e1b371979/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2024-12_406b7f4.json": {
+    "bytes": 286299,
+    "commit": "406b7f43a8ba9312b2831fca4aeddcced54f3009",
+    "commit_date": "2024-12-29T01:08:43Z",
+    "retrieved_utc": "2026-11-22T05:02:46Z",
+    "sha256": "cc399fbbf92db35509811ab13381df3076ef5152d496dd567b5e85468cd1282b",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/406b7f43a8ba9312b2831fca4aeddcced54f3009/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-01_9f0f2b3.json": {
+    "bytes": 306569,
+    "commit": "9f0f2b3f016a334a9e192e056f0c7f51da473f50",
+    "commit_date": "2025-01-31T21:30:06Z",
+    "retrieved_utc": "2026-11-22T05:02:48Z",
+    "sha256": "7132b50e128b7022ef90ae6588b7803eff93856e502b59c974c16f91c6128236",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/9f0f2b3f016a334a9e192e056f0c7f51da473f50/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-02_1affd0f.json": {
+    "bytes": 346077,
+    "commit": "1affd0f17842014f7b735f27ecf35ab34a7fecc5",
+    "commit_date": "2025-02-28T04:24:03Z",
+    "retrieved_utc": "2026-11-22T05:02:49Z",
+    "sha256": "10265b1b5f77b79b09dfce48bf734409be86a84692064907075764786e45e20b",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/1affd0f17842014f7b735f27ecf35ab34a7fecc5/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-03_dfb838e.json": {
+    "bytes": 391227,
+    "commit": "dfb838eaff82301d4101d09982fbbb251bbc1ce1",
+    "commit_date": "2025-03-31T22:22:12Z",
+    "retrieved_utc": "2026-11-22T05:02:50Z",
+    "sha256": "231bb15e5294ba5b63b51857313de110e384fa1fff0000ace568268749a3ce0e",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/dfb838eaff82301d4101d09982fbbb251bbc1ce1/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-04_d783190.json": {
+    "bytes": 444301,
+    "commit": "d783190e04756092739dcaacf2df30b4929fe03d",
+    "commit_date": "2025-04-30T03:58:05Z",
+    "retrieved_utc": "2026-11-22T05:02:52Z",
+    "sha256": "a958cf333c5a6272c34c21f6d896dea78aa8c4d86791a255ff878b09444fa37d",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/d783190e04756092739dcaacf2df30b4929fe03d/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-05_06484f6.json": {
+    "bytes": 499356,
+    "commit": "06484f6e5a7a2f4e45c490266782ed28b51b7db6",
+    "commit_date": "2025-05-31T21:26:16Z",
+    "retrieved_utc": "2026-11-22T05:02:54Z",
+    "sha256": "5dd6cd3a102dfce55689d40453f0d584ab34776d5d097e3eff56916d34860662",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/06484f6e5a7a2f4e45c490266782ed28b51b7db6/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-06_06c86d6.json": {
+    "bytes": 563037,
+    "commit": "06c86d6130a6f0c1b2449c485dbbf55d607d15a4",
+    "commit_date": "2025-06-28T04:36:59Z",
+    "retrieved_utc": "2026-11-22T05:02:56Z",
+    "sha256": "d0cdaeefa9a02884661bf636bac6c2dcf89dfe2d746bacd10ee27a0dafb77157",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/06c86d6130a6f0c1b2449c485dbbf55d607d15a4/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-07_a973202.json": {
+    "bytes": 625459,
+    "commit": "a973202cb1b55d12f1f06400563488230df455da",
+    "commit_date": "2025-07-31T21:47:48Z",
+    "retrieved_utc": "2026-11-22T05:02:57Z",
+    "sha256": "46ec2df2208badb9eac1f794f9ccb8e8167a08623200af38d42b4f930a6068bd",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/a973202cb1b55d12f1f06400563488230df455da/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-08_fa4c833.json": {
+    "bytes": 743061,
+    "commit": "fa4c833e58f8ab9a64a26f2232e01aa9f6499920",
+    "commit_date": "2025-08-30T17:29:08Z",
+    "retrieved_utc": "2026-11-22T05:02:59Z",
+    "sha256": "6921795a7067a144f08e6a05b1fafeb0a5915c5bb6fd04914db62f164cf50ccb",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/fa4c833e58f8ab9a64a26f2232e01aa9f6499920/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-09_862736e.json": {
+    "bytes": 796941,
+    "commit": "862736e74b4b697030994078b42c98856ed9911f",
+    "commit_date": "2025-09-30T19:51:21Z",
+    "retrieved_utc": "2026-11-22T05:03:01Z",
+    "sha256": "71ffd1842b6ef250863da167ff911858b42cccfc32201888c530cbabb551e1af",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/862736e74b4b697030994078b42c98856ed9911f/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-10_0d84c11.json": {
+    "bytes": 861821,
+    "commit": "0d84c11bbead2f39247f727f3ddea5855d7d5e6b",
+    "commit_date": "2025-10-31T02:40:35Z",
+    "retrieved_utc": "2026-11-22T05:03:03Z",
+    "sha256": "d08dbc2cc3a9a734027f5c0c2aca28b427a8af9cf2ad317d29f1ac5a907aa02e",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/0d84c11bbead2f39247f727f3ddea5855d7d5e6b/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-11_71f4135.json": {
+    "bytes": 961688,
+    "commit": "71f41352fa4e1f3e0109634afe74a82232193076",
+    "commit_date": "2025-11-28T02:44:14Z",
+    "retrieved_utc": "2026-11-22T05:03:04Z",
+    "sha256": "7de38d6a7b957c0734ccdc3666e581fe8f4a46e70981a77c9a4b800875099e76",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/71f41352fa4e1f3e0109634afe74a82232193076/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2025-12_f502462.json": {
+    "bytes": 1126996,
+    "commit": "f5024624d7b9fdc5fd888edffbb7b388f192b09f",
+    "commit_date": "2025-12-28T18:44:03Z",
+    "retrieved_utc": "2026-11-22T05:03:06Z",
+    "sha256": "1d33e2cbf509f14c0a35c4a0069c379562c8f6db11dc688fafb48a41fa204783",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/f5024624d7b9fdc5fd888edffbb7b388f192b09f/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-01_1f83aaf.json": {
+    "bytes": 1223198,
+    "commit": "1f83aafe3befe4438f73ebeaea22409cabc8bdbb",
+    "commit_date": "2026-01-31T03:31:49Z",
+    "retrieved_utc": "2026-11-22T05:03:07Z",
+    "sha256": "c9bfda80437d3bea8857d47ffade0e85096b7baa2c7fd801024ac012bd1b55ad",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/1f83aafe3befe4438f73ebeaea22409cabc8bdbb/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-02_29d1d04.json": {
+    "bytes": 1356372,
+    "commit": "29d1d0479f3ef7d897fbd7cb707b0744f727101b",
+    "commit_date": "2026-02-28T10:09:38Z",
+    "retrieved_utc": "2026-11-22T05:03:09Z",
+    "sha256": "d56b0ed1c500b8db44feab711bf2dad2524d2a0c419b3ac67a46bfe20dbeac8d",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/29d1d0479f3ef7d897fbd7cb707b0744f727101b/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-03_92db2df.json": {
+    "bytes": 1329442,
+    "commit": "92db2df2f676417fc616b9edd727b3dffaaf15c1",
+    "commit_date": "2026-03-29T03:04:47Z",
+    "retrieved_utc": "2026-11-22T05:03:11Z",
+    "sha256": "ffe40f10de682c8f95889037fa6c4d516153a19a393775a0277944461f423b0d",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/92db2df2f676417fc616b9edd727b3dffaaf15c1/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-04_3f5c589.json": {
+    "bytes": 1417019,
+    "commit": "3f5c58925571381af50996b54ca87bf53ebd3180",
+    "commit_date": "2026-04-29T19:21:57Z",
+    "retrieved_utc": "2026-11-22T05:03:12Z",
+    "sha256": "4cc9e1a33ef6f2c1f8310b58c24beb97a29fc7f60bac05f2dce7890dd7a0067b",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/3f5c58925571381af50996b54ca87bf53ebd3180/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-05_bae0459.json": {
+    "bytes": 1477113,
+    "commit": "bae04591b2861eedb26c55ea007d11f9f49deaa7",
+    "commit_date": "2026-05-29T01:50:33Z",
+    "retrieved_utc": "2026-11-22T05:03:14Z",
+    "sha256": "cc96ba1f61303fdb3e84c56cefc63e870a38517d5d1d1b6f5f927731d1a1e5a2",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/bae04591b2861eedb26c55ea007d11f9f49deaa7/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-06_6d43c21.json": {
+    "bytes": 1579065,
+    "commit": "6d43c21ec641baee73e486ec3f9b72c1c36a850d",
+    "commit_date": "2026-06-30T19:19:48Z",
+    "retrieved_utc": "2026-11-22T05:03:17Z",
+    "sha256": "b6cc3b93a2e0ca1b0650835658392ba51416bb42907fcca8d00203c6caaf2e80",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/6d43c21ec641baee73e486ec3f9b72c1c36a850d/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-07_bf1a8fe.json": {
+    "bytes": 1670646,
+    "commit": "bf1a8fe40329eb018ef420057766ce95a43baaa3",
+    "commit_date": "2026-07-31T04:46:46Z",
+    "retrieved_utc": "2026-11-22T05:03:19Z",
+    "sha256": "ba37bb46dc4662f4bfed71db90168644ef917713fa073bd397775376d55a6b1c",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/bf1a8fe40329eb018ef420057766ce95a43baaa3/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-08_7a02e41.json": {
+    "bytes": 2008717,
+    "commit": "7a02e4163faedcb5736495e4a17e8021c0c0ee4a",
+    "commit_date": "2026-08-31T22:47:27Z",
+    "retrieved_utc": "2026-11-22T05:03:20Z",
+    "sha256": "01d9ba0176a0044707325b465f0f02c562c73f44c528d6b7123f0c1d1666fb00",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/7a02e4163faedcb5736495e4a17e8021c0c0ee4a/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-09_025292e.json": {
+    "bytes": 3018676,
+    "commit": "025292e75bda0381174a751da320645c971e06c7",
+    "commit_date": "2026-09-30T17:20:57Z",
+    "retrieved_utc": "2026-11-22T05:03:22Z",
+    "sha256": "a1af9a18fcc830f9bae4aeaa3811ba54bbdd703c0baf00cb92e516f439fdfa00",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/025292e75bda0381174a751da320645c971e06c7/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-10_b264711.json": {
+    "bytes": 3176032,
+    "commit": "b2647116ca1a880115c068cd7007c03f32e826f1",
+    "commit_date": "2026-10-31T15:56:44Z",
+    "retrieved_utc": "2026-11-22T05:03:24Z",
+    "sha256": "a00d6bdf774672924f61344a8c0a5e19ed4cd19061a02cef7b3734719c42fb49",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/b2647116ca1a880115c068cd7007c03f32e826f1/model_prices_and_context_window.json"
+  },
+  "litellm_price_history/2026-11_0946b74.json": {
+    "bytes": 5092671,
+    "commit": "0946b7416c5bb13f04f692bc3604b91b897d5e43",
+    "commit_date": "2026-11-21T23:51:27Z",
+    "retrieved_utc": "2026-11-22T05:03:26Z",
+    "sha256": "8335a7bdfaeece5e4347caa54e9ccd64ff9a4544bbdb6d4c41369b7d51c421e0",
+    "url": "https://raw.githubusercontent.com/BerriAI/litellm/0946b7416c5bb13f04f692bc3604b91b897d5e43/model_prices_and_context_window.json"
+  },
+  "microsoft_working_with_ai/LICENSE.txt": {
+    "bytes": 214,
+    "etag": "\"b486de08e8372df174f42ebce3dcffa9f5810b3711f11cff9a39a9e77c511b78\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:14Z",
+    "sha256": "7482bb7c074d6d966bb94e54f3393f089d576e8be9dc9e92e239a40a56df8a41",
+    "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/LICENSE.txt"
+  },
+  "microsoft_working_with_ai/README.md": {
+    "bytes": 11360,
+    "etag": "\"dac62d6221340225999210ba4072ae0f8ccd0e77b9f38977df1b9f63d382ed15\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:14Z",
+    "sha256": "b98be795b8a96490ecf0e50329d5867958f11f0ac78939b4144422a1929433b3",
+    "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/README.md"
+  },
+  "microsoft_working_with_ai/ai_applicability_scores.csv": {
+    "bytes": 50018,
+    "etag": "\"3bde8a1e2016a945f2c28ce8e7c76c8560fde04e26ec7987977fe905c5c8ca19\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:12Z",
+    "sha256": "204c7e6a5ec704156212f88a6282dba7508c8b90e5df7c0d590088b2b44aa7d2",
+    "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/ai_applicability_scores.csv"
+  },
+  "microsoft_working_with_ai/soc_metrics.csv": {
+    "bytes": 183048,
+    "etag": "\"c70d047ecd5e2a88def98df65647ad031d2d42231cc9327a2e124fc782dae9f2\"",
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:13Z",
+    "sha256": "c452eb71acf0cca7cfd236025a124802d148fed6c31f5e1baa342dd7d1babbfa",
+    "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/main/soc_metrics.csv"
+  },
+  "onet_29_0/db_29_0_text.zip": {
+    "bytes": 13157837,
+    "etag": "\"6a628074-c8c5cd\"",
+    "http_status": 200,
+    "last_modified": "Thu, 23 Jul 2026 20:58:28 GMT",
+    "retrieved_utc": "2026-11-22T04:55:43Z",
+    "sha256": "ebf4237f614f9d34ad83edd837da3eac19dec280998bfeea5b73f740fab34777",
+    "url": "https://www.onetcenter.org/dl_files/database/db_29_0_text.zip"
+  },
+  "onet_31_0/db_31_0_text.zip": {
+    "bytes": 13183034,
+    "etag": "\"6a93eb89-c9283a\"",
+    "http_status": 200,
+    "last_modified": "Sun, 30 Aug 2026 08:36:25 GMT",
+    "retrieved_utc": "2026-11-22T05:06:28Z",
+    "sha256": "6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9",
+    "url": "https://www.onetcenter.org/dl_files/database/db_31_0_text.zip"
+  },
+  "openrouter_models/models.json": {
+    "bytes": 925512,
+    "etag": null,
+    "http_status": 200,
+    "last_modified": null,
+    "retrieved_utc": "2026-11-22T04:55:16Z",
+    "sha256": "7b7f878e0eae99076cb161e01f99d1529fd88260ac9ecf31630027ca944d4800",
+    "url": "https://openrouter.ai/api/v1/models"
+  }
+}

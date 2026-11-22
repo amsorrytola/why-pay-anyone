@@ -8,7 +8,9 @@ This project answers it with real data, a task-based economic model and an inter
 
 ## Status
 
-Planning (2026-11-22). Topic agreed with the industry supervisor. Nothing is built yet. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules and what data each one needs, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and whether it has been checked.
+Data stage (2026-11-22). Topic agreed with the industry supervisor. The raw data has been downloaded and opened; analysis and the website are not built yet. See [docs/research-plan.md](docs/research-plan.md) for the research question, the six modules and what data each one needs, and [data/SOURCES.md](data/SOURCES.md) for every data source, its licence and what its files contain.
+
+To re-fetch the raw data (about 370 MB, standard-library Python only): `python3 -I pipeline/fetch.py all` and `python3 -I pipeline/fetch_litellm_history.py` (needs the `gh` CLI). The BLS wage file must be downloaded in a browser because BLS blocks scripts; it is recorded in `data/manifest.json`.
 
 ## The six modules
 
@@ -30,7 +32,8 @@ docs/            research plan and method notes
 data/raw/        downloaded source files (not committed; re-fetched by the pipeline)
 data/processed/  small derived tables the website reads (committed, each with its source)
 data/SOURCES.md  data registry: source, licence, files, status
-pipeline/        scripts that turn raw data into processed tables (to be added)
+data/manifest.json  URL, size, SHA-256 and retrieval time of every raw file
+pipeline/        scripts that fetch the raw data (done) and turn it into processed tables (to be added)
 web/             the website, with the chatbot endpoint (to be added)
 ```
 
