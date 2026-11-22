@@ -1,0 +1,655 @@
+series,area,year,value,unit,source,note
+PWT labsh,USA,1950,0.62836,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1951,0.63373,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1952,0.64485,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1953,0.6445,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1954,0.63705,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1955,0.62684,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1956,0.64043,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1957,0.63868,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1958,0.63585,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1959,0.62935,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1960,0.63674,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1961,0.6337,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1962,0.62911,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1963,0.62639,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1964,0.62438,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1965,0.61936,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1966,0.62289,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1967,0.63008,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1968,0.63423,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1969,0.64388,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1970,0.64899,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1971,0.63765,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1972,0.63945,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1973,0.64067,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1974,0.64097,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1975,0.62556,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1976,0.62159,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1977,0.6216,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1978,0.6223,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1979,0.62262,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1980,0.62435,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1981,0.61422,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1982,0.61674,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1983,0.60385,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1984,0.60195,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1985,0.6023,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1986,0.60774,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1987,0.61597,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1988,0.62067,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1989,0.61186,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1990,0.6152,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1991,0.6151,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1992,0.62005,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1993,0.6142,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1994,0.60795,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1995,0.60738,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1996,0.60712,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1997,0.60961,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1998,0.62302,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,1999,0.62595,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2000,0.63715,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2001,0.64033,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2002,0.63011,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2003,0.62159,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2004,0.61697,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2005,0.60556,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2006,0.60552,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2007,0.60303,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2008,0.60149,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2009,0.58981,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2010,0.58552,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2011,0.59019,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2012,0.59081,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2013,0.58722,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2014,0.58829,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2015,0.59089,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2016,0.58917,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2017,0.59132,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2018,0.59057,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2019,0.59183,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2020,0.60564,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2021,0.59388,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2022,0.57618,share of GDP,Penn World Table 11.0,
+PWT labsh,USA,2023,0.5683,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1950,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1951,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1952,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1953,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1954,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1955,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1956,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1957,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1958,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1959,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1960,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1961,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1962,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1963,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1964,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1965,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1966,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1967,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1968,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1969,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1970,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1971,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1972,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1973,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1974,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1975,0.75255,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,1976,0.73039,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1977,0.75255,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1978,0.7285,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1979,0.70103,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1980,0.73688,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1981,0.71756,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1982,0.70748,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1983,0.71877,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1984,0.71449,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1985,0.69809,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1986,0.69415,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1987,0.69695,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1988,0.6958,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1989,0.68128,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1990,0.6792,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1991,0.67567,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1992,0.66941,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1993,0.65643,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1994,0.64144,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1995,0.6247,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1996,0.62232,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1997,0.62306,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1998,0.6099,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,1999,0.6021,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2000,0.59491,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2001,0.58352,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2002,0.55809,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2003,0.55063,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2004,0.51533,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2005,0.50388,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2006,0.48348,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2007,0.48404,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2008,0.50306,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2009,0.51252,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2010,0.51177,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2011,0.51267,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2012,0.51098,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2013,0.51469,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2014,0.51627,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2015,0.50827,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2016,0.51815,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2017,0.52274,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2018,0.5206,share of GDP,Penn World Table 11.0,
+PWT labsh,IND,2019,0.53348,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,2020,0.53348,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,2021,0.53348,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,2022,0.53348,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,IND,2023,0.53348,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1952,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1953,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1954,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1955,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1956,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1957,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1958,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1959,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1960,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1961,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1962,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1963,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1964,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1965,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1966,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1967,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1968,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1969,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1970,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1971,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1972,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1973,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1974,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1975,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1976,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1977,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1978,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1979,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1980,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1981,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1982,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1983,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1984,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1985,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1986,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1987,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1988,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1989,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1990,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1991,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1992,0.59219,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,1993,0.56684,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1994,0.56085,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1995,0.56728,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1996,0.58803,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1997,0.588,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1998,0.59184,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,1999,0.60547,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2000,0.59066,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2001,0.58725,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2002,0.60307,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2003,0.59818,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2004,0.57622,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2005,0.56975,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2006,0.56183,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2007,0.56276,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2008,0.56485,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2009,0.56447,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2010,0.55841,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2011,0.56084,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2012,0.56953,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2013,0.57875,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2014,0.58033,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2015,0.58101,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2016,0.58116,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2017,0.57982,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2018,0.57706,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2019,0.57775,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2020,0.5725,share of GDP,Penn World Table 11.0,
+PWT labsh,CHN,2021,0.56118,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,2022,0.56118,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,CHN,2023,0.56118,share of GDP,Penn World Table 11.0,same value as a neighbouring year: PWT assumes the share constant where it has no observation (flag i_labsh2 in the labour detail file)
+PWT labsh,World (GDP-weighted),1950,0.6208,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 47 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1951,0.62097,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 52 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1952,0.62557,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 53 countries covering 99% of world output
+PWT labsh,World (GDP-weighted),1953,0.62475,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 55 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1954,0.62152,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 58 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1955,0.61601,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 61 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1956,0.62127,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 61 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1957,0.61909,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 61 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1958,0.61698,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 61 countries covering 98% of world output
+PWT labsh,World (GDP-weighted),1959,0.61421,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 62 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1960,0.6141,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1961,0.61289,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1962,0.61183,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1963,0.61059,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1964,0.60965,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1965,0.6074,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1966,0.60774,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1967,0.60987,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1968,0.61064,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 79 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1969,0.61278,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 80 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1970,0.60627,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 95 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1971,0.60557,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 95 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1972,0.60501,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 95 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1973,0.6041,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 97 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1974,0.60366,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 97 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1975,0.60597,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 98 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1976,0.6019,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 98 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1977,0.60213,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 99 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1978,0.59997,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 99 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1979,0.59585,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 99 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1980,0.59671,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1981,0.59345,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1982,0.59349,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1983,0.58816,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1984,0.58276,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1985,0.57986,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 114 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1986,0.58241,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 115 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1987,0.58376,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 115 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1988,0.58374,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 115 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1989,0.58073,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 115 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),1990,0.57861,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 136 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1991,0.57793,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1992,0.57369,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1993,0.57494,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1994,0.57351,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1995,0.57114,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1996,0.5713,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1997,0.57216,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1998,0.57679,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),1999,0.57702,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),2000,0.57439,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),2001,0.57647,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),2002,0.57138,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),2003,0.56544,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 97% of world output
+PWT labsh,World (GDP-weighted),2004,0.55434,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2005,0.54584,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2006,0.5409,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2007,0.53698,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2008,0.53645,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2009,0.54488,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 139 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2010,0.53544,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2011,0.53325,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2012,0.53592,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2013,0.53897,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2014,0.54145,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2015,0.5436,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2016,0.54528,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2017,0.54514,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 96% of world output
+PWT labsh,World (GDP-weighted),2018,0.54268,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2019,0.54642,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2020,0.54849,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2021,0.53939,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2022,0.53278,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+PWT labsh,World (GDP-weighted),2023,0.5339,share of GDP,Penn World Table 11.0,cgdpo-weighted mean over 140 countries covering 95% of world output
+ILO labour income share,China,2004,0.51455,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2005,0.51104,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2006,0.50741,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2007,0.50331,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2008,0.51423,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2009,0.5145,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2010,0.51112,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2011,0.51348,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2012,0.51734,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2013,0.51731,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2014,0.51666,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2015,0.51613,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2016,0.51515,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2017,0.51345,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2018,0.51241,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2019,0.51419,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2020,0.51758,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2021,0.50977,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2022,0.51602,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2023,0.51062,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2024,0.51165,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,China,2025,0.51228,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,China,2026,0.51346,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,India,2004,0.59128,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2005,0.57163,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2006,0.54781,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2007,0.54484,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2008,0.59975,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2009,0.61553,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2010,0.59346,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2011,0.58128,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2012,0.57299,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2013,0.57365,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2014,0.58568,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2015,0.57585,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2016,0.58485,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2017,0.58989,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2018,0.59827,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2019,0.60332,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2020,0.62607,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2021,0.62346,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2022,0.62027,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2023,0.61141,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2024,0.61925,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,India,2025,0.61825,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,India,2026,0.61918,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,United States of America,2004,0.6201,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2005,0.61055,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2006,0.60895,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2007,0.60906,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2008,0.60854,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2009,0.59791,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2010,0.58758,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2011,0.58675,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2012,0.58537,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2013,0.57917,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2014,0.58089,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2015,0.58582,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2016,0.58399,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2017,0.58398,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2018,0.58397,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2019,0.582,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2020,0.59091,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2021,0.57926,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2022,0.56163,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2023,0.55385,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2024,0.55452,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,United States of America,2025,0.55807,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,United States of America,2026,0.55783,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World,2004,0.54,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2005,0.534,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2006,0.53,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2007,0.528,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2008,0.533,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2009,0.544,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2010,0.532,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2011,0.526,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2012,0.528,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2013,0.528,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2014,0.531,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2015,0.531,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2016,0.532,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2017,0.53,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2018,0.529,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2019,0.531,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2020,0.539,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2021,0.527,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2022,0.521,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2023,0.522,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2024,0.525,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World,2025,0.527,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World,2026,0.527,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Low income,2004,0.36,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2005,0.361,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2006,0.361,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2007,0.365,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2008,0.361,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2009,0.365,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2010,0.359,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2011,0.365,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2012,0.369,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2013,0.369,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2014,0.373,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2015,0.379,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2016,0.378,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2017,0.376,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2018,0.378,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2019,0.38,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2020,0.381,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2021,0.375,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2022,0.38,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2023,0.382,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2024,0.382,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Low income,2025,0.382,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Low income,2026,0.382,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Lower-middle income,2004,0.524,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2005,0.513,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2006,0.502,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2007,0.5,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2008,0.521,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2009,0.534,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2010,0.523,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2011,0.52,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2012,0.517,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2013,0.522,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2014,0.531,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2015,0.524,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2016,0.528,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2017,0.533,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2018,0.538,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2019,0.541,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2020,0.552,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2021,0.55,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2022,0.546,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2023,0.545,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2024,0.549,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Lower-middle income,2025,0.549,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Lower-middle income,2026,0.55,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Upper-middle income,2004,0.47,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2005,0.47,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2006,0.47,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2007,0.469,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2008,0.478,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2009,0.493,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2010,0.485,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2011,0.487,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2012,0.493,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2013,0.497,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2014,0.501,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2015,0.5,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2016,0.499,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2017,0.495,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2018,0.492,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2019,0.495,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2020,0.499,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2021,0.486,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2022,0.487,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2023,0.491,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2024,0.495,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: Upper-middle income,2025,0.496,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: Upper-middle income,2026,0.497,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: High income,2004,0.574,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2005,0.568,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2006,0.565,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2007,0.565,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2008,0.566,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2009,0.576,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2010,0.563,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2011,0.554,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2012,0.553,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2013,0.551,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2014,0.553,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2015,0.556,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2016,0.558,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2017,0.556,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2018,0.555,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2019,0.556,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2020,0.568,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2021,0.551,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2022,0.54,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2023,0.54,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2024,0.543,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate
+ILO labour income share,World: High income,2025,0.546,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+ILO labour income share,World: High income,2026,0.545,share of GDP,"ILOSTAT modelled estimates, Nov. 2025",ILO modelled estimate; later years are model projections
+BLS nonfarm business labor share,USA,1947,115.3125,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1948,114.5215,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1949,113.3435,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1950,111.35675,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1951,110.746,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1952,112.357,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1953,113.62575,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1954,113.94875,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1955,111.284,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1956,114.70525,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1957,114.65,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1958,114.835,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1959,113.374,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1960,115.52825,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1961,114.70675,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1962,113.094,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1963,112.2115,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1964,111.00875,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1965,109.754,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1966,109.69325,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1967,110.51625,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1968,110.54275,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1969,112.836,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1970,113.956,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1971,111.55875,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1972,111.4365,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1973,112.35175,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1974,113.297,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1975,110.138,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1976,108.755,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1977,108.89975,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1978,109.489,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1979,110.84675,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1980,112.13775,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1981,110.52925,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1982,112.62875,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1983,109.2525,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1984,108.42,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1985,108.449,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1986,109.821,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1987,111.26225,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1988,111.6685,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1989,109.8785,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1990,110.72325,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1991,110.67125,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1992,110.6665,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1993,109.3345,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1994,107.655,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1995,107.23825,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1996,107.178,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1997,107.37,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1998,109.502,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,1999,109.50225,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2000,111.6185,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2001,111.7225,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2002,108.68575,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2003,107.25975,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2004,106.40775,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2005,104.423,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2006,104.32775,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2007,104.86375,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2008,105.10775,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2009,102.00475,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2010,99.4995,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2011,99.7215,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2012,99.45475,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2013,98.6385,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2014,98.72575,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2015,99.77025,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2016,99.48675,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2017,100.003,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2018,99.83625,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2019,100.00725,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2020,102.28925,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2021,100.253,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2022,97.931,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2023,96.606,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2024,96.4525,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+BLS nonfarm business labor share,USA,2025,95.96775,index 2017=100,BLS via FRED (PRS85006173),annual mean of four quarters
+"BEA compensation of employees, share of gross domestic income",USA,1929,0.495,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1930,0.509,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1931,0.523,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1932,0.529,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1933,0.526,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1934,0.52,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1935,0.506,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1936,0.517,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1937,0.519,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1938,0.524,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1939,0.527,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1940,0.518,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1941,0.513,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1942,0.528,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1943,0.55,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1944,0.56,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1945,0.564,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1946,0.541,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1947,0.536,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1948,0.525,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1949,0.533,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1950,0.53,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1951,0.541,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1952,0.551,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1953,0.558,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1954,0.553,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1955,0.545,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1956,0.552,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1957,0.554,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1958,0.551,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1959,0.548,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1960,0.554,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1961,0.552,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1962,0.55,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1963,0.549,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1964,0.549,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1965,0.547,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1966,0.556,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1967,0.562,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1968,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1969,0.575,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1970,0.584,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1971,0.576,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1972,0.575,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1973,0.573,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1974,0.577,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1975,0.567,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1976,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1977,0.565,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1978,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1979,0.572,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1980,0.577,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1981,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1982,0.568,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1983,0.563,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1984,0.555,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1985,0.557,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1986,0.565,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1987,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1988,0.563,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1989,0.564,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1990,0.57,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1991,0.569,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1992,0.573,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1993,0.57,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1994,0.561,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1995,0.557,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1996,0.552,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1997,0.55,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1998,0.557,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,1999,0.56,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2000,0.566,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2001,0.565,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2002,0.558,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2003,0.554,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2004,0.55,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2005,0.54,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2006,0.534,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2007,0.546,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2008,0.553,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2009,0.544,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2010,0.53,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2011,0.527,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2012,0.523,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2013,0.523,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2014,0.522,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2015,0.528,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2016,0.532,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2017,0.534,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2018,0.533,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2019,0.533,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2020,0.546,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2021,0.53,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2022,0.517,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2023,0.515,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2024,0.514,share of GDI,BEA via FRED (A4002E1A156NBEA),
+"BEA compensation of employees, share of gross domestic income",USA,2025,0.509,share of GDI,BEA via FRED (A4002E1A156NBEA),

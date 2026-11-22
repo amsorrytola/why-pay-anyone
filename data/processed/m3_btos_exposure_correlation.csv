@@ -1,0 +1,5 @@
+x,y,n_sectors,spearman_rho,p_value
+ms_exposure,q7_last4,14,0.6571,0.0107
+aei_usage_ratio,q7_last4,14,0.7451,0.0022
+ms_exposure,q7_change_pp,14,0.495,0.0719
+q7_last4,us_postings_change_pct_2026_vs_2022,13,-0.511,0.0743

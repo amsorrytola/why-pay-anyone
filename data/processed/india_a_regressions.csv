@@ -1,0 +1,17 @@
+model,term,coef,se_robust,t,p,ci_low,ci_high,n,r2,adj_r2,se_type
+"B0 GDP only, all countries with data",Intercept,-9.7175,0.412,-23.5848,5.53e-123,-10.5251,-8.91,120,0.8131,0.8116,HC1
+"B0 GDP only, all countries with data",ln_gdp,0.9623,0.0409,23.5523,1.19e-122,0.8823,1.0424,120,0.8131,0.8116,HC1
+"C1 GDP only, common sample",Intercept,-9.7929,0.5186,-18.8818,1.61e-79,-10.8094,-8.7764,106,0.7924,0.7904,HC1
+"C1 GDP only, common sample",ln_gdp,0.9704,0.0505,19.2239,2.34e-82,0.8715,1.0694,106,0.7924,0.7904,HC1
+C2 + internet use,Intercept,-9.2538,0.6069,-15.2482,1.69e-52,-10.4433,-8.0644,106,0.796,0.7921,HC1
+C2 + internet use,ln_gdp,0.8683,0.0897,9.6759,3.82e-22,0.6924,1.0442,106,0.796,0.7921,HC1
+C2 + internet use,net10,0.0611,0.0515,1.1862,0.236,-0.0399,0.1621,106,0.796,0.7921,HC1
+C3 + tertiary enrollment,Intercept,-8.3966,0.6796,-12.3557,4.54e-35,-9.7285,-7.0646,106,0.8145,0.809,HC1
+C3 + tertiary enrollment,ln_gdp,0.7789,0.095,8.2022,2.36e-16,0.5927,0.965,106,0.8145,0.809,HC1
+C3 + tertiary enrollment,net10,0.0155,0.0519,0.2982,0.766,-0.0863,0.1173,106,0.8145,0.809,HC1
+C3 + tertiary enrollment,ter10,0.0716,0.0267,2.6838,0.00728,0.0193,0.1239,106,0.8145,0.809,HC1
+C4 + services share of employment,Intercept,-7.465,0.5422,-13.7688,3.93e-43,-8.5276,-6.4024,106,0.8456,0.8395,HC1
+C4 + services share of employment,ln_gdp,0.59,0.0824,7.1613,7.99e-13,0.4285,0.7515,106,0.8456,0.8395,HC1
+C4 + services share of employment,net10,-0.0197,0.0474,-0.4162,0.677,-0.1127,0.0732,106,0.8456,0.8395,HC1
+C4 + services share of employment,ter10,0.0628,0.0255,2.4632,0.0138,0.0128,0.1128,106,0.8456,0.8395,HC1
+C4 + services share of employment,srv10,0.2099,0.0456,4.5989,4.25e-06,0.1205,0.2994,106,0.8456,0.8395,HC1

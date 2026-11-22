@@ -53,3 +53,15 @@ Built by `pipeline/build_m5.py` (after `build_m1_prices.py`). A firm is the mode
 | `m5_epoch_revenue.csv` | Annualised revenue reports from Epoch AI (levels only; too sparse to compute concentration) |
 
 Cautions: OpenRouter's users are not the whole market; token counts use each provider's tokenizer; tokens are not revenue.
+
+## M2 tables (where AI is used)
+Built by `pipeline/build_m2.py`. Column lists, definitions and the reading of each table are in [../../docs/findings-m2.md](../../docs/findings-m2.md). Files: `m2_scatter.csv` (one row per occupation, for the explorer), `m2_agreement.csv` (rank correlations with bootstrap intervals), `m2_disagreement.csv` (largest rank gaps with rule-based hints), `m2_major_groups.csv`, `m2_regressions.csv`, `m2_quirks.csv` (data warnings), `m2_summary.csv`.
+
+## M3 tables (adoption in the economy)
+Built by `pipeline/build_m3.py` (after `pipeline/fetch_indeed.py`). Details in [../../docs/findings-m3.md](../../docs/findings-m3.md). Files: `m3_btos_*` (Census BTOS tidy tables by geography, adoption summaries, dispersion, trend, snapshot of the headcount questions, sector exposure), `m3_indeed_*` (AI share of postings, aggregate and sector posting indices), `m3_category_exposure.csv` and `m3_category_soc_map.csv` (the judged crosswalk from Indeed categories to occupations), `m3_event_study_*` (event-study coefficients, group paths, summary by specification and country).
+
+## India Stage A tables
+Built by `pipeline/fetch_worldbank.py` and `pipeline/build_india_a.py`. Details in [../../docs/findings-india-a.md](../../docs/findings-india-a.md). Files: `india_a_country_data.csv` (120 countries: usage index, income and controls, fitted values), `india_a_india_summary.csv`, `india_a_regressions.csv`, `india_a_robustness.csv`, `india_a_composition_*.csv` (India against the world by job family, occupation and activity), `india_a_use_patterns.csv`, `india_a_benchmarks.csv` (published figures with a `verified` flag).
+
+## M6 tables (macro and policy)
+Built by `pipeline/build_m6.py` (after `pipeline/fetch_pwt.py`). Method, equations and checks are in [../../docs/model-m6.md](../../docs/model-m6.md); results in [../../docs/findings-m6.md](../../docs/findings-m6.md). Files: `m6_compute_stock.csv` and `m6_compute_growth.csv` (Epoch AI chip shipments in H100 equivalents and growth and doubling times), `m6_datacenter_capacity.csv` (tracked data-centre power), `m6_labour_share.csv` (labour share by source: Penn World Table, ILO, BLS, BEA), `m6_macro_calibration.csv` (series behind the USA and India calibration), `m6_parameters.csv` (every model parameter with its value, source and kind: data, derived or assumption), `m6_preset_results.csv` (outputs of the eight presets, used to check the browser model against a Python reference).

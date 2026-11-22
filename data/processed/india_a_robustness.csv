@@ -1,0 +1,16 @@
+spec,outcome,n,coef_ln_gdp,se_robust,r2,note,india_residual_log,india_actual_over_predicted,india_rank_1_is_highest,india_percentile
+baseline: ln index on ln GDP per capita,ln_index,120,0.9623,0.0409,0.8131,,-0.3372,0.7138,94,21.6667
+trim: drop 5 highest and 5 lowest index values,ln_index,110,0.9103,0.0444,0.7837,,-0.3774,0.6856,90,18.1818
+drop the 10 richest countries,ln_index,110,0.9671,0.0469,0.7876,,-0.3344,0.7158,86,21.8182
+drop the 10 poorest countries,ln_index,110,0.9817,0.0565,0.7583,,-0.3139,0.7306,84,23.6364
+drop the United States,ln_index,119,0.9593,0.0412,0.8106,,-0.337,0.7139,94,21.0084
+only countries with at least 0.1% of world usage,ln_index,70,0.9967,0.0667,0.7741,drops countries with the smallest samples,-0.3161,0.729,53,24.2857
+April 2026 only,ln_index,113,0.9979,0.0492,0.7927,index of one month; 7 countries lack an April value,-0.2494,0.7792,82,27.4336
+May 2026 only,ln_index,120,0.9471,0.0398,0.8135,index of one month,-0.4003,0.6701,99,17.5
+"outcome is ln(share of world usage), regress on ln GDP per capita and ln working-age population",ln_usage_pct,120,0.9304,0.0435,0.9031,coefficient on ln working-age population 0.91 (SE 0.03); the index forces it to 1,0.0411,1.042,59,50.8333
+HC3 standard errors,ln_index,120,0.9623,0.0415,0.8131,HC3 standard error of the GDP coefficient; residuals are unchanged,-0.3372,0.7138,94,21.6667
+quadratic in ln GDP per capita,ln_index,120,-0.0026,0.588,0.8159,squared term 0.050 (SE 0.031),-0.2961,0.7437,95,20.8333
+World Bank lower-middle-income countries only,ln_index,29,0.635,0.2677,0.182,,-0.194,0.8237,20,31.0345
+"full controls (C4), common sample",ln_index,106,0.59,0.0824,0.8456,,0.0792,1.0824,49,53.7736
+GDP plus services share of employment only (larger sample than C4),ln_index,119,0.6946,0.0664,0.8433,,0.0676,1.0699,56,52.9412
+full controls with agriculture share in place of services share,ln_index,106,0.6613,0.0928,0.8329,,-0.0542,0.9473,57,46.2264

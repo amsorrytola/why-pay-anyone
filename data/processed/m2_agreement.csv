@@ -1,0 +1,53 @@
+measure_a,measure_b,sample,weighting,statistic,n,estimate,ci_low,ci_high
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell,unweighted,spearman,591,0.453,0.381,0.52
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell,employment,spearman,591,0.54,0.369,0.66
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell,unweighted,kendall_tau_b,591,0.327,0.274,0.379
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell,employment,kendall_tau_b,591,0.385,0.257,0.488
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell with a job zone,unweighted,partial_spearman_given_job_zone,591,0.387,0.309,0.456
+ms_applicability,aei_global_share_pct,591 occupations with a published Claude.ai cell,unweighted,within_major_group_spearman,591,0.256,0.179,0.337
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell,unweighted,spearman,591,0.471,0.403,0.537
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell,employment,spearman,591,0.493,0.356,0.601
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell,unweighted,kendall_tau_b,591,0.332,0.282,0.382
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell,employment,kendall_tau_b,591,0.338,0.24,0.431
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell with a job zone,unweighted,partial_spearman_given_job_zone,591,0.386,0.311,0.456
+ms_applicability,aei_usage_ratio,591 occupations with a published Claude.ai cell,unweighted,within_major_group_spearman,591,0.277,0.199,0.353
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share,unweighted,spearman,423,0.321,0.234,0.406
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share,employment,spearman,423,0.386,0.18,0.548
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share,unweighted,kendall_tau_b,423,0.215,0.156,0.275
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share,employment,kendall_tau_b,423,0.253,0.12,0.372
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share with a job zone,unweighted,partial_spearman_given_job_zone,423,0.276,0.186,0.36
+ms_applicability,aei_usage_ratio,423 occupations with positive usage share,unweighted,within_major_group_spearman,423,0.264,0.18,0.354
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity),unweighted,spearman,783,0.59,0.539,0.634
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity),employment,spearman,783,0.578,0.462,0.669
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity),unweighted,kendall_tau_b,783,0.434,0.394,0.469
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity),employment,kendall_tau_b,783,0.413,0.324,0.496
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity) with a job zone,unweighted,partial_spearman_given_job_zone,778,0.456,0.394,0.514
+ms_applicability,aei_usage_ratio (unpublished set to 0),783 occupations with an applicability score (sensitivity),unweighted,within_major_group_spearman,783,0.306,0.241,0.374
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell,unweighted,spearman,396,0.296,0.201,0.386
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell,employment,spearman,396,0.456,0.273,0.593
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell,unweighted,kendall_tau_b,396,0.213,0.146,0.278
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell,employment,kendall_tau_b,396,0.309,0.178,0.427
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell with a job zone,unweighted,partial_spearman_given_job_zone,396,0.295,0.204,0.387
+ms_applicability,aei_india_share_pct,396 occupations with a published India cell,unweighted,within_major_group_spearman,396,0.228,0.113,0.316
+ms_applicability,aei_automation_pct,423 occupations with positive usage share,unweighted,spearman,423,-0.21,-0.301,-0.114
+ms_applicability,aei_automation_pct,423 occupations with positive usage share,employment,spearman,423,-0.091,-0.308,0.146
+ms_applicability,aei_automation_pct,423 occupations with positive usage share,unweighted,kendall_tau_b,423,-0.139,-0.203,-0.073
+ms_applicability,aei_automation_pct,423 occupations with positive usage share,employment,kendall_tau_b,423,-0.049,-0.205,0.113
+ms_applicability,aei_automation_pct,423 occupations with positive usage share with a job zone,unweighted,partial_spearman_given_job_zone,423,-0.136,-0.233,-0.036
+ms_applicability,aei_automation_pct,423 occupations with positive usage share,unweighted,within_major_group_spearman,423,-0.161,-0.259,-0.067
+aei_usage_ratio,aei_automation_pct,423 occupations with positive usage share,unweighted,spearman,423,-0.172,-0.262,-0.077
+aei_usage_ratio,aei_automation_pct,423 occupations with positive usage share,employment,spearman,423,-0.064,-0.252,0.13
+aei_usage_ratio,aei_automation_pct,423 occupations with positive usage share,unweighted,kendall_tau_b,423,-0.115,-0.176,-0.051
+aei_usage_ratio,aei_automation_pct,423 occupations with positive usage share,employment,kendall_tau_b,423,-0.048,-0.181,0.095
+employment,aei_global_share_pct,591 occupations with a published Claude.ai cell,unweighted,spearman,591,0.248,0.168,0.327
+employment,aei_global_share_pct,591 occupations with a published Claude.ai cell,employment,spearman,591,0.23,0.002,0.414
+employment,aei_global_share_pct,591 occupations with a published Claude.ai cell,unweighted,kendall_tau_b,591,0.176,0.12,0.233
+employment,aei_global_share_pct,591 occupations with a published Claude.ai cell,employment,kendall_tau_b,591,0.162,0.005,0.295
+employment,ms_applicability,591 occupations with a published Claude.ai cell,unweighted,spearman,591,-0.014,-0.091,0.069
+employment,ms_applicability,591 occupations with a published Claude.ai cell,employment,spearman,591,0.053,-0.164,0.28
+employment,ms_applicability,591 occupations with a published Claude.ai cell,unweighted,kendall_tau_b,591,-0.009,-0.061,0.047
+employment,ms_applicability,591 occupations with a published Claude.ai cell,employment,kendall_tau_b,591,0.041,-0.114,0.198
+ms_applicability (group mean),aei_usage_ratio (group),22 SOC major groups,unweighted,spearman,22,0.8,0.566,0.911
+ms_applicability (group mean),aei_usage_ratio (group),22 SOC major groups,employment,spearman,22,0.776,0.487,0.935
+ms_applicability (group mean),aei_usage_ratio (group),22 SOC major groups,unweighted,kendall_tau_b,22,0.602,0.416,0.769
+ms_applicability (group mean),aei_usage_ratio (group),22 SOC major groups,employment,kendall_tau_b,22,0.594,0.353,0.832

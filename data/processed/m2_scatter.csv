@@ -1,0 +1,831 @@
+soc,title,major_group,major_group_name,employment,annual_mean,ms_applicability,aei_global_share_pct,aei_india_share_pct,aei_usage_ratio,aei_automation_pct,job_zone,ms_pct_rank,aei_ratio_pct_rank,rank_gap_ratio,aei_status,small_employment
+11-1011,Chief Executives,11,Management,204350,269630.0,0.156,0.16,0.12,1.217,52.98,5.0,0.426,0.675,0.249,positive,no
+11-1021,General and Operations Managers,11,Management,3503020,134940.0,0.11,0.205,0.225,0.091,43.87,4.0,0.242,0.349,0.107,positive,no
+11-2011,Advertising and Promotions Managers,11,Management,21470,154280.0,0.189,0.665,0.765,48.158,32.74,4.0,0.565,0.961,0.396,positive,no
+11-2021,Marketing Managers,11,Management,395240,177770.0,0.189,0.515,0.57,2.026,39.16,4.0,0.57,0.746,0.176,positive,no
+11-2022,Sales Managers,11,Management,637080,164350.0,0.164,0.11,0.08,0.268,47.87,4.0,0.469,0.437,-0.032,positive,no
+11-2032,Public Relations Managers,11,Management,74850,164760.0,0.222,0.17,0.17,3.531,32.89,4.0,0.665,0.795,0.13,positive,no
+11-2033,Fundraising Managers,11,Management,38810,140020.0,0.143,0.045,0.06,1.803,32.23,4.0,0.381,0.728,0.347,positive,no
+11-3012,Administrative Services Managers,11,Management,263960,129870.0,0.087,0.135,0.075,0.795,64.99,3.0,0.173,0.594,0.421,positive,no
+11-3013,Facilities Managers,11,Management,156180,116890.0,0.062,0.035,0.03,0.348,71.42,3.5,0.078,0.47,0.393,positive,no
+11-3021,Computer and Information Systems Managers,11,Management,670570,192160.0,0.152,0.44,0.315,1.02,64.42,4.0,0.416,0.641,0.225,positive,no
+11-3031,Financial Managers,11,Management,841710,186910.0,0.149,0.335,0.265,0.619,42.38,4.3,0.408,0.56,0.152,positive,no
+11-3051,Industrial Production Managers,11,Management,246250,134170.0,0.12,0.52,0.485,3.283,52.29,3.7,0.286,0.794,0.508,positive,no
+11-3061,Purchasing Managers,11,Management,84320,156360.0,0.105,0.03,0.03,0.553,36.22,4.0,0.232,0.538,0.306,positive,no
+11-3071,"Transportation, Storage, and Distribution Managers",11,Management,221180,121600.0,0.205,0.155,0.095,1.09,43.41,4.0,0.618,0.655,0.037,positive,no
+11-3111,Compensation and Benefits Managers,11,Management,22940,162640.0,0.141,0.02,0.015,1.356,37.94,4.0,0.372,0.694,0.321,positive,no
+11-3121,Human Resources Managers,11,Management,220660,164230.0,0.137,0.02,0.01,0.141,42.78,4.0,0.35,0.381,0.03,positive,no
+11-3131,Training and Development Managers,11,Management,48050,148370.0,0.193,0.2,0.325,6.472,57.85,4.0,0.58,0.856,0.276,positive,no
+11-9013,"Farmers, Ranchers, and Other Agricultural Managers",11,Management,6500,99820.0,0.076,0.02,0.015,4.784,41.1,4.0,0.134,0.829,0.695,positive,yes
+11-9021,Construction Managers,11,Management,380360,124360.0,0.145,0.01,,0.041,50.4,4.0,0.393,0.303,-0.09,positive,no
+11-9031,"Education and Childcare Administrators, Preschool and Daycare",11,Management,73660,64800.0,0.125,0.02,0.01,0.422,37.22,4.0,0.313,0.491,0.178,positive,no
+11-9032,"Education Administrators, Kindergarten through Secondary",11,Management,328330,116100.0,0.135,0.485,1.16,2.297,27.07,5.0,0.343,0.756,0.413,positive,no
+11-9033,"Education Administrators, Postsecondary",11,Management,180470,126540.0,0.096,0.425,1.0,3.662,33.58,5.0,0.21,0.802,0.592,positive,no
+11-9039,"Education Administrators, All Other",11,Management,55130,101900.0,,,,,,,,,,not_published,no
+11-9041,Architectural and Engineering Managers,11,Management,220260,181540.0,0.163,0.06,0.05,0.424,46.46,4.5,0.462,0.494,0.032,positive,no
+11-9051,Food Service Managers,11,Management,238430,74880.0,0.091,0.125,0.06,0.815,51.2,2.0,0.193,0.597,0.404,positive,no
+11-9071,Gambling Managers,11,Management,5030,103050.0,0.185,0.0,,0.0,,2.0,0.56,0.143,-0.417,zero,yes
+11-9072,"Entertainment and Recreation Managers, Except Gambling",11,Management,37980,89750.0,0.253,0.06,0.045,2.456,40.8,4.0,0.753,0.765,0.012,positive,no
+11-9081,Lodging Managers,11,Management,42620,78740.0,0.183,0.03,0.02,1.094,61.9,4.0,0.555,0.657,0.102,positive,no
+11-9111,Medical and Health Services Managers,11,Management,597080,140970.0,0.163,0.05,0.035,0.13,62.46,4.0,0.46,0.374,-0.086,positive,no
+11-9121,Natural Sciences Managers,11,Management,108690,180250.0,0.112,0.11,0.075,1.574,45.91,4.3,0.255,0.709,0.453,positive,no
+11-9131,Postmasters and Mail Superintendents,11,Management,13810,97360.0,0.109,0.015,0.01,1.689,63.12,2.0,0.239,0.719,0.481,positive,no
+11-9141,"Property, Real Estate, and Community Association Managers",11,Management,311180,83710.0,0.139,0.01,,0.05,45.14,4.0,0.362,0.313,-0.049,positive,no
+11-9151,Social and Community Service Managers,11,Management,209330,88880.0,0.156,0.05,0.02,0.371,34.07,4.0,0.428,0.477,0.049,positive,no
+11-9161,Emergency Management Directors,11,Management,13500,102420.0,0.198,0.0,,0.0,,4.0,0.594,0.143,-0.451,zero,no
+11-9171,Funeral Home Managers,11,Management,13910,92840.0,0.166,0.07,0.065,7.824,55.52,3.0,0.474,0.871,0.398,positive,no
+11-9179,"Personal Service Managers, All Other",11,Management,10450,78190.0,0.146,0.325,0.27,48.356,50.26,3.5,0.403,0.963,0.56,positive,no
+11-9199,"Managers, All Other",11,Management,622190,153890.0,0.146,0.135,0.12,0.337,42.58,3.8,0.399,0.465,0.066,positive,no
+13-1011,"Agents and Business Managers of Artists, Performers, and Athletes",13,Business and Financial Operations,12620,141580.0,0.269,0.12,0.085,14.784,28.98,4.0,0.79,0.909,0.118,positive,no
+13-1020,Buyers and Purchasing Agents,13,Business and Financial Operations,491430,83770.0,0.203,,,,,3.7,,,,not_published,no
+13-1031,"Claims Adjusters, Examiners, and Investigators",13,Business and Financial Operations,324230,80470.0,0.207,0.01,0.01,0.048,38.14,4.0,0.628,0.31,-0.318,positive,no
+13-1032,"Insurance Appraisers, Auto Damage",13,Business and Financial Operations,11560,78900.0,0.272,0.0,,0.0,,3.0,0.794,0.143,-0.651,zero,no
+13-1041,Compliance Officers,13,Business and Financial Operations,417070,88400.0,0.199,0.235,0.16,0.876,45.23,3.6,0.599,0.618,0.019,positive,no
+13-1051,Cost Estimators,13,Business and Financial Operations,224220,85390.0,0.255,0.01,0.01,0.069,50.24,4.0,0.756,0.327,-0.43,positive,no
+13-1071,Human Resources Specialists,13,Business and Financial Operations,912430,81990.0,0.201,0.03,0.03,0.051,44.24,4.0,0.606,0.316,-0.289,positive,no
+13-1074,Farm Labor Contractors,13,Business and Financial Operations,310,58470.0,0.04,,,,,2.0,,,,not_published,yes
+13-1075,Labor Relations Specialists,13,Business and Financial Operations,64810,98720.0,0.067,0.0,,0.0,,4.0,0.093,0.143,0.05,zero,no
+13-1081,Logisticians,13,Business and Financial Operations,251040,89730.0,0.162,0.17,0.165,1.053,57.85,4.0,0.455,0.648,0.193,positive,no
+13-1082,Project Management Specialists,13,Business and Financial Operations,1066670,110740.0,0.182,0.175,0.135,0.255,52.08,4.0,0.552,0.43,-0.122,positive,no
+13-1111,Management Analysts,13,Business and Financial Operations,898280,113790.0,0.353,0.15,0.135,0.26,44.95,4.0,0.963,0.433,-0.53,positive,no
+13-1121,"Meeting, Convention, and Event Planners",13,Business and Financial Operations,142860,66520.0,0.147,0.115,0.1,1.252,37.14,4.0,0.404,0.682,0.277,positive,no
+13-1131,Fundraisers,13,Business and Financial Operations,111040,77200.0,0.123,0.06,0.075,0.84,35.3,4.0,0.298,0.604,0.306,positive,no
+13-1141,"Compensation, Benefits, and Job Analysis Specialists",13,Business and Financial Operations,112380,84330.0,0.167,0.02,0.02,0.277,42.07,4.0,0.479,0.442,-0.037,positive,no
+13-1151,Training and Development Specialists,13,Business and Financial Operations,458300,75550.0,0.242,0.13,0.19,0.441,47.49,4.0,0.711,0.501,-0.21,positive,no
+13-1161,Market Research Analysts and Marketing Specialists,13,Business and Financial Operations,899580,89490.0,0.35,0.565,0.745,0.977,52.23,4.0,0.958,0.631,-0.327,positive,no
+13-1199,"Business Operations Specialists, All Other",13,Business and Financial Operations,1087090,93970.0,0.219,0.745,0.855,1.066,45.37,4.0,0.655,0.65,-0.005,positive,no
+13-2011,Accountants and Auditors,13,Business and Financial Operations,1449500,94750.0,0.195,0.115,0.09,0.123,44.89,4.0,0.585,0.369,-0.217,positive,no
+13-2020,Property Appraisers and Assessors,13,Business and Financial Operations,57070,75770.0,0.229,,,,,4.0,,,,not_published,no
+13-2031,Budget Analysts,13,Business and Financial Operations,47160,96370.0,0.234,0.03,0.03,0.989,35.38,4.0,0.69,0.638,-0.052,positive,no
+13-2041,Credit Analysts,13,Business and Financial Operations,64390,100850.0,0.162,0.01,0.01,0.241,50.41,4.0,0.452,0.426,-0.025,positive,no
+13-2051,Financial and Investment Analysts,13,Business and Financial Operations,361980,116800.0,0.278,0.205,0.205,0.881,44.32,4.0,0.804,0.619,-0.184,positive,no
+13-2052,Personal Financial Advisors,13,Business and Financial Operations,266800,156670.0,0.355,0.255,0.275,1.486,41.34,4.0,0.968,0.706,-0.262,positive,no
+13-2053,Insurance Underwriters,13,Business and Financial Operations,105420,93700.0,0.161,0.0,,0.0,,4.0,0.45,0.143,-0.307,zero,no
+13-2054,Financial Risk Specialists,13,Business and Financial Operations,63850,124420.0,0.241,0.335,0.275,8.158,42.75,4.0,0.709,0.875,0.166,positive,no
+13-2061,Financial Examiners,13,Business and Financial Operations,67830,106240.0,0.139,0.08,0.06,1.834,37.82,4.0,0.36,0.733,0.372,positive,no
+13-2071,Credit Counselors,13,Business and Financial Operations,27770,57210.0,0.289,1.435,1.235,80.344,34.99,4.0,0.821,0.981,0.161,positive,no
+13-2072,Loan Officers,13,Business and Financial Operations,274330,87790.0,0.247,0.085,0.055,0.482,61.08,4.0,0.726,0.513,-0.213,positive,no
+13-2081,"Tax Examiners and Collectors, and Revenue Agents",13,Business and Financial Operations,56610,70520.0,0.34,0.01,0.01,0.275,54.24,3.0,0.948,0.44,-0.508,positive,no
+13-2082,Tax Preparers,13,Business and Financial Operations,76480,60930.0,0.312,0.075,0.03,1.525,45.7,3.0,0.871,0.707,-0.164,positive,no
+13-2099,"Financial Specialists, All Other",13,Business and Financial Operations,132130,93810.0,0.246,0.235,0.21,2.765,35.4,4.5,0.723,0.775,0.052,positive,no
+15-1211,Computer Systems Analysts,15,Computer and Mathematical,519530,114610.0,0.313,1.97,2.29,5.896,83.84,4.5,0.875,0.853,-0.022,positive,no
+15-1212,Information Security Analysts,15,Computer and Mathematical,190650,132510.0,0.222,0.01,,0.082,75.42,4.0,0.662,0.337,-0.325,positive,no
+15-1221,Computer and Information Research Scientists,15,Computer and Mathematical,37200,153930.0,0.169,0.085,0.085,3.553,58.2,5.0,0.489,0.797,0.308,positive,no
+15-1231,Computer Network Support Specialists,15,Computer and Mathematical,146190,81870.0,0.302,0.085,0.06,0.904,80.53,4.0,0.846,0.623,-0.223,positive,no
+15-1232,Computer User Support Specialists,15,Computer and Mathematical,717190,67330.0,0.334,2.215,2.005,4.802,65.14,3.0,0.939,0.832,-0.107,positive,no
+15-1241,Computer Network Architects,15,Computer and Mathematical,179740,139580.0,0.252,0.135,0.095,1.168,76.2,3.5,0.746,0.665,-0.081,positive,no
+15-1242,Database Administrators,15,Computer and Mathematical,69990,110090.0,0.297,0.14,0.195,3.11,62.76,4.0,0.836,0.787,-0.049,positive,no
+15-1243,Database Architects,15,Computer and Mathematical,67140,144440.0,0.312,1.82,2.85,42.147,60.57,4.0,0.873,0.951,0.078,positive,no
+15-1244,Network and Computer Systems Administrators,15,Computer and Mathematical,314340,103680.0,0.253,0.175,0.16,0.866,67.09,3.0,0.748,0.611,-0.137,positive,no
+15-1251,Computer Programmers,15,Computer and Mathematical,92230,105170.0,0.31,1.675,2.57,28.237,63.1,4.0,0.866,0.942,0.076,positive,no
+15-1252,Software Developers,15,Computer and Mathematical,1687890,148100.0,0.278,0.345,0.47,0.318,60.57,4.0,0.8,0.462,-0.338,positive,no
+15-1253,Software Quality Assurance Analysts and Testers,15,Computer and Mathematical,186740,111490.0,0.328,1.35,1.91,11.24,75.27,4.0,0.912,0.893,-0.019,positive,no
+15-1254,Web Developers,15,Computer and Mathematical,70190,98770.0,0.353,0.64,0.97,14.177,54.94,3.0,0.966,0.907,-0.059,positive,no
+15-1255,Web and Digital Interface Designers,15,Computer and Mathematical,113330,117490.0,0.294,1.885,2.625,25.861,50.87,4.0,0.826,0.932,0.107,positive,no
+15-1299,"Computer Occupations, All Other",15,Computer and Mathematical,435370,122230.0,0.298,7.77,6.69,27.749,67.81,3.9,0.838,0.939,0.102,positive,no
+15-2011,Actuaries,15,Computer and Mathematical,26670,141480.0,0.158,0.07,0.04,4.081,34.68,4.0,0.438,0.814,0.376,positive,no
+15-2021,Mathematicians,15,Computer and Mathematical,2030,129260.0,0.386,0.995,1.105,762.091,45.97,5.0,0.985,1.0,0.015,positive,yes
+15-2031,Operations Research Analysts,15,Computer and Mathematical,108510,99730.0,0.307,0.335,0.295,4.8,52.86,5.0,0.86,0.831,-0.029,positive,no
+15-2041,Statisticians,15,Computer and Mathematical,29030,115700.0,0.315,0.465,0.45,24.905,43.84,5.0,0.883,0.927,0.044,positive,no
+15-2051,Data Scientists,15,Computer and Mathematical,262440,126800.0,0.357,1.36,1.445,8.057,55.81,4.0,0.97,0.873,-0.096,positive,no
+15-2099,"Mathematical Science Occupations, All Other",15,Computer and Mathematical,3720,91550.0,0.336,0.365,0.34,152.556,48.82,4.0,0.941,0.993,0.052,positive,yes
+17-1011,"Architects, Except Landscape and Naval",17,Architecture and Engineering,106770,106260.0,0.175,0.045,0.04,0.655,46.95,5.0,0.518,0.567,0.049,positive,no
+17-1012,Landscape Architects,17,Architecture and Engineering,19600,88780.0,0.218,0.015,0.01,1.19,47.37,4.0,0.653,0.67,0.017,positive,no
+17-1021,Cartographers and Photogrammetrists,17,Architecture and Engineering,14260,86690.0,0.176,0.02,0.01,2.181,86.36,4.0,0.519,0.748,0.228,positive,no
+17-1022,Surveyors,17,Architecture and Engineering,50830,80570.0,0.149,0.06,0.045,1.835,62.51,4.0,0.409,0.736,0.327,positive,no
+17-2011,Aerospace Engineers,17,Architecture and Engineering,67710,142060.0,0.196,0.07,0.07,1.607,50.52,4.0,0.587,0.714,0.127,positive,no
+17-2021,Agricultural Engineers,17,Architecture and Engineering,1480,108230.0,0.153,0.02,0.015,21.011,31.02,4.0,0.418,0.924,0.506,positive,yes
+17-2031,Bioengineers and Biomedical Engineers,17,Architecture and Engineering,23480,116890.0,0.298,0.02,0.04,1.324,54.71,4.0,0.843,0.687,-0.156,positive,no
+17-2041,Chemical Engineers,17,Architecture and Engineering,21070,129980.0,0.172,0.0,,0.0,,4.0,0.503,0.143,-0.36,zero,no
+17-2051,Civil Engineers,17,Architecture and Engineering,367840,108670.0,0.205,0.1,0.09,0.423,41.92,4.0,0.621,0.492,-0.129,positive,no
+17-2061,Computer Hardware Engineers,17,Architecture and Engineering,76660,162670.0,0.315,0.865,1.205,17.544,45.22,4.0,0.88,0.915,0.036,positive,no
+17-2071,Electrical Engineers,17,Architecture and Engineering,198750,125100.0,0.11,0.02,0.025,0.156,58.89,4.0,0.245,0.387,0.142,positive,no
+17-2072,"Electronics Engineers, Except Computer",17,Architecture and Engineering,96900,137280.0,0.274,0.2,0.195,3.209,36.28,4.0,0.795,0.792,-0.003,positive,no
+17-2081,Environmental Engineers,17,Architecture and Engineering,38340,112910.0,0.208,0.03,0.02,1.217,47.45,4.0,0.629,0.673,0.044,positive,no
+17-2111,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",17,Architecture and Engineering,21450,119770.0,0.24,0.02,0.01,1.45,46.57,4.0,0.702,0.701,-0.002,positive,no
+17-2112,Industrial Engineers,17,Architecture and Engineering,365740,109900.0,0.253,0.24,0.23,1.02,47.1,4.2,0.751,0.643,-0.108,positive,no
+17-2121,Marine Engineers and Naval Architects,17,Architecture and Engineering,8250,124180.0,0.2,0.02,0.01,3.769,47.06,4.0,0.602,0.807,0.205,positive,yes
+17-2131,Materials Engineers,17,Architecture and Engineering,22770,120250.0,0.179,0.02,0.02,1.366,37.36,4.0,0.53,0.695,0.166,positive,no
+17-2141,Mechanical Engineers,17,Architecture and Engineering,296810,113610.0,0.257,0.53,0.5,2.776,49.06,4.0,0.766,0.777,0.01,positive,no
+17-2151,"Mining and Geological Engineers, Including Mining Safety Engineers",17,Architecture and Engineering,6080,115410.0,0.225,0.0,0.01,0.0,,4.0,0.67,0.143,-0.527,zero,yes
+17-2161,Nuclear Engineers,17,Architecture and Engineering,15280,140420.0,0.209,0.01,0.01,1.018,62.15,4.0,0.633,0.64,0.007,positive,no
+17-2171,Petroleum Engineers,17,Architecture and Engineering,18060,157150.0,0.2,0.01,0.01,0.861,41.48,4.0,0.604,0.609,0.005,positive,no
+17-2199,"Engineers, All Other",17,Architecture and Engineering,154070,125330.0,0.211,0.48,0.515,4.844,43.41,4.2,0.636,0.836,0.2,positive,no
+17-3011,Architectural and Civil Drafters,17,Architecture and Engineering,103700,70740.0,0.222,0.025,0.015,0.375,38.06,3.0,0.663,0.481,-0.183,positive,no
+17-3012,Electrical and Electronics Drafters,17,Architecture and Engineering,17920,81280.0,0.308,0.01,0.01,0.868,62.66,3.0,0.861,0.613,-0.249,positive,no
+17-3013,Mechanical Drafters,17,Architecture and Engineering,39960,75060.0,0.173,0.03,0.03,1.167,38.63,3.0,0.513,0.663,0.151,positive,no
+17-3019,"Drafters, All Other",17,Architecture and Engineering,14470,68250.0,,,,,,,,,,not_published,no
+17-3021,Aerospace Engineering and Operations Technologists and Technicians,17,Architecture and Engineering,11280,91310.0,0.228,,,,,3.0,,,,not_published,no
+17-3022,Civil Engineering Technologists and Technicians,17,Architecture and Engineering,68520,68990.0,0.199,0.05,0.03,1.135,67.4,3.0,0.601,0.66,0.059,positive,no
+17-3023,Electrical and Electronic Engineering Technologists and Technicians,17,Architecture and Engineering,95130,80680.0,0.203,0.01,0.01,0.163,53.5,3.0,0.609,0.398,-0.212,positive,no
+17-3024,Electro-Mechanical and Mechatronics Technologists and Technicians,17,Architecture and Engineering,15520,76420.0,0.168,0.02,0.02,2.004,64.48,3.0,0.484,0.743,0.259,positive,no
+17-3025,Environmental Engineering Technologists and Technicians,17,Architecture and Engineering,12190,64870.0,0.18,0.23,0.185,29.336,40.24,4.0,0.535,0.944,0.409,positive,no
+17-3026,Industrial Engineering Technologists and Technicians,17,Architecture and Engineering,75570,70700.0,0.174,0.15,0.18,3.086,35.02,3.5,0.514,0.783,0.269,positive,no
+17-3027,Mechanical Engineering Technologists and Technicians,17,Architecture and Engineering,36190,76380.0,0.225,0.205,0.25,8.807,30.01,3.0,0.672,0.882,0.21,positive,no
+17-3028,Calibration Technologists and Technicians,17,Architecture and Engineering,16540,74170.0,0.262,0.0,,0.0,,3.0,0.782,0.143,-0.639,zero,no
+17-3029,"Engineering Technologists and Technicians, Except Drafters, All Other",17,Architecture and Engineering,59930,80960.0,0.204,0.0,,0.0,,2.5,0.611,0.143,-0.468,zero,no
+17-3031,Surveying and Mapping Technicians,17,Architecture and Engineering,58010,58000.0,0.218,0.01,0.01,0.268,56.72,3.0,0.646,0.435,-0.212,positive,no
+19-1011,Animal Scientists,19,"Life, Physical, and Social Science",3100,88350.0,0.262,0.0,,0.0,,5.0,0.78,0.143,-0.637,zero,yes
+19-1012,Food Scientists and Technologists,19,"Life, Physical, and Social Science",13060,95360.0,0.259,0.0,,0.0,,4.0,0.772,0.143,-0.629,zero,no
+19-1013,Soil and Plant Scientists,19,"Life, Physical, and Social Science",15730,87720.0,0.182,0.005,,0.494,55.7,5.0,0.55,0.516,-0.034,positive,no
+19-1021,Biochemists and Biophysicists,19,"Life, Physical, and Social Science",33830,129840.0,0.251,0.0,,0.0,,5.0,0.745,0.143,-0.602,zero,no
+19-1022,Microbiologists,19,"Life, Physical, and Social Science",18940,97600.0,0.177,0.01,0.01,0.821,45.38,4.0,0.523,0.599,0.076,positive,no
+19-1023,Zoologists and Wildlife Biologists,19,"Life, Physical, and Social Science",18120,83020.0,0.212,0.01,0.01,0.858,48.18,4.0,0.641,0.607,-0.034,positive,no
+19-1029,"Biological Scientists, All Other",19,"Life, Physical, and Social Science",55850,106330.0,0.24,0.615,0.73,17.121,51.11,5.0,0.706,0.912,0.206,positive,no
+19-1031,Conservation Scientists,19,"Life, Physical, and Social Science",25950,77130.0,0.155,0.01,0.01,0.599,54.79,4.0,0.423,0.553,0.13,positive,no
+19-1032,Foresters,19,"Life, Physical, and Social Science",10430,79170.0,0.07,,,,,4.0,,,,not_published,no
+19-1041,Epidemiologists,19,"Life, Physical, and Social Science",12090,97890.0,0.177,0.035,0.04,4.501,37.11,5.0,0.526,0.821,0.294,positive,no
+19-1042,"Medical Scientists, Except Epidemiologists",19,"Life, Physical, and Social Science",172340,116840.0,0.192,0.01,0.01,0.09,25.2,5.0,0.575,0.347,-0.228,positive,no
+19-1099,"Life Scientists, All Other",19,"Life, Physical, and Social Science",7460,107860.0,,,,,,,,,,not_published,yes
+19-2011,Astronomers,19,"Life, Physical, and Social Science",2120,132920.0,0.281,0.09,0.075,66.006,53.72,5.0,0.807,0.976,0.169,positive,yes
+19-2012,Physicists,19,"Life, Physical, and Social Science",20430,171180.0,0.235,0.11,0.13,8.372,50.91,5.0,0.694,0.878,0.184,positive,no
+19-2021,Atmospheric and Space Scientists,19,"Life, Physical, and Social Science",10000,106110.0,0.321,0.02,0.025,3.11,22.94,4.0,0.892,0.785,-0.107,positive,no
+19-2031,Chemists,19,"Life, Physical, and Social Science",82770,100450.0,0.238,0.06,0.055,1.127,69.19,4.0,0.699,0.658,-0.041,positive,no
+19-2032,Materials Scientists,19,"Life, Physical, and Social Science",8470,126180.0,0.245,0.075,0.12,13.768,37.25,4.0,0.719,0.905,0.186,positive,yes
+19-2041,"Environmental Scientists and Specialists, Including Health",19,"Life, Physical, and Social Science",89250,91680.0,0.172,0.135,0.25,2.352,17.88,4.8,0.506,0.76,0.254,positive,no
+19-2042,"Geoscientists, Except Hydrologists and Geographers",19,"Life, Physical, and Social Science",23470,116150.0,0.174,0.0,,0.0,,4.0,0.516,0.143,-0.373,zero,no
+19-2043,Hydrologists,19,"Life, Physical, and Social Science",5850,103600.0,0.18,0.0,,0.0,,4.0,0.541,0.143,-0.398,zero,yes
+19-2099,"Physical Scientists, All Other",19,"Life, Physical, and Social Science",22300,129230.0,0.17,0.11,0.145,7.67,46.8,4.0,0.494,0.87,0.376,positive,no
+19-3011,Economists,19,"Life, Physical, and Social Science",17790,142130.0,0.328,0.2,0.17,17.48,42.12,5.0,0.914,0.914,0.0,positive,no
+19-3022,Survey Researchers,19,"Life, Physical, and Social Science",8290,79580.0,0.131,0.01,0.01,1.876,48.61,5.0,0.332,0.738,0.406,positive,yes
+19-3032,Industrial-Organizational Psychologists,19,"Life, Physical, and Social Science",790,170230.0,0.257,0.265,0.295,521.553,40.91,5.0,0.768,0.998,0.23,positive,yes
+19-3033,Clinical and Counseling Psychologists,19,"Life, Physical, and Social Science",75990,112750.0,0.211,0.735,0.9,15.039,36.48,5.0,0.638,0.91,0.272,positive,no
+19-3034,School Psychologists,19,"Life, Physical, and Social Science",63940,99160.0,0.223,0.03,0.015,0.73,33.32,5.0,0.667,0.579,-0.088,positive,no
+19-3039,"Psychologists, All Other",19,"Life, Physical, and Social Science",18820,111210.0,0.194,0.03,0.04,2.478,23.09,5.0,0.582,0.766,0.184,positive,no
+19-3041,Sociologists,19,"Life, Physical, and Social Science",2260,114920.0,0.286,0.14,0.07,96.316,23.21,5.0,0.816,0.983,0.168,positive,yes
+19-3051,Urban and Regional Planners,19,"Life, Physical, and Social Science",44230,94750.0,0.33,0.01,0.01,0.352,47.8,5.0,0.92,0.474,-0.447,positive,no
+19-3091,Anthropologists and Archeologists,19,"Life, Physical, and Social Science",8990,75620.0,0.198,0.06,0.045,10.377,51.39,5.0,0.592,0.888,0.296,positive,yes
+19-3092,Geographers,19,"Life, Physical, and Social Science",1400,102350.0,0.352,0.03,0.03,33.318,39.2,4.0,0.961,0.948,-0.014,positive,yes
+19-3093,Historians,19,"Life, Physical, and Social Science",3450,81240.0,0.462,0.095,0.05,42.814,36.87,5.0,0.998,0.956,-0.042,positive,yes
+19-3094,Political Scientists,19,"Life, Physical, and Social Science",5540,142510.0,0.391,0.1,0.065,28.065,25.64,5.0,0.986,0.941,-0.046,positive,yes
+19-3099,"Social Scientists and Related Workers, All Other",19,"Life, Physical, and Social Science",37100,107690.0,0.329,0.01,0.01,0.419,48.8,4.0,0.917,0.489,-0.428,positive,no
+19-4012,Agricultural Technicians,19,"Life, Physical, and Social Science",15130,53840.0,0.127,0.195,0.26,20.039,27.4,3.0,0.323,0.919,0.596,positive,no
+19-4013,Food Science Technicians,19,"Life, Physical, and Social Science",14600,56660.0,0.093,0.0,,0.0,,3.0,0.205,0.143,-0.062,zero,no
+19-4021,Biological Technicians,19,"Life, Physical, and Social Science",69620,61380.0,0.091,0.08,0.045,1.787,59.96,4.0,0.195,0.726,0.531,positive,no
+19-4031,Chemical Technicians,19,"Life, Physical, and Social Science",57540,63900.0,0.14,0.24,0.315,6.485,48.99,3.0,0.365,0.858,0.492,positive,no
+19-4042,"Environmental Science and Protection Technicians, Including Health",19,"Life, Physical, and Social Science",34670,60800.0,0.154,0.0,,0.0,,4.0,0.42,0.143,-0.277,zero,no
+19-4043,"Geological Technicians, Except Hydrologic Technicians",19,"Life, Physical, and Social Science",6980,61870.0,0.127,0.01,,2.228,91.0,4.0,0.321,0.755,0.433,positive,yes
+19-4044,Hydrologic Technicians,19,"Life, Physical, and Social Science",2840,69530.0,0.234,0.05,0.045,27.374,55.74,3.0,0.692,0.937,0.245,positive,yes
+19-4051,Nuclear Technicians,19,"Life, Physical, and Social Science",6470,108940.0,0.151,,,,,3.0,,,,not_published,yes
+19-4061,Social Science Research Assistants,19,"Life, Physical, and Social Science",30640,66140.0,0.204,0.14,0.14,7.104,57.83,4.0,0.613,0.866,0.254,positive,no
+19-4071,Forest and Conservation Technicians,19,"Life, Physical, and Social Science",30410,59060.0,0.032,0.01,0.01,0.511,57.68,3.0,0.022,0.525,0.503,positive,no
+19-4092,Forensic Science Technicians,19,"Life, Physical, and Social Science",19120,79200.0,0.181,0.0,,0.0,,3.0,0.547,0.143,-0.404,zero,no
+19-4099,"Life, Physical, and Social Science Technicians, All Other",19,"Life, Physical, and Social Science",73910,66280.0,0.164,0.62,0.645,13.043,29.36,3.5,0.464,0.904,0.44,positive,no
+19-5011,Occupational Health and Safety Specialists,19,"Life, Physical, and Social Science",140610,93860.0,0.146,0.11,0.085,1.216,46.96,4.0,0.401,0.672,0.271,positive,no
+19-5012,Occupational Health and Safety Technicians,19,"Life, Physical, and Social Science",30590,68120.0,0.099,0.01,0.01,0.508,29.3,3.0,0.218,0.523,0.305,positive,no
+21-1012,"Educational, Guidance, and Career Counselors and Advisors",21,Community and Social Service,353310,71430.0,0.325,0.19,0.37,0.836,36.97,5.0,0.904,0.602,-0.301,positive,no
+21-1013,Marriage and Family Therapists,21,Community and Social Service,66740,76960.0,0.231,0.52,0.36,12.114,43.38,5.0,0.68,0.898,0.218,positive,no
+21-1015,Rehabilitation Counselors,21,Community and Social Service,94740,51820.0,0.232,0.01,0.01,0.164,51.2,5.0,0.685,0.401,-0.284,positive,no
+21-1018,"Substance Abuse, Behavioral Disorder, and Mental Health Counselors",21,Community and Social Service,491930,64440.0,0.18,,,,,,,,,not_published,no
+21-1019,"Counselors, All Other",21,Community and Social Service,28580,58210.0,,,,,,,,,,not_published,no
+21-1021,"Child, Family, and School Social Workers",21,Community and Social Service,392550,64000.0,0.334,0.04,0.02,0.158,37.6,4.0,0.936,0.391,-0.545,positive,no
+21-1022,Healthcare Social Workers,21,Community and Social Service,187630,71790.0,0.189,0.0,,0.0,,5.0,0.567,0.143,-0.424,zero,no
+21-1023,Mental Health and Substance Abuse Social Workers,21,Community and Social Service,132810,68030.0,0.146,0.01,0.01,0.117,47.65,5.0,0.398,0.364,-0.034,positive,no
+21-1029,"Social Workers, All Other",21,Community and Social Service,62930,75910.0,,,,,,,,,,not_published,no
+21-1091,Health Education Specialists,21,Community and Social Service,65690,73280.0,0.166,0.0,,0.0,,4.0,0.472,0.143,-0.329,zero,no
+21-1092,Probation Officers and Correctional Treatment Specialists,21,Community and Social Service,89390,73130.0,0.288,0.0,,0.0,,4.0,0.819,0.143,-0.676,zero,no
+21-1093,Social and Human Service Assistants,21,Community and Social Service,437860,47690.0,0.255,0.03,0.025,0.107,56.24,4.0,0.758,0.362,-0.396,positive,no
+21-1094,Community Health Workers,21,Community and Social Service,61660,56180.0,0.297,0.355,0.3,8.952,34.74,4.0,0.831,0.883,0.052,positive,no
+21-1099,"Community and Social Service Specialists, All Other",21,Community and Social Service,107730,59590.0,,,,,,,,,,not_published,no
+21-2011,Clergy,21,Community and Social Service,57200,66860.0,0.28,0.17,0.29,4.621,40.33,5.0,0.805,0.826,0.02,positive,no
+21-2021,"Directors, Religious Activities and Education",21,Community and Social Service,22160,62100.0,0.218,0.735,0.715,51.57,40.3,4.0,0.651,0.968,0.316,positive,no
+21-2099,"Religious Workers, All Other",21,Community and Social Service,15760,53870.0,,,,,,,,,,not_published,no
+23-1011,Lawyers,23,Legal,754500,185840.0,0.18,0.595,0.33,1.226,31.95,5.0,0.538,0.677,0.139,positive,no
+23-1012,Judicial Law Clerks,23,Legal,13290,72950.0,0.074,0.07,0.045,8.189,40.71,5.0,0.122,0.876,0.755,positive,no
+23-1021,"Administrative Law Judges, Adjudicators, and Hearing Officers",23,Legal,16370,125990.0,0.14,0.03,0.025,2.849,35.65,5.0,0.371,0.778,0.408,positive,no
+23-1022,"Arbitrators, Mediators, and Conciliators",23,Legal,9210,91010.0,0.112,0.065,0.035,10.973,37.31,5.0,0.252,0.892,0.64,positive,yes
+23-1023,"Judges, Magistrate Judges, and Magistrates",23,Legal,24030,143830.0,0.076,0.01,0.01,0.647,51.0,5.0,0.135,0.565,0.43,positive,no
+23-2011,Paralegals and Legal Assistants,23,Legal,392880,69700.0,0.057,0.185,0.17,0.732,37.48,3.0,0.069,0.58,0.511,positive,no
+23-2093,"Title Examiners, Abstractors, and Searchers",23,Legal,48580,62350.0,0.067,0.02,0.015,0.64,62.04,2.0,0.095,0.563,0.469,positive,no
+23-2099,"Legal Support Workers, All Other",23,Legal,46760,89660.0,,,,,,,,,,not_published,no
+25-1011,"Business Teachers, Postsecondary",25,Educational Instruction and Library,82150,114720.0,0.367,0.035,0.085,0.662,29.85,5.0,0.973,0.569,-0.404,positive,no
+25-1021,"Computer Science Teachers, Postsecondary",25,Educational Instruction and Library,35480,104420.0,0.33,0.01,0.015,0.438,29.14,5.0,0.922,0.499,-0.423,positive,no
+25-1022,"Mathematical Science Teachers, Postsecondary",25,Educational Instruction and Library,47670,91550.0,0.296,0.015,0.02,0.489,29.02,5.0,0.829,0.514,-0.315,positive,no
+25-1031,"Architecture Teachers, Postsecondary",25,Educational Instruction and Library,7700,101250.0,0.329,0.01,0.01,2.019,28.64,5.0,0.915,0.745,-0.171,positive,yes
+25-1032,"Engineering Teachers, Postsecondary",25,Educational Instruction and Library,40270,124520.0,0.331,0.07,0.07,2.703,28.94,5.0,0.927,0.773,-0.154,positive,no
+25-1041,"Agricultural Sciences Teachers, Postsecondary",25,Educational Instruction and Library,8920,102050.0,0.331,0.01,0.01,1.743,28.98,5.0,0.926,0.721,-0.205,positive,yes
+25-1042,"Biological Science Teachers, Postsecondary",25,Educational Instruction and Library,50190,102840.0,0.267,0.115,0.09,3.563,30.3,5.0,0.788,0.799,0.01,positive,no
+25-1043,"Forestry and Conservation Science Teachers, Postsecondary",25,Educational Instruction and Library,1520,102450.0,0.323,0.045,0.03,46.031,29.01,5.0,0.9,0.958,0.058,positive,yes
+25-1051,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",25,Educational Instruction and Library,9900,116020.0,0.297,0.345,0.29,54.183,25.14,5.0,0.834,0.97,0.135,positive,yes
+25-1052,"Chemistry Teachers, Postsecondary",25,Educational Instruction and Library,19980,105210.0,0.25,0.01,0.01,0.778,28.76,5.0,0.738,0.587,-0.151,positive,no
+25-1053,"Environmental Science Teachers, Postsecondary",25,Educational Instruction and Library,6690,103610.0,0.305,0.01,0.01,2.324,29.06,5.0,0.851,0.758,-0.093,positive,yes
+25-1054,"Physics Teachers, Postsecondary",25,Educational Instruction and Library,13090,111460.0,0.306,0.01,0.015,1.188,28.76,5.0,0.854,0.668,-0.186,positive,no
+25-1061,"Anthropology and Archeology Teachers, Postsecondary",25,Educational Instruction and Library,5240,106880.0,0.323,0.09,0.045,26.705,25.78,5.0,0.898,0.936,0.037,positive,yes
+25-1062,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",25,Educational Instruction and Library,11300,98330.0,0.331,0.03,0.075,4.128,29.28,5.0,0.931,0.816,-0.115,positive,no
+25-1063,"Economics Teachers, Postsecondary",25,Educational Instruction and Library,11560,138850.0,0.349,0.01,0.01,1.345,29.16,5.0,0.956,0.69,-0.266,positive,no
+25-1064,"Geography Teachers, Postsecondary",25,Educational Instruction and Library,3330,102350.0,0.322,0.01,0.01,4.669,29.24,5.0,0.893,0.827,-0.066,positive,yes
+25-1065,"Political Science Teachers, Postsecondary",25,Educational Instruction and Library,16970,108100.0,0.339,0.01,0.01,0.916,29.2,5.0,0.946,0.624,-0.321,positive,no
+25-1066,"Psychology Teachers, Postsecondary",25,Educational Instruction and Library,41530,93860.0,0.31,0.01,0.01,0.374,29.0,5.0,0.865,0.479,-0.386,positive,no
+25-1067,"Sociology Teachers, Postsecondary",25,Educational Instruction and Library,11850,96980.0,0.327,0.01,0.01,1.312,29.21,5.0,0.91,0.685,-0.225,positive,no
+25-1069,"Social Sciences Teachers, Postsecondary, All Other",25,Educational Instruction and Library,16580,88390.0,,,,,,,,,,not_published,no
+25-1071,"Health Specialties Teachers, Postsecondary",25,Educational Instruction and Library,221270,147570.0,0.315,0.01,0.01,0.07,29.16,5.0,0.882,0.33,-0.552,positive,no
+25-1072,"Nursing Instructors and Teachers, Postsecondary",25,Educational Instruction and Library,77960,86410.0,0.296,0.01,0.01,0.199,28.58,5.0,0.827,0.413,-0.415,positive,no
+25-1081,"Education Teachers, Postsecondary",25,Educational Instruction and Library,60830,79350.0,0.33,0.01,0.01,0.256,29.22,5.0,0.919,0.431,-0.487,positive,no
+25-1082,"Library Science Teachers, Postsecondary",25,Educational Instruction and Library,3630,88110.0,0.341,0.01,0.015,4.283,29.48,5.0,0.949,0.817,-0.132,positive,yes
+25-1111,"Criminal Justice and Law Enforcement Teachers, Postsecondary",25,Educational Instruction and Library,13150,87550.0,0.334,0.01,0.01,1.182,29.18,5.0,0.937,0.667,-0.271,positive,no
+25-1112,"Law Teachers, Postsecondary",25,Educational Instruction and Library,20060,144770.0,0.326,0.01,0.01,0.775,28.64,5.0,0.907,0.585,-0.321,positive,no
+25-1113,"Social Work Teachers, Postsecondary",25,Educational Instruction and Library,12610,83940.0,0.326,0.04,0.055,4.932,29.7,5.0,0.909,0.843,-0.066,positive,no
+25-1121,"Art, Drama, and Music Teachers, Postsecondary",25,Educational Instruction and Library,93560,94700.0,0.325,0.185,0.285,3.074,33.7,5.0,0.905,0.782,-0.124,positive,no
+25-1122,"Communications Teachers, Postsecondary",25,Educational Instruction and Library,29420,90010.0,0.317,0.01,0.01,0.528,29.2,5.0,0.887,0.531,-0.355,positive,no
+25-1123,"English Language and Literature Teachers, Postsecondary",25,Educational Instruction and Library,57720,89580.0,0.33,0.17,0.13,4.579,30.97,5.0,0.924,0.822,-0.102,positive,no
+25-1124,"Foreign Language and Literature Teachers, Postsecondary",25,Educational Instruction and Library,19830,89990.0,0.333,0.01,0.01,0.784,29.17,5.0,0.934,0.589,-0.345,positive,no
+25-1125,"History Teachers, Postsecondary",25,Educational Instruction and Library,18790,96580.0,0.332,0.01,0.01,0.827,29.18,5.0,0.932,0.601,-0.332,positive,no
+25-1126,"Philosophy and Religion Teachers, Postsecondary",25,Educational Instruction and Library,20460,92040.0,0.338,0.34,0.36,25.838,39.84,5.0,0.944,0.931,-0.014,positive,no
+25-1192,"Family and Consumer Sciences Teachers, Postsecondary",25,Educational Instruction and Library,2770,81940.0,0.322,0.01,0.01,5.613,28.73,5.0,0.895,0.849,-0.046,positive,yes
+25-1193,"Recreation and Fitness Studies Teachers, Postsecondary",25,Educational Instruction and Library,12630,86620.0,0.322,0.01,0.01,1.231,29.18,5.0,0.897,0.679,-0.218,positive,no
+25-1194,"Career/Technical Education Teachers, Postsecondary",25,Educational Instruction and Library,114110,72060.0,0.186,0.37,0.45,5.041,28.44,3.0,0.562,0.844,0.283,positive,no
+25-1199,"Postsecondary Teachers, All Other",25,Educational Instruction and Library,149840,90630.0,,,,,,,,,,not_published,no
+25-2011,"Preschool Teachers, Except Special Education",25,Educational Instruction and Library,478780,43030.0,0.159,0.005,0.0,0.016,39.93,3.0,0.442,0.294,-0.147,positive,no
+25-2012,"Kindergarten Teachers, Except Special Education",25,Educational Instruction and Library,108870,69370.0,0.199,0.02,0.02,0.286,32.88,4.0,0.597,0.448,-0.149,positive,no
+25-2021,"Elementary School Teachers, Except Special Education",25,Educational Instruction and Library,1388390,72650.0,0.189,0.035,0.055,0.039,33.51,4.0,0.569,0.301,-0.267,positive,no
+25-2022,"Middle School Teachers, Except Special and Career/Technical Education",25,Educational Instruction and Library,620090,72030.0,0.177,0.02,0.025,0.05,36.78,4.0,0.525,0.315,-0.21,positive,no
+25-2023,"Career/Technical Education Teachers, Middle School",25,Educational Instruction and Library,16870,71590.0,0.18,0.01,0.01,0.922,35.52,4.0,0.533,0.626,0.093,positive,no
+25-2031,"Secondary School Teachers, Except Special and Career/Technical Education",25,Educational Instruction and Library,1065210,76320.0,0.176,0.0,0.0,0.0,,4.0,0.521,0.143,-0.378,zero,no
+25-2032,"Career/Technical Education Teachers, Secondary School",25,Educational Instruction and Library,111420,72680.0,0.18,0.01,0.025,0.14,34.54,4.0,0.536,0.379,-0.157,positive,no
+25-2051,"Special Education Teachers, Preschool",25,Educational Instruction and Library,29510,76380.0,0.173,0.07,0.05,3.688,41.3,4.0,0.511,0.804,0.293,positive,no
+25-2052,"Special Education Teachers, Kindergarten and Elementary School",25,Educational Instruction and Library,260870,72650.0,0.168,,,,,,,,,not_published,no
+25-2057,"Special Education Teachers, Middle School",25,Educational Instruction and Library,95200,73780.0,0.167,0.01,0.01,0.163,41.38,4.0,0.475,0.396,-0.08,positive,no
+25-2058,"Special Education Teachers, Secondary School",25,Educational Instruction and Library,163930,77260.0,0.198,0.01,0.01,0.095,41.68,4.0,0.596,0.354,-0.242,positive,no
+25-2059,"Special Education Teachers, All Other",25,Educational Instruction and Library,33930,79750.0,0.195,0.005,,0.229,38.25,4.0,0.584,0.421,-0.162,positive,no
+25-3011,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors",25,Educational Instruction and Library,37310,65860.0,0.17,0.075,0.125,3.125,31.51,4.0,0.497,0.79,0.293,positive,no
+25-3021,Self-Enrichment Teachers,25,Educational Instruction and Library,332110,54740.0,0.205,0.1,0.155,0.468,46.1,3.0,0.614,0.509,-0.105,positive,no
+25-3031,"Substitute Teachers, Short-Term",25,Educational Instruction and Library,524770,46420.0,0.229,1.315,2.785,3.896,23.33,4.0,0.677,0.81,0.134,positive,no
+25-3041,Tutors,25,Educational Instruction and Library,175070,48050.0,0.292,1.185,1.955,10.524,48.98,3.0,0.824,0.89,0.066,positive,no
+25-3099,"Teachers and Instructors, All Other",25,Educational Instruction and Library,113790,73880.0,,,,,,,,,,not_published,no
+25-4011,Archivists,25,Educational Instruction and Library,7970,70640.0,0.276,0.105,0.185,20.484,57.66,5.0,0.799,0.922,0.124,positive,yes
+25-4012,Curators,25,Educational Instruction and Library,12150,71560.0,0.248,0.075,0.045,9.598,24.01,5.0,0.729,0.885,0.156,positive,no
+25-4013,Museum Technicians and Conservators,25,Educational Instruction and Library,12310,57410.0,0.193,0.0,,0.0,,5.0,0.577,0.143,-0.434,zero,no
+25-4022,Librarians and Media Collections Specialists,25,Educational Instruction and Library,133790,72840.0,0.254,4.115,3.26,47.822,50.65,5.0,0.755,0.959,0.205,positive,no
+25-4031,Library Technicians,25,Educational Instruction and Library,68690,45500.0,0.256,1.465,1.18,33.161,50.49,3.0,0.76,0.946,0.186,positive,no
+25-9021,Farm and Home Management Educators,25,Educational Instruction and Library,8220,61060.0,0.324,0.03,0.035,5.675,46.1,5.0,0.902,0.851,-0.051,positive,yes
+25-9031,Instructional Coordinators,25,Educational Instruction and Library,227760,80920.0,0.314,0.965,1.39,6.588,47.64,5.0,0.878,0.86,-0.019,positive,no
+25-9044,"Teaching Assistants, Postsecondary",25,Educational Instruction and Library,164090,47670.0,0.215,0.57,0.67,5.401,33.25,5.0,0.643,0.848,0.205,positive,no
+25-9045,"Teaching Assistants, Except Postsecondary",25,Educational Instruction and Library,1420350,38290.0,0.169,,,,,,,,,not_published,no
+25-9099,"Educational Instruction and Library Workers, All Other",25,Educational Instruction and Library,118590,59060.0,,,,,,,,,,not_published,no
+27-1011,Art Directors,27,"Arts, Design, Entertainment, Sports, and Media",53070,129440.0,0.243,0.09,0.115,2.637,46.96,4.0,0.714,0.772,0.058,positive,no
+27-1012,Craft Artists,27,"Arts, Design, Entertainment, Sports, and Media",4580,49740.0,0.198,0.145,0.135,49.225,43.39,3.0,0.591,0.966,0.376,positive,yes
+27-1013,"Fine Artists, Including Painters, Sculptors, and Illustrators",27,"Arts, Design, Entertainment, Sports, and Media",11220,73150.0,0.183,0.145,0.175,20.093,45.82,3.0,0.553,0.92,0.367,positive,no
+27-1014,Special Effects Artists and Animators,27,"Arts, Design, Entertainment, Sports, and Media",19970,112870.0,0.131,0.04,0.085,3.114,53.64,4.0,0.335,0.788,0.453,positive,no
+27-1019,"Artists and Related Workers, All Other",27,"Arts, Design, Entertainment, Sports, and Media",6930,80530.0,,,,,,,,,,not_published,yes
+27-1021,Commercial and Industrial Designers,27,"Arts, Design, Entertainment, Sports, and Media",33490,93260.0,0.209,0.165,0.14,7.66,24.4,4.0,0.631,0.868,0.237,positive,no
+27-1022,Fashion Designers,27,"Arts, Design, Entertainment, Sports, and Media",21450,91230.0,0.271,0.0,0.01,0.0,,3.0,0.792,0.143,-0.649,zero,no
+27-1023,Floral Designers,27,"Arts, Design, Entertainment, Sports, and Media",40590,39520.0,0.17,0.03,0.03,1.149,46.72,2.0,0.496,0.662,0.166,positive,no
+27-1024,Graphic Designers,27,"Arts, Design, Entertainment, Sports, and Media",197830,70560.0,0.228,1.075,1.075,8.449,30.13,4.0,0.675,0.88,0.205,positive,no
+27-1025,Interior Designers,27,"Arts, Design, Entertainment, Sports, and Media",71500,74540.0,0.207,0.04,0.03,0.87,41.76,4.0,0.624,0.616,-0.008,positive,no
+27-1026,Merchandise Displayers and Window Trimmers,27,"Arts, Design, Entertainment, Sports, and Media",165220,42830.0,0.169,0.0,,0.0,,3.0,0.487,0.143,-0.344,zero,no
+27-1027,Set and Exhibit Designers,27,"Arts, Design, Entertainment, Sports, and Media",10630,83160.0,0.24,0.01,,1.463,31.07,5.0,0.704,0.703,-0.001,positive,no
+27-1029,"Designers, All Other",27,"Arts, Design, Entertainment, Sports, and Media",9480,79090.0,,,,,,,,,,not_published,yes
+27-2011,Actors,27,"Arts, Design, Entertainment, Sports, and Media",55000,,0.131,0.155,0.16,4.382,50.9,2.0,0.33,0.819,0.489,positive,no
+27-2012,Producers and Directors,27,"Arts, Design, Entertainment, Sports, and Media",143120,113300.0,0.167,0.145,0.195,1.575,32.84,4.0,0.481,0.711,0.23,positive,no
+27-2021,Athletes and Sports Competitors,27,"Arts, Design, Entertainment, Sports, and Media",15070,206180.0,0.222,0.0,,0.0,,2.0,0.66,0.143,-0.517,zero,no
+27-2022,Coaches and Scouts,27,"Arts, Design, Entertainment, Sports, and Media",248950,60160.0,0.169,0.05,0.045,0.312,47.64,4.0,0.491,0.459,-0.032,positive,no
+27-2023,"Umpires, Referees, and Other Sports Officials",27,"Arts, Design, Entertainment, Sports, and Media",15780,53010.0,0.087,0.0,0.01,0.0,,2.0,0.174,0.143,-0.031,zero,no
+27-2031,Dancers,27,"Arts, Design, Entertainment, Sports, and Media",8130,,0.088,,,,,3.0,,,,not_published,yes
+27-2032,Choreographers,27,"Arts, Design, Entertainment, Sports, and Media",2860,73100.0,0.157,0.0,,0.0,,3.0,0.435,0.143,-0.292,zero,yes
+27-2041,Music Directors and Composers,27,"Arts, Design, Entertainment, Sports, and Media",12540,90470.0,0.137,0.01,0.01,1.24,40.02,4.0,0.347,0.68,0.333,positive,no
+27-2042,Musicians and Singers,27,"Arts, Design, Entertainment, Sports, and Media",36180,,0.085,0.01,0.01,0.43,38.25,4.0,0.166,0.496,0.33,positive,no
+27-2091,"Disc Jockeys, Except Radio",27,"Arts, Design, Entertainment, Sports, and Media",7920,,0.253,0.01,0.01,1.963,70.57,2.0,0.75,0.739,-0.01,positive,yes
+27-2099,"Entertainers and Performers, Sports and Related Workers, All Other",27,"Arts, Design, Entertainment, Sports, and Media",16550,,,,,,,,,,,not_published,no
+27-3011,Broadcast Announcers and Radio Disc Jockeys,27,"Arts, Design, Entertainment, Sports, and Media",21240,78720.0,0.409,0.095,0.145,6.954,35.97,4.0,0.992,0.861,-0.13,positive,no
+27-3023,"News Analysts, Reporters, and Journalists",27,"Arts, Design, Entertainment, Sports, and Media",39250,102460.0,0.383,1.57,1.345,62.193,28.98,4.0,0.983,0.975,-0.008,positive,no
+27-3031,Public Relations Specialists,27,"Arts, Design, Entertainment, Sports, and Media",283380,84120.0,0.365,0.325,0.345,1.783,39.64,4.0,0.971,0.724,-0.247,positive,no
+27-3041,Editors,27,"Arts, Design, Entertainment, Sports, and Media",91690,90060.0,0.367,2.51,2.24,42.563,33.88,4.0,0.975,0.954,-0.02,positive,no
+27-3042,Technical Writers,27,"Arts, Design, Entertainment, Sports, and Media",45500,96970.0,0.373,1.625,1.275,55.529,39.25,4.0,0.98,0.973,-0.007,positive,no
+27-3043,Writers and Authors,27,"Arts, Design, Entertainment, Sports, and Media",47940,86090.0,0.454,3.675,2.975,119.19,29.04,4.0,0.997,0.985,-0.012,positive,no
+27-3091,Interpreters and Translators,27,"Arts, Design, Entertainment, Sports, and Media",52060,66360.0,0.492,0.89,0.41,26.581,62.86,4.0,1.0,0.934,-0.066,positive,no
+27-3092,Court Reporters and Simultaneous Captioners,27,"Arts, Design, Entertainment, Sports, and Media",12870,78760.0,0.202,0.0,,0.0,,3.0,0.607,0.143,-0.464,zero,no
+27-3099,"Media and Communication Workers, All Other",27,"Arts, Design, Entertainment, Sports, and Media",19590,83860.0,,,,,,,,,,not_published,no
+27-4011,Audio and Video Technicians,27,"Arts, Design, Entertainment, Sports, and Media",70230,64630.0,0.172,0.32,0.575,7.084,52.19,3.0,0.504,0.865,0.36,positive,no
+27-4012,Broadcast Technicians,27,"Arts, Design, Entertainment, Sports, and Media",21110,67960.0,0.14,0.01,0.01,0.737,51.66,3.0,0.367,0.582,0.215,positive,no
+27-4014,Sound Engineering Technicians,27,"Arts, Design, Entertainment, Sports, and Media",13080,81390.0,0.072,0.015,0.02,1.783,87.35,3.0,0.112,0.723,0.611,positive,no
+27-4015,Lighting Technicians,27,"Arts, Design, Entertainment, Sports, and Media",8900,78380.0,0.207,,,,,3.0,,,,not_published,yes
+27-4021,Photographers,27,"Arts, Design, Entertainment, Sports, and Media",51760,55410.0,0.246,0.035,0.035,1.051,51.46,3.0,0.724,0.646,-0.078,positive,no
+27-4031,"Camera Operators, Television, Video, and Film",27,"Arts, Design, Entertainment, Sports, and Media",21550,83210.0,0.205,0.025,0.035,1.804,40.79,3.0,0.616,0.729,0.113,positive,no
+27-4032,Film and Video Editors,27,"Arts, Design, Entertainment, Sports, and Media",25610,86130.0,0.116,0.05,0.08,3.036,44.28,4.0,0.272,0.78,0.508,positive,no
+27-4099,"Media and Communication Equipment Workers, All Other",27,"Arts, Design, Entertainment, Sports, and Media",12450,81040.0,,,,,,,,,,not_published,no
+29-1011,Chiropractors,29,Healthcare Practitioners and Technical,39630,90520.0,0.111,0.305,0.28,11.966,47.41,5.0,0.25,0.895,0.645,positive,no
+29-1021,"Dentists, General",29,Healthcare Practitioners and Technical,124390,191350.0,0.046,0.0,,0.0,,5.0,0.039,0.143,0.104,zero,no
+29-1022,Oral and Maxillofacial Surgeons,29,Healthcare Practitioners and Technical,4910,346490.0,0.026,,,,,5.0,,,,not_published,yes
+29-1023,Orthodontists,29,Healthcare Practitioners and Technical,6210,259400.0,0.179,0.01,0.01,2.504,45.74,5.0,0.531,0.77,0.239,positive,yes
+29-1024,Prosthodontists,29,Healthcare Practitioners and Technical,870,268630.0,0.015,,,,,5.0,,,,not_published,yes
+29-1029,"Dentists, All Other Specialists",29,Healthcare Practitioners and Technical,5230,247930.0,,,,,,,,,,not_published,yes
+29-1031,Dietitians and Nutritionists,29,Healthcare Practitioners and Technical,77570,77130.0,0.221,0.23,0.205,4.61,47.88,5.0,0.658,0.824,0.166,positive,no
+29-1041,Optometrists,29,Healthcare Practitioners and Technical,42790,141550.0,0.066,0.0,,0.0,,5.0,0.091,0.143,0.052,zero,no
+29-1051,Pharmacists,29,Healthcare Practitioners and Technical,321970,140920.0,0.278,0.14,0.095,0.676,36.76,5.0,0.802,0.574,-0.228,positive,no
+29-1071,Physician Assistants,29,Healthcare Practitioners and Technical,162150,141280.0,0.051,0.03,0.03,0.288,53.1,5.0,0.054,0.452,0.398,positive,no
+29-1081,Podiatrists,29,Healthcare Practitioners and Technical,9680,175480.0,0.144,0.0,,0.0,,5.0,0.387,0.143,-0.245,zero,yes
+29-1122,Occupational Therapists,29,Healthcare Practitioners and Technical,162450,101280.0,0.106,0.0,,0.0,,5.0,0.234,0.143,-0.091,zero,no
+29-1123,Physical Therapists,29,Healthcare Practitioners and Technical,267330,105280.0,0.172,0.015,0.01,0.087,37.43,5.0,0.508,0.34,-0.168,positive,no
+29-1124,Radiation Therapists,29,Healthcare Practitioners and Technical,17070,114990.0,0.088,0.0,,0.0,,3.0,0.178,0.143,-0.035,zero,no
+29-1125,Recreational Therapists,29,Healthcare Practitioners and Technical,14930,67630.0,0.065,0.005,,0.521,68.9,4.0,0.088,0.53,0.442,positive,no
+29-1126,Respiratory Therapists,29,Healthcare Practitioners and Technical,139790,87300.0,0.054,0.0,,0.0,,3.0,0.063,0.143,0.08,zero,no
+29-1127,Speech-Language Pathologists,29,Healthcare Practitioners and Technical,183390,98170.0,0.138,0.01,0.01,0.085,43.2,5.0,0.355,0.338,-0.017,positive,no
+29-1128,Exercise Physiologists,29,Healthcare Practitioners and Technical,8560,60940.0,0.123,0.19,0.145,34.511,44.0,4.0,0.301,0.949,0.648,positive,yes
+29-1129,"Therapists, All Other",29,Healthcare Practitioners and Technical,22640,90420.0,0.097,0.07,0.04,4.807,42.07,4.5,0.213,0.834,0.621,positive,no
+29-1131,Veterinarians,29,Healthcare Practitioners and Technical,83900,142680.0,0.155,0.015,0.01,0.278,59.79,5.0,0.425,0.443,0.019,positive,no
+29-1141,Registered Nurses,29,Healthcare Practitioners and Technical,3379720,101420.0,0.122,0.105,0.065,0.048,46.72,4.4,0.293,0.311,0.019,positive,no
+29-1151,Nurse Anesthetists,29,Healthcare Practitioners and Technical,51840,248320.0,0.075,0.0,,0.0,,5.0,0.13,0.143,0.013,zero,no
+29-1161,Nurse Midwives,29,Healthcare Practitioners and Technical,7920,136980.0,0.125,0.025,0.01,4.908,39.95,5.0,0.315,0.841,0.526,positive,yes
+29-1171,Nurse Practitioners,29,Healthcare Practitioners and Technical,323040,137300.0,0.143,0.105,0.08,0.505,37.23,5.0,0.379,0.521,0.142,positive,no
+29-1181,Audiologists,29,Healthcare Practitioners and Technical,13660,97740.0,0.149,0.0,,0.0,,5.0,0.406,0.143,-0.263,zero,no
+29-1211,Anesthesiologists,29,Healthcare Practitioners and Technical,38760,360570.0,0.036,0.01,0.01,0.401,45.0,5.0,0.029,0.484,0.455,positive,no
+29-1212,Cardiologists,29,Healthcare Practitioners and Technical,17290,454940.0,0.138,0.795,0.64,71.491,37.59,5.0,0.354,0.98,0.626,positive,no
+29-1213,Dermatologists,29,Healthcare Practitioners and Technical,11370,323530.0,0.113,0.0,,0.0,,5.0,0.264,0.143,-0.121,zero,no
+29-1214,Emergency Medicine Physicians,29,Healthcare Practitioners and Technical,32880,317480.0,0.077,0.085,0.06,4.019,28.2,5.0,0.139,0.812,0.673,positive,no
+29-1215,Family Medicine Physicians,29,Healthcare Practitioners and Technical,107510,255820.0,0.165,0.02,0.02,0.289,43.38,5.0,0.47,0.453,-0.017,positive,no
+29-1216,General Internal Medicine Physicians,29,Healthcare Practitioners and Technical,67150,267200.0,0.163,0.02,0.02,0.463,43.78,5.0,0.459,0.508,0.049,positive,no
+29-1217,Neurologists,29,Healthcare Practitioners and Technical,10590,267630.0,0.129,0.015,0.01,2.202,27.05,5.0,0.327,0.75,0.423,positive,no
+29-1218,Obstetricians and Gynecologists,29,Healthcare Practitioners and Technical,21260,279040.0,0.156,0.02,0.02,1.463,43.14,5.0,0.43,0.703,0.273,positive,no
+29-1221,"Pediatricians, General",29,Healthcare Practitioners and Technical,39390,212110.0,0.145,0.02,0.02,0.789,46.4,5.0,0.391,0.592,0.201,positive,no
+29-1222,"Physicians, Pathologists",29,Healthcare Practitioners and Technical,11110,285420.0,0.124,0.01,0.01,1.399,32.53,5.0,0.305,0.697,0.393,positive,no
+29-1223,Psychiatrists,29,Healthcare Practitioners and Technical,27980,269940.0,0.167,0.01,0.01,0.556,33.38,5.0,0.477,0.54,0.063,positive,no
+29-1224,Radiologists,29,Healthcare Practitioners and Technical,26770,381530.0,0.142,0.01,0.01,0.581,51.29,5.0,0.374,0.548,0.174,positive,no
+29-1229,"Physicians, All Other",29,Healthcare Practitioners and Technical,342720,262040.0,0.113,0.105,0.08,0.476,42.73,5.0,0.259,0.511,0.252,positive,no
+29-1241,"Ophthalmologists, Except Pediatric",29,Healthcare Practitioners and Technical,8950,304650.0,0.088,0.0,0.01,0.0,,5.0,0.179,0.143,-0.036,zero,yes
+29-1242,"Orthopedic Surgeons, Except Pediatric",29,Healthcare Practitioners and Technical,14100,373570.0,0.084,0.0,,0.0,,5.0,0.164,0.143,-0.021,zero,no
+29-1243,Pediatric Surgeons,29,Healthcare Practitioners and Technical,1190,502050.0,0.115,0.0,,0.0,,5.0,0.267,0.143,-0.124,zero,yes
+29-1249,"Surgeons, All Other",29,Healthcare Practitioners and Technical,25140,373930.0,,,,,,,,,,not_published,no
+29-1291,Acupuncturists,29,Healthcare Practitioners and Technical,7830,87020.0,0.055,0.0,,0.0,,5.0,0.066,0.143,0.077,zero,yes
+29-1292,Dental Hygienists,29,Healthcare Practitioners and Technical,222740,98990.0,0.057,0.005,,0.035,32.41,3.0,0.071,0.299,0.228,positive,no
+29-1299,"Healthcare Diagnosing or Treating Practitioners, All Other",29,Healthcare Practitioners and Technical,28630,127660.0,0.134,0.045,0.045,2.444,49.55,5.0,0.342,0.763,0.421,positive,no
+29-2010,Clinical Laboratory Technologists and Technicians,29,Healthcare Practitioners and Technical,332940,67350.0,0.114,,,,,3.6,,,,not_published,no
+29-2031,Cardiovascular Technologists and Technicians,29,Healthcare Practitioners and Technical,62960,76940.0,0.089,0.0,,0.0,,3.0,0.184,0.143,-0.041,zero,no
+29-2032,Diagnostic Medical Sonographers,29,Healthcare Practitioners and Technical,90160,97240.0,0.075,0.0,,0.0,,3.0,0.127,0.143,0.016,zero,no
+29-2033,Nuclear Medicine Technologists,29,Healthcare Practitioners and Technical,17080,105160.0,0.087,0.0,,0.0,,3.0,0.176,0.143,-0.033,zero,no
+29-2034,Radiologic Technologists and Technicians,29,Healthcare Practitioners and Technical,230490,83840.0,0.103,0.0,,0.0,,3.0,0.223,0.143,-0.08,zero,no
+29-2035,Magnetic Resonance Imaging Technologists,29,Healthcare Practitioners and Technical,43390,96120.0,0.079,0.0,,0.0,,3.0,0.147,0.143,-0.004,zero,no
+29-2036,Medical Dosimetrists,29,Healthcare Practitioners and Technical,3410,148500.0,0.164,0.145,0.105,66.114,31.05,4.0,0.467,0.978,0.511,positive,yes
+29-2042,Emergency Medical Technicians,29,Healthcare Practitioners and Technical,180510,46830.0,0.078,0.02,0.01,0.172,48.68,3.0,0.144,0.404,0.261,positive,no
+29-2043,Paramedics,29,Healthcare Practitioners and Technical,100610,63360.0,0.077,0.02,0.01,0.309,48.5,3.0,0.14,0.457,0.316,positive,no
+29-2051,Dietetic Technicians,29,Healthcare Practitioners and Technical,31560,40630.0,0.125,0.075,0.075,3.695,48.03,3.0,0.311,0.805,0.494,positive,no
+29-2052,Pharmacy Technicians,29,Healthcare Practitioners and Technical,471680,46620.0,0.193,0.205,0.17,0.676,41.36,3.0,0.579,0.572,-0.007,positive,no
+29-2053,Psychiatric Technicians,29,Healthcare Practitioners and Technical,156960,46610.0,0.062,0.01,0.01,0.099,57.93,3.0,0.081,0.355,0.274,positive,no
+29-2055,Surgical Technologists,29,Healthcare Practitioners and Technical,117460,68710.0,0.029,,,,,3.0,,,,not_published,no
+29-2056,Veterinary Technologists and Technicians,29,Healthcare Practitioners and Technical,129140,49120.0,0.07,0.02,,0.241,54.4,3.0,0.107,0.425,0.318,positive,no
+29-2057,Ophthalmic Medical Technicians,29,Healthcare Practitioners and Technical,71010,47060.0,0.007,,,,,3.0,,,,not_published,no
+29-2061,Licensed Practical and Licensed Vocational Nurses,29,Healthcare Practitioners and Technical,648410,67050.0,0.034,0.0,,0.0,,3.0,0.024,0.143,0.119,zero,no
+29-2072,Medical Records Specialists,29,Healthcare Practitioners and Technical,194720,56790.0,0.264,0.0,,0.0,,3.0,0.783,0.143,-0.64,zero,no
+29-2081,"Opticians, Dispensing",29,Healthcare Practitioners and Technical,73530,51770.0,0.136,,,,,3.0,,,,not_published,no
+29-2091,Orthotists and Prosthetists,29,Healthcare Practitioners and Technical,9390,83740.0,0.051,,,,,5.0,,,,not_published,yes
+29-2092,Hearing Aid Specialists,29,Healthcare Practitioners and Technical,11270,66370.0,0.095,,,,,3.0,,,,not_published,no
+29-2099,"Health Technologists and Technicians, All Other",29,Healthcare Practitioners and Technical,182610,58710.0,0.097,0.02,0.025,0.17,48.85,3.0,0.212,0.403,0.191,positive,no
+29-9021,Health Information Technologists and Medical Registrars,29,Healthcare Practitioners and Technical,38100,74970.0,0.307,0.0,,0.0,,3.0,0.856,0.143,-0.713,zero,no
+29-9091,Athletic Trainers,29,Healthcare Practitioners and Technical,30500,66620.0,0.111,0.075,0.055,3.823,43.75,5.0,0.249,0.809,0.56,positive,no
+29-9092,Genetic Counselors,29,Healthcare Practitioners and Technical,3740,104620.0,0.311,0.03,0.03,12.472,41.92,5.0,0.87,0.902,0.032,positive,yes
+29-9093,Surgical Assistants,29,Healthcare Practitioners and Technical,22270,72710.0,0.012,,,,,3.0,,,,not_published,no
+29-9099,"Healthcare Practitioners and Technical Workers, All Other",29,Healthcare Practitioners and Technical,35010,76720.0,0.139,0.05,0.04,2.221,33.56,5.0,0.364,0.753,0.389,positive,no
+31-1120,Home Health and Personal Care Aides,31,Healthcare Support,4305810,36120.0,0.051,,,,,2.0,,,,not_published,no
+31-1131,Nursing Assistants,31,Healthcare Support,1448910,42700.0,0.029,0.39,0.33,0.419,37.09,3.0,0.02,0.487,0.467,positive,no
+31-1132,Orderlies,31,Healthcare Support,52440,40660.0,0.0,0.0,,0.0,,2.0,0.003,0.143,0.14,zero,no
+31-1133,Psychiatric Aides,31,Healthcare Support,35520,45690.0,0.068,0.0,,0.0,,2.0,0.096,0.143,0.047,zero,no
+31-2011,Occupational Therapy Assistants,31,Healthcare Support,51290,70710.0,0.086,0.0,,0.0,,3.0,0.171,0.143,-0.028,zero,no
+31-2012,Occupational Therapy Aides,31,Healthcare Support,4310,44110.0,0.046,0.0,,0.0,,3.0,0.042,0.143,0.101,zero,yes
+31-2021,Physical Therapist Assistants,31,Healthcare Support,112430,68730.0,0.044,0.01,,0.138,53.16,3.0,0.036,0.377,0.342,positive,no
+31-2022,Physical Therapist Aides,31,Healthcare Support,48150,36430.0,0.038,,,,,2.0,,,,not_published,no
+31-9011,Massage Therapists,31,Healthcare Support,98790,63830.0,0.012,0.0,,0.0,,3.0,0.01,0.143,0.133,zero,no
+31-9091,Dental Assistants,31,Healthcare Support,387790,50200.0,0.055,,,,,3.0,,,,not_published,no
+31-9092,Medical Assistants,31,Healthcare Support,817870,46120.0,0.069,0.065,0.065,0.124,26.15,3.0,0.1,0.371,0.271,positive,no
+31-9093,Medical Equipment Preparers,31,Healthcare Support,77420,50510.0,0.021,,,,,2.0,,,,not_published,no
+31-9094,Medical Transcriptionists,31,Healthcare Support,41550,41710.0,0.084,0.02,0.015,0.748,52.27,3.0,0.162,0.584,0.421,positive,no
+31-9095,Pharmacy Aides,31,Healthcare Support,39530,40450.0,0.089,0.0,,0.0,,2.0,0.183,0.143,-0.04,zero,no
+31-9096,Veterinary Assistants and Laboratory Animal Caretakers,31,Healthcare Support,126580,40340.0,0.034,0.0,,0.0,,2.0,0.025,0.143,0.118,zero,no
+31-9097,Phlebotomists,31,Healthcare Support,143540,45520.0,0.022,0.0,,0.0,,3.0,0.017,0.143,0.126,zero,no
+31-9099,"Healthcare Support Workers, All Other",31,Healthcare Support,109740,50810.0,0.054,,,,,2.5,,,,not_published,no
+33-1011,First-Line Supervisors of Correctional Officers,33,Protective Service,53380,84380.0,0.124,0.01,0.01,0.291,56.72,3.0,0.306,0.455,0.149,positive,no
+33-1012,First-Line Supervisors of Police and Detectives,33,Protective Service,154610,112190.0,0.083,0.025,0.01,0.251,40.82,2.0,0.156,0.428,0.272,positive,no
+33-1021,First-Line Supervisors of Firefighting and Prevention Workers,33,Protective Service,99140,96930.0,0.009,0.005,,0.078,47.52,3.0,0.005,0.335,0.33,positive,no
+33-1091,First-Line Supervisors of Security Workers,33,Protective Service,81480,59900.0,0.084,0.0,,0.0,,2.0,0.161,0.143,-0.018,zero,no
+33-1099,"First-Line Supervisors of Protective Service Workers, All Other",33,Protective Service,20690,74390.0,,,,,,,,,,not_published,no
+33-2011,Firefighters,33,Protective Service,345990,63630.0,0.07,,,,,2.0,,,,not_published,no
+33-2021,Fire Inspectors and Investigators,33,Protective Service,13800,78670.0,0.113,0.0,,0.0,,3.0,0.261,0.143,-0.118,zero,no
+33-2022,Forest Fire Inspectors and Prevention Specialists,33,Protective Service,2780,66640.0,0.049,0.0,,0.0,,3.0,0.049,0.143,0.094,zero,yes
+33-3011,Bailiffs,33,Protective Service,17310,61660.0,0.209,,,,,3.0,,,,not_published,no
+33-3012,Correctional Officers and Jailers,33,Protective Service,380500,63630.0,0.108,0.195,0.1,0.797,97.61,2.0,0.235,0.596,0.36,positive,no
+33-3021,Detectives and Criminal Investigators,33,Protective Service,114430,99430.0,0.145,0.01,0.01,0.136,60.0,3.3,0.394,0.376,-0.019,positive,no
+33-3031,Fish and Game Wardens,33,Protective Service,5770,74950.0,0.125,,,,,3.0,,,,not_published,yes
+33-3041,Parking Enforcement Workers,33,Protective Service,9050,51190.0,0.153,,,,,2.0,,,,not_published,yes
+33-3051,Police and Sheriff's Patrol Officers,33,Protective Service,670520,79200.0,0.143,0.055,0.04,0.128,36.53,3.0,0.384,0.372,-0.012,positive,no
+33-3052,Transit and Railroad Police,33,Protective Service,4390,91810.0,0.086,0.0,,0.0,,3.0,0.168,0.143,-0.025,zero,yes
+33-9011,Animal Control Workers,33,Protective Service,12070,48440.0,0.203,,,,,2.0,,,,not_published,no
+33-9021,Private Detectives and Investigators,33,Protective Service,35580,60150.0,0.172,0.0,,0.0,,3.0,0.501,0.143,-0.358,zero,no
+33-9031,Gambling Surveillance Officers and Gambling Investigators,33,Protective Service,9520,45630.0,0.156,0.0,,0.0,,2.0,0.431,0.143,-0.288,zero,yes
+33-9032,Security Guards,33,Protective Service,1283470,42470.0,0.139,0.0,,0.0,,2.0,0.359,0.143,-0.216,zero,no
+33-9091,Crossing Guards and Flaggers,33,Protective Service,94360,43350.0,0.189,,,,,2.0,,,,not_published,no
+33-9092,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",33,Protective Service,157550,34470.0,0.034,,,,,2.0,,,,not_published,no
+33-9093,Transportation Security Screeners,33,Protective Service,50290,64310.0,0.211,0.0,,0.0,,2.0,0.64,0.143,-0.497,zero,no
+33-9094,School Bus Monitors,33,Protective Service,78420,35150.0,0.275,0.01,,0.198,49.67,2.0,0.797,0.411,-0.386,positive,no
+33-9099,"Protective Service Workers, All Other",33,Protective Service,81500,48070.0,0.051,0.015,0.01,0.286,47.35,2.0,0.051,0.45,0.399,positive,no
+35-1011,Chefs and Head Cooks,35,Food Preparation and Serving Related,200040,66700.0,0.151,0.01,,0.078,40.05,3.0,0.415,0.333,-0.081,positive,no
+35-1012,First-Line Supervisors of Food Preparation and Serving Workers,35,Food Preparation and Serving Related,1223240,46180.0,0.117,0.01,,0.013,43.52,2.0,0.274,0.291,0.017,positive,no
+35-2011,"Cooks, Fast Food",35,Food Preparation and Serving Related,641070,32390.0,0.191,0.0,,0.0,,2.0,0.574,0.143,-0.431,zero,no
+35-2012,"Cooks, Institution and Cafeteria",35,Food Preparation and Serving Related,441050,38810.0,0.072,0.025,0.01,0.088,42.69,2.0,0.11,0.343,0.234,positive,no
+35-2013,"Cooks, Private Household",35,Food Preparation and Serving Related,1100,53680.0,0.26,0.03,0.015,42.404,40.23,3.0,0.775,0.953,0.178,positive,yes
+35-2014,"Cooks, Restaurant",35,Food Preparation and Serving Related,1409890,38730.0,0.172,0.01,,0.011,72.22,2.0,0.509,0.289,-0.22,positive,no
+35-2015,"Cooks, Short Order",35,Food Preparation and Serving Related,138650,36120.0,0.142,0.0,,0.0,,2.0,0.376,0.143,-0.233,zero,no
+35-2019,"Cooks, All Other",35,Food Preparation and Serving Related,19350,39150.0,,,,,,,,,,not_published,no
+35-2021,Food Preparation Workers,35,Food Preparation and Serving Related,893600,35290.0,0.137,0.0,,0.0,,2.0,0.349,0.143,-0.206,zero,no
+35-3011,Bartenders,35,Food Preparation and Serving Related,756390,40790.0,0.178,0.02,0.01,0.041,47.82,2.0,0.528,0.305,-0.223,positive,no
+35-3023,Fast Food and Counter Workers,35,Food Preparation and Serving Related,3854050,32150.0,0.164,0.01,0.01,0.004,49.57,2.0,0.465,0.286,-0.179,positive,no
+35-3031,Waiters and Waitresses,35,Food Preparation and Serving Related,2270910,40060.0,0.261,0.155,0.08,0.106,59.61,2.0,0.777,0.36,-0.416,positive,no
+35-3041,"Food Servers, Nonrestaurant",35,Food Preparation and Serving Related,293900,36140.0,0.117,0.0,,0.0,,2.0,0.281,0.143,-0.138,zero,no
+35-9011,Dining Room and Cafeteria Attendants and Bartender Helpers,35,Food Preparation and Serving Related,542750,34230.0,0.061,0.02,0.015,0.057,75.22,2.0,0.076,0.32,0.244,positive,no
+35-9021,Dishwashers,35,Food Preparation and Serving Related,477450,34310.0,0.018,0.0,,0.0,,2.0,0.012,0.143,0.131,zero,no
+35-9031,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",35,Food Preparation and Serving Related,432690,32690.0,0.305,0.16,0.145,0.575,30.6,2.0,0.849,0.545,-0.305,positive,no
+35-9099,"Food Preparation and Serving Related Workers, All Other",35,Food Preparation and Serving Related,84630,36810.0,,,,,,,,,,not_published,no
+37-1011,First-Line Supervisors of Housekeeping and Janitorial Workers,37,Building and Grounds Cleaning and Maintenance,178760,53320.0,0.158,0.11,0.08,0.957,43.39,2.0,0.437,0.629,0.193,positive,no
+37-1012,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",37,Building and Grounds Cleaning and Maintenance,130760,60960.0,0.114,0.01,,0.119,64.92,3.0,0.266,0.367,0.102,positive,no
+37-2011,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",37,Building and Grounds Cleaning and Maintenance,2209760,38760.0,0.108,,,,,3.0,,,,not_published,no
+37-2012,Maids and Housekeeping Cleaners,37,Building and Grounds Cleaning and Maintenance,860670,37080.0,0.008,,,,,2.0,,,,not_published,no
+37-2019,"Building Cleaning Workers, All Other",37,Building and Grounds Cleaning and Maintenance,17210,46420.0,,,,,,,,,,not_published,no
+37-2021,Pest Control Workers,37,Building and Grounds Cleaning and Maintenance,102620,46400.0,0.115,0.015,0.01,0.227,67.09,2.0,0.269,0.42,0.151,positive,no
+37-3011,Landscaping and Groundskeeping Workers,37,Building and Grounds Cleaning and Maintenance,952640,42290.0,0.043,0.0,,0.0,,2.0,0.034,0.143,0.109,zero,no
+37-3012,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",37,Building and Grounds Cleaning and Maintenance,27050,47070.0,0.082,,,,,2.0,,,,not_published,no
+37-3013,Tree Trimmers and Pruners,37,Building and Grounds Cleaning and Maintenance,55160,55970.0,0.03,,,,,2.0,,,,not_published,no
+37-3019,"Grounds Maintenance Workers, All Other",37,Building and Grounds Cleaning and Maintenance,13630,48830.0,,,,,,,,,,not_published,no
+39-1013,First-Line Supervisors of Gambling Services Workers,39,Personal Care and Service,26010,64830.0,0.26,0.01,,0.598,36.74,2.0,0.773,0.552,-0.222,positive,no
+39-1014,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services",39,Personal Care and Service,103190,53550.0,0.251,0.04,0.03,0.603,47.42,2.0,0.743,0.557,-0.186,positive,no
+39-1022,First-Line Supervisors of Personal Service Workers,39,Personal Care and Service,114110,52360.0,0.291,0.0,,0.0,,3.0,0.822,0.143,-0.679,zero,no
+39-2011,Animal Trainers,39,Personal Care and Service,18770,47020.0,0.058,0.0,,0.0,,2.0,0.073,0.143,0.07,zero,no
+39-2021,Animal Caretakers,39,Personal Care and Service,266910,37300.0,0.249,0.035,0.01,0.204,59.26,2.0,0.733,0.416,-0.316,positive,no
+39-3011,Gambling Dealers,39,Personal Care and Service,83910,42550.0,0.285,0.03,0.03,0.556,61.39,2.0,0.814,0.541,-0.272,positive,no
+39-3012,Gambling and Sports Book Writers and Runners,39,Personal Care and Service,8950,36450.0,0.249,0.005,,0.869,56.59,2.0,0.731,0.614,-0.117,positive,yes
+39-3019,"Gambling Service Workers, All Other",39,Personal Care and Service,14140,41380.0,,,,,,,,,,not_published,no
+39-3021,Motion Picture Projectionists,39,Personal Care and Service,1480,51480.0,0.052,,,,,2.0,,,,not_published,yes
+39-3031,"Ushers, Lobby Attendants, and Ticket Takers",39,Personal Care and Service,121770,33080.0,0.221,0.0,,0.0,,2.0,0.657,0.143,-0.514,zero,no
+39-3091,Amusement and Recreation Attendants,39,Personal Care and Service,397830,32640.0,0.287,0.0,,0.0,,2.0,0.817,0.143,-0.674,zero,no
+39-3092,Costume Attendants,39,Personal Care and Service,6510,63440.0,0.1,,,,,2.0,,,,not_published,yes
+39-3093,"Locker Room, Coatroom, and Dressing Room Attendants",39,Personal Care and Service,15560,38460.0,0.181,0.545,0.62,54.459,64.64,2.0,0.543,0.971,0.428,positive,no
+39-3099,"Entertainment Attendants and Related Workers, All Other",39,Personal Care and Service,7060,34980.0,,,,,,,,,,not_published,yes
+39-4011,Embalmers,39,Personal Care and Service,3890,58390.0,0.026,,,,,3.0,,,,not_published,yes
+39-4012,Crematory Operators,39,Personal Care and Service,2970,45670.0,0.127,0.01,0.0,5.235,44.9,2.0,0.325,0.846,0.521,positive,yes
+39-4021,Funeral Attendants,39,Personal Care and Service,31090,37190.0,0.181,0.01,0.01,0.5,63.82,2.0,0.545,0.519,-0.025,positive,no
+39-4031,"Morticians, Undertakers, and Funeral Arrangers",39,Personal Care and Service,25100,58160.0,0.11,0.01,0.01,0.619,50.08,3.0,0.24,0.562,0.321,positive,no
+39-5011,Barbers,39,Personal Care and Service,15000,47070.0,0.095,0.01,0.015,1.037,51.34,3.0,0.208,0.645,0.437,positive,no
+39-5012,"Hairdressers, Hairstylists, and Cosmetologists",39,Personal Care and Service,305710,43960.0,0.069,0.02,0.035,0.102,45.04,3.0,0.098,0.359,0.261,positive,no
+39-5091,"Makeup Artists, Theatrical and Performance",39,Personal Care and Service,2340,102240.0,0.133,0.0,,0.0,,3.0,0.337,0.143,-0.194,zero,yes
+39-5092,Manicurists and Pedicurists,39,Personal Care and Service,152770,38570.0,0.037,0.0,,0.0,,2.0,0.03,0.143,0.113,zero,no
+39-5093,Shampooers,39,Personal Care and Service,8070,31980.0,0.092,0.0,,0.0,,2.0,0.198,0.143,-0.055,zero,yes
+39-5094,Skincare Specialists,39,Personal Care and Service,72890,51850.0,0.084,0.04,0.04,0.853,58.27,3.0,0.159,0.606,0.447,positive,no
+39-6011,Baggage Porters and Bellhops,39,Personal Care and Service,28510,38570.0,0.196,0.01,0.01,0.545,72.04,2.0,0.589,0.535,-0.054,positive,no
+39-6012,Concierges,39,Personal Care and Service,49240,42510.0,0.372,0.005,,0.158,76.77,2.0,0.978,0.389,-0.589,positive,no
+39-7010,Tour and Travel Guides,39,Personal Care and Service,53500,43720.0,0.316,,,,,2.5,,,,not_published,no
+39-9011,Childcare Workers,39,Personal Care and Service,518910,35030.0,0.16,0.09,0.07,0.27,57.32,2.0,0.448,0.438,-0.01,positive,no
+39-9031,Exercise Trainers and Group Fitness Instructors,39,Personal Care and Service,322930,52420.0,0.115,0.065,0.05,0.313,41.23,3.0,0.271,0.46,0.19,positive,no
+39-9032,Recreation Workers,39,Personal Care and Service,331490,38520.0,0.19,0.11,0.105,0.516,54.82,4.0,0.572,0.528,-0.044,positive,no
+39-9041,Residential Advisors,39,Personal Care and Service,84760,43990.0,0.144,0.1,0.155,1.834,42.09,3.0,0.389,0.734,0.345,positive,no
+39-9099,"Personal Care and Service Workers, All Other",39,Personal Care and Service,60420,40120.0,,,,,,,,,,not_published,no
+41-1011,First-Line Supervisors of Retail Sales Workers,41,Sales and Related,1121800,53380.0,0.13,0.04,0.04,0.055,44.09,2.0,0.328,0.318,-0.01,positive,no
+41-1012,First-Line Supervisors of Non-Retail Sales Workers,41,Sales and Related,214390,99370.0,0.169,0.02,0.02,0.145,41.34,4.0,0.492,0.382,-0.11,positive,no
+41-2011,Cashiers,41,Sales and Related,3089410,33180.0,0.298,0.91,0.965,0.458,33.01,2.0,0.839,0.504,-0.335,positive,no
+41-2012,Gambling Change Persons and Booth Cashiers,41,Sales and Related,21530,39100.0,0.143,0.0,,0.0,,2.0,0.382,0.143,-0.239,zero,no
+41-2021,Counter and Rental Clerks,41,Sales and Related,400810,45700.0,0.344,2.56,1.92,9.931,43.35,2.0,0.953,0.887,-0.066,positive,no
+41-2022,Parts Salespersons,41,Sales and Related,270070,43830.0,0.244,0.075,0.025,0.432,35.96,2.0,0.716,0.497,-0.218,positive,no
+41-2031,Retail Salespersons,41,Sales and Related,3897860,37310.0,0.299,0.375,0.23,0.15,41.2,2.0,0.844,0.384,-0.46,positive,no
+41-3011,Advertising Sales Agents,41,Sales and Related,91700,80670.0,0.353,0.13,0.13,2.204,32.26,3.0,0.964,0.751,-0.213,positive,no
+41-3021,Insurance Sales Agents,41,Sales and Related,479100,81480.0,0.228,0.0,,0.0,,4.0,0.673,0.143,-0.53,zero,no
+41-3031,"Securities, Commodities, and Financial Services Sales Agents",41,Sales and Related,489570,109150.0,0.232,0.14,0.13,0.445,49.04,4.0,0.684,0.503,-0.181,positive,no
+41-3041,Travel Agents,41,Sales and Related,55110,54660.0,0.237,0.01,0.01,0.282,62.86,3.0,0.697,0.447,-0.25,positive,no
+41-3091,"Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel",41,Sales and Related,1256010,82430.0,0.449,0.325,0.285,0.402,44.69,2.0,0.995,0.486,-0.509,positive,no
+41-4011,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",41,Sales and Related,284800,119730.0,0.313,0.455,0.365,2.484,46.38,3.5,0.876,0.768,-0.108,positive,no
+41-4012,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",41,Sales and Related,1238190,82530.0,0.305,1.3,1.1,1.632,46.89,4.0,0.848,0.716,-0.132,positive,no
+41-9011,Demonstrators and Product Promoters,41,Sales and Related,64520,45580.0,0.309,0.825,0.78,19.881,37.89,2.0,0.863,0.917,0.054,positive,no
+41-9012,Models,41,Sales and Related,3780,72800.0,0.337,0.0,,0.0,,2.0,0.942,0.143,-0.799,zero,yes
+41-9021,Real Estate Brokers,41,Sales and Related,46100,83950.0,0.249,0.0,,0.0,,4.0,0.734,0.143,-0.591,zero,no
+41-9022,Real Estate Sales Agents,41,Sales and Related,193370,69510.0,0.265,0.04,0.02,0.322,46.84,2.0,0.787,0.464,-0.323,positive,no
+41-9031,Sales Engineers,41,Sales and Related,51790,130140.0,0.297,0.71,0.69,21.315,70.59,4.0,0.832,0.926,0.093,positive,no
+41-9041,Telemarketers,41,Sales and Related,58430,37370.0,0.404,0.46,0.5,12.241,28.51,2.0,0.988,0.9,-0.088,positive,no
+41-9091,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",41,Sales and Related,2760,43850.0,0.257,0.345,0.26,194.352,36.32,2.0,0.765,0.995,0.23,positive,yes
+41-9099,"Sales and Related Workers, All Other",41,Sales and Related,93180,58510.0,,,,,,,,,,not_published,no
+43-1011,First-Line Supervisors of Office and Administrative Support Workers,43,Office and Administrative Support,1436680,73490.0,0.245,0.36,0.285,0.39,56.76,3.0,0.721,0.482,-0.239,positive,no
+43-2011,"Switchboard Operators, Including Answering Service",43,Office and Administrative Support,34280,42300.0,0.298,0.04,0.04,1.814,67.9,2.0,0.841,0.731,-0.11,positive,no
+43-2021,Telephone Operators,43,Office and Administrative Support,3430,44970.0,0.342,0.0,,0.0,,2.0,0.951,0.143,-0.808,zero,yes
+43-2099,"Communications Equipment Operators, All Other",43,Office and Administrative Support,1200,62130.0,,,,,,,,,,not_published,yes
+43-3011,Bill and Account Collectors,43,Office and Administrative Support,158830,49060.0,0.233,0.0,,0.0,,2.0,0.689,0.143,-0.546,zero,no
+43-3021,Billing and Posting Clerks,43,Office and Administrative Support,404060,51070.0,0.223,0.04,0.03,0.154,44.72,2.0,0.668,0.386,-0.283,positive,no
+43-3031,"Bookkeeping, Accounting, and Auditing Clerks",43,Office and Administrative Support,1373680,53560.0,0.244,0.31,0.235,0.351,52.13,3.0,0.717,0.472,-0.245,positive,no
+43-3041,Gambling Cage Workers,43,Office and Administrative Support,14430,39510.0,0.218,0.0,,0.0,,2.0,0.648,0.143,-0.505,zero,no
+43-3051,Payroll and Timekeeping Clerks,43,Office and Administrative Support,153140,59630.0,0.218,0.01,0.01,0.102,49.04,3.0,0.65,0.357,-0.293,positive,no
+43-3061,Procurement Clerks,43,Office and Administrative Support,55810,52370.0,0.256,0.01,0.01,0.279,67.11,2.0,0.761,0.445,-0.316,positive,no
+43-3071,Tellers,43,Office and Administrative Support,329480,42350.0,0.25,0.02,0.015,0.094,49.75,2.0,0.736,0.352,-0.384,positive,no
+43-3099,"Financial Clerks, All Other",43,Office and Administrative Support,36260,56450.0,,,,,,,,,,not_published,no
+43-4011,Brokerage Clerks,43,Office and Administrative Support,35940,72850.0,0.35,0.0,,0.0,,3.0,0.959,0.143,-0.816,zero,no
+43-4021,Correspondence Clerks,43,Office and Administrative Support,4290,48090.0,0.285,0.375,0.31,135.911,37.69,2.0,0.812,0.988,0.176,positive,yes
+43-4031,"Court, Municipal, and License Clerks",43,Office and Administrative Support,179750,52320.0,0.248,0.155,0.125,1.341,46.64,2.0,0.728,0.689,-0.039,positive,no
+43-4041,"Credit Authorizers, Checkers, and Clerks",43,Office and Administrative Support,12030,51420.0,0.185,0.01,,1.292,52.37,2.0,0.558,0.684,0.125,positive,no
+43-4051,Customer Service Representatives,43,Office and Administrative Support,2595750,46590.0,0.408,0.07,0.07,0.042,33.76,2.0,0.99,0.306,-0.684,positive,no
+43-4061,"Eligibility Interviewers, Government Programs",43,Office and Administrative Support,154800,56090.0,0.283,0.06,0.045,0.603,40.77,3.0,0.81,0.555,-0.255,positive,no
+43-4071,File Clerks,43,Office and Administrative Support,73440,45590.0,0.25,0.17,0.11,3.599,76.23,2.0,0.741,0.8,0.059,positive,no
+43-4081,"Hotel, Motel, and Resort Desk Clerks",43,Office and Administrative Support,261420,35550.0,0.236,0.0,,0.0,,2.0,0.695,0.143,-0.552,zero,no
+43-4111,"Interviewers, Except Eligibility and Loan",43,Office and Administrative Support,148060,47240.0,0.232,0.225,0.225,2.363,59.38,3.0,0.687,0.761,0.074,positive,no
+43-4121,"Library Assistants, Clerical",43,Office and Administrative Support,85520,39370.0,0.15,0.01,0.01,0.182,82.17,2.0,0.411,0.408,-0.003,positive,no
+43-4131,Loan Interviewers and Clerks,43,Office and Administrative Support,164790,52520.0,0.283,0.01,0.01,0.094,41.77,3.0,0.809,0.35,-0.459,positive,no
+43-4141,New Accounts Clerks,43,Office and Administrative Support,36860,49370.0,0.306,0.005,0.01,0.211,66.0,3.0,0.853,0.418,-0.435,positive,no
+43-4151,Order Clerks,43,Office and Administrative Support,75200,48220.0,0.321,0.035,0.035,0.724,61.19,2.0,0.89,0.575,-0.315,positive,no
+43-4161,"Human Resources Assistants, Except Payroll and Timekeeping",43,Office and Administrative Support,90220,52250.0,0.217,0.01,0.025,0.172,48.5,3.0,0.645,0.406,-0.239,positive,no
+43-4171,Receptionists and Information Clerks,43,Office and Administrative Support,910180,39460.0,0.241,0.36,0.325,0.615,58.09,2.0,0.707,0.558,-0.149,positive,no
+43-4181,Reservation and Transportation Ticket Agents and Travel Clerks,43,Office and Administrative Support,118710,49630.0,0.331,0.075,0.06,0.982,33.77,2.0,0.929,0.636,-0.293,positive,no
+43-4199,"Information and Record Clerks, All Other",43,Office and Administrative Support,134920,51490.0,,,,,,,,,,not_published,no
+43-5011,Cargo and Freight Agents,43,Office and Administrative Support,97670,57230.0,0.21,0.01,0.01,0.159,46.57,2.0,0.635,0.393,-0.242,positive,no
+43-5021,Couriers and Messengers,43,Office and Administrative Support,68640,40970.0,0.125,0.0,,0.0,,2.0,0.316,0.143,-0.173,zero,no
+43-5031,Public Safety Telecommunicators,43,Office and Administrative Support,102500,56740.0,0.346,0.0,,0.0,,2.0,0.954,0.143,-0.811,zero,no
+43-5032,"Dispatchers, Except Police, Fire, and Ambulance",43,Office and Administrative Support,202810,54740.0,0.232,0.01,,0.077,87.87,2.0,0.682,0.332,-0.35,positive,no
+43-5041,"Meter Readers, Utilities",43,Office and Administrative Support,19430,55380.0,0.23,0.0,,0.0,,2.0,0.679,0.143,-0.536,zero,no
+43-5051,Postal Service Clerks,43,Office and Administrative Support,73720,61860.0,0.219,,,,,2.0,,,,not_published,no
+43-5052,Postal Service Mail Carriers,43,Office and Administrative Support,328820,62540.0,0.123,0.0,,0.0,,2.0,0.303,0.143,-0.16,zero,no
+43-5053,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",43,Office and Administrative Support,105200,59430.0,0.06,,,,,2.0,,,,not_published,no
+43-5061,"Production, Planning, and Expediting Clerks",43,Office and Administrative Support,390160,62150.0,0.258,0.145,0.115,0.578,42.5,2.0,0.77,0.547,-0.223,positive,no
+43-5071,"Shipping, Receiving, and Inventory Clerks",43,Office and Administrative Support,816870,46810.0,0.184,0.0,,0.0,,2.0,0.557,0.143,-0.414,zero,no
+43-5111,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",43,Office and Administrative Support,53300,47630.0,0.089,0.025,0.015,0.729,45.0,2.0,0.186,0.577,0.391,positive,no
+43-6011,Executive Secretaries and Executive Administrative Assistants,43,Office and Administrative Support,459910,79140.0,0.261,0.29,0.28,0.98,57.34,3.0,0.778,0.635,-0.144,positive,no
+43-6012,Legal Secretaries and Administrative Assistants,43,Office and Administrative Support,156280,60620.0,0.207,0.06,0.05,0.597,51.4,3.0,0.626,0.55,-0.076,positive,no
+43-6013,Medical Secretaries and Administrative Assistants,43,Office and Administrative Support,961610,46800.0,0.182,0.01,0.01,0.016,74.67,2.0,0.548,0.293,-0.255,positive,no
+43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",43,Office and Administrative Support,1706790,49350.0,0.256,0.565,0.4,0.515,71.03,2.0,0.763,0.526,-0.237,positive,no
+43-9021,Data Entry Keyers,43,Office and Administrative Support,127080,43310.0,0.315,0.08,0.065,0.979,76.23,2.0,0.885,0.633,-0.252,positive,no
+43-9022,Word Processors and Typists,43,Office and Administrative Support,35010,51120.0,0.265,1.105,1.71,49.074,55.7,2.0,0.785,0.964,0.179,positive,no
+43-9031,Desktop Publishers,43,Office and Administrative Support,3350,61970.0,0.311,0.54,0.87,250.627,55.64,3.0,0.868,0.997,0.129,positive,yes
+43-9041,Insurance Claims and Policy Processing Clerks,43,Office and Administrative Support,214260,52920.0,0.307,0.845,0.665,6.132,47.75,2.0,0.858,0.854,-0.003,positive,no
+43-9051,"Mail Clerks and Mail Machine Operators, Except Postal Service",43,Office and Administrative Support,55230,41650.0,0.083,,,,,2.0,,,,not_published,no
+43-9061,"Office Clerks, General",43,Office and Administrative Support,2464940,46420.0,0.242,0.73,0.43,0.46,70.08,2.0,0.712,0.506,-0.206,positive,no
+43-9071,"Office Machine Operators, Except Computer",43,Office and Administrative Support,25130,43220.0,0.162,0.0,,0.0,,2.0,0.453,0.143,-0.31,zero,no
+43-9081,Proofreaders and Copy Markers,43,Office and Administrative Support,4580,54800.0,0.369,0.4,0.295,135.792,56.91,4.0,0.976,0.986,0.01,positive,yes
+43-9111,Statistical Assistants,43,Office and Administrative Support,4710,55650.0,0.318,0.43,0.38,141.947,58.44,4.0,0.888,0.992,0.103,positive,yes
+43-9199,"Office and Administrative Support Workers, All Other",43,Office and Administrative Support,192260,48670.0,,,,,,,,,,not_published,no
+45-1011,"First-Line Supervisors of Farming, Fishing, and Forestry Workers",45,"Farming, Fishing, and Forestry",27960,62730.0,0.055,0.01,,0.556,96.08,3.0,0.064,0.543,0.479,positive,no
+45-2011,Agricultural Inspectors,45,"Farming, Fishing, and Forestry",14410,54910.0,0.089,0.01,0.01,1.079,51.52,2.0,0.188,0.653,0.465,positive,no
+45-2021,Animal Breeders,45,"Farming, Fishing, and Forestry",1330,57010.0,0.169,,,,,2.0,,,,not_published,yes
+45-2041,"Graders and Sorters, Agricultural Products",45,"Farming, Fishing, and Forestry",25180,36430.0,0.039,,,,,2.0,,,,not_published,no
+45-2091,Agricultural Equipment Operators,45,"Farming, Fishing, and Forestry",28500,43710.0,0.081,,,,,2.0,,,,not_published,no
+45-2092,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",45,"Farming, Fishing, and Forestry",265500,37630.0,0.048,0.02,0.01,0.117,53.4,2.0,0.047,0.365,0.318,positive,no
+45-2093,"Farmworkers, Farm, Ranch, and Aquacultural Animals",45,"Farming, Fishing, and Forestry",32810,39260.0,0.144,0.0,,0.0,,2.0,0.386,0.143,-0.243,zero,no
+45-2099,"Agricultural Workers, All Other",45,"Farming, Fishing, and Forestry",3620,45510.0,,,,,,,,,,not_published,yes
+45-4011,Forest and Conservation Workers,45,"Farming, Fishing, and Forestry",6050,43680.0,0.074,0.0,,0.0,,2.0,0.12,0.143,0.023,zero,yes
+45-4021,Fallers,45,"Farming, Fishing, and Forestry",3130,57110.0,0.075,,,,,2.0,,,,not_published,yes
+45-4022,Logging Equipment Operators,45,"Farming, Fishing, and Forestry",21060,53190.0,0.005,,,,,2.0,,,,not_published,no
+45-4023,Log Graders and Scalers,45,"Farming, Fishing, and Forestry",3070,47770.0,0.061,,,,,2.0,,,,not_published,yes
+45-4029,"Logging Workers, All Other",45,"Farming, Fishing, and Forestry",1700,52910.0,,,,,,,,,,not_published,yes
+47-1011,First-Line Supervisors of Construction Trades and Extraction Workers,47,Construction and Extraction,812210,86450.0,0.11,0.025,0.01,0.048,63.37,3.0,0.247,0.308,0.061,positive,no
+47-2011,Boilermakers,47,Construction and Extraction,10190,80090.0,0.041,,,,,2.0,,,,not_published,no
+47-2021,Brickmasons and Blockmasons,47,Construction and Extraction,52550,68280.0,0.098,0.0,,0.0,,2.0,0.217,0.143,-0.074,zero,no
+47-2022,Stonemasons,47,Construction and Extraction,7820,60710.0,0.03,,,,,2.0,,,,not_published,yes
+47-2031,Carpenters,47,Construction and Extraction,670090,65630.0,0.056,0.03,0.01,0.07,78.34,2.0,0.068,0.328,0.261,positive,no
+47-2041,Carpet Installers,47,Construction and Extraction,13780,56990.0,0.063,0.0,,0.0,,2.0,0.085,0.143,0.058,zero,no
+47-2042,"Floor Layers, Except Carpet, Wood, and Hard Tiles",47,Construction and Extraction,23640,61760.0,0.036,,,,,2.0,,,,not_published,no
+47-2043,Floor Sanders and Finishers,47,Construction and Extraction,3720,52460.0,0.0,,,,,2.0,,,,not_published,yes
+47-2044,Tile and Stone Setters,47,Construction and Extraction,35850,59250.0,0.072,0.0,,0.0,,2.0,0.113,0.143,0.03,zero,no
+47-2051,Cement Masons and Concrete Finishers,47,Construction and Extraction,206170,60050.0,0.015,,,,,2.0,,,,not_published,no
+47-2053,Terrazzo Workers and Finishers,47,Construction and Extraction,1180,84920.0,0.077,,,,,2.0,,,,not_published,yes
+47-2061,Construction Laborers,47,Construction and Extraction,1096780,52030.0,0.03,,,,,2.0,,,,not_published,no
+47-2071,"Paving, Surfacing, and Tamping Equipment Operators",47,Construction and Extraction,41820,59000.0,0.007,,,,,2.0,,,,not_published,no
+47-2072,Pile Driver Operators,47,Construction and Extraction,2310,80710.0,0.0,,,,,2.0,,,,not_published,yes
+47-2073,Operating Engineers and Other Construction Equipment Operators,47,Construction and Extraction,478090,66290.0,0.098,0.0,,0.0,,2.0,0.215,0.143,-0.072,zero,no
+47-2081,Drywall and Ceiling Tile Installers,47,Construction and Extraction,83080,63600.0,0.042,,,,,2.0,,,,not_published,no
+47-2082,Tapers,47,Construction and Extraction,12840,72710.0,0.05,,,,,2.0,,,,not_published,no
+47-2111,Electricians,47,Construction and Extraction,757220,71490.0,0.151,0.0,,0.0,,3.0,0.413,0.143,-0.27,zero,no
+47-2121,Glaziers,47,Construction and Extraction,58480,59720.0,0.053,0.0,,0.0,,2.0,0.058,0.143,0.085,zero,no
+47-2131,"Insulation Workers, Floor, Ceiling, and Wall",47,Construction and Extraction,44440,54740.0,0.074,,,,,2.0,,,,not_published,no
+47-2132,"Insulation Workers, Mechanical",47,Construction and Extraction,25660,65530.0,0.14,,,,,2.0,,,,not_published,no
+47-2141,"Painters, Construction and Maintenance",47,Construction and Extraction,225190,55420.0,0.093,0.01,,0.069,41.92,2.0,0.201,0.325,0.124,positive,no
+47-2142,Paperhangers,47,Construction and Extraction,1570,53730.0,0.072,0.0,,0.0,,2.0,0.115,0.143,0.028,zero,yes
+47-2151,Pipelayers,47,Construction and Extraction,33050,54700.0,0.042,,,,,2.0,,,,not_published,no
+47-2152,"Plumbers, Pipefitters, and Steamfitters",47,Construction and Extraction,465840,72170.0,0.074,0.0,,0.0,,3.0,0.124,0.143,0.019,zero,no
+47-2161,Plasterers and Stucco Masons,47,Construction and Extraction,19310,62050.0,0.1,0.0,,0.0,,2.0,0.222,0.143,-0.079,zero,no
+47-2171,Reinforcing Iron and Rebar Workers,47,Construction and Extraction,13800,66060.0,0.055,,,,,2.0,,,,not_published,no
+47-2181,Roofers,47,Construction and Extraction,135490,58140.0,0.009,0.0,,0.0,,2.0,0.007,0.143,0.136,zero,no
+47-2211,Sheet Metal Workers,47,Construction and Extraction,119770,67850.0,0.064,,,,,2.0,,,,not_published,no
+47-2221,Structural Iron and Steel Workers,47,Construction and Extraction,68380,70280.0,0.03,,,,,2.0,,,,not_published,no
+47-2231,Solar Photovoltaic Installers,47,Construction and Extraction,31350,57900.0,0.16,0.01,,0.496,97.59,2.0,0.445,0.518,0.073,positive,no
+47-3011,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",47,Construction and Extraction,14170,50920.0,0.07,,,,,2.0,,,,not_published,no
+47-3012,Helpers--Carpenters,47,Construction and Extraction,21680,44050.0,0.03,,,,,2.0,,,,not_published,no
+47-3013,Helpers--Electricians,47,Construction and Extraction,63630,44080.0,0.063,,,,,2.0,,,,not_published,no
+47-3014,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",47,Construction and Extraction,7490,42440.0,0.027,,,,,2.0,,,,not_published,yes
+47-3015,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",47,Construction and Extraction,44330,43730.0,0.06,,,,,2.0,,,,not_published,no
+47-3016,Helpers--Roofers,47,Construction and Extraction,6030,45150.0,0.01,,,,,2.0,,,,not_published,yes
+47-3019,"Helpers, Construction Trades, All Other",47,Construction and Extraction,24770,45140.0,,,,,,,,,,not_published,no
+47-4011,Construction and Building Inspectors,47,Construction and Extraction,146720,77730.0,0.118,0.0,,0.0,,3.0,0.283,0.143,-0.14,zero,no
+47-4021,Elevator and Escalator Installers and Repairers,47,Construction and Extraction,23790,109820.0,0.061,,,,,3.0,,,,not_published,no
+47-4031,Fence Erectors,47,Construction and Extraction,24480,50530.0,0.058,,,,,2.0,,,,not_published,no
+47-4041,Hazardous Materials Removal Workers,47,Construction and Extraction,51710,56430.0,0.022,,,,,2.0,,,,not_published,no
+47-4051,Highway Maintenance Workers,47,Construction and Extraction,154960,53080.0,0.021,,,,,2.0,,,,not_published,no
+47-4061,Rail-Track Laying and Maintenance Equipment Operators,47,Construction and Extraction,19580,68740.0,0.0,,,,,2.0,,,,not_published,no
+47-4071,Septic Tank Servicers and Sewer Pipe Cleaners,47,Construction and Extraction,30650,53500.0,0.087,,,,,2.0,,,,not_published,no
+47-4090,Miscellaneous Construction and Related Workers,47,Construction and Extraction,28380,55130.0,0.083,,,,,2.0,,,,not_published,no
+47-5011,"Derrick Operators, Oil and Gas",47,Construction and Extraction,10590,60210.0,0.052,,,,,2.0,,,,not_published,no
+47-5012,"Rotary Drill Operators, Oil and Gas",47,Construction and Extraction,12600,72130.0,0.057,,,,,2.0,,,,not_published,no
+47-5013,"Service Unit Operators, Oil and Gas",47,Construction and Extraction,43140,62470.0,0.059,0.0,,0.0,,2.0,0.074,0.143,0.069,zero,no
+47-5022,"Excavating and Loading Machine and Dragline Operators, Surface Mining",47,Construction and Extraction,34480,59930.0,0.097,,,,,2.0,,,,not_published,no
+47-5023,"Earth Drillers, Except Oil and Gas",47,Construction and Extraction,19450,62830.0,0.046,,,,,2.0,,,,not_published,no
+47-5032,"Explosives Workers, Ordnance Handling Experts, and Blasters",47,Construction and Extraction,5100,66640.0,0.034,,,,,2.0,,,,not_published,yes
+47-5041,Continuous Mining Machine Operators,47,Construction and Extraction,14000,65050.0,0.044,,,,,2.0,,,,not_published,no
+47-5043,"Roof Bolters, Mining",47,Construction and Extraction,2160,78100.0,0.05,,,,,2.0,,,,not_published,yes
+47-5044,"Loading and Moving Machine Operators, Underground Mining",47,Construction and Extraction,5930,71240.0,0.048,,,,,2.0,,,,not_published,yes
+47-5049,"Underground Mining Machine Operators, All Other",47,Construction and Extraction,3180,69860.0,,,,,,,,,,not_published,yes
+47-5051,"Rock Splitters, Quarry",47,Construction and Extraction,3320,51500.0,0.029,,,,,2.0,,,,not_published,yes
+47-5071,"Roustabouts, Oil and Gas",47,Construction and Extraction,44970,49200.0,0.009,,,,,2.0,,,,not_published,no
+47-5081,Helpers--Extraction Workers,47,Construction and Extraction,6700,50620.0,0.028,,,,,2.0,,,,not_published,yes
+47-5099,"Extraction Workers, All Other",47,Construction and Extraction,5540,57890.0,,,,,,,,,,not_published,yes
+49-1011,"First-Line Supervisors of Mechanics, Installers, and Repairers",49,"Installation, Maintenance, and Repair",617500,85220.0,0.126,0.01,,0.025,52.44,3.0,0.32,0.296,-0.024,positive,no
+49-2011,"Computer, Automated Teller, and Office Machine Repairers",49,"Installation, Maintenance, and Repair",65600,50880.0,0.159,0.01,0.01,0.237,71.04,2.0,0.443,0.423,-0.02,positive,no
+49-2021,"Radio, Cellular, and Tower Equipment Installers and Repairers",49,"Installation, Maintenance, and Repair",11140,69870.0,0.119,0.035,0.015,4.885,84.25,3.0,0.284,0.839,0.555,positive,no
+49-2022,"Telecommunications Equipment Installers and Repairers, Except Line Installers",49,"Installation, Maintenance, and Repair",140920,68500.0,0.18,0.085,0.08,0.938,29.77,3.0,0.54,0.628,0.088,positive,no
+49-2091,Avionics Technicians,49,"Installation, Maintenance, and Repair",18830,83380.0,0.14,0.0,,0.0,,3.0,0.369,0.143,-0.226,zero,no
+49-2092,"Electric Motor, Power Tool, and Related Repairers",49,"Installation, Maintenance, and Repair",14450,58610.0,0.104,0.0,,0.0,,3.0,0.228,0.143,-0.085,zero,no
+49-2093,"Electrical and Electronics Installers and Repairers, Transportation Equipment",49,"Installation, Maintenance, and Repair",6940,83300.0,0.122,0.0,,0.0,,3.0,0.294,0.143,-0.151,zero,yes
+49-2094,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",49,"Installation, Maintenance, and Repair",65010,75570.0,0.206,0.0,,0.0,,3.0,0.623,0.143,-0.48,zero,no
+49-2095,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",49,"Installation, Maintenance, and Repair",20720,100760.0,0.169,0.065,0.06,4.878,66.54,3.0,0.486,0.838,0.352,positive,no
+49-2096,"Electronic Equipment Installers and Repairers, Motor Vehicles",49,"Installation, Maintenance, and Repair",8550,51560.0,0.104,0.0,,0.0,,3.0,0.227,0.143,-0.084,zero,yes
+49-2097,Audiovisual Equipment Installers and Repairers,49,"Installation, Maintenance, and Repair",19780,57930.0,0.124,0.01,0.01,0.786,50.65,3.0,0.308,0.591,0.283,positive,no
+49-2098,Security and Fire Alarm Systems Installers,49,"Installation, Maintenance, and Repair",86340,60960.0,0.163,0.03,0.035,0.54,19.38,3.0,0.457,0.533,0.076,positive,no
+49-3011,Aircraft Mechanics and Service Technicians,49,"Installation, Maintenance, and Repair",138090,84740.0,0.062,0.0,,0.0,,3.0,0.08,0.143,0.063,zero,no
+49-3021,Automotive Body and Related Repairers,49,"Installation, Maintenance, and Repair",149310,59690.0,0.087,,,,,2.0,,,,not_published,no
+49-3022,Automotive Glass Installers and Repairers,49,"Installation, Maintenance, and Repair",20310,50430.0,0.025,0.0,,0.0,,2.0,0.019,0.143,0.124,zero,no
+49-3023,Automotive Service Technicians and Mechanics,49,"Installation, Maintenance, and Repair",704640,56420.0,0.124,0.03,0.02,0.066,72.8,3.0,0.31,0.323,0.014,positive,no
+49-3031,Bus and Truck Mechanics and Diesel Engine Specialists,49,"Installation, Maintenance, and Repair",289960,64320.0,0.099,0.0,,0.0,,3.0,0.22,0.143,-0.077,zero,no
+49-3041,Farm Equipment Mechanics and Service Technicians,49,"Installation, Maintenance, and Repair",37870,57290.0,0.119,,,,,3.0,,,,not_published,no
+49-3042,"Mobile Heavy Equipment Mechanics, Except Engines",49,"Installation, Maintenance, and Repair",176600,69240.0,0.077,0.01,,0.088,77.68,3.0,0.142,0.342,0.2,positive,no
+49-3043,Rail Car Repairers,49,"Installation, Maintenance, and Repair",21350,70680.0,0.043,,,,,2.0,,,,not_published,no
+49-3051,Motorboat Mechanics and Service Technicians,49,"Installation, Maintenance, and Repair",23220,58070.0,0.07,0.01,0.015,0.67,66.07,3.0,0.102,0.57,0.469,positive,no
+49-3052,Motorcycle Mechanics,49,"Installation, Maintenance, and Repair",13510,52370.0,0.064,,,,,3.0,,,,not_published,no
+49-3053,Outdoor Power Equipment and Other Small Engine Mechanics,49,"Installation, Maintenance, and Repair",36060,49990.0,0.041,,,,,2.0,,,,not_published,no
+49-3091,Bicycle Repairers,49,"Installation, Maintenance, and Repair",12170,42730.0,0.122,,,,,2.0,,,,not_published,no
+49-3092,Recreational Vehicle Service Technicians,49,"Installation, Maintenance, and Repair",17430,56440.0,0.158,0.01,,0.892,34.08,2.0,0.44,0.621,0.181,positive,no
+49-3093,Tire Repairers and Changers,49,"Installation, Maintenance, and Repair",108410,40170.0,0.023,,,,,2.0,,,,not_published,no
+49-9011,Mechanical Door Repairers,49,"Installation, Maintenance, and Repair",27120,57540.0,0.079,0.0,,0.0,,2.0,0.149,0.143,-0.006,zero,no
+49-9012,"Control and Valve Installers and Repairers, Except Mechanical Door",49,"Installation, Maintenance, and Repair",48240,76210.0,0.149,,,,,3.0,,,,not_published,no
+49-9021,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers",49,"Installation, Maintenance, and Repair",409670,64780.0,0.117,0.0,,0.0,,3.0,0.279,0.143,-0.136,zero,no
+49-9031,Home Appliance Repairers,49,"Installation, Maintenance, and Repair",32150,56040.0,0.122,0.0,,0.0,,2.0,0.296,0.143,-0.153,zero,no
+49-9041,Industrial Machinery Mechanics,49,"Installation, Maintenance, and Repair",439640,68460.0,0.104,0.025,0.03,0.088,81.23,3.0,0.225,0.345,0.12,positive,no
+49-9043,"Maintenance Workers, Machinery",49,"Installation, Maintenance, and Repair",60020,64610.0,0.098,,,,,3.0,,,,not_published,no
+49-9044,Millwrights,49,"Installation, Maintenance, and Repair",40330,69780.0,0.063,0.035,0.01,1.349,84.87,2.0,0.083,0.692,0.609,positive,no
+49-9045,"Refractory Materials Repairers, Except Brickmasons",49,"Installation, Maintenance, and Repair",1080,63770.0,0.092,,,,,2.0,,,,not_published,yes
+49-9051,Electrical Power-Line Installers and Repairers,49,"Installation, Maintenance, and Repair",131070,91970.0,0.112,0.0,,0.0,,2.0,0.254,0.143,-0.111,zero,no
+49-9052,Telecommunications Line Installers and Repairers,49,"Installation, Maintenance, and Repair",97720,73940.0,0.166,,,,,2.0,,,,not_published,no
+49-9061,Camera and Photographic Equipment Repairers,49,"Installation, Maintenance, and Repair",1650,56040.0,0.168,0.0,,0.0,,3.0,0.482,0.143,-0.339,zero,yes
+49-9062,Medical Equipment Repairers,49,"Installation, Maintenance, and Repair",65990,65930.0,0.155,0.0,,0.0,,3.0,0.421,0.143,-0.278,zero,no
+49-9063,Musical Instrument Repairers and Tuners,49,"Installation, Maintenance, and Repair",5380,49960.0,0.137,,,,,3.0,,,,not_published,yes
+49-9064,Watch and Clock Repairers,49,"Installation, Maintenance, and Repair",1310,70840.0,0.08,,,,,3.0,,,,not_published,yes
+49-9069,"Precision Instrument and Equipment Repairers, All Other",49,"Installation, Maintenance, and Repair",9400,71180.0,,,,,,,,,,not_published,yes
+49-9071,"Maintenance and Repair Workers, General",49,"Installation, Maintenance, and Repair",1529700,53780.0,0.076,0.01,,0.01,75.02,3.0,0.132,0.288,0.156,positive,no
+49-9081,Wind Turbine Service Technicians,49,"Installation, Maintenance, and Repair",9980,68980.0,0.125,,,,,3.0,,,,not_published,yes
+49-9091,"Coin, Vending, and Amusement Machine Servicers and Repairers",49,"Installation, Maintenance, and Repair",26410,49770.0,0.083,0.0,,0.0,,2.0,0.157,0.143,-0.014,zero,no
+49-9092,Commercial Divers,49,"Installation, Maintenance, and Repair",3450,88320.0,0.084,,,,,3.0,,,,not_published,yes
+49-9094,Locksmiths and Safe Repairers,49,"Installation, Maintenance, and Repair",15040,55470.0,0.043,,,,,2.0,,,,not_published,no
+49-9095,Manufactured Building and Mobile Home Installers,49,"Installation, Maintenance, and Repair",3020,45410.0,0.121,0.0,,0.0,,2.0,0.289,0.143,-0.146,zero,yes
+49-9096,Riggers,49,"Installation, Maintenance, and Repair",22530,66810.0,0.176,,,,,2.0,,,,not_published,no
+49-9097,Signal and Track Switch Repairers,49,"Installation, Maintenance, and Repair",8720,90410.0,0.073,,,,,3.0,,,,not_published,yes
+49-9098,"Helpers--Installation, Maintenance, and Repair Workers",49,"Installation, Maintenance, and Repair",95580,41490.0,0.063,,,,,2.0,,,,not_published,no
+49-9099,"Installation, Maintenance, and Repair Workers, All Other",49,"Installation, Maintenance, and Repair",176300,53850.0,0.121,0.19,0.065,1.676,89.4,2.0,0.291,0.717,0.426,positive,no
+51-1011,First-Line Supervisors of Production and Operating Workers,51,Production,673430,76600.0,0.25,0.15,0.165,0.346,36.44,3.0,0.739,0.469,-0.271,positive,no
+51-2011,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",51,Production,34020,71420.0,0.054,,,,,2.0,,,,not_published,no
+51-2021,"Coil Winders, Tapers, and Finishers",51,Production,12840,50470.0,0.075,0.0,,0.0,,2.0,0.125,0.143,0.018,zero,no
+51-2028,"Electrical, Electronic, and Electromechanical Assemblers, Except Coil Winders, Tapers, and Finishers",51,Production,246970,47660.0,0.1,,,,,,,,,not_published,no
+51-2031,Engine and Other Machine Assemblers,51,Production,34000,57790.0,0.117,,,,,2.0,,,,not_published,no
+51-2041,Structural Metal Fabricators and Fitters,51,Production,52360,54030.0,0.045,,,,,2.0,,,,not_published,no
+51-2051,Fiberglass Laminators and Fabricators,51,Production,16170,49550.0,0.061,,,,,2.0,,,,not_published,no
+51-2061,Timing Device Assemblers and Adjusters,51,Production,250,56720.0,0.029,,,,,2.0,,,,not_published,yes
+51-2090,Miscellaneous Assemblers and Fabricators,51,Production,1405030,46660.0,0.115,,,,,2.0,,,,not_published,no
+51-3011,Bakers,51,Production,236200,38480.0,0.091,0.03,0.01,0.197,45.11,2.0,0.191,0.409,0.218,positive,no
+51-3021,Butchers and Meat Cutters,51,Production,136430,42380.0,0.194,,,,,2.0,,,,not_published,no
+51-3022,"Meat, Poultry, and Fish Cutters and Trimmers",51,Production,145700,39280.0,0.177,,,,,2.0,,,,not_published,no
+51-3023,Slaughterers and Meat Packers,51,Production,69950,41770.0,0.105,,,,,2.0,,,,not_published,no
+51-3091,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",51,Production,20370,45930.0,0.064,0.0,,0.0,,2.0,0.086,0.143,0.057,zero,no
+51-3092,Food Batchmakers,51,Production,174520,43750.0,0.073,0.0,,0.0,,2.0,0.118,0.143,0.025,zero,no
+51-3093,Food Cooking Machine Operators and Tenders,51,Production,31250,42570.0,0.093,0.0,,0.0,,2.0,0.2,0.143,-0.057,zero,no
+51-3099,"Food Processing Workers, All Other",51,Production,65000,40300.0,,,,,,,,,,not_published,no
+51-4021,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,60840,49480.0,0.144,,,,,2.0,,,,not_published,no
+51-4022,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,8930,51680.0,0.115,,,,,2.0,,,,not_published,yes
+51-4023,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,25250,53220.0,0.108,,,,,2.0,,,,not_published,no
+51-4031,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,171200,48430.0,0.081,,,,,2.0,,,,not_published,no
+51-4032,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51,Production,4680,51810.0,0.095,,,,,2.0,,,,not_published,yes
+51-4033,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51,Production,67000,48170.0,0.105,,,,,2.0,,,,not_published,no
+51-4034,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51,Production,16710,52490.0,0.146,,,,,2.0,,,,not_published,no
+51-4035,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,12460,56740.0,0.125,,,,,2.0,,,,not_published,no
+51-4041,Machinists,51,Production,287050,59320.0,0.157,0.03,0.03,0.162,27.14,3.0,0.433,0.394,-0.039,positive,no
+51-4051,Metal-Refining Furnace Operators and Tenders,51,Production,16780,55490.0,0.075,0.0,,0.0,,2.0,0.129,0.143,0.014,zero,no
+51-4052,"Pourers and Casters, Metal",51,Production,4560,54290.0,0.064,,,,,2.0,,,,not_published,yes
+51-4061,"Model Makers, Metal and Plastic",51,Production,2610,68570.0,0.068,,,,,3.0,,,,not_published,yes
+51-4062,"Patternmakers, Metal and Plastic",51,Production,1470,60610.0,0.143,0.0,,0.0,,3.0,0.377,0.143,-0.234,zero,yes
+51-4071,Foundry Mold and Coremakers,51,Production,12790,49860.0,0.0,,,,,2.0,,,,not_published,no
+51-4072,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,150470,45960.0,0.071,0.0,,0.0,,2.0,0.108,0.143,0.035,zero,no
+51-4081,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",51,Production,124590,50030.0,0.137,0.0,,0.0,,2.0,0.345,0.143,-0.202,zero,no
+51-4111,Tool and Die Makers,51,Production,56930,66860.0,0.086,0.0,,0.0,,3.0,0.169,0.143,-0.026,zero,no
+51-4121,"Welders, Cutters, Solderers, and Brazers",51,Production,416210,56760.0,0.075,,,,,2.0,,,,not_published,no
+51-4122,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",51,Production,31600,50220.0,0.08,,,,,2.0,,,,not_published,no
+51-4191,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",51,Production,14000,50450.0,0.138,,,,,2.0,,,,not_published,no
+51-4192,"Layout Workers, Metal and Plastic",51,Production,5970,66520.0,0.073,0.0,,0.0,,2.0,0.117,0.143,0.026,zero,yes
+51-4193,"Plating Machine Setters, Operators, and Tenders, Metal and Plastic",51,Production,32410,45100.0,0.08,0.0,,0.0,,2.0,0.152,0.143,-0.009,zero,no
+51-4194,"Tool Grinders, Filers, and Sharpeners",51,Production,5600,53240.0,0.096,,,,,2.0,,,,not_published,yes
+51-4199,"Metal Workers and Plastic Workers, All Other",51,Production,15900,48580.0,,,,,,,,,,not_published,no
+51-5111,Prepress Technicians and Workers,51,Production,23840,50800.0,0.133,0.0,,0.0,,3.0,0.338,0.143,-0.195,zero,no
+51-5112,Printing Press Operators,51,Production,144260,47360.0,0.117,0.0,,0.0,,2.0,0.277,0.143,-0.135,zero,no
+51-5113,Print Binding and Finishing Workers,51,Production,33180,44460.0,0.042,0.0,,0.0,,2.0,0.032,0.143,0.111,zero,no
+51-6011,Laundry and Dry-Cleaning Workers,51,Production,198040,34920.0,0.045,,,,,2.0,,,,not_published,no
+51-6021,"Pressers, Textile, Garment, and Related Materials",51,Production,26120,34640.0,0.054,,,,,2.0,,,,not_published,no
+51-6031,Sewing Machine Operators,51,Production,104880,37600.0,0.041,,,,,2.0,,,,not_published,no
+51-6041,Shoe and Leather Workers and Repairers,51,Production,7450,39160.0,0.047,0.0,,0.0,,2.0,0.044,0.143,0.099,zero,yes
+51-6042,Shoe Machine Operators and Tenders,51,Production,3280,36280.0,0.05,,,,,2.0,,,,not_published,yes
+51-6051,"Sewers, Hand",51,Production,2190,37210.0,0.074,,,,,2.0,,,,not_published,yes
+51-6052,"Tailors, Dressmakers, and Custom Sewers",51,Production,13920,45140.0,0.048,0.0,,0.0,,2.0,0.046,0.143,0.097,zero,no
+51-6061,Textile Bleaching and Dyeing Machine Operators and Tenders,51,Production,5310,40380.0,0.104,0.0,,0.0,,2.0,0.23,0.143,-0.087,zero,yes
+51-6062,"Textile Cutting Machine Setters, Operators, and Tenders",51,Production,9000,39530.0,0.113,0.0,,0.0,,2.0,0.257,0.143,-0.114,zero,yes
+51-6063,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",51,Production,13030,40720.0,0.091,0.0,,0.0,,2.0,0.196,0.143,-0.053,zero,no
+51-6064,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",51,Production,22020,40120.0,0.055,,,,,2.0,,,,not_published,no
+51-6091,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",51,Production,12850,48580.0,0.044,,,,,2.0,,,,not_published,no
+51-6092,Fabric and Apparel Patternmakers,51,Production,2950,71420.0,0.089,0.0,,0.0,,3.0,0.181,0.143,-0.038,zero,yes
+51-6093,Upholsterers,51,Production,20140,47340.0,0.082,0.0,,0.0,,2.0,0.154,0.143,-0.011,zero,no
+51-6099,"Textile, Apparel, and Furnishings Workers, All Other",51,Production,13530,40560.0,,,,,,,,,,not_published,no
+51-7011,Cabinetmakers and Bench Carpenters,51,Production,77170,48290.0,0.117,0.01,0.01,0.201,46.38,2.0,0.276,0.415,0.139,positive,no
+51-7021,Furniture Finishers,51,Production,14480,45300.0,0.079,0.01,,1.074,33.18,2.0,0.151,0.651,0.501,positive,no
+51-7031,"Model Makers, Wood",51,Production,280,63670.0,0.138,,,,,3.0,,,,not_published,yes
+51-7032,"Patternmakers, Wood",51,Production,220,54240.0,0.123,0.02,0.015,141.347,62.8,3.0,0.299,0.99,0.69,positive,yes
+51-7041,"Sawing Machine Setters, Operators, and Tenders, Wood",51,Production,40850,43580.0,0.109,,,,,2.0,,,,not_published,no
+51-7042,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",51,Production,61420,43570.0,0.126,,,,,2.0,,,,not_published,no
+51-7099,"Woodworkers, All Other",51,Production,5490,46070.0,,,,,,,,,,not_published,yes
+51-8011,Nuclear Power Reactor Operators,51,Production,5150,121380.0,0.076,0.04,0.03,12.076,71.02,3.0,0.137,0.897,0.76,positive,yes
+51-8012,Power Distributors and Dispatchers,51,Production,8520,111320.0,0.146,0.0,,0.0,,3.0,0.396,0.143,-0.253,zero,yes
+51-8013,Power Plant Operators,51,Production,29320,99790.0,0.066,0.03,0.01,1.591,94.18,2.3,0.09,0.712,0.623,positive,no
+51-8021,Stationary Engineers and Boiler Operators,51,Production,28250,83960.0,0.094,0.46,0.465,25.317,84.17,3.0,0.206,0.929,0.723,positive,no
+51-8031,Water and Wastewater Treatment Plant and System Operators,51,Production,128490,62540.0,0.0,,,,,2.0,,,,not_published,no
+51-8091,Chemical Plant and System Operators,51,Production,16610,79970.0,0.046,0.0,,0.0,,2.0,0.041,0.143,0.102,zero,no
+51-8092,Gas Plant Operators,51,Production,18030,88710.0,0.102,,,,,2.0,,,,not_published,no
+51-8093,"Petroleum Pump System Operators, Refinery Operators, and Gaugers",51,Production,33160,90630.0,0.059,,,,,2.0,,,,not_published,no
+51-8099,"Plant and System Operators, All Other",51,Production,14080,65700.0,0.026,,,,,2.0,,,,not_published,no
+51-9011,Chemical Equipment Operators and Tenders,51,Production,139630,60710.0,0.09,0.0,,0.0,,2.0,0.19,0.143,-0.047,zero,no
+51-9012,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",51,Production,60100,56030.0,0.103,,,,,2.0,,,,not_published,no
+51-9021,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",51,Production,26000,51380.0,0.051,0.0,,0.0,,2.0,0.052,0.143,0.091,zero,no
+51-9022,"Grinding and Polishing Workers, Hand",51,Production,10510,45020.0,0.084,,,,,2.0,,,,not_published,no
+51-9023,"Mixing and Blending Machine Setters, Operators, and Tenders",51,Production,94920,52090.0,0.078,0.01,0.01,0.164,90.4,2.0,0.146,0.399,0.254,positive,no
+51-9031,"Cutters and Trimmers, Hand",51,Production,6060,41050.0,0.053,0.0,,0.0,,2.0,0.059,0.143,0.084,zero,yes
+51-9032,"Cutting and Slicing Machine Setters, Operators, and Tenders",51,Production,44980,47460.0,0.085,,,,,2.0,,,,not_published,no
+51-9041,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",51,Production,58770,47260.0,0.077,,,,,2.0,,,,not_published,no
+51-9051,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",51,Production,14280,50940.0,0.122,,,,,2.0,,,,not_published,no
+51-9061,"Inspectors, Testers, Sorters, Samplers, and Weighers",51,Production,597370,53450.0,0.093,0.14,0.155,0.364,33.81,2.0,0.203,0.475,0.272,positive,no
+51-9071,Jewelers and Precious Stone and Metal Workers,51,Production,22440,57960.0,0.113,0.0,,0.0,,3.0,0.262,0.143,-0.119,zero,no
+51-9081,Dental Laboratory Technicians,51,Production,34410,54290.0,0.04,,,,,2.0,,,,not_published,no
+51-9082,Medical Appliance Technicians,51,Production,11280,52730.0,0.038,,,,,2.0,,,,not_published,no
+51-9083,Ophthalmic Laboratory Technicians,51,Production,18660,43190.0,0.062,,,,,2.0,,,,not_published,no
+51-9111,Packaging and Filling Machine Operators and Tenders,51,Production,379060,44590.0,0.02,,,,,2.0,,,,not_published,no
+51-9123,"Painting, Coating, and Decorating Workers",51,Production,7940,45210.0,0.087,,,,,2.0,,,,not_published,yes
+51-9124,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",51,Production,158740,52620.0,0.051,0.0,,0.0,,2.0,0.056,0.143,0.087,zero,no
+51-9141,Semiconductor Processing Technicians,51,Production,31460,60180.0,0.09,,,,,2.0,,,,not_published,no
+51-9151,Photographic Process Workers and Processing Machine Operators,51,Production,4800,46050.0,0.108,0.0,,0.0,,2.0,0.237,0.143,-0.094,zero,yes
+51-9161,Computer Numerically Controlled Tool Operators,51,Production,169450,54320.0,0.205,0.0,,0.0,,2.0,0.619,0.143,-0.476,zero,no
+51-9162,Computer Numerically Controlled Tool Programmers,51,Production,28500,72210.0,0.419,0.01,0.01,0.546,47.7,2.0,0.993,0.536,-0.457,positive,no
+51-9191,Adhesive Bonding Machine Operators and Tenders,51,Production,11500,46850.0,0.116,,,,,2.0,,,,not_published,no
+51-9192,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",51,Production,14760,44600.0,0.053,,,,,2.0,,,,not_published,no
+51-9193,Cooling and Freezing Equipment Operators and Tenders,51,Production,6900,44940.0,0.11,,,,,2.0,,,,not_published,yes
+51-9194,Etchers and Engravers,51,Production,7750,46320.0,0.082,,,,,2.0,,,,not_published,yes
+51-9195,"Molders, Shapers, and Casters, Except Metal and Plastic",51,Production,33190,47500.0,0.093,,,,,2.2,,,,not_published,no
+51-9196,"Paper Goods Machine Setters, Operators, and Tenders",51,Production,96130,52840.0,0.091,,,,,2.0,,,,not_published,no
+51-9197,Tire Builders,51,Production,20770,57160.0,0.012,,,,,2.0,,,,not_published,no
+51-9198,Helpers--Production Workers,51,Production,165700,41120.0,0.021,0.0,,0.0,,2.0,0.015,0.143,0.128,zero,no
+51-9199,"Production Workers, All Other",51,Production,251700,44380.0,,,,,,,,,,not_published,no
+53-1041,Aircraft Cargo Handling Supervisors,53,Transportation and Material Moving,9760,65010.0,0.078,,,,,2.0,,,,not_published,yes
+53-1047,"First-Line Supervisors of Transportation and Material Moving Workers, Except Aircraft Cargo Handling Supervisors",53,Transportation and Material Moving,623640,66860.0,0.177,,,,,,,,,not_published,no
+53-2011,"Airline Pilots, Copilots, and Flight Engineers",53,Transportation and Material Moving,103560,288650.0,0.099,,,,,4.0,,,,not_published,no
+53-2012,Commercial Pilots,53,Transportation and Material Moving,47630,146080.0,0.157,,,,,3.0,,,,not_published,no
+53-2021,Air Traffic Controllers,53,Transportation and Material Moving,22510,146490.0,0.171,0.005,,0.345,48.7,3.0,0.499,0.467,-0.032,positive,no
+53-2022,Airfield Operations Specialists,53,Transportation and Material Moving,15190,63610.0,0.192,,,,,3.0,,,,not_published,no
+53-2031,Flight Attendants,53,Transportation and Material Moving,131650,77440.0,0.239,0.005,,0.059,71.71,2.0,0.701,0.321,-0.379,positive,no
+53-3011,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",53,Transportation and Material Moving,12630,36210.0,0.047,,,,,2.0,,,,not_published,no
+53-3031,Driver/Sales Workers,53,Transportation and Material Moving,409180,40730.0,0.07,0.0,,0.0,,2.0,0.105,0.143,0.038,zero,no
+53-3032,Heavy and Tractor-Trailer Truck Drivers,53,Transportation and Material Moving,2062040,59710.0,0.138,0.0,,0.0,,2.0,0.357,0.143,-0.214,zero,no
+53-3033,Light Truck Drivers,53,Transportation and Material Moving,983300,48770.0,0.119,,,,,2.0,,,,not_published,no
+53-3051,"Bus Drivers, School",53,Transportation and Material Moving,402930,48430.0,0.142,,,,,2.0,,,,not_published,no
+53-3052,"Bus Drivers, Transit and Intercity",53,Transportation and Material Moving,159240,60280.0,0.188,0.0,,0.0,,2.0,0.563,0.143,-0.42,zero,no
+53-3053,Shuttle Drivers and Chauffeurs,53,Transportation and Material Moving,248530,39880.0,0.131,0.0,,0.0,,2.0,0.333,0.143,-0.19,zero,no
+53-3054,Taxi Drivers,53,Transportation and Material Moving,41050,49930.0,0.16,0.0,,0.0,,2.0,0.447,0.143,-0.304,zero,no
+53-3099,"Motor Vehicle Operators, All Other",53,Transportation and Material Moving,46880,42430.0,,,,,,,,,,not_published,no
+53-4011,Locomotive Engineers,53,Transportation and Material Moving,33470,85900.0,0.111,,,,,2.0,,,,not_published,no
+53-4013,"Rail Yard Engineers, Dinkey Operators, and Hostlers",53,Transportation and Material Moving,3920,68450.0,0.135,,,,,2.0,,,,not_published,yes
+53-4022,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers",53,Transportation and Material Moving,12400,69030.0,0.032,,,,,2.0,,,,not_published,no
+53-4031,Railroad Conductors and Yardmasters,53,Transportation and Material Moving,46440,79100.0,0.155,,,,,2.0,,,,not_published,no
+53-4041,Subway and Streetcar Operators,53,Transportation and Material Moving,10200,77170.0,0.126,0.0,,0.0,,2.0,0.318,0.143,-0.175,zero,no
+53-4099,"Rail Transportation Workers, All Other",53,Transportation and Material Moving,1120,60140.0,,,,,,,,,,not_published,yes
+53-5011,Sailors and Marine Oilers,53,Transportation and Material Moving,31670,56830.0,0.062,,,,,2.0,,,,not_published,no
+53-5021,"Captains, Mates, and Pilots of Water Vessels",53,Transportation and Material Moving,36850,103720.0,0.131,,,,,3.0,,,,not_published,no
+53-5022,Motorboat Operators,53,Transportation and Material Moving,2480,56270.0,0.003,,,,,2.0,,,,not_published,yes
+53-5031,Ship Engineers,53,Transportation and Material Moving,8400,111790.0,0.025,,,,,3.0,,,,not_published,yes
+53-6011,Bridge and Lock Tenders,53,Transportation and Material Moving,3040,55370.0,0.0,0.0,,0.0,,2.0,0.003,0.143,0.14,zero,yes
+53-6021,Parking Attendants,53,Transportation and Material Moving,137880,34990.0,0.137,0.0,,0.0,,2.0,0.352,0.143,-0.209,zero,no
+53-6031,Automotive and Watercraft Service Attendants,53,Transportation and Material Moving,102010,36780.0,0.044,0.0,,0.0,,2.0,0.037,0.143,0.106,zero,no
+53-6032,Aircraft Service Attendants,53,Transportation and Material Moving,31300,43330.0,0.078,,,,,2.0,,,,not_published,no
+53-6041,Traffic Technicians,53,Transportation and Material Moving,7860,62050.0,0.121,0.01,0.015,1.978,40.15,3.0,0.288,0.741,0.453,positive,yes
+53-6051,Transportation Inspectors,53,Transportation and Material Moving,24500,88540.0,0.134,0.11,0.115,6.981,40.28,3.0,0.34,0.863,0.523,positive,no
+53-6061,Passenger Attendants,53,Transportation and Material Moving,27110,37820.0,0.376,0.025,0.02,1.434,72.06,2.0,0.981,0.699,-0.283,positive,no
+53-6099,"Transportation Workers, All Other",53,Transportation and Material Moving,13550,50890.0,,,,,,,,,,not_published,no
+53-7011,Conveyor Operators and Tenders,53,Transportation and Material Moving,22930,45080.0,0.052,,,,,2.0,,,,not_published,no
+53-7021,Crane and Tower Operators,53,Transportation and Material Moving,42890,72130.0,0.071,,,,,3.0,,,,not_published,no
+53-7031,Dredge Operators,53,Transportation and Material Moving,1040,56120.0,0.0,,,,,2.0,,,,not_published,yes
+53-7041,Hoist and Winch Operators,53,Transportation and Material Moving,2600,67710.0,0.068,,,,,2.0,,,,not_published,yes
+53-7051,Industrial Truck and Tractor Operators,53,Transportation and Material Moving,774420,48370.0,0.013,,,,,2.0,,,,not_published,no
+53-7061,Cleaners of Vehicles and Equipment,53,Transportation and Material Moving,380430,36980.0,0.039,,,,,2.0,,,,not_published,no
+53-7062,"Laborers and Freight, Stock, and Material Movers, Hand",53,Transportation and Material Moving,2950280,42260.0,0.054,0.0,,0.0,,2.0,0.061,0.143,0.082,zero,no
+53-7063,Machine Feeders and Offbearers,53,Transportation and Material Moving,42330,43660.0,0.019,0.0,,0.0,,2.0,0.014,0.143,0.129,zero,no
+53-7064,"Packers and Packagers, Hand",53,Transportation and Material Moving,559820,37540.0,0.07,0.0,,0.0,,2.0,0.103,0.143,0.04,zero,no
+53-7065,Stockers and Order Fillers,53,Transportation and Material Moving,2833810,39540.0,0.11,0.055,0.035,0.03,45.75,2.0,0.244,0.298,0.054,positive,no
+53-7071,Gas Compressor and Gas Pumping Station Operators,53,Transportation and Material Moving,3510,74610.0,0.01,0.0,,0.0,,2.0,0.008,0.143,0.135,zero,yes
+53-7072,"Pump Operators, Except Wellhead Pumpers",53,Transportation and Material Moving,9780,63960.0,0.147,,,,,2.0,,,,not_published,yes
+53-7073,Wellhead Pumpers,53,Transportation and Material Moving,17990,70370.0,0.083,,,,,2.0,,,,not_published,no
+53-7081,Refuse and Recyclable Material Collectors,53,Transportation and Material Moving,147240,52820.0,0.035,0.0,,0.0,,2.0,0.027,0.143,0.116,zero,no
+53-7121,"Tank Car, Truck, and Ship Loaders",53,Transportation and Material Moving,10700,59970.0,0.08,,,,,2.0,,,,not_published,no
+53-7199,"Material Moving Workers, All Other",53,Transportation and Material Moving,23480,45640.0,,,,,,,,,,not_published,no

@@ -1,0 +1,14 @@
+key,value,note
+occupations_total,830,"detailed SOC 2018 occupations, BLS OEWS May 2025"
+with_ms_score,783,Microsoft applicability score
+with_aei_published_cell,591,Claude.ai worldwide share published (includes published zeros)
+with_both,591,agreement sample
+with_positive_usage,423,positive usage share; automation and time metrics exist for these
+employment_share_pct_in_agreement_sample,83.3,
+wage_bill_share_pct_ms_ge_0.3,10.6,share of the wage bill (of all 830 occupations; occupations without a score count in the denominator) in occupations with applicability of 0.3 or more
+wage_bill_share_pct_ms_ge_0.3_of_scored,10.7,"same, denominator = wage bill of scored occupations"
+employment_share_pct_ms_ge_0.3,9.3,
+n_ms_ge_0.3,93,
+published_detailed_share_sum_pct,95.42,sum over the 591 cells; the rest is unpublished
+smallest_employment_for_disagreement_list,10000,occupations below this are left out of m2_disagreement.csv
+bootstrap_reps,2000,seed 20261122

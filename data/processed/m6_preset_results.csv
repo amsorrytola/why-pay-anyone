@@ -1,0 +1,225 @@
+preset,metric,value
+USA baseline (calibrated),A gdp multiple at year 30 (today = 1),2.07281
+USA baseline (calibrated),A gdp multiple at year 60,3.94053
+USA baseline (calibrated),A gdp at year 60 relative to frozen-compute path,1.12597
+USA baseline (calibrated),A wage at year 30 relative to frozen-compute path,1.07882
+USA baseline (calibrated),A wage at year 60 relative to frozen-compute path,1.09787
+USA baseline (calibrated),A labour share today,0.5885
+USA baseline (calibrated),A labour share at year 30,0.57342
+USA baseline (calibrated),A labour share at year 60,0.57453
+USA baseline (calibrated),A AI income share at year 30,0.02208
+USA baseline (calibrated),A AI income share at year 60,0.02097
+USA baseline (calibrated),A consumption at year 30 relative to frozen-compute path,1.1079
+USA baseline (calibrated),"A GDP growth, years 1-10 average",0.02652
+USA baseline (calibrated),A crowded-out years (AI spending above saving),0.0
+USA baseline (calibrated),B long-run regime index (phi + lambda a_end),0.694
+USA baseline (calibrated),B regime,constant growth
+USA baseline (calibrated),B ideas growth at year 30,0.01964
+USA baseline (calibrated),B ideas growth at year 60,0.02857
+USA baseline (calibrated),B GDP at year 60 relative to no-automation path,1.38063
+USA baseline (calibrated),B year ideas growth hits the cap (blank if never),
+USA baseline (calibrated),C baseline saving rate,0.18398
+USA baseline (calibrated),C evaluation year,30
+USA baseline (calibrated),C demand gap without tax at evaluation year (% of potential),0.24556
+USA baseline (calibrated),C demand gap with tax at evaluation year (% of potential),0.24556
+USA baseline (calibrated),C UBI at evaluation year (% of GDP),0.0
+USA baseline (calibrated),C welfare change from the chosen tax at evaluation year (%),0.0
+USA baseline (calibrated),C welfare-maximising tax rate,0.6
+USA baseline (calibrated),C welfare gain at that rate (%),0.82069
+USA baseline (calibrated),C revenue-maximising tax rate,0.67
+India baseline (calibrated),A gdp multiple at year 30 (today = 1),6.22064
+India baseline (calibrated),A gdp multiple at year 60,37.48758
+India baseline (calibrated),A gdp at year 60 relative to frozen-compute path,1.03658
+India baseline (calibrated),A wage at year 30 relative to frozen-compute path,1.02637
+India baseline (calibrated),A wage at year 60 relative to frozen-compute path,1.02916
+India baseline (calibrated),A labour share today,0.5244
+India baseline (calibrated),A labour share at year 30,0.5204
+India baseline (calibrated),A labour share at year 60,0.52108
+India baseline (calibrated),A AI income share at year 30,0.006
+India baseline (calibrated),A AI income share at year 60,0.00532
+India baseline (calibrated),A consumption at year 30 relative to frozen-compute path,1.03473
+India baseline (calibrated),"A GDP growth, years 1-10 average",0.06336
+India baseline (calibrated),A crowded-out years (AI spending above saving),0.0
+India baseline (calibrated),B long-run regime index (phi + lambda a_end),0.694
+India baseline (calibrated),B regime,constant growth
+India baseline (calibrated),B ideas growth at year 30,0.063
+India baseline (calibrated),B ideas growth at year 60,0.07643
+India baseline (calibrated),B GDP at year 60 relative to no-automation path,2.91407
+India baseline (calibrated),B year ideas growth hits the cap (blank if never),
+India baseline (calibrated),C baseline saving rate,0.30653
+India baseline (calibrated),C evaluation year,30
+India baseline (calibrated),C demand gap without tax at evaluation year (% of potential),0.06589
+India baseline (calibrated),C demand gap with tax at evaluation year (% of potential),0.06589
+India baseline (calibrated),C UBI at evaluation year (% of GDP),0.0
+India baseline (calibrated),C welfare change from the chosen tax at evaluation year (%),0.0
+India baseline (calibrated),C welfare-maximising tax rate,0.61
+India baseline (calibrated),C welfare gain at that rate (%),0.25105
+India baseline (calibrated),C revenue-maximising tax rate,0.67
+AI compute doubles every 2 years,A gdp multiple at year 30 (today = 1),2.33014
+AI compute doubles every 2 years,A gdp multiple at year 60,19.00389
+AI compute doubles every 2 years,A gdp at year 60 relative to frozen-compute path,5.43017
+AI compute doubles every 2 years,A wage at year 30 relative to frozen-compute path,1.15545
+AI compute doubles every 2 years,A wage at year 60 relative to frozen-compute path,3.26428
+AI compute doubles every 2 years,A labour share today,0.5885
+AI compute doubles every 2 years,A labour share at year 30,0.54632
+AI compute doubles every 2 years,A labour share at year 60,0.35421
+AI compute doubles every 2 years,A AI income share at year 30,0.04918
+AI compute doubles every 2 years,A AI income share at year 60,0.24129
+AI compute doubles every 2 years,A consumption at year 30 relative to frozen-compute path,1.24544
+AI compute doubles every 2 years,"A GDP growth, years 1-10 average",0.02402
+AI compute doubles every 2 years,A crowded-out years (AI spending above saving),0.0
+AI compute doubles every 2 years,B long-run regime index (phi + lambda a_end),0.694
+AI compute doubles every 2 years,B regime,constant growth
+AI compute doubles every 2 years,B ideas growth at year 30,0.01964
+AI compute doubles every 2 years,B ideas growth at year 60,0.02857
+AI compute doubles every 2 years,B GDP at year 60 relative to no-automation path,1.38063
+AI compute doubles every 2 years,B year ideas growth hits the cap (blank if never),
+AI compute doubles every 2 years,C baseline saving rate,0.18398
+AI compute doubles every 2 years,C evaluation year,30
+AI compute doubles every 2 years,C demand gap without tax at evaluation year (% of potential),0.68665
+AI compute doubles every 2 years,C demand gap with tax at evaluation year (% of potential),0.68665
+AI compute doubles every 2 years,C UBI at evaluation year (% of GDP),0.0
+AI compute doubles every 2 years,C welfare change from the chosen tax at evaluation year (%),0.0
+AI compute doubles every 2 years,C welfare-maximising tax rate,0.6
+AI compute doubles every 2 years,C welfare gain at that rate (%),1.93808
+AI compute doubles every 2 years,C revenue-maximising tax rate,0.67
+Tasks complement (low substitution),A gdp multiple at year 30 (today = 1),1.8914
+Tasks complement (low substitution),A gdp multiple at year 60,3.55604
+Tasks complement (low substitution),A gdp at year 60 relative to frozen-compute path,1.01809
+Tasks complement (low substitution),A wage at year 30 relative to frozen-compute path,1.0272
+Tasks complement (low substitution),A wage at year 60 relative to frozen-compute path,1.03915
+Tasks complement (low substitution),A labour share today,0.5885
+Tasks complement (low substitution),A labour share at year 30,0.59548
+Tasks complement (low substitution),A labour share at year 60,0.59547
+Tasks complement (low substitution),A AI income share at year 30,2e-05
+Tasks complement (low substitution),A AI income share at year 60,3e-05
+Tasks complement (low substitution),A consumption at year 30 relative to frozen-compute path,1.01135
+Tasks complement (low substitution),"A GDP growth, years 1-10 average",0.02164
+Tasks complement (low substitution),A crowded-out years (AI spending above saving),0.0
+Tasks complement (low substitution),B long-run regime index (phi + lambda a_end),0.694
+Tasks complement (low substitution),B regime,constant growth
+Tasks complement (low substitution),B ideas growth at year 30,0.01964
+Tasks complement (low substitution),B ideas growth at year 60,0.02857
+Tasks complement (low substitution),B GDP at year 60 relative to no-automation path,1.38063
+Tasks complement (low substitution),B year ideas growth hits the cap (blank if never),
+Tasks complement (low substitution),C baseline saving rate,0.18398
+Tasks complement (low substitution),C evaluation year,30
+Tasks complement (low substitution),C demand gap without tax at evaluation year (% of potential),-0.11364
+Tasks complement (low substitution),C demand gap with tax at evaluation year (% of potential),-0.11364
+Tasks complement (low substitution),C UBI at evaluation year (% of GDP),0.0
+Tasks complement (low substitution),C welfare change from the chosen tax at evaluation year (%),0.0
+Tasks complement (low substitution),C welfare-maximising tax rate,0.56
+Tasks complement (low substitution),C welfare gain at that rate (%),0.00053
+Tasks complement (low substitution),C revenue-maximising tax rate,0.67
+Tasks substitute (high substitution),A gdp multiple at year 30 (today = 1),2.88018
+Tasks substitute (high substitution),A gdp multiple at year 60,5.55075
+Tasks substitute (high substitution),A gdp at year 60 relative to frozen-compute path,1.58529
+Tasks substitute (high substitution),A wage at year 30 relative to frozen-compute path,1.10759
+Tasks substitute (high substitution),A wage at year 60 relative to frozen-compute path,1.18967
+Tasks substitute (high substitution),A labour share today,0.5885
+Tasks substitute (high substitution),A labour share at year 30,0.42423
+Tasks substitute (high substitution),A labour share at year 60,0.44311
+Tasks substitute (high substitution),A AI income share at year 30,0.17127
+Tasks substitute (high substitution),A AI income share at year 60,0.15239
+Tasks substitute (high substitution),A consumption at year 30 relative to frozen-compute path,1.53924
+Tasks substitute (high substitution),"A GDP growth, years 1-10 average",0.04036
+Tasks substitute (high substitution),A crowded-out years (AI spending above saving),0.0
+Tasks substitute (high substitution),B long-run regime index (phi + lambda a_end),0.694
+Tasks substitute (high substitution),B regime,constant growth
+Tasks substitute (high substitution),B ideas growth at year 30,0.01964
+Tasks substitute (high substitution),B ideas growth at year 60,0.02857
+Tasks substitute (high substitution),B GDP at year 60 relative to no-automation path,1.38063
+Tasks substitute (high substitution),B year ideas growth hits the cap (blank if never),
+Tasks substitute (high substitution),C baseline saving rate,0.18398
+Tasks substitute (high substitution),C evaluation year,30
+Tasks substitute (high substitution),C demand gap without tax at evaluation year (% of potential),2.67432
+Tasks substitute (high substitution),C demand gap with tax at evaluation year (% of potential),2.67432
+Tasks substitute (high substitution),C UBI at evaluation year (% of GDP),0.0
+Tasks substitute (high substitution),C welfare change from the chosen tax at evaluation year (%),0.0
+Tasks substitute (high substitution),C welfare-maximising tax rate,0.61
+Tasks substitute (high substitution),C welfare gain at that rate (%),8.70089
+Tasks substitute (high substitution),C revenue-maximising tax rate,0.69
+"Demand failure (Keynes), high substitution",A gdp multiple at year 30 (today = 1),2.88018
+"Demand failure (Keynes), high substitution",A gdp multiple at year 60,5.55075
+"Demand failure (Keynes), high substitution",A gdp at year 60 relative to frozen-compute path,1.58529
+"Demand failure (Keynes), high substitution",A wage at year 30 relative to frozen-compute path,1.10759
+"Demand failure (Keynes), high substitution",A wage at year 60 relative to frozen-compute path,1.18967
+"Demand failure (Keynes), high substitution",A labour share today,0.5885
+"Demand failure (Keynes), high substitution",A labour share at year 30,0.42423
+"Demand failure (Keynes), high substitution",A labour share at year 60,0.44311
+"Demand failure (Keynes), high substitution",A AI income share at year 30,0.17127
+"Demand failure (Keynes), high substitution",A AI income share at year 60,0.15239
+"Demand failure (Keynes), high substitution",A consumption at year 30 relative to frozen-compute path,1.53924
+"Demand failure (Keynes), high substitution","A GDP growth, years 1-10 average",0.04036
+"Demand failure (Keynes), high substitution",A crowded-out years (AI spending above saving),0.0
+"Demand failure (Keynes), high substitution",B long-run regime index (phi + lambda a_end),0.694
+"Demand failure (Keynes), high substitution",B regime,constant growth
+"Demand failure (Keynes), high substitution",B ideas growth at year 30,0.01964
+"Demand failure (Keynes), high substitution",B ideas growth at year 60,0.02857
+"Demand failure (Keynes), high substitution",B GDP at year 60 relative to no-automation path,1.38063
+"Demand failure (Keynes), high substitution",B year ideas growth hits the cap (blank if never),
+"Demand failure (Keynes), high substitution",C baseline saving rate,0.18398
+"Demand failure (Keynes), high substitution",C evaluation year,30
+"Demand failure (Keynes), high substitution",C demand gap without tax at evaluation year (% of potential),5.34864
+"Demand failure (Keynes), high substitution",C demand gap with tax at evaluation year (% of potential),5.34864
+"Demand failure (Keynes), high substitution",C UBI at evaluation year (% of GDP),0.0
+"Demand failure (Keynes), high substitution",C welfare change from the chosen tax at evaluation year (%),0.0
+"Demand failure (Keynes), high substitution",C welfare-maximising tax rate,0.64
+"Demand failure (Keynes), high substitution",C welfare gain at that rate (%),10.44776
+"Demand failure (Keynes), high substitution",C revenue-maximising tax rate,0.69
+Automation tax 25 percent with UBI,A gdp multiple at year 30 (today = 1),2.88018
+Automation tax 25 percent with UBI,A gdp multiple at year 60,5.55075
+Automation tax 25 percent with UBI,A gdp at year 60 relative to frozen-compute path,1.58529
+Automation tax 25 percent with UBI,A wage at year 30 relative to frozen-compute path,1.10759
+Automation tax 25 percent with UBI,A wage at year 60 relative to frozen-compute path,1.18967
+Automation tax 25 percent with UBI,A labour share today,0.5885
+Automation tax 25 percent with UBI,A labour share at year 30,0.42423
+Automation tax 25 percent with UBI,A labour share at year 60,0.44311
+Automation tax 25 percent with UBI,A AI income share at year 30,0.17127
+Automation tax 25 percent with UBI,A AI income share at year 60,0.15239
+Automation tax 25 percent with UBI,A consumption at year 30 relative to frozen-compute path,1.53924
+Automation tax 25 percent with UBI,"A GDP growth, years 1-10 average",0.04036
+Automation tax 25 percent with UBI,A crowded-out years (AI spending above saving),0.0
+Automation tax 25 percent with UBI,B long-run regime index (phi + lambda a_end),0.694
+Automation tax 25 percent with UBI,B regime,constant growth
+Automation tax 25 percent with UBI,B ideas growth at year 30,0.01964
+Automation tax 25 percent with UBI,B ideas growth at year 60,0.02857
+Automation tax 25 percent with UBI,B GDP at year 60 relative to no-automation path,1.38063
+Automation tax 25 percent with UBI,B year ideas growth hits the cap (blank if never),
+Automation tax 25 percent with UBI,C baseline saving rate,0.18398
+Automation tax 25 percent with UBI,C evaluation year,30
+Automation tax 25 percent with UBI,C demand gap without tax at evaluation year (% of potential),2.67432
+Automation tax 25 percent with UBI,C demand gap with tax at evaluation year (% of potential),1.96448
+Automation tax 25 percent with UBI,C UBI at evaluation year (% of GDP),3.70811
+Automation tax 25 percent with UBI,C welfare change from the chosen tax at evaluation year (%),5.31993
+Automation tax 25 percent with UBI,C welfare-maximising tax rate,0.61
+Automation tax 25 percent with UBI,C welfare gain at that rate (%),8.70089
+Automation tax 25 percent with UBI,C revenue-maximising tax rate,0.69
+Research automation,A gdp multiple at year 30 (today = 1),2.07281
+Research automation,A gdp multiple at year 60,3.94053
+Research automation,A gdp at year 60 relative to frozen-compute path,1.12597
+Research automation,A wage at year 30 relative to frozen-compute path,1.07882
+Research automation,A wage at year 60 relative to frozen-compute path,1.09787
+Research automation,A labour share today,0.5885
+Research automation,A labour share at year 30,0.57342
+Research automation,A labour share at year 60,0.57453
+Research automation,A AI income share at year 30,0.02208
+Research automation,A AI income share at year 60,0.02097
+Research automation,A consumption at year 30 relative to frozen-compute path,1.1079
+Research automation,"A GDP growth, years 1-10 average",0.02652
+Research automation,A crowded-out years (AI spending above saving),0.0
+Research automation,B long-run regime index (phi + lambda a_end),1.144
+Research automation,B regime,explosive
+Research automation,B ideas growth at year 30,0.25
+Research automation,B ideas growth at year 60,0.25
+Research automation,B GDP at year 60 relative to no-automation path,2106.97472
+Research automation,B year ideas growth hits the cap (blank if never),26
+Research automation,C baseline saving rate,0.18398
+Research automation,C evaluation year,30
+Research automation,C demand gap without tax at evaluation year (% of potential),0.24556
+Research automation,C demand gap with tax at evaluation year (% of potential),0.24556
+Research automation,C UBI at evaluation year (% of GDP),0.0
+Research automation,C welfare change from the chosen tax at evaluation year (%),0.0
+Research automation,C welfare-maximising tax rate,0.6
+Research automation,C welfare gain at that rate (%),0.82069
+Research automation,C revenue-maximising tax rate,0.67

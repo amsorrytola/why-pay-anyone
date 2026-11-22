@@ -1,0 +1,42 @@
+series,statistic,value,ci_lo,ci_hi,note
+Q7 Yes,periods,26.0,,,202524 to 202623
+Q7 Yes,first_value_pct,17.3,,,202524
+Q7 Yes,last_value_pct,25.0,,,202623
+Q7 Yes,slope_pp_per_fortnight,0.316,0.2814,0.3506,"OLS on fortnight index, Newey-West (2 lags)"
+Q7 Yes,slope_pp_per_year,8.216,7.3167,9.1153,26 fortnights
+Q7 Yes,r_squared,0.9578,,,
+Q7 No,periods,26.0,,,202524 to 202623
+Q7 No,first_value_pct,71.6,,,202524
+Q7 No,last_value_pct,61.6,,,202623
+Q7 No,slope_pp_per_fortnight,-0.3459,-0.4678,-0.224,"OLS on fortnight index, Newey-West (2 lags)"
+Q7 No,slope_pp_per_year,-8.9947,-12.1641,-5.8253,26 fortnights
+Q7 No,r_squared,0.7778,,,
+Q7 Do not know,periods,26.0,,,202524 to 202623
+Q7 Do not know,first_value_pct,11.1,,,202524
+Q7 Do not know,last_value_pct,13.3,,,202623
+Q7 Do not know,slope_pp_per_fortnight,0.0291,-0.0686,0.1268,"OLS on fortnight index, Newey-West (2 lags)"
+Q7 Do not know,slope_pp_per_year,0.7556,-1.7849,3.296,26 fortnights
+Q7 Do not know,r_squared,0.0355,,,
+Q28 Yes,periods,26.0,,,202524 to 202623
+Q28 Yes,first_value_pct,21.1,,,202524
+Q28 Yes,last_value_pct,28.2,,,202623
+Q28 Yes,slope_pp_per_fortnight,0.3096,0.2539,0.3654,"OLS on fortnight index, Newey-West (2 lags)"
+Q28 Yes,slope_pp_per_year,8.0507,6.6001,9.5012,26 fortnights
+Q28 Yes,r_squared,0.9034,,,
+Q28 No,periods,26.0,,,202524 to 202623
+Q28 No,first_value_pct,56.8,,,202524
+Q28 No,last_value_pct,45.2,,,202623
+Q28 No,slope_pp_per_fortnight,-0.477,-0.5105,-0.4434,"OLS on fortnight index, Newey-West (2 lags)"
+Q28 No,slope_pp_per_year,-12.4009,-13.2728,-11.529,26 fortnights
+Q28 No,r_squared,0.9635,,,
+Q28 Do not know,periods,26.0,,,202524 to 202623
+Q28 Do not know,first_value_pct,22.2,,,202524
+Q28 Do not know,last_value_pct,26.6,,,202623
+Q28 Do not know,slope_pp_per_fortnight,0.1658,0.0898,0.2419,"OLS on fortnight index, Newey-West (2 lags)"
+Q28 Do not know,slope_pp_per_year,4.312,2.3338,6.2902,26 fortnights
+Q28 Do not know,r_squared,0.5912,,,
+Q7 Do not know,jump_at_202622_pp,3.925,,,"mean of 202622-202623 minus mean of 202618-202621; descriptive, cause not stated in the files"
+Q7 No,jump_at_202622_pp,-4.725,,,"mean of 202622-202623 minus mean of 202618-202621; descriptive, cause not stated in the files"
+Q7 Yes,jump_at_202622_pp,0.75,,,"mean of 202622-202623 minus mean of 202618-202621; descriptive, cause not stated in the files"
+Q7 Yes,mean_se_202524_202621,0.3179,,,
+Q7 Yes,mean_se_202622_202623,0.605,,,

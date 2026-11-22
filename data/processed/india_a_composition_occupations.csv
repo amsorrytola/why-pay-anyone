@@ -1,0 +1,46 @@
+list,rank_in_list,soc,title,india_apr,india_may,india_share,world_apr,world_may,world_share,diff_pp,ratio_india_to_world,both_published,direction_same_in_both_months,india_occupations_published
+top_by_india_share,1,15-1299,"Computer Occupations, All Other",6.59,6.79,6.69,7.7,7.84,7.77,-1.08,0.861,True,yes,412
+top_by_india_share,2,25-4022,Librarians and Media Collections Specialists,3.16,3.36,3.26,4.01,4.22,4.115,-0.855,0.792,True,yes,412
+top_by_india_share,3,27-3043,Writers and Authors,2.93,3.02,2.975,3.64,3.71,3.675,-0.7,0.81,True,yes,412
+top_by_india_share,4,15-1243,Database Architects,2.96,2.74,2.85,1.85,1.79,1.82,1.03,1.566,True,yes,412
+top_by_india_share,5,25-3031,"Substitute Teachers, Short-Term",2.7,2.87,2.785,1.25,1.38,1.315,1.47,2.118,True,yes,412
+top_by_india_share,6,15-1255,Web and Digital Interface Designers,2.67,2.58,2.625,1.86,1.91,1.885,0.74,1.393,True,yes,412
+top_by_india_share,7,15-1251,Computer Programmers,2.65,2.49,2.57,1.68,1.67,1.675,0.895,1.534,True,yes,412
+top_by_india_share,8,15-1211,Computer Systems Analysts,2.38,2.2,2.29,2.02,1.92,1.97,0.32,1.162,True,yes,412
+top_by_india_share,9,27-3041,Editors,2.18,2.3,2.24,2.44,2.58,2.51,-0.27,0.892,True,yes,412
+top_by_india_share,10,15-1232,Computer User Support Specialists,2.03,1.98,2.005,2.26,2.17,2.215,-0.21,0.905,True,yes,412
+top_by_india_share,11,25-3041,Tutors,1.83,2.08,1.955,1.1,1.27,1.185,0.77,1.65,True,yes,412
+top_by_india_share,12,41-2021,Counter and Rental Clerks,1.74,2.1,1.92,2.4,2.72,2.56,-0.64,0.75,True,yes,412
+top_by_india_share,13,15-1253,Software Quality Assurance Analysts and Testers,2.0,1.82,1.91,1.38,1.32,1.35,0.56,1.415,True,yes,412
+top_by_india_share,14,43-9022,Word Processors and Typists,1.72,1.7,1.71,1.05,1.16,1.105,0.605,1.548,True,yes,412
+top_by_india_share,15,15-2051,Data Scientists,1.54,1.35,1.445,1.37,1.35,1.36,0.085,1.062,True,no,412
+most_over_indexed,1,11-9032,"Education Administrators, Kindergarten through Secondary",1.1,1.22,1.16,0.46,0.51,0.485,0.675,2.392,True,yes,412
+most_over_indexed,2,11-9033,"Education Administrators, Postsecondary",0.91,1.09,1.0,0.41,0.44,0.425,0.575,2.353,True,yes,412
+most_over_indexed,3,25-3031,"Substitute Teachers, Short-Term",2.7,2.87,2.785,1.25,1.38,1.315,1.47,2.118,True,yes,412
+most_over_indexed,4,21-1012,"Educational, Guidance, and Career Counselors and Advisors",0.34,0.4,0.37,0.18,0.2,0.19,0.18,1.947,True,yes,412
+most_over_indexed,5,19-2041,"Environmental Scientists and Specialists, Including Health",0.25,0.25,0.25,0.14,0.13,0.135,0.115,1.852,True,yes,412
+most_over_indexed,6,27-4011,Audio and Video Technicians,0.56,0.59,0.575,0.31,0.33,0.32,0.255,1.797,True,yes,412
+most_over_indexed,7,21-2011,Clergy,0.28,0.3,0.29,0.16,0.18,0.17,0.12,1.706,True,yes,412
+most_over_indexed,8,25-3041,Tutors,1.83,2.08,1.955,1.1,1.27,1.185,0.77,1.65,True,yes,412
+most_over_indexed,9,11-3131,Training and Development Managers,0.33,0.32,0.325,0.19,0.21,0.2,0.125,1.625,True,yes,412
+most_over_indexed,10,43-9031,Desktop Publishers,0.83,0.91,0.87,0.5,0.58,0.54,0.33,1.611,True,yes,412
+most_over_indexed,11,15-1243,Database Architects,2.96,2.74,2.85,1.85,1.79,1.82,1.03,1.566,True,yes,412
+most_over_indexed,12,43-9022,Word Processors and Typists,1.72,1.7,1.71,1.05,1.16,1.105,0.605,1.548,True,yes,412
+most_over_indexed,13,25-1121,"Art, Drama, and Music Teachers, Postsecondary",0.26,0.31,0.285,0.17,0.2,0.185,0.1,1.541,True,yes,412
+most_over_indexed,14,15-1251,Computer Programmers,2.65,2.49,2.57,1.68,1.67,1.675,0.895,1.534,True,yes,412
+most_over_indexed,15,15-1254,Web Developers,0.99,0.95,0.97,0.64,0.64,0.64,0.33,1.516,True,yes,412
+most_under_indexed,1,27-3091,Interpreters and Translators,0.39,0.43,0.41,0.85,0.93,0.89,-0.48,0.461,True,yes,412
+most_under_indexed,2,23-1011,Lawyers,0.32,0.34,0.33,0.57,0.62,0.595,-0.265,0.555,True,yes,412
+most_under_indexed,3,43-9061,"Office Clerks, General",0.41,0.45,0.43,0.7,0.76,0.73,-0.3,0.589,True,yes,412
+most_under_indexed,4,41-2031,Retail Salespersons,0.21,0.25,0.23,0.35,0.4,0.375,-0.145,0.613,True,yes,412
+most_under_indexed,5,21-1013,Marriage and Family Therapists,0.35,0.37,0.36,0.51,0.53,0.52,-0.16,0.692,True,yes,412
+most_under_indexed,6,43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",0.39,0.41,0.4,0.55,0.58,0.565,-0.165,0.708,True,yes,412
+most_under_indexed,7,11-3021,Computer and Information Systems Managers,0.3,0.33,0.315,0.43,0.45,0.44,-0.125,0.716,True,yes,412
+most_under_indexed,8,43-9081,Proofreaders and Copy Markers,0.29,0.3,0.295,0.39,0.41,0.4,-0.105,0.737,True,yes,412
+most_under_indexed,9,41-2021,Counter and Rental Clerks,1.74,2.1,1.92,2.4,2.72,2.56,-0.64,0.75,True,yes,412
+most_under_indexed,10,41-9091,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",0.26,0.26,0.26,0.33,0.36,0.345,-0.085,0.754,True,yes,412
+most_under_indexed,11,43-3031,"Bookkeeping, Accounting, and Auditing Clerks",0.22,0.25,0.235,0.3,0.32,0.31,-0.075,0.758,True,yes,412
+most_under_indexed,12,21-1014,Mental Health Counselors,0.31,0.35,0.33,0.42,0.43,0.425,-0.095,0.776,True,yes,412
+most_under_indexed,13,27-3042,Technical Writers,1.28,1.27,1.275,1.58,1.67,1.625,-0.35,0.785,True,yes,412
+most_under_indexed,14,43-9041,Insurance Claims and Policy Processing Clerks,0.64,0.69,0.665,0.85,0.84,0.845,-0.18,0.787,True,yes,412
+most_under_indexed,15,11-3031,Financial Managers,0.26,0.27,0.265,0.33,0.34,0.335,-0.07,0.791,True,yes,412

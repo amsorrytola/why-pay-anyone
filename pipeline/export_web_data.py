@@ -16,7 +16,11 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "processed"
 DST = ROOT / "web" / "src" / "data"
 MAX_BYTES = 1_200_000
-SKIP = {"m5_hhi_daily.csv"}  # large and only used for a smooth line; export a thinned copy below
+SKIP = {
+    "m5_hhi_daily.csv",  # thinned copy below
+    "m3_btos_msa.csv", "m3_btos_state.csv", "m3_btos_subsector.csv", "m3_btos_sector.csv", "m3_btos_size.csv",  # slim copies below
+    "m3_indeed_sector_monthly.csv", "m3_category_soc_map.csv", "m3_btos_snapshot_employment.csv",
+}
 
 
 def clean(v):
@@ -42,7 +46,18 @@ def main():
     d = pd.read_csv(SRC / "m5_hhi_daily.csv")
     d = d.iloc[::2]  # every second day
     (DST / "m5_hhi_daily.json").write_text(json.dumps([{k: clean(v) for k, v in r.items()} for r in d.to_dict("records")], separators=(",", ":")))
-    print(f"exported {n + 1} tables")
+    # M3: only the series the site draws
+    parts = []
+    for name in ("m3_btos_sector", "m3_btos_size", "m3_btos_state"):
+        b = pd.read_csv(SRC / f"{name}.csv")
+        b = b[(b.question_id == 7) & (b.answer == "Yes")]
+        parts.append(b[["geo_type", "geo_name", "ref_end", "estimate_pct", "se_pct"]])
+    q7 = pd.concat(parts)
+    (DST / "m3_btos_q7_groups.json").write_text(json.dumps([{k: clean(v) for k, v in r.items()} for r in q7.to_dict("records")], separators=(",", ":")))
+    sn = pd.read_csv(SRC / "m3_btos_snapshot_employment.csv")
+    sn = sn[sn.geo_type.isin(["national", "size"])]
+    (DST / "m3_btos_snapshot_employment.json").write_text(json.dumps([{k: clean(v) for k, v in r.items()} for r in sn.to_dict("records")], separators=(",", ":")))
+    print(f"exported {n + 3} tables")
 
 
 if __name__ == "__main__":

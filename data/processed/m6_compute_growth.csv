@@ -1,0 +1,14 @@
+series,window,n_points,unit,log_growth_per_year,annual_growth_factor,doubling_years,doubling_years_ci_low,doubling_years_ci_high,r2,note
+"AI chip stock (cumulative shipments, H100e)",2024Q1-2026Q2 (all six designers),10,H100e,1.1436,3.138,0.6061,0.5668,0.6513,0.9929,cumulative shipments; no retirements
+"AI chip stock (cumulative shipments, H100e)",2025Q2-2026Q2 (latest year),5,H100e,0.9482,2.581,0.731,0.7087,0.7549,0.9983,cumulative shipments; no retirements
+"AI chip stock (cumulative shipments, H100e)",2024Q2-2025Q2 (year before),5,H100e,1.2745,3.577,0.5438,0.5304,0.558,0.9987,cumulative shipments; no retirements
+Nvidia chip stock only (cumulative H100e),2022Q1-2026Q2,18,H100e,1.3178,3.7352,0.526,0.4857,0.5735,0.9869,"one designer, longest consistent coverage"
+AI chip shipments per quarter (H100e),2024Q1-2026Q2,10,H100e per quarter,0.9088,2.4815,0.7627,0.7,0.8377,0.9837,"flow, not stock"
+AI chip stock power (cumulative TDP),2024Q1-2026Q2,10,MW,0.9436,2.5693,0.7346,0.6737,0.8075,0.9881,"chip thermal design power, not data-centre power"
+AI chip spending per quarter (Epoch cost estimate),2024Q1-2026Q2,10,USD bn per quarter,0.6048,1.831,1.146,1.0926,1.2049,0.991,chip purchase cost only
+Tracked data-centre IT power,2024Q1-2026Q3,11,MW,1.2721,3.5685,0.5449,0.5006,0.5977,0.9868,96 sites tracked by Epoch; early growth is overstated because only sites that are large today are listed
+Tracked data-centre H100 equivalents,2024Q1-2026Q3,11,H100e,1.6005,4.9553,0.4331,0.409,0.4602,0.9931,same sites
+Tracked data-centre IT power,2025Q3-2026Q3 (latest year),5,MW,1.1221,3.0712,0.6177,0.5754,0.6668,0.9818,96 sites tracked by Epoch; early growth is overstated because only sites that are large today are listed
+Tracked data-centre H100 equivalents,2025Q3-2026Q3 (latest year),5,H100e,1.4002,4.056,0.495,0.4607,0.5349,0.9807,same sites
+Hardware performance per dollar (H100e per chip price),chips released 2018 to 2026,26,H100e per USD,0.3101,1.3635,2.2354,1.6602,3.4205,0.4448,26 chip types; list-price and TDP approximations from Epoch
+Hardware performance per watt (H100e per chip TDP),chips released 2018 to 2026,29,H100e per W,0.3245,1.3833,2.1363,1.8522,2.5234,0.6907,29 chip types; list-price and TDP approximations from Epoch

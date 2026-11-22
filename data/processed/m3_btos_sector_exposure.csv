@@ -1,0 +1,16 @@
+sector_code,sector_name,core_categories,ms_exposure,aei_usage_ratio,mapped_employment,q7_first3,q7_last4,q7_last4_se,q7_change_pp,us_postings_change_pct_2026_vs_2022,us_postings_categories_used
+11,"Agriculture, Forestry, Fishing and Hunting",Agriculture & Forestry,0.0582,0.2807,442610,,,,,,
+23,Construction,Construction; Civil Engineering,0.0956,0.1498,7627340,8.467,16.525,0.523,8.058,-24.2314,Construction; Civil Engineering
+31,Manufacturing,Production & Manufacturing; Industrial Engineering; Mechanical Engineering; Electrical Engineering,0.1281,0.6557,10314360,12.3,21.875,0.695,9.575,-33.9007,Production & Manufacturing; Industrial Engineering; Mechanical Engineering; Electrical Engineering
+44,Retail Trade,Retail,0.2936,0.4538,7487080,12.3,19.0,0.463,6.7,-32.5885,Retail
+48,Transportation and Warehousing,Driving; Loading & Stocking; Logistic Support; Aviation,0.1174,0.0719,16532500,7.033,11.625,0.733,4.592,-39.0854,Driving; Loading & Stocking; Logistic Support; Aviation
+51,Information,Software Development; IT Systems & Solutions; Data & Analytics; Media & Communications,0.3078,9.9369,5174410,36.533,47.8,1.045,11.267,-61.779,Software Development; IT Systems & Solutions; Data & Analytics; Media & Communications
+52,Finance and Insurance,Banking & Finance; Insurance,0.227,1.4394,4115310,29.933,40.625,1.034,10.692,-36.8936,Banking & Finance; Insurance
+53,Real Estate and Rental and Leasing,Real Estate,0.196,0.1279,607720,23.9,30.775,0.896,6.875,,
+54,"Professional, Scientific, and Technical Services",Legal; Accounting; Architecture; Scientific Research & Development; Marketing,0.2183,1.2273,9078800,33.233,42.225,0.55,8.992,-46.7168,Legal; Accounting; Architecture; Scientific Research & Development; Marketing
+56,Administrative and Support and Waste Management,Cleaning & Sanitation; Security & Public Safety; Administrative Assistance; Customer Service,0.2137,0.6601,19418900,15.6,22.425,0.895,6.825,-39.402,Cleaning & Sanitation; Security & Public Safety; Administrative Assistance; Customer Service
+61,Educational Services,Education & Instruction,0.2089,2.1465,9698240,29.833,39.2,1.542,9.367,-31.6321,Education & Instruction
+62,Health Care and Social Assistance,Nursing; Physicians & Surgeons; Medical Technician; Dental; Pharmacy; Therapy; Medical Information; Personal Care & Home Health; Community & Social Service; Childcare,0.1114,0.3961,21958620,20.233,25.575,0.487,5.342,-27.4061,Nursing; Physicians & Surgeons; Medical Technician; Dental; Pharmacy; Therapy; Medical Information; Personal Care & Home Health; Community & Social Service; Childcare
+71,"Arts, Entertainment, and Recreation",Arts & Entertainment; Sports,0.1922,1.8203,2681160,17.467,20.275,0.733,2.808,-41.0463,Arts & Entertainment
+72,Accommodation and Food Services,Food Preparation & Service; Hospitality & Tourism,0.1728,0.0874,13067790,8.233,11.8,0.64,3.567,-30.9439,Food Preparation & Service; Hospitality & Tourism
+81,Other Services (except Public Administration),Beauty & Wellness; Installation & Maintenance,0.1042,0.1487,6534580,10.233,13.8,0.53,3.567,-25.5713,Installation & Maintenance
