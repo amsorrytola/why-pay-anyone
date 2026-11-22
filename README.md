@@ -12,7 +12,7 @@ Data stage (2026-11-22). Topic agreed with the industry supervisor. The raw data
 
 Python setup: install [uv](https://docs.astral.sh/uv/), then `uv sync` creates the environment from `pyproject.toml` and `uv.lock` (pandas, statsmodels, scipy, pyarrow, openpyxl); run scripts with `uv run python pipeline/<script>.py`. Secrets go in `.env` (see `.env.example`); it is never committed.
 
-To re-fetch the raw data (about 370 MB, standard-library Python only): `python3 -I pipeline/fetch.py all` and `python3 -I pipeline/fetch_litellm_history.py` (needs the `gh` CLI). The BLS wage file must be downloaded in a browser because BLS blocks scripts; it is recorded in `data/manifest.json`.
+To re-fetch the raw data (about 370 MB, standard-library Python only): `python3 -I pipeline/fetch.py all` `python3 -I pipeline/fetch_litellm_history.py` (needs the `gh` CLI) and `python3 -I pipeline/fetch_openrouter_rankings.py` (needs `OPENROUTER_API_KEY` in `.env`). The BLS wage file must be downloaded in a browser because BLS blocks scripts; it is recorded in `data/manifest.json`.
 
 ## The six modules
 

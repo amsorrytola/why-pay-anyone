@@ -544,6 +544,15 @@
     "sha256": "7b7f878e0eae99076cb161e01f99d1529fd88260ac9ecf31630027ca944d4800",
     "url": "https://openrouter.ai/api/v1/models"
   },
+  "openrouter_rankings_daily/rankings_daily.json": {
+    "as_of": "2026-11-22T05:41:25.278Z",
+    "bytes": 3720037,
+    "citation": "Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-22T05:41:25.278Z. Licensed under CC BY 4.0.",
+    "retrieved_utc": "2026-11-22T05:41:28Z",
+    "rows": 35088,
+    "sha256": "78ee4b09b73f3215c886887724159f5d95b923a3d3436dcb07b1bdd7b0bcab41",
+    "url": "https://openrouter.ai/api/v1/datasets/rankings-daily?start_date=2025-01-01&end_date=2026-11-21 (fetched in 60-day chunks)"
+  },
   "plfs_2025_docs/FV_Data_LayoutPLFS_2025.xlsx": {
     "bytes": 70514,
     "method": "documentation file downloaded in the browser pane while logged in (study 284, PLFS Calendar Year 2025), then moved here",

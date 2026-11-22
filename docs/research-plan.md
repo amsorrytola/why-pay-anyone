@@ -58,7 +58,9 @@ Rule for every module: real data, one headline model, one slider panel, one plai
 - **Data:** OpenRouter daily token share by model and author (needs an API key); Epoch AI data on companies, chips and compute.
 - **Method:** Herfindahl–Hirschman index over time; Cournot and Bertrand benchmarks calibrated to the number of firms and costs; price competition among providers.
 - **Controls:** provider shares, number of firms, cost assumptions.
-- **Drop if:** daily shares cannot be obtained. Concentration would then be shown from Epoch's company data only if that data supports it; otherwise only the theory panel stays.
+- **Known limits:** the shares are OpenRouter's users only, not the whole market; token counts differ by provider's tokenizer; two days are missing from the source; only the top 50 models per day are listed, plus one "other" row.
+- **First look (2026-11-22, exploratory, not final):** an HHI by model author, computed from the top-50 models' daily tokens, falls from about 2,960 in the first quarter of 2025 to about 1,170 in the second quarter of 2026, and rises again to about 1,870 in the last (partial) quarter. The largest share in the first quarter of 2025 is Anthropic at about 41%; in the last quarter it is DeepSeek at about 34%.
+- **Drop if:** daily shares cannot be obtained (they were, on 2026-11-22). Concentration would then be shown from Epoch's company data only if that data supports it; otherwise only the theory panel stays.
 
 ### M6. Macro and policy
 - **Question:** what does falling intelligence cost, and the way its gains are shared, imply for growth, the labour share and policies such as UBI and an automation tax?
