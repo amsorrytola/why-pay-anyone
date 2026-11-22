@@ -129,7 +129,7 @@ def main():
             if month < r["release_month"]:
                 continue
             best = None
-            for k in r["_keys"]:
+            for k in sorted(r["_keys"]):
                 v = d.get(k)
                 if v and usable(k, v):
                     i, o = v["input_cost_per_token"] * 1e6, v["output_cost_per_token"] * 1e6
@@ -138,6 +138,25 @@ def main():
                         best = (b, i, o, k)
             if best:
                 rows.append({"month": month, "model": r["model"], "blended": best[0], "input": best[1], "output": best[2], "cheapest_key": best[3]})
+    # number of hosts and price spread across hosts, model x month (used by M5 for the price-competition test)
+    hosts = []
+    for month, d in snaps.items():
+        for _, r in m.iterrows():
+            if month < r["release_month"]:
+                continue
+            listed = []
+            for k in sorted(r["_keys"]):
+                v = d.get(k)
+                if v and usable(k, v):
+                    host = re.split(r"[-_]", str(v.get("litellm_provider")))[0]       # bedrock_converse -> bedrock, azure_ai -> azure
+                    listed.append((host, (3 * v["input_cost_per_token"] + v["output_cost_per_token"]) / 4 * 1e6))
+            if listed:
+                prices_listed = [p for _, p in listed]
+                hosts.append({"month": month, "model": r["model"], "eci": r["eci"], "access": r["access"],
+                              "n_hosts": len({h for h, _ in listed}), "n_listings": len(listed), "price_min": min(prices_listed),
+                              "price_median": float(np.median(prices_listed)), "price_max": max(prices_listed)})
+    pd.DataFrame(hosts).round(5).to_csv(OUT / "m5_host_prices.csv", index=False)
+
     panel = pd.DataFrame(rows).merge(m[["model", "eci", "access", "release_date"]], on="model")
     first_priced = panel.groupby("model").month.min().rename("first_price_month")
     last = panel[panel.month == panel.month.max()].set_index("model").blended.rename("price_now")

@@ -38,3 +38,18 @@ Built by `pipeline/build_m1_prices.py` and then `pipeline/build_m1_volume.py`. P
 | `m1_elasticity.csv` | Panel regressions of log tokens on log price with model and month fixed effects |
 
 Cautions: tokens are OpenRouter's own traffic and include prompt tokens (many cached, billed at a fraction), so implied spending is an upper bound; a model counts as "priced" only if its name matched an Epoch-scored model (about half of OpenRouter's tokens); within-model price changes are few, so the elasticity is imprecise.
+
+## M5 tables (market structure)
+Built by `pipeline/build_m5.py` (after `build_m1_prices.py`). A firm is the model author mapped to its parent (for example `meta` and `meta-llama` to Meta, `qwen` to Alibaba). Models from `stealth` and `openrouter` are anonymous and excluded from concentration. Shares are of the top-50 models' tokens on OpenRouter; HHI runs from 0 to 10,000.
+
+| File | Contents |
+|---|---|
+| `m5_firm_month_shares.csv` | Firm × month: tokens per day and share of attributed top-50 tokens |
+| `m5_concentration_monthly.csv` | Monthly HHI with lower and upper bounds (allowing for models outside the top 50), effective number of firms, largest-firm and top-four shares, leader, firms with at least 1% share, new firms reaching 1%, share-change (instability) index, share of anonymous models |
+| `m5_hhi_daily.csv` | Daily HHI, top share, and 7-day mean |
+| `m5_cournot_by_month.csv` | For each month and demand elasticity of 1, 1.5, 2, 3, 5: the Cournot-implied Lerner index (HHI ÷ elasticity) and markup over marginal cost |
+| `m5_host_prices.csv` | Model × month: number of hosts and listings, lowest, median and highest list price per million blended tokens (from the LiteLLM snapshots) |
+| `m5_host_competition.csv` | Regressions of the lowest, median and spread of price on the log number of hosts, with model and month fixed effects, for open-weights and closed models |
+| `m5_epoch_revenue.csv` | Annualised revenue reports from Epoch AI (levels only; too sparse to compute concentration) |
+
+Cautions: OpenRouter's users are not the whole market; token counts use each provider's tokenizer; tokens are not revenue.
