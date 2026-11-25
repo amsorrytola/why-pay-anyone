@@ -34,7 +34,9 @@ export function Chat() {
     setInput("");
     setBusy(true);
     try {
+      // never leave the panel waiting: give up after 35 seconds
       const res = await fetch("/api/chat", {
+        signal: AbortSignal.timeout(35000),
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: next.slice(-6), page, state }),

@@ -3,12 +3,13 @@ import { KNOWLEDGE } from "@/content/knowledge";
 export const maxDuration = 30;
 
 // The answer is streamed as it is written. Providers are tried in order, so a busy one does not stop the chat:
-// Gemini 2.5 Flash with thinking off (first words in about 1.5 s, accurate), Gemini 2.5 Flash-Lite (faster, less
-// careful), MiniMax (about 4 s, it thinks first), then the newer Gemini model, which is often overloaded.
-// A provider that has not started answering by its deadline is skipped before anything is shown.
+// OpenAI GPT-5.4 mini with reasoning off (first words in about 1 s, the most accurate in our tests), Gemini 2.5
+// Flash with thinking off (about 1.5 s), Gemini 2.5 Flash-Lite (fast, less careful), then MiniMax (about 4 s, it
+// thinks first). A provider that has not started answering by its deadline is skipped before anything is shown.
+// (gemini-3.1-flash-lite was dropped: in November 2026 it often answered 503 "high demand" after many seconds.)
+const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-5.4-mini";
 const FAST_MODEL = process.env.GEMINI_FAST_MODEL || "gemini-2.5-flash";
 const LITE_MODEL = process.env.GEMINI_LITE_MODEL || "gemini-2.5-flash-lite";
-const MODEL = process.env.GEMINI_MODEL || "gemini-3.1-flash-lite";
 const MINIMAX_MODEL = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash";
 const PER_IP_LIMIT = Number(process.env.CHAT_PER_IP_PER_10MIN || 14);
 const DAILY_CAP = Number(process.env.CHAT_DAILY_CAP || 500);
@@ -67,7 +68,8 @@ export async function POST(req: Request) {
 
   const geminiKey = process.env.GEMINI_API_KEY;
   const minimaxKey = process.env.MINIMAX_API_KEY || process.env.MINIMAX_API;
-  if (!geminiKey && !minimaxKey) return Response.json({ answer: fallback(question, "The chat is not switched on for this copy of the site."), limited: true });
+  const openaiKey = process.env.OPENAI_API_KEY;
+  if (!geminiKey && !minimaxKey && !openaiKey) return Response.json({ answer: fallback(question, "The chat is not switched on for this copy of the site."), limited: true });
 
   const stateText = Object.entries(body.state ?? {})
     .slice(0, 24)
@@ -77,12 +79,12 @@ export async function POST(req: Request) {
 
   type Provider = { name: string; firstTokenMs: number; open: (signal: AbortSignal) => AsyncGenerator<string> };
   const providers: Provider[] = [];
+  if (openaiKey) providers.push({ name: OPENAI_MODEL, firstTokenMs: 3500, open: (sig) => streamOpenAI(openaiKey, system, msgs, sig) });
   if (geminiKey) {
     providers.push({ name: FAST_MODEL, firstTokenMs: 4000, open: (sig) => streamGemini(geminiKey, FAST_MODEL, system, msgs, sig, { thinkingConfig: { thinkingBudget: 0 } }) });
     providers.push({ name: LITE_MODEL, firstTokenMs: 4000, open: (sig) => streamGemini(geminiKey, LITE_MODEL, system, msgs, sig) });
   }
   if (minimaxKey) providers.push({ name: MINIMAX_MODEL, firstTokenMs: 10000, open: (sig) => streamMinimax(minimaxKey, system, msgs, sig) });
-  if (geminiKey && MODEL !== FAST_MODEL) providers.push({ name: MODEL, firstTokenMs: 6000, open: (sig) => streamGemini(geminiKey, MODEL, system, msgs, sig) });
 
   const enc = new TextEncoder();
   const stream = new ReadableStream<Uint8Array>({
@@ -176,6 +178,24 @@ async function* streamMinimax(key: string, system: string, msgs: Msg[], signal: 
     signal,
   });
   // only the answer is shown; the model's reasoning (reasoning_content) is skipped
+  for await (const ev of sse(res)) {
+    yield (ev as { choices?: { delta?: { content?: string } }[] })?.choices?.[0]?.delta?.content ?? "";
+  }
+}
+
+async function* streamOpenAI(key: string, system: string, msgs: Msg[], signal: AbortSignal) {
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({
+      model: OPENAI_MODEL,
+      stream: true,
+      reasoning_effort: "none",
+      max_completion_tokens: 600,
+      messages: [{ role: "system", content: system }, ...msgs.map((m) => ({ role: m.role === "model" ? "assistant" : "user", content: m.text }))],
+    }),
+    signal,
+  });
   for await (const ev of sse(res)) {
     yield (ev as { choices?: { delta?: { content?: string } }[] })?.choices?.[0]?.delta?.content ?? "";
   }
