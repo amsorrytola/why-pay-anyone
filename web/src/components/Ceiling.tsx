@@ -7,8 +7,8 @@ import type { M4Params, M4Result } from "@/models/m4";
 /**
  * The wage ceiling, drawn. Each column is one task, from the tasks people are best at (left) to the tasks
  * AI finds easiest (right). A column's height is what one unit of the task costs, in units of a person's cost at
- * their best task. Amber: done by a person. Cobalt: done by AI, so the cost is cut to the ceiling.
- * The hatched ghost above a cobalt column is what a person would have cost.
+ * their best task. Red: done by a person. Blue: done by AI, so the cost is cut to the ceiling.
+ * The hatched ghost above a blue column is what a person would have cost.
  */
 export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number; onRhoScale?: (factor: number) => void; intro?: boolean }) {
   const { p, r } = props;
@@ -98,7 +98,7 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
             y={yOf(ai) - 15}
             width={150}
             height={26}
-            rx={13}
+            rx={3}
             fill="var(--ai-deep)"
             onPointerDown={onDown}
             onPointerMove={onMove}
@@ -106,7 +106,7 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
             style={{ cursor: dragging ? "grabbing" : "grab", touchAction: "none" }}
           />
           <text x={w - m.right - 75} y={yOf(ai) + 3} textAnchor="middle" fontSize={13} fontWeight={600} fill="#fff" className="ui" pointerEvents="none">
-            ⇅ AI price: drag
+            Drag the AI price
           </text>
         </g>
 

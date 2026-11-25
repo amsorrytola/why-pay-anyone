@@ -304,7 +304,7 @@ export default function M3Page() {
                     key={s.value}
                     onClick={() => setSpec(s.value)}
                     aria-pressed={useSpec === s.value}
-                    className={`ui rounded-full border px-3 py-1 text-[0.88rem] ${useSpec === s.value ? "border-ink bg-ink text-paper" : "border-rule bg-surface hover:border-ai hover:bg-ai-soft"}`}
+                    className={`ui rounded-[3px] border px-3 py-1 text-[0.88rem] ${useSpec === s.value ? "border-ink bg-ink text-paper" : "border-rule bg-surface hover:border-ai hover:bg-ai-soft"}`}
                   >
                     {s.label}
                   </button>

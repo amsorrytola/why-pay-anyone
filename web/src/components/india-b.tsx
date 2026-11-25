@@ -341,7 +341,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
       <Section className="grid gap-5 lg:grid-cols-2">
         <Figure
           title="Exposure and pay across occupation groups"
-          subtitle="Each bubble is a three-digit occupation group, sized by its share of Indian workers. Cobalt: above your line. Amber: below. Pay is the median monthly pay of regular wage workers in the group."
+          subtitle="Each bubble is a three-digit occupation group, sized by its share of Indian workers. Blue: above your line. Red: below. Pay is the median monthly pay of regular wage workers in the group."
           source="Source: PLFS 2025 (MoSPI), exposure from the measure chosen above. Groups with at least 30 regular-wage earners in the sample."
         >
           <Scatter

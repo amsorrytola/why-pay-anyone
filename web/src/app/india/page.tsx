@@ -152,7 +152,7 @@ export default function IndiaPage() {
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_300px]">
           <Figure
             title="Claude usage per person against income, 120 countries"
-            subtitle="Each dot is a country. Up: usage relative to the country's share of working-age people (1.0 means use in proportion to population). Right: income per person. The line is what income alone predicts. Amber is India; the pale ring is where the chosen prediction puts India. Blue dots are income peers."
+            subtitle="Each dot is a country. Up: usage relative to the country's share of working-age people (1.0 means use in proportion to population). Right: income per person. The line is what income alone predicts. Red is India; the pale red ring is where the chosen prediction puts India. Blue dots are income peers."
             source="Sources: Anthropic Economic Index (Claude.ai, April and May 2026, CC-BY); World Bank (GDP per capita PPP, latest year). Claude.ai covers one company's products."
           >
             <Scatter
@@ -199,7 +199,7 @@ export default function IndiaPage() {
       <Section className="grid gap-5 lg:grid-cols-2">
         <Figure
           title="What India uses Claude for, against the world"
-          subtitle="Share of each country's use by job family (the job the conversation is about). Amber: India. Blue: worldwide."
+          subtitle="Share of each country's use by job family (the job the conversation is about). Red: India. Blue: worldwide."
           source="Anthropic Economic Index (Claude.ai). Only published cells."
         >
           <Dumbbell rows={dumb} aLabel="India" bLabel="World" />
@@ -232,7 +232,7 @@ export default function IndiaPage() {
                 );
               })}
             </ul>
-            <p className="ui mt-3 text-[0.85rem] text-ink-soft">Amber tick: India. Black tick: world. Blue band: the middle half of income peers.</p>
+            <p className="ui mt-3 text-[0.85rem] text-ink-soft">Red tick: India. Black tick: world. Blue band: the middle half of income peers.</p>
           </Figure>
         </div>
       </Section>

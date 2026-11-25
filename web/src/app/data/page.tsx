@@ -536,7 +536,7 @@ const LINKS: { label: string; href: string; note: string }[] = [
 
 function StatusPill({ status }: { status: Status }) {
   const s = STATUS[status];
-  return <span className={`ui inline-block rounded-full border border-rule px-2.5 py-0.5 text-[0.78rem] leading-snug text-ink ${s.bg}`}>{s.label}</span>;
+  return <span className={`ui inline-block rounded-[3px] border border-rule px-2.5 py-0.5 text-[0.78rem] leading-snug text-ink ${s.bg}`}>{s.label}</span>;
 }
 
 function FeedList({ feeds }: { feeds: string[] }) {

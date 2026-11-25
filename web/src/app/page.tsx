@@ -1,23 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState, type ReactNode } from "react";
+import { useMemo, useState } from "react";
 import { Slider, Stat, Section, Caveat } from "@/components/ui";
 import { CeilingChart } from "@/components/Ceiling";
-import { Marquee, Spark } from "@/components/viz";
 import { usePageState } from "@/components/chat-context";
+import { SITE_LINKS } from "@/components/site";
 import { M4_DEFAULTS, simulateM4, type M4Params } from "@/models/m4";
-import { mult, pct0, compact } from "@/lib/format";
+import { mult, pct0 } from "@/lib/format";
 import fits from "@/data/m1_price_decline_fits.json";
-import prices from "@/data/m1_price_of_capability.json";
 import vol from "@/data/m1_volume_monthly.json";
 import conc from "@/data/m5_concentration_monthly.json";
+import agr from "@/data/m2_agreement.json";
+import btosSum from "@/data/m3_btos_adoption_summary.json";
+import ev from "@/data/m3_event_study_summary.json";
 import indiaSummary from "@/data/india_b_summary.json";
 
-type Fit = { threshold: number; price_first: number; price_last: number; halving_time_months: number; annual_decline_pct: number };
-type PriceRow = { threshold: number; month: string; price: number };
+type Fit = { threshold: number; price_first: number; price_last: number; halving_time_months: number };
 type Vol = { month: string; all_tokens_per_day: number };
 type Conc = { month: string; hhi: number; effective_firms: number };
+type Agr = { measure_a: string; measure_b: string; sample: string; weighting: string; statistic: string; estimate: number };
+type BtosSum = { geo_type: string; question_id: number; answer: string; first3_mean: number; latest_value: number };
+type Ev = { country: string; spec: string; window: string; pct: number };
 type Sum = { measure: string; scope: string; label: string; value: number };
 
 const monthLabel = (ym: string) => {
@@ -25,111 +29,13 @@ const monthLabel = (ym: string) => {
   return `${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1]} ${y}`;
 };
 
-type Tone = "ai" | "human" | "owner" | "ok";
-const TONE_BG: Record<Tone, string> = { ai: "bg-ai-soft text-ai-deep", human: "bg-human-soft text-human-deep", owner: "bg-owner-soft text-owner", ok: "bg-ok-soft text-ok" };
-const TONE_BAR: Record<Tone, string> = { ai: "bg-ai", human: "bg-human", owner: "bg-owner", ok: "bg-ok" };
-
-function Glyph({ kind, tone }: { kind: string; tone: Tone }) {
-  const p = { fill: "none", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
-  return (
-    <span className={`flex h-11 w-11 items-center justify-center rounded-2xl ${TONE_BG[tone]}`} aria-hidden>
-      <svg width="24" height="24" viewBox="0 0 24 24">
-        {kind === "advantage" && (
-          <>
-            <circle cx="9" cy="12" r="5.5" {...p} />
-            <circle cx="15.5" cy="12" r="5.5" {...p} />
-          </>
-        )}
-        {kind === "ceiling" && (
-          <>
-            <path d="M3 5h18" {...p} />
-            <path d="M5 9c4 1 8 6 14 10" {...p} />
-          </>
-        )}
-        {kind === "buyers" && (
-          <>
-            <path d="M5 8a8 8 0 0 1 14 0M19 16a8 8 0 0 1-14 0" {...p} />
-            <path d="m19 4 .5 4.4-4.4.1M5 20l-.5-4.4 4.4-.1" {...p} />
-          </>
-        )}
-        {kind === "jevons" && <path d="M5 19v-5M10 19V10M15 19V7M20 19V3" {...p} />}
-        {kind === "owners" && (
-          <>
-            <path d="M12 3a9 9 0 1 0 9 9h-9z" {...p} />
-            <path d="M15 3.6A9 9 0 0 1 20.4 9H15z" {...p} />
-          </>
-        )}
-      </svg>
-    </span>
-  );
-}
-
-const LENSES: { href: string; name: string; text: string; tag: string; glyph: string; tone: Tone; span: string }[] = [
-  {
-    href: "/m4",
-    name: "Comparative advantage",
-    text: "Even if AI is better at everything, people keep the tasks where they are relatively best, as long as AI capacity is limited.",
-    tag: "Wages lab",
-    glyph: "advantage",
-    tone: "human",
-    span: "lg:col-span-2",
-  },
-  {
-    href: "/m1",
-    name: "The wage ceiling",
-    text: "For a task AI can do, a person's pay cannot stay above what the AI costs. The price of that AI keeps falling.",
-    tag: "Prices lab",
-    glyph: "ceiling",
-    tone: "ai",
-    span: "lg:col-span-2",
-  },
-  {
-    href: "/m4",
-    name: "Who buys the output",
-    text: "If fewer people earn wages, who buys what is made? Workers and AI owners spend different shares of what they earn.",
-    tag: "Wages lab",
-    glyph: "buyers",
-    tone: "ok",
-    span: "lg:col-span-2",
-  },
-  {
-    href: "/m1",
-    name: "New tasks and Jevons",
-    text: "Cheaper intelligence can raise total demand and create new work, as cheaper coal once raised total coal use.",
-    tag: "Prices lab",
-    glyph: "jevons",
-    tone: "ai",
-    span: "lg:col-span-3",
-  },
-  {
-    href: "/m5",
-    name: "Who owns the agents",
-    text: "If a few providers sell the intelligence, they may keep much of the gain. Concentration, entry and price competition show how likely that is.",
-    tag: "Markets lab",
-    glyph: "owners",
-    tone: "owner",
-    span: "lg:col-span-3",
-  },
+const IDEAS: { name: string; text: string; ch: string; href: string }[] = [
+  { name: "Comparative advantage", text: "Even if AI is better at everything, people keep the tasks where they are relatively best, as long as AI capacity is limited.", ch: "Chapter 4", href: "/m4" },
+  { name: "The wage ceiling", text: "For a task AI can do, a person's pay cannot stay above what the AI costs, and the price of that AI keeps falling.", ch: "Chapter 1", href: "/m1" },
+  { name: "Who buys the output", text: "If fewer people earn wages, who buys what is made? Workers and owners of AI spend different shares of what they earn.", ch: "Chapter 4", href: "/m4" },
+  { name: "New tasks and the Jevons paradox", text: "Cheaper intelligence can raise total demand and create new work, as cheaper coal once raised total coal use.", ch: "Chapter 1", href: "/m1" },
+  { name: "Who owns the agents", text: "If a few providers sell the intelligence, they may keep much of the gain. Concentration, entry and price competition show how likely that is.", ch: "Chapter 5", href: "/m5" },
 ];
-
-const LABS: { id: string; href: string; name: string; q: string; tone: Tone }[] = [
-  { id: "M1", href: "/m1", name: "Prices", q: "How fast is the price of a fixed level of AI capability falling, and does cheaper AI raise total spending?", tone: "ai" },
-  { id: "M2", href: "/m2", name: "Usage", q: "Which jobs does AI touch, and do independent measures agree?", tone: "ai" },
-  { id: "M3", href: "/m3", name: "Adoption", q: "Are firms using AI, and is it showing up in hiring?", tone: "ok" },
-  { id: "M4", href: "/m4", name: "Wages", q: "For a task AI can also do, what happens to pay, jobs and the labour share?", tone: "human" },
-  { id: "M5", href: "/m5", name: "Markets", q: "Who sells the intelligence, and how concentrated is it?", tone: "owner" },
-  { id: "M6", href: "/m6", name: "Growth and policy", q: "What does this mean for growth, inequality, an automation tax and a basic income?", tone: "owner" },
-  { id: "IN", href: "/india", name: "India", q: "How does India's use of AI compare with what its income predicts, and how many Indian workers are in exposed jobs?", tone: "human" },
-];
-
-function Fact({ value, text }: { value: string; text: string }) {
-  return (
-    <span className="ui flex items-baseline gap-3 text-[0.98rem] text-on-night-soft">
-      <b className="num text-[1.35rem] text-white">{value}</b>
-      {text}
-    </span>
-  );
-}
 
 export default function Home() {
   const [p, setP] = useState<M4Params>({ ...M4_DEFAULTS, A: 0.5, rho: 0.3 });
@@ -138,186 +44,195 @@ export default function Home() {
   usePageState("home", { "price of AI as share of wage": p.rho, "share of tasks AI can do": p.A, "elasticity between tasks": p.sigma, "labour share": +r.labourShare.toFixed(3), "real wage vs no-AI world": +r.relWage.toFixed(3) });
 
   const f120 = (fits as Fit[]).find((f) => f.threshold === 120)!;
-  const priceSeries = (prices as PriceRow[]).filter((x) => x.threshold === 120).map((x) => x.price);
   const v = vol as Vol[];
   const c = conc as Conc[];
   const growth = v[v.length - 1].all_tokens_per_day / v[0].all_tokens_per_day;
   const cMin = c.reduce((a, b) => (b.hhi < a.hhi ? b : a));
   const cEnd = c[c.length - 1];
-  const fall = f120.price_first / f120.price_last;
-  const topThird = (indiaSummary as Sum[]).find((x) => x.measure === "ms" && x.scope === "all" && x.label.startsWith("share of Indian workers above the US top-third"))?.value ?? 6;
+  const agree = (agr as Agr[]).find((a) => a.measure_a === "ms_applicability" && a.measure_b === "aei_usage_ratio" && a.sample.startsWith("591") && a.statistic === "spearman" && a.weighting === "unweighted");
+  const adopt = (btosSum as BtosSum[]).find((b) => b.geo_type === "national" && b.question_id === 7 && b.answer === "Yes");
+  const postings = (ev as Ev[]).find((e) => e.country === "US" && e.spec === "tercile_ms" && e.window === "post_all");
+  const india = (indiaSummary as Sum[]).find((x) => x.measure === "ms" && x.scope === "all" && x.label.startsWith("share of Indian workers above the US top-third"))?.value;
 
-  const facts: ReactNode[] = [
-    <Fact key="a" value={`$${f120.price_first.toFixed(2)} → $${f120.price_last.toFixed(2)}`} text="per million tokens, GPT-4-level capability, Sep 2023 to Nov 2026" />,
-    <Fact key="b" value={`${Math.round(growth)}×`} text="more daily AI tokens on OpenRouter since Jan 2025" />,
-    <Fact key="c" value={`${Math.round(f120.halving_time_months * 10) / 10} months`} text="for the price of that capability to halve" />,
-    <Fact key="d" value={`${Math.round(topThird)}%`} text="of Indian workers in the most exposed third of US jobs" />,
-    <Fact key="e" value={`${Math.round(cMin.effective_firms)} → ${Math.round(cEnd.effective_firms)}`} text="equal-sized providers, least to most recent concentration" />,
-    <Fact key="f" value="61" text="economics ideas, old and new, in plain words" />,
+  const rows: { m: string; v: string; when: string; ch: string; href: string }[] = [
+    { m: "Cheapest price of GPT-4-level AI, per million tokens", v: `$${f120.price_first.toFixed(2)} to $${f120.price_last.toFixed(3)}`, when: "Sep 2023 to Nov 2026", ch: "1", href: "/m1" },
+    { m: "Time for that price to halve, on the trend", v: `${f120.halving_time_months.toFixed(1)} months`, when: "Same period", ch: "1", href: "/m1" },
+    { m: "Daily AI tokens through OpenRouter", v: `${Math.round(growth)} times higher`, when: `${monthLabel(v[0].month)} to ${monthLabel(v[v.length - 1].month)}`, ch: "1", href: "/m1" },
+    ...(agree ? [{ m: "Agreement of two measures of which jobs use AI (rank correlation)", v: agree.estimate.toFixed(2), when: "591 US occupations", ch: "2", href: "/m2" }] : []),
+    ...(adopt ? [{ m: "US firms using AI to produce goods or services", v: `${Math.round(adopt.first3_mean)}% to ${Math.round(adopt.latest_value)}%`, when: "Nov 2025 to Nov 2026", ch: "3", href: "/m3" }] : []),
+    ...(postings ? [{ m: "Job postings, most against least AI-exposed third of job types", v: `${postings.pct < 0 ? "\u2212" : ""}${Math.abs(Math.round(postings.pct))}%`, when: "Since ChatGPT (Dec 2022)", ch: "3", href: "/m3" }] : []),
+    { m: "Equivalent number of equal-sized AI providers", v: `${Math.round(cMin.effective_firms)} to ${Math.round(cEnd.effective_firms)}`, when: `${monthLabel(cMin.month)} to ${monthLabel(cEnd.month)}`, ch: "5", href: "/m5" },
+    ...(india !== undefined ? [{ m: "Indian workers in the most AI-exposed third of US jobs (US: 33%)", v: `${india.toFixed(1)}%`, when: "PLFS 2025", ch: "7", href: "/india" }] : []),
   ];
+
+  const chapters = SITE_LINKS.filter((l) => l.n);
 
   return (
     <>
-      <section className="night on-night">
-        <div className="mx-auto grid max-w-[1200px] gap-10 px-5 pb-12 pt-10 sm:px-8 sm:pt-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,560px)] lg:items-center lg:gap-14 lg:pb-16">
+      {/* Title page */}
+      <header className="mx-auto max-w-[1180px] px-5 pt-8 sm:px-8 sm:pt-12">
+        <div className="rule-double pt-6 sm:pt-10">
+          <h1 className="text-[clamp(3rem,10vw,6.4rem)] leading-[0.98] tracking-[-0.02em]">Why Pay Anyone?</h1>
+          <p className="serif mt-3 text-[clamp(1.3rem,2.6vw,1.8rem)] italic leading-snug text-ink-soft">The economics of cheap intelligence</p>
+          <p className="ui mt-5 border-t border-rule pt-3 text-[0.9rem] text-ink-soft">
+            Lab Based Project, BS-MS Economics, IIT Roorkee. Industry track, Hello Agentic. November 2026.
+          </p>
+        </div>
+      </header>
+
+      <Section className="pt-8 sm:pt-10">
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-16">
           <div>
-            <h1 className="max-w-[9ch] text-[clamp(3.6rem,11.5vw,8.2rem)] leading-[0.92]">
-              <span className="rise block" style={{ ["--d" as string]: "0ms" }}>
-                Why pay
-              </span>
-              <span className="rise block" style={{ ["--d" as string]: "120ms" }}>
-                anyone?
-              </span>
-            </h1>
-            <p className="rise mt-6 max-w-[40ch] text-[1.2rem] leading-snug text-on-night sm:text-[1.35rem]" style={{ ["--d" as string]: "260ms" }}>
-              An AI can already do a growing list of tasks for a few cents. If it does the work for less, why would anyone pay a person to do it?
+            <h2 className="text-[1.5rem]">Abstract</h2>
+            <p className="mt-3 text-[1.12rem] leading-[1.65]">
+              An AI can already do a growing list of tasks for a few cents. If it does the work for less, why would anyone pay a person to do it? This study answers with public data on the price of AI, where it is used, how firms adopt it, who sells it, and what it means for India, together with a small task model and a growth model whose every assumption you can change.
             </p>
-            <p className="rise mt-4 max-w-[46ch] text-[1.02rem] leading-relaxed text-on-night-soft" style={{ ["--d" as string]: "340ms" }}>
-              This is a lab for that question: public data on prices, usage, jobs and markets, and a small model where you set every dial. New here? The guided journey takes about eight minutes: you guess, the data answers.
-            </p>
-            <div className="rise mt-8 flex flex-wrap gap-3" style={{ ["--d" as string]: "420ms" }}>
-              <Link href="/journey" className="btn btn-light">
-                Start the guided journey
-              </Link>
-              <a href="#model" className="btn btn-ghost">
-                Play with the model
-              </a>
-            </div>
-          </div>
-
-          <div id="model" className="panel min-w-0 scroll-mt-24 p-4 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.6)] sm:p-6">
-            <CeilingChart p={p} r={r} height={340} intro onRhoScale={(fac) => set("rho", Math.min(3, Math.max(0.01, p.rho * fac)))} />
-            <div className="mt-4 grid grid-cols-3 gap-3 border-t border-rule pt-4">
-              <Stat value={r.unbounded ? "no limit" : mult(r.relWage)} label="Real pay vs a world without AI" tone="human" />
-              <Stat value={pct0(r.labourShare)} label="Share of income paid as wages" tone="human" />
-              <Stat value={pct0(r.aiShare)} label="Of tasks done by AI" tone="ai" />
-            </div>
-            <div className="mt-3 border-t border-rule pt-1">
-              <Slider
-                label="Price of AI"
-                tone="ai"
-                value={p.rho}
-                min={0.01}
-                max={3}
-                step={0.001}
-                toPos={Math.log10}
-                fromPos={(x) => Math.pow(10, x)}
-                onChange={(x) => set("rho", x)}
-                format={(x) => `${(x * 100).toFixed(x < 0.1 ? 1 : 0)}% of wage`}
-                help="All-in cost of a task done with AI, against what a person is paid for it."
-              />
-              <Slider label="Work AI can do" tone="ai" value={p.A} min={0} max={1} step={0.01} onChange={(x) => set("A", x)} format={pct0} help="Share of tasks AI handles well enough." />
-              <Slider label="Swapping one task for another" tone="human" value={p.sigma} min={0.2} max={1.4} step={0.05} onChange={(x) => set("sigma", x)} format={(x) => x.toFixed(2)} help="Below 1, tasks complement each other. Above 1, they substitute." />
-            </div>
-            <p className="ui mt-1 max-w-none text-[0.8rem] text-ink-faint">
-              A stylised model, not a forecast. <Link href="/m4">Open the full wages lab</Link> for every dial.
+            <p className="mt-3 text-[1.12rem] leading-[1.65]">
+              The short answer: the price of AI is falling fast, but price is not what limits it. People keep the tasks where they are relatively best, real pay can rise while the share of income paid as wages falls, and who gains depends on who owns the AI.
             </p>
           </div>
+          <div>
+            <h2 className="text-[1.5rem]">How to read this</h2>
+            <ul className="mt-3 border-t border-ink">
+              <li className="border-b border-rule">
+                <Link href="/journey" className="entry block py-3.5">
+                  <span className="entry-title serif block text-[1.25rem] font-semibold">Guided reading</span>
+                  <span className="ui block text-[0.92rem] text-ink-soft">Seven chapters in about eight minutes. Guess first, then see what the data says. Ends with your scorecard.</span>
+                </Link>
+              </li>
+              <li className="border-b border-rule">
+                <a href="#figure-1" className="entry block py-3.5">
+                  <span className="entry-title serif block text-[1.25rem] font-semibold">The model, below</span>
+                  <span className="ui block text-[0.92rem] text-ink-soft">Change the price of AI and the share of work it can do, and watch pay and the wage share move.</span>
+                </a>
+              </li>
+              <li className="border-b border-rule">
+                <a href="#contents" className="entry block py-3.5">
+                  <span className="entry-title serif block text-[1.25rem] font-semibold">The full chapters</span>
+                  <span className="ui block text-[0.92rem] text-ink-soft">Every dataset, dial and caveat, one question per chapter.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="border-t border-white/10 py-4">
-          <Marquee items={facts} label="Headline figures from the project" seconds={80} />
-        </div>
-      </section>
-
-      <Section className="pt-12 sm:pt-16">
-        <h2 className="max-w-[20ch]">Three ways in</h2>
-        <ul className="mt-7 grid gap-4 md:grid-cols-3">
-          {[
-            { href: "/journey", t: "Take the guided journey", d: "Seven chapters. Guess the price of AI, the jobs it touches and who gains, then see the data. Ends with your scorecard.", tag: "About 8 minutes", tone: "bg-ai" },
-            { href: "#model", t: "Play with the model", d: "Drag the price of AI and the share of work it can do, and watch pay and the wage share move on the chart above.", tag: "Right here", tone: "bg-human" },
-            { href: "#labs", t: "Open a lab", d: "Six labs and an India lens, each with the full data, every dial, and the caveats. For the professor's deep read.", tag: "Seven labs", tone: "bg-owner" },
-          ].map((w) => (
-            <li key={w.t}>
-              <a href={w.href} data-reveal className="tile panel relative flex h-full flex-col overflow-hidden p-6 no-underline">
-                <span aria-hidden className={`absolute inset-x-0 top-0 h-1.5 ${w.tone}`} />
-                <span className="ui text-[0.82rem] font-semibold text-ink-faint">{w.tag}</span>
-                <span className="serif mt-2 block text-[1.6rem] leading-tight text-ink">{w.t}</span>
-                <span className="mt-2 block text-[0.96rem] leading-relaxed text-ink-soft">{w.d}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
       </Section>
 
-      <Section className="pt-14 sm:pt-20">
-        <h2 className="max-w-[20ch]">Five ways to answer the question</h2>
-        <p className="mt-3 max-w-[54ch] text-ink-soft">Each lens is an old idea in economics, tested against new data.</p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
-          {LENSES.map((l) => (
-            <li key={l.name} className={l.span}>
-              <Link href={l.href} data-reveal className="tile panel flex h-full flex-col gap-4 p-5 no-underline sm:p-6">
-                <Glyph kind={l.glyph} tone={l.tone} />
-                <div>
-                  <h3 className="text-[1.2rem] text-ink">{l.name}</h3>
-                  <p className="mt-2 text-[0.98rem] leading-relaxed text-ink-soft">{l.text}</p>
-                </div>
-                <span className="ui mt-auto text-[0.92rem] font-semibold text-ai-deep">{l.tag}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <Section>
+        <h2 className="tab-title ui text-[1.02rem] font-semibold leading-snug">Key figures</h2>
+        <div className="mt-3 overflow-x-auto">
+          <table className="booktabs min-w-[34rem] text-[0.95rem]">
+            <thead>
+              <tr>
+                <th scope="col">Measure</th>
+                <th scope="col" className="r">
+                  Value
+                </th>
+                <th scope="col">Period or sample</th>
+                <th scope="col" className="r">
+                  Chapter
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((x) => (
+                <tr key={x.m}>
+                  <td>{x.m}</td>
+                  <td className="r num">{x.v}</td>
+                  <td className="text-ink-soft">{x.when}</td>
+                  <td className="r">
+                    <Link href={x.href}>{x.ch}</Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="ui mt-2 text-[0.78rem] text-ink-faint">Sources: Epoch AI, LiteLLM, OpenRouter, Microsoft, Anthropic, US Census Bureau, Indeed Hiring Lab, MoSPI (PLFS). Details on the data page.</p>
       </Section>
 
-      <section className="mt-12 bg-paper-2 sm:mt-16">
-        <div className="mx-auto max-w-[1200px] px-5 py-14 sm:px-8 sm:py-20">
-          <h2 className="max-w-[20ch]">What the data already says</h2>
-          <div className="mt-9 grid gap-5 lg:grid-cols-3">
-            <div data-reveal className="panel flex flex-col p-5 sm:p-7">
-              <Stat size="lg" value={`${Math.round(fall).toLocaleString("en-US")}×`} label="Fall in the cheapest price of GPT-4-level capability" tone="ai" sub={`$${f120.price_first.toFixed(2)} to $${f120.price_last.toFixed(2)} per million tokens, Sep 2023 to Nov 2026`} />
-              <div className="mt-6">
-                <Spark values={priceSeries} log color="var(--ai)" label="Price of GPT-4-level capability over time, on a log scale" />
-              </div>
-              <p className="ui mt-4 text-[0.92rem] text-ink-soft">
-                It halves about every {f120.halving_time_months.toFixed(1)} months. <Link href="/m1">See the prices lab</Link>.
-              </p>
+      <Section className="scroll-mt-20" >
+        <figure id="figure-1" className="rule-top scroll-mt-20 pt-3">
+          <figcaption>
+            <h3 className="fig-title ui text-[1.02rem] leading-snug">The ceiling on pay, task by task</h3>
+            <p className="ui mt-1 max-w-[80ch] text-[0.88rem] leading-snug text-ink-soft">
+              Each column is a task, from the tasks people are best at (left) to those AI finds easiest (right). Vermilion: done by a person. Blue: done by AI, its cost cut to the AI price. Drag the AI price, or use the dials.
+            </p>
+          </figcaption>
+          <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+            <div className="min-w-0">
+              <CeilingChart p={p} r={r} height={360} intro onRhoScale={(fac) => set("rho", Math.min(3, Math.max(0.01, p.rho * fac)))} />
             </div>
-            <div data-reveal className="panel flex flex-col p-5 sm:p-7">
-              <Stat size="lg" value={`${Math.round(growth)}×`} label="Rise in daily AI tokens through OpenRouter" tone="human" sub={`${compact(v[0].all_tokens_per_day)} to ${compact(v[v.length - 1].all_tokens_per_day)} a day, Jan 2025 to Nov 2026`} />
-              <div className="mt-6">
-                <Spark values={v.map((x) => x.all_tokens_per_day)} color="var(--human)" label="Daily AI tokens through OpenRouter, on a linear scale" />
+            <div>
+              <div className="grid grid-cols-3 gap-3 border-b border-rule pb-4">
+                <Stat value={r.unbounded ? "no limit" : mult(r.relWage)} label="Real pay vs no AI" tone="human" />
+                <Stat value={pct0(r.labourShare)} label="Wage share of income" tone="human" />
+                <Stat value={pct0(r.aiShare)} label="Tasks done by AI" tone="ai" />
               </div>
-              <p className="ui mt-4 text-[0.92rem] text-ink-soft">Usage grew far faster than prices fell, but a model&apos;s own price cuts do not explain it alone.</p>
-            </div>
-            <div data-reveal className="panel flex flex-col p-5 sm:p-7">
-              <Stat size="lg" value={`${Math.round(cMin.effective_firms)} firms`} label="Equivalent number of equal-sized providers at the least concentrated point" tone="owner" sub={`${monthLabel(cMin.month)}; ${Math.round(cEnd.effective_firms)} by ${monthLabel(cEnd.month)}`} />
-              <div className="mt-6">
-                <Spark values={c.map((x) => x.effective_firms)} color="var(--owner)" label="Equivalent number of equal-sized providers over time" />
+              <div className="mt-2">
+                <Slider label="Price of AI" tone="ai" value={p.rho} min={0.01} max={3} step={0.001} toPos={Math.log10} fromPos={(x) => Math.pow(10, x)} onChange={(x) => set("rho", x)} format={(x) => `${(x * 100).toFixed(x < 0.1 ? 1 : 0)}% of a wage`} help="All-in cost of a task done with AI, against what a person is paid for it." />
+                <Slider label="Work AI can do" tone="ai" value={p.A} min={0} max={1} step={0.01} onChange={(x) => set("A", x)} format={pct0} help="Share of tasks AI handles well enough." />
+                <Slider label="How easily one task replaces another" tone="human" value={p.sigma} min={0.2} max={1.4} step={0.05} onChange={(x) => set("sigma", x)} format={(x) => x.toFixed(2)} help="Below 1, tasks complement each other. Above 1, they substitute." />
               </div>
-              <p className="ui mt-4 text-[0.92rem] text-ink-soft">
-                The market opened up, then narrowed again. <Link href="/m5">See the markets lab</Link>.
-              </p>
             </div>
           </div>
-        </div>
-      </section>
+          <p className="ui mt-4 border-t border-rule pt-2 text-[0.78rem] text-ink-faint">
+            Source: the project&apos;s task model, after Acemoglu and Restrepo. A stylised model, not a forecast. <Link href="/m4">Every dial is in chapter 4</Link>.
+          </p>
+        </figure>
+      </Section>
 
-      <Section className="scroll-mt-20 pt-14 sm:pt-20">
-        <h2 id="labs" className="max-w-[20ch] scroll-mt-24">The labs</h2>
-        <p className="mt-3 max-w-[54ch] text-ink-soft">Six labs and an India lens. Each starts from one question, shows the data, then lets you change the assumptions.</p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {LABS.map((l, i) => (
-            <li key={l.id} className={i === LABS.length - 1 ? "sm:col-span-2 lg:col-span-1" : ""}>
-              <Link href={l.href} data-reveal className="tile panel group relative flex h-full flex-col overflow-hidden p-5 no-underline sm:p-6">
-                <span aria-hidden className={`absolute inset-x-0 top-0 h-1.5 ${TONE_BAR[l.tone]}`} />
-                <div className="flex items-baseline justify-between">
-                  <span className="mono text-[0.85rem] font-medium text-ink-faint">{l.id}</span>
-                  <span aria-hidden className="ui text-[1.2rem] text-ink-faint transition-transform group-hover:translate-x-1">
-                    &rarr;
-                  </span>
-                </div>
-                <h3 className="serif mt-3 text-[1.7rem] font-medium leading-tight text-ink">{l.name}</h3>
-                <p className="mt-2 text-[0.96rem] leading-relaxed text-ink-soft">{l.q}</p>
+      <Section>
+        <h2 id="contents" className="scroll-mt-24">
+          Contents
+        </h2>
+        <ol className="mt-4 border-t border-ink">
+          {chapters.map((l) => (
+            <li key={l.href} className="border-b border-rule">
+              <Link href={l.href} className="entry grid grid-cols-[2.5rem_minmax(0,1fr)] items-baseline gap-x-4 py-4 sm:grid-cols-[3.5rem_14rem_minmax(0,1fr)]">
+                <span className="serif text-[1.7rem] font-semibold leading-none text-human">{l.n}</span>
+                <span className="entry-title serif text-[1.4rem] font-semibold leading-tight">{l.label}</span>
+                <span className="ui col-start-2 text-[0.95rem] text-ink-soft sm:col-start-3">{l.q}</span>
               </Link>
             </li>
           ))}
-        </ul>
+          <li className="border-b border-rule">
+            <Link href="/concepts" className="entry grid grid-cols-[2.5rem_minmax(0,1fr)] items-baseline gap-x-4 py-4 sm:grid-cols-[3.5rem_14rem_minmax(0,1fr)]">
+              <span />
+              <span className="entry-title serif text-[1.4rem] leading-tight">Concepts</span>
+              <span className="ui col-start-2 text-[0.95rem] text-ink-soft sm:col-start-3">61 economics ideas used in the study, in plain words, and how they connect.</span>
+            </Link>
+          </li>
+          <li className="border-b border-ink">
+            <Link href="/data" className="entry grid grid-cols-[2.5rem_minmax(0,1fr)] items-baseline gap-x-4 py-4 sm:grid-cols-[3.5rem_14rem_minmax(0,1fr)]">
+              <span />
+              <span className="entry-title serif text-[1.4rem] leading-tight">Data and method</span>
+              <span className="ui col-start-2 text-[0.95rem] text-ink-soft sm:col-start-3">Every source, its licence, what was done with it, and its limits.</span>
+            </Link>
+          </li>
+        </ol>
       </Section>
 
-      <Section className="pt-10 sm:pt-14">
+      <Section>
+        <h2>The argument in five ideas</h2>
+        <dl className="mt-5 grid gap-x-12 gap-y-6 md:grid-cols-2">
+          {IDEAS.map((i) => (
+            <div key={i.name} className="border-t border-rule pt-3">
+              <dt className="serif text-[1.25rem] font-semibold">{i.name}</dt>
+              <dd className="mt-1 text-[1.02rem] leading-relaxed">
+                {i.text}{" "}
+                <Link href={i.href} className="ui whitespace-nowrap text-[0.92rem] font-semibold">
+                  {i.ch}
+                </Link>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
+      <Section>
         <Caveat title="What this is not">
           <p>
-            It is not a forecast of jobs. Exposure scores say where AI is used, not who will lose work. Each dataset covers one platform or one country. The models are deliberately simple so every dial can be explained. The{" "}
-            <Link href="/data">data page</Link> lists every source and its limits, and the chat panel can answer questions about any chart.
+            It is not a forecast of jobs. Exposure scores say where AI is used, not who will lose work. Each dataset covers one platform or one country. The models are deliberately simple so that every dial can be explained. The <Link href="/data">data page</Link> lists every source and its limits, and the question panel can answer questions about any figure.
           </p>
         </Caveat>
       </Section>

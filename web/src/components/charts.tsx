@@ -19,6 +19,15 @@ export function useWidth<T extends HTMLElement>(): [React.RefObject<T | null>, n
   return [ref, w];
 }
 
+
+/** On a log axis, label only 1-2-5 ticks (only powers of ten when narrow) so the labels never run together. */
+function thinLog(ticks: number[], isLog: boolean | undefined, narrow: boolean) {
+  if (!isLog) return ticks;
+  const keep = narrow ? [1] : [1, 2, 5];
+  const f = ticks.filter((v) => keep.includes(Number(Math.abs(v).toExponential(0)[0])));
+  return f.length >= 2 ? f : ticks;
+}
+
 type NumScale = ((v: number) => number) & { ticks: (n?: number) => number[]; nice: () => unknown; invert: (v: number) => number };
 const M = { top: 14, right: 12, bottom: 30, left: 52 };
 const AXIS = "var(--ink-faint)";
@@ -79,7 +88,7 @@ export function LineChart(props: {
   const yd: [number, number] = props.yDomain ?? [props.log ? (min(ys) as number) * 0.8 : Math.min(0, min(ys) as number), (max(ys) as number) * (props.log ? 1.25 : 1.06)];
   const x = scaleLinear().domain(xd).range([M.left, w - M.right - rightPad]);
   const y = (props.log ? scaleLog().domain(yd).range([h - M.bottom, M.top]) : scaleLinear().domain(yd).range([h - M.bottom, M.top]).nice()) as ReturnType<typeof scaleLinear>;
-  const yTicks = props.log ? (y as unknown as ReturnType<typeof scaleLog>).ticks(5) : y.ticks(5);
+  const yTicks = thinLog(props.log ? (y as unknown as ReturnType<typeof scaleLog>).ticks(5) : y.ticks(5), props.log, h < 300 || w < 520);
   const xTicks = x.ticks(props.xTicks ?? Math.max(3, Math.floor(w / 110)));
   const ln = line<[number, number]>().x((d) => x(d[0])).y((d) => y(d[1]) as number).defined((d) => Number.isFinite(d[1]) && (!props.log || d[1] > 0));
 
@@ -230,7 +239,7 @@ export function Scatter(props: {
   return (
     <div ref={ref} className="relative w-full">
       <svg width={w} height={h} role="img" aria-label={props.ariaLabel}>
-        {y.ticks(5).map((t) => (
+        {thinLog(y.ticks(5), props.yLog, w < 520).map((t) => (
           <g key={`y${t}`}>
             <line x1={left} x2={w - 14} y1={y(t)} y2={y(t)} stroke={GRID} />
             <text x={left - 8} y={y(t) + 4} textAnchor="end" fontSize={12} fill={AXIS} className="ui">
@@ -238,7 +247,7 @@ export function Scatter(props: {
             </text>
           </g>
         ))}
-        {x.ticks(Math.max(3, Math.floor(w / 100))).map((t) => (
+        {thinLog(x.ticks(Math.max(3, Math.floor(w / 100))), props.xLog, w < 520).map((t) => (
           <g key={`x${t}`}>
             <line x1={x(t)} x2={x(t)} y1={12} y2={h - 44} stroke={GRID} strokeOpacity={0.5} />
             <text x={x(t)} y={h - 26} textAnchor="middle" fontSize={12} fill={AXIS} className="ui">

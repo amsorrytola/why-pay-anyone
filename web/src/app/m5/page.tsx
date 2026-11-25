@@ -74,7 +74,7 @@ const NAMED = [...peak.entries()]
 
 /*
   Firm colours, defined once. A restrained set that avoids the site's three meaning colours
-  (amber for people, cobalt for AI, plum for owners): greens, teal, brick, brown and slate.
+  (red for people, blue for AI, ochre for owners): greens, teal, brick, brown and slate.
 */
 const FIRM_COLORS: Record<string, string> = {
   Google: "#3b8f5a",
@@ -556,7 +556,7 @@ export default function M5Page() {
               <Slider label="Marginal cost" value={cost} min={0.05} max={0.9} step={0.05} tone="owner" format={(v) => v.toFixed(2)} onChange={setCost} help="The cost of serving one more unit, in the same units as price." />
               <button
                 onClick={() => setNFirms(effNearest)}
-                className="ui mt-2 rounded-full border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft"
+                className="ui mt-2 rounded-[3px] border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft"
               >
                 Use {effNearest} firms, the closest to {monthLabel(cs.month)}
               </button>
@@ -804,7 +804,7 @@ export default function M5Page() {
                       key={c}
                       onClick={() => setRevSel((s) => (s.includes(c) ? s.filter((x) => x !== c) : [...s, c]))}
                       aria-pressed={on}
-                      className={`ui rounded-full border px-3 py-1 text-[0.88rem] transition-colors ${on ? "border-ink bg-ink text-paper" : "border-rule bg-surface hover:border-ai hover:bg-ai-soft"}`}
+                      className={`ui rounded-[3px] border px-3 py-1 text-[0.88rem] transition-colors ${on ? "border-ink bg-ink text-paper" : "border-rule bg-surface hover:border-ai hover:bg-ai-soft"}`}
                     >
                       {c} <span className="opacity-70">({n})</span>
                     </button>

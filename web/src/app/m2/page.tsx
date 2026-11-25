@@ -190,7 +190,7 @@ export default function M2Page() {
                   <div className="flex justify-between gap-3"><dt className="text-ink-soft">Automation share</dt><dd className="num">{sel.aei_automation_pct != null ? `${Math.round(sel.aei_automation_pct)}%` : "n/a"}</dd></div>
                 </dl>
               ) : (
-                <p className="ui text-[0.92rem] text-ink-soft">Hover or click any dot to see the job, its pay and both measures. Search for a job above to light it up in amber.</p>
+                <p className="ui text-[0.92rem] text-ink-soft">Hover or click any dot to see the job, its pay and both measures. Search for a job above to light it up in red.</p>
               )}
             </div>
             <div className="panel p-4">

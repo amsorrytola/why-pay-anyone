@@ -155,7 +155,7 @@ function Gate(props: { open: boolean; children: ReactNode; hint?: string }) {
       </div>
       {!props.open && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center p-6 text-center">
-          <span className="ui rounded-full border border-white/20 bg-night/70 px-4 py-2 text-[0.92rem] font-semibold text-white backdrop-blur">{props.hint ?? "Lock in your answer to see the data"}</span>
+          <span className="ui border border-ink bg-paper px-3 py-1.5 text-[0.9rem] font-semibold text-ink">{props.hint ?? "Lock in your answer to see the data"}</span>
         </div>
       )}
     </div>
@@ -164,14 +164,18 @@ function Gate(props: { open: boolean; children: ReactNode; hint?: string }) {
 
 function VerdictChip({ v, text }: { v: Verdict | "right" | "wrong"; text?: string }) {
   const map = {
-    spot: ["bg-ok text-white", "Spot on"],
-    close: ["bg-human text-night", "Close"],
-    off: ["bg-white/15 text-white", "Off"],
-    right: ["bg-ok text-white", "Right"],
-    wrong: ["bg-white/15 text-white", "Not quite"],
+    spot: ["border-ok bg-ok text-white", "Spot on"],
+    close: ["border-owner bg-owner-soft text-ink", "Close"],
+    off: ["border-ink bg-paper text-ink", "Off"],
+    right: ["border-ok bg-ok text-white", "Right"],
+    wrong: ["border-ink bg-paper text-ink", "Not quite"],
   } as const;
   const [cls, label] = map[v];
-  return <span className={`ui pop inline-flex items-center rounded-full px-3 py-1 text-[0.85rem] font-semibold ${cls}`}>{text ?? label}</span>;
+  return (
+    <span className={`ui inline-flex shrink-0 items-center border px-2 py-0.5 text-[0.82rem] font-bold ${cls}`} style={{ borderRadius: "var(--radius)" }}>
+      {text ?? label}
+    </span>
+  );
 }
 
 function GuessControl(props: { spec: GuessSpec; locked?: number; onLock: (v: number) => void; children?: ReactNode }) {
@@ -192,9 +196,9 @@ function GuessControl(props: { spec: GuessSpec; locked?: number; onLock: (v: num
   const verdict = props.locked !== undefined ? spec.verdict(props.locked) : null;
 
   return (
-    <div className="rounded-[var(--radius)] border border-white/12 bg-white/[0.05] p-5 sm:p-6" data-noswipe>
-      <div className="ui text-[0.85rem] font-semibold text-on-night-soft">{props.locked === undefined ? "Your guess" : "You guessed"}</div>
-      <div className="num mt-1 text-[3.1rem] leading-none text-white sm:text-[3.6rem]">{spec.fmt(val)}</div>
+    <div className="border border-ink bg-paper-2 p-5 sm:p-6" style={{ borderRadius: "var(--radius)" }} data-noswipe>
+      <div className="ui text-[0.85rem] font-semibold text-ink-soft">{props.locked === undefined ? "Your guess" : "You guessed"}</div>
+      <div className="num mt-1 text-[3rem] leading-none text-human-deep sm:text-[3.4rem]">{spec.fmt(val)}</div>
       {props.locked === undefined ? (
         <>
           <input
@@ -206,37 +210,37 @@ function GuessControl(props: { spec: GuessSpec; locked?: number; onLock: (v: num
             step={spec.log ? (hi - lo) / 400 : spec.step}
             value={toPos(v)}
             onChange={(e) => setV(fromPos(Number(e.target.value)))}
-            style={{ ["--pct" as string]: `${pctOf(v)}%`, ["--fill" as string]: "var(--human)", ["--track" as string]: "rgba(255,255,255,0.16)" }}
+            style={{ ["--pct" as string]: `${pctOf(v)}%`, ["--fill" as string]: "var(--human)" }}
           />
-          <div className="ui mt-1 flex justify-between text-[0.78rem] text-on-night-soft">
+          <div className="ui mt-1 flex justify-between text-[0.78rem] text-ink-soft">
             <span>{spec.fmt(spec.min)}</span>
             <span>{spec.fmt(spec.max)}</span>
           </div>
-          <button type="button" onClick={() => props.onLock(spec.log ? v : Math.round(v / spec.step) * spec.step)} className="btn btn-light mt-5 w-full sm:w-auto">
+          <button type="button" onClick={() => props.onLock(spec.log ? v : Math.round(v / spec.step) * spec.step)} className="btn btn-ink mt-5 w-full sm:w-auto">
             Lock in my guess
           </button>
         </>
       ) : (
         <>
           <div className="relative mt-7 h-12" aria-hidden>
-            <div className="absolute inset-x-0 top-5 h-1.5 rounded-full bg-white/15" />
+            <div className="absolute inset-x-0 top-[22px] h-[2px] bg-ink" />
             <div className="marker absolute top-0 -translate-x-1/2 text-center" style={{ left: `${pctOf(props.locked)}%` }}>
-              <span className="mx-auto block h-4 w-4 rounded-full border-[3px] border-night bg-human" style={{ marginTop: 13 }} />
-              <span className="ui mt-1 block whitespace-nowrap text-[0.72rem] font-semibold text-human">You</span>
+              <span className="mx-auto block h-4 w-4 rounded-full border-2 border-paper-2 bg-human" style={{ marginTop: 15 }} />
+              <span className="ui mt-1 block whitespace-nowrap text-[0.76rem] font-bold text-human-deep">You</span>
             </div>
             <div className="marker absolute top-0 -translate-x-1/2 text-center" style={{ left: `${pctOf(shown ? spec.actual : props.locked)}%` }}>
-              <span className="mx-auto block h-4 w-4 rounded-full border-[3px] border-night bg-ai-glow" style={{ marginTop: 13 }} />
-              <span className="ui mt-1 block whitespace-nowrap text-[0.72rem] font-semibold text-ai-glow">Data</span>
+              <span className="mx-auto block h-4 w-4 border-2 border-paper-2 bg-ai" style={{ marginTop: 15 }} />
+              <span className="ui mt-1 block whitespace-nowrap text-[0.76rem] font-bold text-ai">Data</span>
             </div>
           </div>
           <div className="mt-4 flex flex-wrap items-center gap-3">
             {verdict && <VerdictChip v={verdict} />}
-            <span className="ui text-[0.95rem] text-white">
+            <span className="ui text-[0.95rem] text-ink">
               The data says <b className="num">{spec.fmt(spec.actual)}</b>
-              {verdict === "off" || verdict === "close" ? <span className="text-on-night-soft">; you were {spec.miss(props.locked)}</span> : null}
+              {verdict === "off" || verdict === "close" ? <span className="text-ink-soft">; you were {spec.miss(props.locked)}</span> : null}
             </span>
           </div>
-          {props.children && <div className="mt-4 space-y-3 text-[1rem] leading-relaxed text-on-night-soft">{props.children}</div>}
+          {props.children && <div className="serif mt-4 space-y-3 border-t border-rule pt-3 text-[1.02rem] leading-relaxed text-ink">{props.children}</div>}
         </>
       )}
     </div>
@@ -257,58 +261,68 @@ function ChoiceControl(props: { spec: ChoiceSpec; locked?: string; onLock: (k: s
             type="button"
             disabled={locked !== undefined}
             onClick={() => props.onLock(o.k)}
-            className={`choice ui flex w-full items-center justify-between gap-3 rounded-2xl border px-5 py-4 text-left text-[1.02rem] font-medium ${
+            className={`ui flex w-full items-center justify-between gap-3 border px-4 py-3.5 text-left text-[1rem] font-semibold transition-colors ${
               state === "idle"
-                ? "border-white/15 bg-white/[0.05] text-white hover:border-ai-glow hover:bg-white/[0.09]"
+                ? "border-ink bg-paper text-ink hover:bg-paper-2"
                 : state === "right"
-                  ? "border-ok bg-ok/20 text-white"
+                  ? "border-ok bg-ok-soft text-ink"
                   : state === "wrong"
-                    ? "border-white/30 bg-white/[0.06] text-white"
-                    : "border-white/10 bg-transparent text-on-night-soft opacity-60"
+                    ? "border-ink bg-paper text-ink"
+                    : "border-rule bg-paper text-ink-faint"
             }`}
+            style={{ borderRadius: "var(--radius)" }}
           >
-            <span className={state === "wrong" ? "line-through decoration-white/40" : undefined}>{o.text}</span>
+            <span className={state === "wrong" ? "line-through decoration-ink/50" : undefined}>{o.text}</span>
             {state === "right" && <VerdictChip v="right" text={isPick ? "Your call, right" : "The data"} />}
             {state === "wrong" && <VerdictChip v="wrong" text="Your call" />}
           </button>
         );
       })}
-      {locked !== undefined && props.children && <div className="journey-step mt-4 space-y-3 text-[1rem] leading-relaxed text-on-night-soft">{props.children}</div>}
+      {locked !== undefined && props.children && <div className="journey-step serif mt-4 space-y-3 border-t border-rule pt-3 text-[1.02rem] leading-relaxed text-ink">{props.children}</div>}
     </div>
   );
 }
 
 function Deeper({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="ui inline-flex items-center gap-2 font-semibold text-ai-glow no-underline hover:text-white">
+    <Link href={href} className="ui inline-block text-[0.95rem] font-semibold">
       {label}
-      <span aria-hidden>&rarr;</span>
     </Link>
   );
 }
 
 function Frame(props: { kicker: string; title: string; intro: ReactNode; control?: ReactNode; visual?: ReactNode }) {
+  const n = props.kicker.match(/Chapter (\d)/)?.[1];
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.08fr)] lg:items-start lg:gap-14">
       <div>
-        <p className="ui text-[0.92rem] font-semibold text-ai-glow">{props.kicker}</p>
-        <h2 className="mt-3 text-[clamp(2rem,5vw,3.4rem)] leading-[1.04]">{props.title}</h2>
-        <div className="mt-5 max-w-[54ch] space-y-3 text-[1.05rem] leading-relaxed text-on-night-soft sm:text-[1.12rem]">{props.intro}</div>
+        <p className="sr-only-ui">{props.kicker}</p>
+        <div className="flex items-start gap-4">
+          {n && (
+            <span aria-hidden className="serif text-[3.4rem] font-semibold leading-[0.82] text-human sm:text-[4.2rem]">
+              {n}
+            </span>
+          )}
+          <h2 className="text-[clamp(1.9rem,4.4vw,3rem)] leading-[1.06]">{props.title}</h2>
+        </div>
+        <div className="serif mt-5 max-w-[56ch] space-y-3 text-[1.08rem] leading-relaxed text-ink sm:text-[1.14rem]">{props.intro}</div>
         {props.control && <div className="mt-7">{props.control}</div>}
       </div>
-      {props.visual && <div className="lg:sticky lg:top-[calc(var(--nav-h)+5rem)]">{props.visual}</div>}
+      {props.visual && <div className="lg:sticky lg:top-[calc(var(--nav-h)+5.5rem)]">{props.visual}</div>}
     </div>
   );
 }
 
 function Card(props: { title: string; sub?: string; children: ReactNode; source?: string }) {
   return (
-    <div className="panel p-4 sm:p-6">
-      <h3 className="ui text-[1.05rem]">{props.title}</h3>
-      {props.sub && <p className="ui mt-1 text-[0.88rem] leading-snug text-ink-soft">{props.sub}</p>}
+    <figure className="rule-top bg-paper pt-3">
+      <figcaption>
+        <h3 className="ui text-[1rem] font-bold leading-snug">{props.title}</h3>
+        {props.sub && <p className="ui mt-1 text-[0.86rem] leading-snug text-ink-soft">{props.sub}</p>}
+      </figcaption>
       <div className="mt-4">{props.children}</div>
-      {props.source && <p className="ui mt-4 border-t border-rule pt-3 text-[0.76rem] leading-snug text-ink-faint">{props.source}</p>}
-    </div>
+      {props.source && <p className="ui mt-4 border-t border-rule pt-2 text-[0.76rem] leading-snug text-ink-faint">Source: {props.source}</p>}
+    </figure>
   );
 }
 
@@ -321,8 +335,8 @@ function Bars(props: { rows: { label: string; value: number; max: number; color:
             <span className="text-ink">{r.label}</span>
             <span className="num text-ink">{r.text}</span>
           </div>
-          <div className="mt-1.5 h-3.5 overflow-hidden rounded-full bg-paper-2">
-            <div className="h-full rounded-full transition-[width] duration-700" style={{ width: `${Math.max(1.5, (r.value / r.max) * 100)}%`, background: r.color }} />
+          <div className="mt-1.5 h-3 bg-paper-2">
+            <div className="h-full transition-[width] duration-700" style={{ width: `${Math.max(1.5, (r.value / r.max) * 100)}%`, background: r.color }} />
           </div>
         </li>
       ))}
@@ -473,7 +487,7 @@ export default function Journey() {
     case "start":
       body = (
         <Frame
-          kicker="A guided tour in seven chapters"
+          kicker="Guided reading"
           title="Before the data, your instinct."
           intro={
             <>
@@ -484,19 +498,19 @@ export default function Journey() {
             </>
           }
           control={
-            <button type="button" onClick={() => go(1)} className="btn btn-light">
+            <button type="button" onClick={() => go(1)} className="btn btn-ink">
               Begin with prices
             </button>
           }
           visual={
-            <ol className="space-y-2">
+            <ol className="border-t border-ink">
               {CHAPTERS.slice(1, 8).map((c, i) => (
                 <li key={c}>
-                  <button type="button" onClick={() => go(STEPS.findIndex((s) => s.ch === i + 1))} className="choice flex w-full items-center gap-4 rounded-2xl border border-white/12 bg-white/[0.05] px-4 py-3 text-left hover:border-ai-glow">
-                    <span className="serif w-8 shrink-0 text-[1.6rem] leading-none text-ai-glow">{i + 1}</span>
+                  <button type="button" onClick={() => go(STEPS.findIndex((s) => s.ch === i + 1))} className="entry flex w-full items-baseline gap-4 border-b border-rule py-3 text-left">
+                    <span className="serif w-7 shrink-0 text-[1.5rem] font-semibold leading-none text-human">{i + 1}</span>
                     <span className="min-w-0">
-                      <span className="ui block text-[1.02rem] font-semibold text-white">{c}</span>
-                      <span className="ui block truncate text-[0.85rem] text-on-night-soft">
+                      <span className="entry-title serif block text-[1.2rem] font-semibold">{c}</span>
+                      <span className="ui block text-[0.88rem] text-ink-soft">
                         {
                           [
                             "How cheap did intelligence get, and did use explode?",
@@ -526,13 +540,13 @@ export default function Journey() {
           title="How cheap did GPT-4-level AI get?"
           intro={
             <p>
-              In September 2023 the cheapest model as capable as GPT-4 cost <b className="text-white">{usd(F120.price_first)}</b> per million tokens, roughly 750,000 words of text. What did the cheapest model at that level cost in November 2026?
+              In September 2023 the cheapest model as capable as GPT-4 cost <b>{usd(F120.price_first)}</b> per million tokens, roughly 750,000 words of text. What did the cheapest model at that level cost in November 2026?
             </p>
           }
           control={
             <GuessControl spec={GUESS.price} locked={num("price")} onLock={(v) => lock("price", v)}>
               <p>
-                That is <b className="text-white">{Math.round(F120.price_first / F120.price_last).toLocaleString("en-US")} times cheaper</b> in a little over three years. The price of a fixed level of capability halved about every {F120.halving_time_months.toFixed(1)} months.
+                That is <b>{Math.round(F120.price_first / F120.price_last).toLocaleString("en-US")} times cheaper</b> in a little over three years. The price of a fixed level of capability halved about every {F120.halving_time_months.toFixed(1)} months.
               </p>
               <Deeper href="/m1" label="Go deeper in the Prices lab" />
             </GuessControl>
@@ -575,7 +589,7 @@ export default function Journey() {
           control={
             <ChoiceControl spec={CHOICES.jevons} locked={str("jevons")} onLock={(k) => lock("jevons", k)}>
               <p>
-                Daily tokens rose <b className="text-white">{Math.round(TOKEN_GROWTH)} times</b>, from {compact(V[0].all_tokens_per_day)} to {compact(V[V.length - 1].all_tokens_per_day)} a day. Use grew far faster than prices fell, but a model&apos;s own price cuts explain only part of it: new users and new uses drive the rest.
+                Daily tokens rose <b>{Math.round(TOKEN_GROWTH)} times</b>, from {compact(V[0].all_tokens_per_day)} to {compact(V[V.length - 1].all_tokens_per_day)} a day. Use grew far faster than prices fell, but a model&apos;s own price cuts explain only part of it: new users and new uses drive the rest.
               </p>
               <Deeper href="/m1" label="See the spending test in the Prices lab" />
             </ChoiceControl>
@@ -671,7 +685,7 @@ export default function Journey() {
           control={
             <ChoiceControl spec={CHOICES.postings} locked={str("postings")} onLock={(k) => lock("postings", k)}>
               <p>
-                About <b className="text-white">{Math.round(Math.abs(POSTINGS.pct))}% lower</b> (95% range {Math.round(Math.abs(POSTINGS.pct_hi))}% to {Math.round(Math.abs(POSTINGS.pct_lo))}% lower). But the gap began opening before ChatGPT launched, so this is a pattern, not proof that AI caused it.
+                About <b>{Math.round(Math.abs(POSTINGS.pct))}% lower</b> (95% range {Math.round(Math.abs(POSTINGS.pct_hi))}% to {Math.round(Math.abs(POSTINGS.pct_lo))}% lower). But the gap began opening before ChatGPT launched, so this is a pattern, not proof that AI caused it.
               </p>
               <Deeper href="/m3" label="See the event study in the Adoption lab" />
             </ChoiceControl>
@@ -691,7 +705,7 @@ export default function Journey() {
                       <line x1="150" x2="170" y1={y(POSTINGS.pct_lo)} y2={y(POSTINGS.pct_lo)} stroke="var(--ink)" strokeWidth="2" />
                       <line x1="150" x2="170" y1={y(POSTINGS.pct_hi)} y2={y(POSTINGS.pct_hi)} stroke="var(--ink)" strokeWidth="2" />
                       <text x="210" y={y(POSTINGS.pct) + 4} fontSize="20" fontWeight="700" fill="var(--ai-deep)" className="num">
-                        {Math.round(POSTINGS.pct)}%
+                        {"\u2212"}{Math.abs(Math.round(POSTINGS.pct))}%
                       </text>
                     </g>
                   );
@@ -716,7 +730,7 @@ export default function Journey() {
           control={
             <ChoiceControl spec={CHOICES.wages} locked={str("wages")} onLock={(k) => lock("wages", k)}>
               <p>
-                In the model real pay rises to <b className="text-white">{mult(base.relWage)}</b> its no-AI level, because cheap AI makes everything people buy cheaper. But the share of income paid as wages falls to <b className="text-white">{pct0(base.labourShare)}</b>. Pay and the wage share can move in opposite directions.
+                In the model real pay rises to <b>{mult(base.relWage)}</b> its no-AI level, because cheap AI makes everything people buy cheaper. But the share of income paid as wages falls to <b>{pct0(base.labourShare)}</b>. Pay and the wage share can move in opposite directions.
               </p>
               <p>Now set the dials yourself and watch the chart.</p>
               <div className="panel p-4">
@@ -728,7 +742,7 @@ export default function Journey() {
           }
           visual={gateVisual(
             str("wages") !== undefined,
-            <Card title="The ceiling on pay, task by task" sub="Amber: done by a person. Cobalt: done by AI, its cost cut to the AI price. Drag the AI price tab.">
+            <Card title="The ceiling on pay, task by task" sub="Red: done by a person. Blue: done by AI, its cost cut to the AI price. Drag the AI price tab.">
               <CeilingChart p={play} r={r} height={300} onRhoScale={(f) => setPlay((q) => ({ ...q, rho: Math.min(3, Math.max(0.01, q.rho * f)) }))} />
               <div className="mt-4 grid grid-cols-3 gap-3 border-t border-rule pt-4">
                 <div>
@@ -764,7 +778,7 @@ export default function Journey() {
           control={
             <GuessControl spec={GUESS.firms} locked={num("firms")} onLock={(v) => lock("firms", v)}>
               <p>
-                About <b className="text-white">{C_END.effective_firms.toFixed(1)}</b> (HHI {Math.round(C_END.hhi).toLocaleString("en-US")}), with {C_END.leader} the largest at {Math.round(C_END.cr1 * 100)}%. In {monthName(C_MIN.month)} it was {C_MIN.effective_firms.toFixed(1)}: the market opened up, then narrowed again. The leader changed several times.
+                About <b>{C_END.effective_firms.toFixed(1)}</b> (HHI {Math.round(C_END.hhi).toLocaleString("en-US")}), with {C_END.leader} the largest at {Math.round(C_END.cr1 * 100)}%. In {monthName(C_MIN.month)} it was {C_MIN.effective_firms.toFixed(1)}: the market opened up, then narrowed again. The leader changed several times.
               </p>
               <Deeper href="/m5" label="Watch shares month by month in the Markets lab" />
             </GuessControl>
@@ -805,13 +819,14 @@ export default function Journey() {
             <Card title="Welfare gain from the best automation tax" sub="Percent, in four model worlds. Tap a world." source="Project growth model (M6); scenarios, not forecasts.">
               <div className="hscroll -mx-1 flex gap-2 px-1 pb-3" data-noswipe>
                 {worlds.map((w, i) => (
-                  <button key={w.name} type="button" onClick={() => setScenario(i)} className={`ui shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-[0.85rem] font-medium ${scenario === i ? "border-ink bg-ink text-white" : "border-rule text-ink-soft hover:border-ai"}`}>
+                  <button key={w.name} type="button" onClick={() => setScenario(i)} className={`ui shrink-0 whitespace-nowrap border px-3 py-1.5 text-[0.85rem] font-semibold ${scenario === i ? "border-ink bg-ink text-white" : "border-rule text-ink hover:border-ink"}`}
+                    style={{ borderRadius: "var(--radius)" }}>
                     {w.label}
                   </button>
                 ))}
               </div>
               <Bars rows={worlds.map((w, i) => ({ label: w.label, value: Math.max(0, w.gain), max: Math.max(...worlds.map((x) => x.gain)), color: i === scenario ? "var(--owner)" : "var(--rule)", text: `${w.gain.toFixed(1)}%` }))} />
-              <p className="ui mt-4 rounded-xl bg-paper-2 p-3 text-[0.9rem] text-ink">
+              <p className="ui mt-4 border-t border-rule pt-3 text-[0.9rem] text-ink">
                 <b>{worlds[scenario].label}:</b> best tax {Math.round(worlds[scenario].tax * 100)}% of AI income, welfare gain {worlds[scenario].gain.toFixed(1)}%.
               </p>
             </Card>,
@@ -833,7 +848,7 @@ export default function Journey() {
           control={
             <GuessControl spec={GUESS.india} locked={num("india")} onLock={(v) => lock("india", v)}>
               <p>
-                About <b className="text-white">{Math.round(INDIA_TOP)}%</b>. Crop growing, farm and construction labour and small shop work dominate India&apos;s job mix, and AI applies least to work done with hands. Urban workers {Math.round(INDIA_URBAN)}%, rural {Math.round(INDIA_RURAL)}%.
+                About <b>{Math.round(INDIA_TOP)}%</b>. Crop growing, farm and construction labour and small shop work dominate India&apos;s job mix, and AI applies least to work done with hands. Urban workers {Math.round(INDIA_URBAN)}%, rural {Math.round(INDIA_RURAL)}%.
               </p>
               <Deeper href="/india" label="Filter by sector, sex and type of work on the India page" />
             </GuessControl>
@@ -864,7 +879,7 @@ export default function Journey() {
       const answeredC = cs.filter((x) => x.c !== undefined).length;
       body = (
         <Frame
-          kicker="Your answer"
+          kicker="Conclusion"
           title="So, why pay anyone?"
           intro={
             <ol className="space-y-4">
@@ -874,9 +889,9 @@ export default function Journey() {
                 ["But who gains is a choice.", "If AI replaces workers and a few firms sell it, owners take more of the income. Taxes, competition and new tasks decide how it is shared."],
               ].map(([a, b], i) => (
                 <li key={a} className="flex gap-4">
-                  <span className="serif w-7 shrink-0 text-[1.8rem] leading-none text-ai-glow">{i + 1}</span>
+                  <span className="serif w-7 shrink-0 text-[1.8rem] font-semibold leading-none text-human">{i + 1}</span>
                   <span>
-                    <b className="block text-white">{a}</b>
+                    <b className="block">{a}</b>
                     {b}
                   </span>
                 </li>
@@ -885,8 +900,8 @@ export default function Journey() {
           }
           control={
             <div className="flex flex-wrap gap-3">
-              <Link href="/m1" className="btn btn-light">
-                Explore the labs
+              <Link href="/m1" className="btn btn-ink">
+                Read chapter 1
               </Link>
               <button
                 type="button"
@@ -901,8 +916,8 @@ export default function Journey() {
             </div>
           }
           visual={
-            <div className="panel p-5 sm:p-6">
-              <h3 className="ui text-[1.05rem]">Your scorecard</h3>
+            <div className="rule-top pt-3">
+              <h3 className="ui text-[1.05rem] font-bold">Your scorecard</h3>
               <p className="ui mt-1 text-[0.9rem] text-ink-soft">
                 {answeredG + answeredC === 0
                   ? "You skipped every question. Go back and guess; it is more fun."
@@ -919,7 +934,7 @@ export default function Journey() {
                           You {g !== undefined ? spec.fmt(g) : "skipped"}, data {spec.fmt(spec.actual)}
                         </span>
                       </span>
-                      <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-[0.78rem] font-semibold ${v === "spot" ? "bg-ok-soft text-ok" : v === "close" ? "bg-human-soft text-human-deep" : "bg-paper-2 text-ink-soft"}`}>
+                      <span className={`shrink-0 border border-transparent px-2 py-0.5 text-[0.78rem] font-bold ${v === "spot" ? "bg-ok-soft text-ok" : v === "close" ? "bg-human-soft text-human-deep" : "bg-paper-2 text-ink-soft"}`}>
                         {v === "spot" ? "Spot on" : v === "close" ? "Close" : v === "off" ? "Off" : "Skipped"}
                       </span>
                     </li>
@@ -931,7 +946,7 @@ export default function Journey() {
                       <span className="block text-ink">{spec.label}</span>
                       <span className="block truncate text-[0.8rem] text-ink-faint">Data: {spec.options.find((o) => o.k === spec.correct)?.text}</span>
                     </span>
-                    <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-[0.78rem] font-semibold ${c === undefined ? "bg-paper-2 text-ink-soft" : c === spec.correct ? "bg-ok-soft text-ok" : "bg-paper-2 text-ink-soft"}`}>
+                    <span className={`shrink-0 border border-transparent px-2 py-0.5 text-[0.78rem] font-bold ${c === undefined ? "bg-paper-2 text-ink-soft" : c === spec.correct ? "bg-ok-soft text-ok" : "bg-paper-2 text-ink-soft"}`}>
                       {c === undefined ? "Skipped" : c === spec.correct ? "Right" : "Not quite"}
                     </span>
                   </li>
@@ -945,13 +960,13 @@ export default function Journey() {
     }
   }
 
-  const nextLabel = step === 0 ? "Begin" : step === STEPS.length - 2 ? "See my scorecard" : step === STEPS.length - 1 ? "Explore the labs" : "Next";
+  const nextLabel = step === 0 ? "Begin" : step === STEPS.length - 2 ? "See my scorecard" : step === STEPS.length - 1 ? "Read chapter 1" : "Next";
   const answered = cur.id !== "start" && cur.id !== "score" && answers[cur.id] !== undefined;
   const needsAnswer = cur.id !== "start" && cur.id !== "score" && !answered;
 
   return (
     <div
-      className="night on-night min-h-[calc(100dvh-var(--nav-h))] overflow-x-clip"
+      className="min-h-[calc(100dvh-var(--nav-h))] overflow-x-clip bg-paper"
       onPointerDown={(e) => {
         if ((e.target as HTMLElement).closest("[data-noswipe],input,button,a,svg")) return;
         touch.current = { x: e.clientX, y: e.clientY };
@@ -965,7 +980,7 @@ export default function Journey() {
         if (Math.abs(dx) > 70 && Math.abs(dy) < 50) go(step + (dx < 0 ? 1 : -1));
       }}
     >
-      <nav aria-label="Chapters" className="sticky top-[var(--nav-h)] z-30 border-b border-white/10 bg-night/85 backdrop-blur-xl">
+      <nav aria-label="Chapters" className="sticky top-[var(--nav-h)] z-30 border-b border-ink bg-paper">
         <div className="mx-auto flex max-w-[1200px] items-center gap-3 px-5 py-3 sm:px-8">
           <ol className="flex flex-1 gap-1.5">
             {CHAPTERS.map((c, i) => {
@@ -973,14 +988,14 @@ export default function Journey() {
               return (
                 <li key={c} className="min-w-0 flex-1">
                   <button type="button" onClick={() => go(first)} aria-current={cur.ch === i ? "step" : undefined} aria-label={`Chapter: ${c}`} className="block w-full text-left">
-                    <span className={`block h-1.5 rounded-full transition-colors duration-500 ${i < cur.ch ? "bg-ai-glow" : i === cur.ch ? "bg-white" : "bg-white/15"}`} />
-                    <span className={`ui mt-1.5 hidden truncate text-[0.72rem] lg:block ${i === cur.ch ? "text-white" : "text-on-night-soft"}`}>{c}</span>
+                    <span className={`block h-[5px] transition-colors duration-500 ${i < cur.ch ? "bg-ink" : i === cur.ch ? "bg-human" : "bg-rule"}`} />
+                    <span className={`ui mt-1.5 hidden truncate text-[0.76rem] lg:block ${i === cur.ch ? "font-bold text-ink" : "text-ink-soft"}`}>{c}</span>
                   </button>
                 </li>
               );
             })}
           </ol>
-          <span className="ui whitespace-nowrap text-[0.8rem] text-on-night-soft">
+          <span className="ui whitespace-nowrap text-[0.82rem] text-ink-soft">
             {step + 1} / {STEPS.length}
           </span>
         </div>
@@ -990,18 +1005,18 @@ export default function Journey() {
         {body}
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-night/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl">
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-ink bg-paper pb-[env(safe-area-inset-bottom)]">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-3 px-5 py-3 sm:px-8">
           <button type="button" onClick={() => go(step - 1)} disabled={step === 0} className="btn btn-ghost min-h-[44px] px-5 disabled:opacity-30">
             Back
           </button>
-          <span className="ui hidden text-[0.85rem] text-on-night-soft md:block">{needsAnswer ? "Lock in an answer, or skip ahead" : "Arrow keys and swipes work too"}</span>
+          <span className="ui hidden text-[0.85rem] text-ink-soft md:block">{needsAnswer ? "Lock in an answer, or skip ahead" : "Arrow keys and swipes work too"}</span>
           {step === STEPS.length - 1 ? (
-            <Link href="/m1" className="btn btn-light min-h-[44px] px-6">
+            <Link href="/m1" className="btn btn-ink min-h-[44px] px-6">
               {nextLabel}
             </Link>
           ) : (
-            <button type="button" onClick={() => go(step + 1)} className={`btn min-h-[44px] px-6 ${needsAnswer ? "btn-ghost" : "btn-light"}`}>
+            <button type="button" onClick={() => go(step + 1)} className={`btn min-h-[44px] px-6 ${needsAnswer ? "btn-ghost" : "btn-ink"}`}>
               {needsAnswer ? "Skip" : nextLabel}
             </button>
           )}

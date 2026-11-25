@@ -215,7 +215,7 @@ export default function M4Page() {
               <Stat value={usd(exposure.hourly)} label="Average pay per hour, US" tone="human" />
               <Stat value={tokenRho < 0.001 ? "<0.1%" : `${(tokenRho * 100).toFixed(1)}%`} label="Tokens as a share of pay" />
             </div>
-            <button onClick={() => set("rho", Math.min(3, Math.max(0.01, tokenRho * 10)))} className="ui mt-3 rounded-full border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft">
+            <button onClick={() => set("rho", Math.min(3, Math.max(0.01, tokenRho * 10)))} className="ui mt-3 rounded-[3px] border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft">
               Set the all-in price to 10 times this
             </button>
             <p className="ui mt-2 text-[0.85rem] text-ink-soft">The all-in price also has to cover checking the work, fixing errors and integration. Ten times the token cost is a guess that leaves AI still far cheaper than a person.</p>
@@ -227,7 +227,7 @@ export default function M4Page() {
             source="Sources: Microsoft Working with AI (applicability, Bing Copilot use Jan to Sep 2024); BLS OEWS May 2025 (wages). Applicability measures where AI is used, not whether jobs will disappear."
           >
             <HBars items={exposure.top.map((t) => ({ ...t, color: "var(--ai)" }))} format={(v) => `$${v.toFixed(0)}B`} ariaLabel="Occupations ranked by pay in tasks AI can do" labelWidth={200} />
-            <button onClick={() => set("A", +exposure.weighted.toFixed(2))} className="ui mt-3 rounded-full border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft">
+            <button onClick={() => set("A", +exposure.weighted.toFixed(2))} className="ui mt-3 rounded-[3px] border border-rule px-3.5 py-1.5 text-[0.9rem] hover:border-ai hover:bg-ai-soft">
               Set &quot;work AI can do&quot; to the US data ({pct0(exposure.weighted)})
             </button>
           </Figure>

@@ -106,7 +106,7 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
       type="button"
       aria-pressed={pressed}
       onClick={onClick}
-      className={`ui min-h-9 rounded-full border px-3 py-1 text-[0.9rem] transition-colors ${
+      className={`ui min-h-9 rounded-[3px] border px-3 py-1 text-[0.9rem] transition-colors ${
         pressed ? "border-ink bg-ink text-paper" : "border-rule bg-surface text-ink hover:border-ai hover:bg-ai-soft"
       }`}
     >
@@ -128,7 +128,7 @@ function FilterRow({ label, children }: { label: string; children: ReactNode }) 
 
 function Badge({ children, tone }: { children: ReactNode; tone?: "ink" }) {
   return (
-    <span className={`ui inline-block rounded-full border px-2.5 py-0.5 text-[0.8rem] ${tone === "ink" ? "border-ink bg-ink text-paper" : "border-rule bg-paper text-ink-soft"}`}>{children}</span>
+    <span className={`ui inline-block rounded-[3px] border px-2.5 py-0.5 text-[0.8rem] ${tone === "ink" ? "border-ink bg-ink text-paper" : "border-rule bg-paper text-ink-soft"}`}>{children}</span>
   );
 }
 
@@ -377,7 +377,7 @@ function MapView({
                 <Badge key={m}>{GROUP_BY_ID.get(m) ? groupLabel(GROUP_BY_ID.get(m)!) : m}</Badge>
               ))}
             </div>
-            <button type="button" onClick={closePanel} className="ui ml-auto shrink-0 rounded-full border border-rule px-3 py-1 text-[0.88rem] hover:border-ink hover:bg-paper">
+            <button type="button" onClick={closePanel} className="ui ml-auto shrink-0 rounded-[3px] border border-rule px-3 py-1 text-[0.88rem] hover:border-ink hover:bg-paper">
               Close<span className="sr-only"> details</span>
             </button>
           </div>
@@ -408,7 +408,7 @@ function MapView({
                           refocusPanel.current = true;
                           onSelect(rid);
                         }}
-                        className="ui min-h-9 rounded-full border border-rule bg-paper px-3 py-1 text-[0.88rem] hover:border-ink hover:bg-ai-soft"
+                        className="ui min-h-9 rounded-[3px] border border-rule bg-paper px-3 py-1 text-[0.88rem] hover:border-ink hover:bg-ai-soft"
                       >
                         {r.short ?? r.name}
                       </button>
@@ -587,14 +587,14 @@ export function ConceptMap() {
             />
           </div>
           {!narrow && (
-            <div role="group" aria-label="View" className="ui inline-flex rounded-full border border-rule bg-paper p-0.5 text-[0.92rem]">
+            <div role="group" aria-label="View" className="ui inline-flex rounded-[3px] border border-rule bg-paper p-0.5 text-[0.92rem]">
               {(["map", "list"] as const).map((v) => (
                 <button
                   key={v}
                   type="button"
                   aria-pressed={view === v}
                   onClick={() => setView(v)}
-                  className={`rounded-full px-4 py-1.5 transition-colors ${view === v ? "bg-ink text-paper" : "text-ink-soft hover:text-ink"}`}
+                  className={`rounded-[2px] px-4 py-1.5 transition-colors ${view === v ? "bg-ink text-paper" : "text-ink-soft hover:text-ink"}`}
                 >
                   {v === "map" ? "Map view" : "List view"}
                 </button>

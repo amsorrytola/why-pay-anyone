@@ -175,7 +175,7 @@ export function PlayButton(props: { playing: boolean; onClick: () => void; label
       type="button"
       onClick={props.onClick}
       aria-pressed={props.playing}
-      className="ui inline-flex items-center gap-2 rounded-full border border-ink bg-ink px-4 py-1.5 text-[0.95rem] font-semibold text-paper transition-colors hover:bg-ai-deep hover:border-ai-deep"
+      className="ui inline-flex items-center gap-2 rounded-[3px] border border-ink bg-ink px-4 py-1.5 text-[0.95rem] font-semibold text-paper transition-colors hover:bg-ai-deep hover:border-ai-deep"
     >
       <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="currentColor">
         {props.playing ? (

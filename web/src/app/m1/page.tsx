@@ -464,7 +464,7 @@ export default function M1Page() {
               title={main.asIndex ? "Cheapest price and quality-adjusted index, both indexed" : `Cheapest price of any model with ${barText}`}
               subtitle={
                 main.asIndex
-                  ? `Both lines are 100 in ${monthLabel(main.baseMonth)}. The amber band is the 95% interval of the quality-adjusted index.`
+                  ? `Both lines are 100 in ${monthLabel(main.baseMonth)}. The red band is the 95% interval of the quality-adjusted index.`
                   : `Dollars per million tokens, 3 parts input to 1 part output. Each point is the cheapest list price in that month among all models that clear the bar; the label names the model that holds it.`
               }
               source="Source: Epoch AI (Epoch Capabilities Index, CC BY); prices from month-end snapshots of the LiteLLM price file (list prices, not what anyone paid)."
@@ -541,7 +541,7 @@ export default function M1Page() {
                 <span className="ui text-[0.85rem] text-ink-soft">Steps through the months once. Pause any time.</span>
               </div>
               <div className="mt-3">
-                <Toggle label="Draw the open-weights frontier too" checked={showOpenFrontier} onChange={setShowOpenFrontier} help="A dashed teal line: the cheapest price at or above each score, counting only open-weights models." />
+                <Toggle label="Draw the open-weights frontier too" checked={showOpenFrontier} onChange={setShowOpenFrontier} help="A dashed green line: the cheapest price at or above each score, counting only open-weights models." />
               </div>
               <p className="ui mt-1 text-[0.85rem] leading-snug text-ink-soft">The dashed black line marks the capability bar from the dial above ({threshold.toFixed(1)}).</p>
             </ControlBox>
@@ -630,7 +630,7 @@ export default function M1Page() {
           <div className="min-w-0 space-y-5">
             <Figure
               title="Tokens, quality-adjusted price and implied spending"
-              subtitle={`Each line is 100 in ${monthLabel(jv.b.month)} and the axis is logarithmic. Cobalt: OpenRouter tokens a day. Amber: the quality-adjusted price index. Plum: implied spending, which is tokens times list price for matched models.`}
+              subtitle={`Each line is 100 in ${monthLabel(jv.b.month)} and the axis is logarithmic. Blue: OpenRouter tokens a day. Red: the quality-adjusted price index. Ochre: implied spending, which is tokens times list price for matched models.`}
               source="Source: OpenRouter (openrouter.ai/rankings), as of 2026-11-22. Licensed under CC BY 4.0. Prices: LiteLLM price file. Capability and quality adjustment: Epoch AI (CC BY). Implied spending is an upper bound."
             >
               <PriceChart
