@@ -2,7 +2,11 @@ import { KNOWLEDGE } from "@/content/knowledge";
 
 export const maxDuration = 30;
 
+// The chat tries each provider in turn, so one overloaded model does not take it down:
+// MiniMax first (if its key is set), then the Gemini model, then an older Gemini model.
 const MODEL = process.env.GEMINI_MODEL || "gemini-3.1-flash-lite";
+const GEMINI_BACKUP = process.env.GEMINI_BACKUP_MODEL || "gemini-2.5-flash-lite";
+const MINIMAX_MODEL = process.env.MINIMAX_MODEL || "MiniMax-M3.1-Flash";
 const PER_IP_LIMIT = Number(process.env.CHAT_PER_IP_PER_10MIN || 14);
 const DAILY_CAP = Number(process.env.CHAT_DAILY_CAP || 500);
 const MAX_MESSAGES = 6;
@@ -58,8 +62,9 @@ export async function POST(req: Request) {
   ipHits.set(ip, hits);
   dayCount++;
 
-  const key = process.env.GEMINI_API_KEY;
-  if (!key) return Response.json({ answer: fallback(question, "The chat is not switched on for this copy of the site."), limited: true });
+  const geminiKey = process.env.GEMINI_API_KEY;
+  const minimaxKey = process.env.MINIMAX_API_KEY || process.env.MINIMAX_API;
+  if (!geminiKey && !minimaxKey) return Response.json({ answer: fallback(question, "The chat is not switched on for this copy of the site."), limited: true });
 
   const stateText = Object.entries(body.state ?? {})
     .slice(0, 24)
@@ -67,22 +72,59 @@ export async function POST(req: Request) {
     .join("; ");
   const system = `${KNOWLEDGE}\nCURRENT PAGE: ${String(body.page ?? "home").slice(0, 20)}. Dial settings and results on screen now: ${stateText || "none"}.`;
 
-  try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: system }] },
-        contents: msgs.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
-        generationConfig: { maxOutputTokens: 450, temperature: 0.3 },
-      }),
-      signal: AbortSignal.timeout(25000),
-    });
-    if (!res.ok) return Response.json({ answer: fallback(question, "The chat service is busy right now."), limited: true });
-    const data = await res.json();
-    const text: string | undefined = data?.candidates?.[0]?.content?.parts?.map((p: { text?: string }) => p.text ?? "").join("").trim();
-    return Response.json({ answer: text || fallback(question, "No answer came back.") });
-  } catch {
-    return Response.json({ answer: fallback(question, "The chat service did not answer in time.") });
+  const attempts: (() => Promise<string | undefined>)[] = [];
+  if (minimaxKey) attempts.push(() => askMinimax(minimaxKey, system, msgs, 12000));
+  if (geminiKey) {
+    attempts.push(() => askGemini(geminiKey, MODEL, system, msgs, 8000));
+    if (GEMINI_BACKUP !== MODEL) attempts.push(() => askGemini(geminiKey, GEMINI_BACKUP, system, msgs, 7000));
   }
+  for (const attempt of attempts) {
+    try {
+      const text = await attempt();
+      if (text) return Response.json({ answer: text });
+    } catch {
+      // try the next provider
+    }
+  }
+  return Response.json({ answer: fallback(question, "The chat service is busy right now."), limited: true });
+}
+
+type Msg = { role: string; text: string };
+
+async function askGemini(key: string, model: string, system: string, msgs: Msg[], ms: number) {
+  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: msgs.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
+      generationConfig: { maxOutputTokens: 450, temperature: 0.3 },
+    }),
+    signal: AbortSignal.timeout(ms),
+  });
+  if (!res.ok) return undefined;
+  const data = await res.json();
+  const text: string | undefined = data?.candidates?.[0]?.content?.parts?.map((p: { text?: string }) => p.text ?? "").join("").trim();
+  return text || undefined;
+}
+
+async function askMinimax(key: string, system: string, msgs: Msg[], ms: number) {
+  const res = await fetch("https://api.minimax.io/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+    body: JSON.stringify({
+      model: MINIMAX_MODEL,
+      reasoning_effort: "low",
+      max_tokens: 900,
+      temperature: 0.3,
+      messages: [{ role: "system", content: system }, ...msgs.map((m) => ({ role: m.role === "model" ? "assistant" : "user", content: m.text }))],
+    }),
+    signal: AbortSignal.timeout(ms),
+  });
+  if (!res.ok) return undefined;
+  const data = await res.json();
+  const raw: string | undefined = data?.choices?.[0]?.message?.content;
+  // drop any reasoning that comes back inline
+  const text = raw?.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+  return text || undefined;
 }

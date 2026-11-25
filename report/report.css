@@ -9,7 +9,7 @@
   size: A4;
   margin: 17mm 15mm 14mm 15mm;
   @top-left { content: "Why Pay Anyone? The Economics of Cheap Intelligence"; font: 600 7.6pt var(--sans); color: #4b4c50; vertical-align: bottom; padding-bottom: 2.2mm; border-bottom: 0.9pt solid #1b1c1e; }
-  @top-right { content: "Talha Ansari, 23322023"; font: 400 7.6pt var(--sans); color: #4b4c50; vertical-align: bottom; padding-bottom: 2.2mm; border-bottom: 0.9pt solid #1b1c1e; }
+  @top-right { content: "Talha Ansari, 23322016"; font: 400 7.6pt var(--sans); color: #4b4c50; vertical-align: bottom; padding-bottom: 2.2mm; border-bottom: 0.9pt solid #1b1c1e; }
   @bottom-center { content: counter(page) " of " counter(pages); font: 400 7.6pt var(--sans); color: #66686d; }
 }
 @page :first {

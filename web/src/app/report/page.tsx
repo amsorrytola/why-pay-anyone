@@ -29,7 +29,7 @@ export default function ReportPage() {
           <a href={PDF} className="btn btn-ink">
             Open the report (PDF, 5 pages)
           </a>
-          <a href={PDF} download="LBP_Report_23322023_Why_Pay_Anyone.pdf" className="btn btn-ghost">
+          <a href={PDF} download="LBP_Report_23322016_Why_Pay_Anyone.pdf" className="btn btn-ghost">
             Download the PDF
           </a>
           <Link href="/presentation" className="btn btn-ghost">
@@ -54,7 +54,7 @@ export default function ReportPage() {
               ))}
             </ol>
             <p className="ui mt-4 text-[0.86rem] text-ink-faint">
-              Talha Ansari, enrolment number 23322023. Lab Based Project (HSC-400), BS-MS Economics, IIT Roorkee; industry track with Hello Agentic. November 2026.
+              Talha Ansari, enrolment number 23322016. Lab Based Project (HSC-400), BS-MS Economics, IIT Roorkee; industry track with Hello Agentic. November 2026.
             </p>
           </div>
           <figure className="m-0 hidden lg:block">

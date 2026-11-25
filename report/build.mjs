@@ -35,6 +35,6 @@ if (process.argv.includes("--publish")) {
   const web = join(HERE, "..", "web", "public", "report");
   mkdirSync(web, { recursive: true });
   copyFileSync(pdf, join(web, "why-pay-anyone-report.pdf"));
-  copyFileSync(pdf, join(HERE, "..", "..", "deliverables", "LBP_Report_23322023.pdf"));
-  console.log("published to web/public/report/ and deliverables/LBP_Report_23322023.pdf");
+  copyFileSync(pdf, join(HERE, "..", "..", "deliverables", "LBP_Report_23322016.pdf"));
+  console.log("published to web/public/report/ and deliverables/LBP_Report_23322016.pdf");
 }

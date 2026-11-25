@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Why Pay Anyone? The Economics of Cheap Intelligence"
+type: software
+authors:
+  - family-names: Ansari
+    given-names: Talha
+    affiliation: "BS-MS Economics, Indian Institute of Technology Roorkee"
+date-released: 2026-11-25
+url: "https://why-pay-anyone.vercel.app"
+repository-code: "https://github.com/amsorrytola/why-pay-anyone"
+abstract: >-
+  An economics study of what happens to jobs, wages, prices and market power when AI makes
+  intelligence cheap: public data on the price, use and adoption of AI and the structure of its market,
+  a task-based labour model, growth and demand models, and an India lens built on PLFS 2025 microdata.
+  Lab Based Project (HSC-400), industry track with Hello Agentic.
+keywords:
+  - artificial intelligence
+  - labour economics
+  - task-based model
+  - labour share
+  - market concentration
+  - India
