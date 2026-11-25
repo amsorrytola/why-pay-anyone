@@ -15,7 +15,7 @@ let dayCount = 0;
 
 const FALLBACKS: { keys: RegExp; answer: string }[] = [
   { keys: /jevons/i, answer: "The Jevons paradox says that when a resource gets cheaper to use, total use can rise by more than the saving. On the Prices page, usage of AI tokens grew about 480 times while the price of GPT-4-level capability fell about 1,000 times, so spending rose. But the estimate of how much usage responds to a model's own price cut is only about -0.47 and imprecise, so the growth is not proof of the paradox: new users and new uses also drive it." },
-  { keys: /binding|bind|price of ai|token/i, answer: "On the Wages page, the tokens for an hour of work cost a few percent of an hour's pay at most, so the price of tokens is not what holds AI back. What binds is how much work AI can do well enough, how much checking it needs, and how easily tasks substitute for each other." },
+  { keys: /binding|bind|price of ai|token/i, answer: "On the Wages page, a million tokens for an hour of work cost well under 1% of an hour's pay (about 0.3% at GPT-5 level), so the price of tokens is not what holds AI back. What binds is how much work AI can do well enough, how much checking it needs, and how easily tasks substitute for each other." },
   { keys: /limit|caveat|weak/i, answer: "The biggest limits: each usage dataset covers one platform; exposure scores are not job-loss forecasts; prices are list prices from one source; OpenRouter users are not the whole market; and the models are simplified scenarios, not forecasts. The Data page lists every source and its limits." },
 ];
 

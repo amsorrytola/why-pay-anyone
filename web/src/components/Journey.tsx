@@ -885,7 +885,7 @@ export default function Journey() {
             <ol className="space-y-4">
               {[
                 ["Because AI can do only some of the work.", "People keep the tasks where they are relatively best. As AI makes the rest cheaper, those tasks are worth more."],
-                ["Because price is not what holds AI back.", "Tokens for an hour of work already cost a few percent of pay. What binds is how much work AI can do well, and how easily tasks substitute."],
+                ["Because price is not what holds AI back.", "A million tokens for an hour of work cost well under 1% of average pay. What binds is how much work AI can do well, and how easily tasks substitute."],
                 ["But who gains is a choice.", "If AI replaces workers and a few firms sell it, owners take more of the income. Taxes, competition and new tasks decide how it is shared."],
               ].map(([a, b], i) => (
                 <li key={a} className="flex gap-4">
