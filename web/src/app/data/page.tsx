@@ -705,7 +705,7 @@ export default function DataPage() {
         {/* Narrow screens: one card for each source. */}
         <ul className="space-y-4 lg:hidden">
           {SOURCES.map((s) => (
-            <li key={s.id} className="rounded-[6px] border border-rule bg-surface p-4">
+            <li key={s.id} className="panel p-4">
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div className="min-w-0">
                   <SourceName s={s} />
@@ -783,7 +783,7 @@ export default function DataPage() {
             const mod = MODULES.find((x) => x.id === m.id);
             if (!mod) return null;
             return (
-              <article key={m.id} className="rounded-[6px] border border-rule bg-surface p-4 sm:p-5">
+              <article key={m.id} className="panel p-4 sm:p-5">
                 <p className="ui text-[0.9rem] font-semibold text-ai-deep">Module {mod.id}</p>
                 <h3 className="mt-1">{mod.name}</h3>
                 <p className="mt-2 text-[1rem] leading-snug text-ink-soft">{mod.question}</p>

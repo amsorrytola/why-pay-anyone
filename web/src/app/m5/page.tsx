@@ -155,7 +155,7 @@ const pctText = (v: number) => (Math.abs(v) >= 10 ? `${v.toFixed(0)}%` : `${v.to
 /* ---------------------------------------------------------------- */
 
 function Card(props: { children: ReactNode; className?: string }) {
-  return <div className={`rounded-[6px] border border-rule bg-surface px-4 py-3 sm:px-5 ${props.className ?? ""}`}>{props.children}</div>;
+  return <div className={`panel px-4 py-3 sm:px-5 ${props.className ?? ""}`}>{props.children}</div>;
 }
 
 /* ---------------------------------------------------------------- */
@@ -481,7 +481,7 @@ export default function M5Page() {
         </p>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold" style={{ color: "var(--owner)" }}>
                 Demand elasticity
               </legend>
@@ -548,7 +548,7 @@ export default function M5Page() {
         </p>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold" style={{ color: "var(--ai-deep)" }}>
                 The market
               </legend>
@@ -642,7 +642,7 @@ export default function M5Page() {
         </p>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold" style={{ color: "var(--ai-deep)" }}>
                 The number of hosts
               </legend>
@@ -715,7 +715,7 @@ export default function M5Page() {
         {/* host scatter */}
         <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold" style={{ color: "var(--ai-deep)" }}>
                 The month
               </legend>
@@ -792,7 +792,7 @@ export default function M5Page() {
         <h2 className="mb-4">Revenue: what is reported, and why it is not used</h2>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold" style={{ color: "var(--ai-deep)" }}>
                 Companies to show
               </legend>

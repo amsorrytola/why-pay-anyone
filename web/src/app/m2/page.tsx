@@ -176,7 +176,7 @@ export default function M2Page() {
             />
           </Figure>
           <div className="space-y-4">
-            <div className="rounded-[6px] border border-rule bg-surface p-4">
+            <div className="panel p-4">
               <h3 className="ui mb-2">{sel ? sel.title : "Pick a dot"}</h3>
               {sel ? (
                 <dl className="ui space-y-1 text-[0.92rem]">
@@ -193,7 +193,7 @@ export default function M2Page() {
                 <p className="ui text-[0.92rem] text-ink-soft">Hover or click any dot to see the job, its pay and both measures. Search for a job above to light it up in amber.</p>
               )}
             </div>
-            <div className="rounded-[6px] border border-rule bg-surface p-4">
+            <div className="panel p-4">
               <Toggle label="Weight by number of jobs" checked={weighted} onChange={setWeighted} help="Big occupations count for more." />
               {headline && (
                 <div className="mt-2">

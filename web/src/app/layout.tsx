@@ -1,20 +1,29 @@
-import type { Metadata } from "next";
-import { Bricolage_Grotesque, Newsreader } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Fraunces, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
+import { ModulePager } from "@/components/ModulePager";
 import { Chat } from "@/components/Chat";
 import { ChatContextProvider } from "@/components/chat-context";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  axes: ["opsz"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
   display: "swap",
 });
 
-const newsreader = Newsreader({
-  variable: "--font-newsreader",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -24,23 +33,21 @@ export const metadata: Metadata = {
     "If AI agents do the work for cents, why would anyone pay a person to do it? An interactive economics lab built on real data: prices, usage, jobs, markets and policy.",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#070e2c",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${newsreader.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}>
       <body className="min-h-screen">
         <ChatContextProvider>
           <Nav />
           <main>{children}</main>
-          <footer className="mt-24 border-t border-rule">
-            <div className="mx-auto max-w-[1180px] px-5 py-10 text-[0.95rem] text-ink-soft">
-              <p className="max-w-[80ch]">
-                A Lab Based Project in economics at IIT Roorkee, built under the industry track at Hello Agentic. Every number on this site
-                comes from a public dataset listed on the <a href="/data">data page</a>. Results are scenarios and exploratory estimates, not
-                forecasts. Code and data tables are in the{" "}
-                <a href="https://github.com/amsorrytola/why-pay-anyone">public repository</a>.
-              </p>
-            </div>
-          </footer>
+          <ModulePager />
+          <Footer />
           <Chat />
         </ChatContextProvider>
       </body>

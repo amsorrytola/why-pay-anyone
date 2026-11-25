@@ -14,6 +14,7 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
   const { p, r } = props;
   const [ref, w] = useWidth<HTMLDivElement>();
   const h = props.height ?? 360;
+  const narrow = w < 600;
   const m = { top: 34, right: 16, bottom: 58, left: 46 };
   const iw = w - m.left - m.right;
   const ih = h - m.top - m.bottom;
@@ -111,13 +112,13 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
 
         <line x1={m.left} x2={w - m.right} y1={yOf(0)} y2={yOf(0)} stroke="var(--ink)" />
         <text x={m.left} y={h - 30} fontSize={12.5} fill="var(--ink-soft)" className="ui">
-          Tasks people are best at
+          {narrow ? "People's best tasks" : "Tasks people are best at"}
         </text>
         <text x={w - m.right} y={h - 30} textAnchor="end" fontSize={12.5} fill="var(--ink-soft)" className="ui">
-          Tasks AI finds easiest
+          {narrow ? "AI's easiest" : "Tasks AI finds easiest"}
         </text>
         <text x={m.left} y={h - 10} fontSize={12.5} fill="var(--ink-faint)" className="ui">
-          Height: cost of one unit of the task, in multiples of a person&apos;s cost at their best task
+          {narrow ? "Cost per task (a person's best task = 1)" : "Height: cost of one unit of the task, in multiples of a person's cost at their best task"}
         </text>
       </svg>
     </div>

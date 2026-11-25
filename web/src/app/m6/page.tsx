@@ -112,14 +112,14 @@ export default function M6Page() {
 
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-4 lg:sticky lg:top-20 lg:self-start">
-            <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <fieldset className="panel px-4 py-3">
               <legend className="ui px-1 text-[1rem] font-bold">{M6_GROUPS.find((g) => g.id === GROUP_OF[tab])?.label}</legend>
               <p className="ui mb-1 text-[0.85rem] text-ink-soft">{M6_GROUPS.find((g) => g.id === GROUP_OF[tab])?.blurb}</p>
               {groupParams.map((m) => (
                 <ParamSlider key={m.key} m={m} value={p[m.key]} onChange={(v) => set(m.key, v)} />
               ))}
             </fieldset>
-            <details className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+            <details className="panel px-4 py-3">
               <summary className="ui cursor-pointer text-[1rem] font-bold">Economy today (calibrated from data)</summary>
               <div className="mt-2">
                 {econParams.map((m) => (

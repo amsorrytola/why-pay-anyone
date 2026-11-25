@@ -52,9 +52,11 @@ export function Chat() {
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls="chat-panel"
-        className="ui fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[1rem] font-semibold text-paper shadow-[0_6px_20px_rgba(17,26,53,0.35)] transition-transform hover:-translate-y-0.5"
+        className="ui fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex items-center gap-2.5 rounded-full bg-gradient-to-r from-ai-deep to-ai px-5 py-3.5 text-[1rem] font-semibold text-white shadow-[0_14px_34px_-10px_rgba(29,56,199,0.75)] transition-transform hover:-translate-y-0.5 sm:right-6"
       >
-        <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-full bg-human" />
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden className="shrink-0">
+          <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" fill="currentColor" />
+        </svg>
         {open ? "Close chat" : "Ask the data"}
       </button>
 
@@ -62,24 +64,24 @@ export function Chat() {
         <section
           id="chat-panel"
           aria-label="Chat about this project"
-          className="fixed bottom-20 right-5 z-40 flex h-[min(620px,78vh)] w-[min(420px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-md border border-rule bg-surface shadow-[0_18px_50px_rgba(17,26,53,0.28)]"
+          className="fixed inset-x-3 bottom-[5.25rem] top-[calc(var(--nav-h)+0.5rem)] z-40 flex flex-col overflow-hidden rounded-3xl border border-rule bg-surface shadow-[0_30px_80px_-20px_rgba(7,14,44,0.55)] sm:inset-x-auto sm:right-6 sm:top-auto sm:h-[min(640px,78vh)] sm:w-[min(430px,calc(100vw-3rem))]"
         >
-          <div className="border-b border-rule bg-ai-soft px-4 py-3">
-            <h2 className="ui text-[1.05rem] font-bold">Ask about the project</h2>
-            <p className="ui mt-0.5 text-[0.85rem] leading-snug text-ink-soft">
+          <div className="night on-night px-5 py-4">
+            <h2 className="ui text-[1.08rem] font-bold tracking-tight">Ask about the project</h2>
+            <p className="ui mt-1 text-[0.82rem] leading-snug text-on-night-soft">
               Answers use this site&apos;s own findings and the sliders on the page you have open. It can be wrong; check the charts and the data page.
             </p>
           </div>
-          <div className="flex-1 space-y-3 overflow-y-auto px-4 py-3 text-[0.98rem] leading-relaxed">
+          <div className="flex-1 space-y-3 overflow-y-auto px-4 py-4 text-[0.98rem] leading-relaxed">
             {msgs.length === 0 && (
               <div className="space-y-2">
-                <p className="ui text-[0.9rem] text-ink-soft">Try one of these:</p>
+                <p className="ui text-[0.88rem] text-ink-soft">Try one of these:</p>
                 <div className="flex flex-col items-start gap-2">
                   {STARTERS.map((s) => (
                     <button
                       key={s}
                       onClick={() => send(s)}
-                      className="ui rounded-full border border-rule bg-paper px-3 py-1.5 text-left text-[0.9rem] hover:border-ai hover:bg-ai-soft"
+                      className="ui rounded-2xl border border-rule bg-paper px-3.5 py-2 text-left text-[0.9rem] transition-colors hover:border-ai hover:bg-ai-soft"
                     >
                       {s}
                     </button>
@@ -92,8 +94,8 @@ export function Chat() {
                 key={i}
                 className={
                   m.role === "user"
-                    ? "ml-8 rounded-md bg-ink px-3 py-2 text-paper"
-                    : "mr-4 whitespace-pre-wrap rounded-md bg-paper px-3 py-2"
+                    ? "ui ml-10 rounded-2xl rounded-br-md bg-ai px-3.5 py-2.5 text-white"
+                    : "ui mr-6 whitespace-pre-wrap rounded-2xl rounded-bl-md bg-paper-2 px-3.5 py-2.5"
                 }
               >
                 {m.text.replace(/\*\*/g, "").replace(/^\s*[*-]\s+/gm, "")}
@@ -107,7 +109,7 @@ export function Chat() {
               e.preventDefault();
               send(input);
             }}
-            className="flex gap-2 border-t border-rule p-3"
+            className="flex gap-2 border-t border-rule bg-paper p-3"
           >
             <label htmlFor="chat-input" className="sr-only-ui">
               Your question
@@ -117,12 +119,9 @@ export function Chat() {
               value={input}
               onChange={(e) => setInput(e.target.value.slice(0, 600))}
               placeholder="Ask a question"
-              className="ui min-w-0 flex-1 rounded border border-rule bg-paper px-3 py-2 text-[1rem] outline-none focus:border-ai"
+              className="ui min-w-0 flex-1 rounded-full border border-rule bg-surface px-4 py-2.5 text-[1rem] outline-none focus:border-ai"
             />
-            <button
-              disabled={busy || !input.trim()}
-              className="ui rounded bg-ai px-4 py-2 text-[1rem] font-semibold text-white disabled:opacity-40"
-            >
+            <button disabled={busy || !input.trim()} className="ui rounded-full bg-ai px-5 py-2.5 text-[1rem] font-semibold text-white disabled:opacity-40">
               Send
             </button>
           </form>

@@ -144,7 +144,7 @@ const ratioText = (r: number) => (r >= 10 ? int(r) : r.toFixed(1));
 function ControlBox(props: { title: string; tone: "ai" | "human" | "owner"; children: ReactNode }) {
   const color = props.tone === "ai" ? "var(--ai-deep)" : props.tone === "human" ? "var(--human-deep)" : "var(--owner)";
   return (
-    <fieldset className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+    <fieldset className="panel px-4 py-3">
       <legend className="ui px-1 text-[1rem] font-bold" style={{ color }}>
         {props.title}
       </legend>

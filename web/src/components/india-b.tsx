@@ -273,7 +273,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
             <Bins shares={calc.bins} line={line} />
           </Figure>
           <div className="space-y-4">
-            <div className="rounded-[6px] border border-rule bg-surface p-4">
+            <div className="panel p-4">
               <Stat value={`${calc.aboveShare.toFixed(1)}%`} label={`of India's ${who} are in jobs above the line`} tone="human" />
               <div className="mt-4">
                 <Stat value={`${100 - line}%`} label="of US workers, by construction" tone="ai" />

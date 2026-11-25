@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { PageHead, Section, Slider, Toggle, PresetBar, Takeaway, Caveat, Figure, Stat } from "@/components/ui";
+import { PageHead, Section, Slider, Toggle, PresetBar, Takeaway, Caveat, Figure, Stat, StickyReadout } from "@/components/ui";
 import { CeilingChart } from "@/components/Ceiling";
 import { HBars } from "@/components/charts";
 import { usePageState } from "@/components/chat-context";
@@ -81,10 +81,17 @@ export default function M4Page() {
       />
 
       <Section>
+        <StickyReadout
+          items={[
+            { value: r.unbounded ? "no limit" : mult(r.relWage), label: "Real pay vs no AI", tone: "human" },
+            { value: pct0(r.labourShare), label: "Wage share", tone: "human" },
+            { value: pct0(r.aiShare), label: "Tasks done by AI", tone: "ai" },
+          ]}
+        />
         <div className="grid gap-6 lg:grid-cols-[minmax(0,340px)_minmax(0,1fr)]">
           <div className="space-y-5 lg:sticky lg:top-20 lg:self-start">
             {GROUPS.map((g) => (
-              <fieldset key={g.id} className="rounded-[6px] border border-rule bg-surface px-4 py-3">
+              <fieldset key={g.id} className="panel px-4 py-3">
                 <legend className="ui px-1 text-[1rem] font-bold" style={{ color: g.tone === "ai" ? "var(--ai-deep)" : g.tone === "human" ? "var(--human-deep)" : "var(--owner)" }}>
                   {g.title}
                 </legend>

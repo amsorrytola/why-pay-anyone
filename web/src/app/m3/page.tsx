@@ -286,7 +286,7 @@ export default function M3Page() {
             <LineChart series={shareSeries} height={330} xFormat={fmtYear} yFormat={(n) => (shareMode === "share" ? `${n}%` : String(Math.round(n)))} ariaLabel="AI share of job postings by country" />
           </Figure>
           <div className="space-y-4">
-            <div className="rounded-[6px] border border-rule bg-surface p-4">
+            <div className="panel p-4">
               <h3 className="ui mb-3">Gap in openings, exposed against less exposed</h3>
               <div className="flex flex-wrap items-center gap-3 pb-3">
                 <label className="ui flex items-center gap-2 text-[0.95rem]">

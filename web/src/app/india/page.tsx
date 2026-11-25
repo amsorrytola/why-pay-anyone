@@ -169,7 +169,7 @@ export default function IndiaPage() {
             />
           </Figure>
           <div className="space-y-4">
-            <div className="rounded-[6px] border border-rule bg-surface p-4">
+            <div className="panel p-4">
               <Stat value={s.actual_index.toFixed(2)} label="India's usage index, 2026 (Apr and May)" tone="human" />
               <div className="mt-4">
                 <Stat value={s.predicted_index.toFixed(2)} label={`What this model predicts (${MODELS.find((m) => m.value === model)?.label.toLowerCase()})`} tone="ai" />

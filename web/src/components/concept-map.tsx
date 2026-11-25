@@ -570,7 +570,7 @@ export function ConceptMap() {
 
   return (
     <div>
-      <div className="rounded-[6px] border border-rule bg-surface p-4 sm:p-5">
+      <div className="panel p-4 sm:p-5">
         <div className="flex flex-wrap items-end gap-x-6 gap-y-3">
           <div className="min-w-[14rem] flex-1">
             <label htmlFor="concept-search" className="ui block text-[0.95rem] font-semibold">
@@ -655,7 +655,7 @@ export function ConceptMap() {
 
       <div className="mt-4">
         {visible.length === 0 ? (
-          <p className="ui rounded-[6px] border border-rule bg-surface px-4 py-6 text-[1rem]">
+          <p className="ui panel px-4 py-6 text-[1rem]">
             No concepts match. {filtered && (
               <button type="button" onClick={clearFilters} className="underline">
                 Clear search and filters
