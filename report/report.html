@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Why Pay Anyone? The Economics of Cheap Intelligence. LBP report, Talha Ansari (23322023)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=block" rel="stylesheet">
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<!-- ============================================================ TITLE PAGE -->
+<section class="cover">
+  <div class="kicker"><span>Lab Based Project (HSC-400), final report</span><span>BS-MS Economics, IIT Roorkee, November 2026</span></div>
+  <div class="rule2"></div>
+  <h1>Why Pay Anyone?</h1>
+  <p class="subtitle">The Economics of Cheap Intelligence</p>
+
+  <table class="people">
+    <tr><th>Student</th><td><b>Talha Ansari</b>, enrolment number 23322023, BS-MS Economics, IIT Roorkee</td></tr>
+    <tr><th>Track</th><td>Industry project hosted by Hello Agentic; industry supervisor Lalla Asmaa Alaoui</td></tr>
+    <tr><th>Online</th><td>Interactive website <a href="https://why-pay-anyone.vercel.app">why-pay-anyone.vercel.app</a>; 6-minute video <a href="https://why-pay-anyone.vercel.app/presentation">why-pay-anyone.vercel.app/presentation</a>; code and data pipeline <a href="https://github.com/amsorrytola/why-pay-anyone">github.com/amsorrytola/why-pay-anyone</a></td></tr>
+  </table>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>If an AI system can do a task for a few cents, an employer will not pay a person much more than that to do it. This project studies that <i>wage ceiling</i> and the forces that decide whether people still earn well under it. I measure how fast the price of a fixed level of AI capability is falling, where AI is used across occupations, whether firm adoption shows up in hiring, and how concentrated the market for AI is. I then take the evidence into a task-based labour model, a growth model with AI capital and a two-group demand model, and add an India lens built on the 2025 Periodic Labour Force Survey microdata. The cheapest price of GPT-4-level capability fell 1,321-fold in 38 months, halving every 3.8 months. Yet the price is rarely what binds: what AI can do, how well tasks substitute for each other, competition among AI sellers and the ownership of AI income decide wages and the labour share. In the models the real wage does not fall when firms adopt AI freely; the labour share falls if compute substitutes for labour. Only 6% of Indian workers hold jobs above the US top-third exposure line, against 33% in the US. All results are exploratory, and every number can be reproduced from public code.</p>
+    <p class="kw"><b>Keywords:</b> artificial intelligence, task-based model, wage ceiling, labour share, price index, market concentration, India, PLFS.<br><b>JEL:</b> E25, J23, J24, J31, L13, O33.</p>
+  </div>
+
+  <table class="glance">
+    <caption><b>Table 1.</b> The project at a glance: seven questions, the data and method used for each, and the main result (95% intervals in brackets).</caption>
+    <thead><tr><th></th><th>Question</th><th>Data and method</th><th>Main result</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td><b>Price.</b> How fast is AI capability getting cheaper, and does spending rise when it does?</td><td>Epoch Capabilities Index matched to 39 monthly LiteLLM price snapshots; log-linear trend; panel elasticity with model and month fixed effects</td><td>GPT-4-level price $37.50 to $0.03 per million tokens (Sep 2023 to Nov 2026), halving every 3.8 months; elasticity −0.47 [−1.03, 0.09]</td></tr>
+      <tr><td class="n">2</td><td><b>Use.</b> Do independent measures agree on which jobs AI touches?</td><td>Microsoft applicability scores and Anthropic Economic Index for 591 US occupations; Spearman correlation, bootstrap intervals</td><td>ρ = 0.45 [0.38, 0.52] across occupations, 0.80 across 22 job families; computer jobs 3.4% of employment, 23.9% of usage</td></tr>
+      <tr><td class="n">3</td><td><b>Adoption.</b> Is adoption visible in firms and in hiring?</td><td>US Census BTOS, 26 fortnights; Indeed postings for 47 job categories; event study (difference in differences), permutation test</td><td>Firms using AI 17% to 25% in a year; postings in the most exposed third −24% [−35%, −11%] since 2022, but the gap opened before ChatGPT</td></tr>
+      <tr><td class="n">4</td><td><b>Labour model.</b> When does cheaper AI lower pay?</td><td>Task model with comparative advantage, compute scarcity and CES aggregation (Acemoglu and Restrepo)</td><td>With free adoption the real wage does not fall, the labour share does; the price of AI binds only while it is high</td></tr>
+      <tr><td class="n">5</td><td><b>Market.</b> Who sells intelligence, and with how much power?</td><td>OpenRouter daily token shares; Herfindahl–Hirschman index, Cournot markups, Bertrand test across hosts</td><td>HHI 3,072 to 992 to 1,577 (Jan 2025, Apr 2026, Oct 2026); five changes of leader; twice the hosts, 29% lower price</td></tr>
+      <tr><td class="n">6</td><td><b>Macro and policy.</b> What happens to growth, the labour share and demand?</td><td>Solow model with AI compute (CES), ideas model, two-group demand model; Penn World Table calibration</td><td>Labour share falls only if σ &gt; 1 (37% at σ = 3, from 59%); welfare-best automation tax 12% to 95% across assumptions</td></tr>
+      <tr><td class="n">7</td><td><b>India.</b> How exposed are Indian workers, and who are they?</td><td>PLFS 2025 unit-level data (1.15 million persons) linked to exposure scores through occupation crosswalks; weighted regressions</td><td>Average worker at the US 28th percentile; 6.3% above the US top-third line (US 33%); exposed jobs pay 65% more, 4.8% after controls</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================================ BODY -->
+<main class="body">
+
+<h2><span class="sn">1</span>Question and objectives</h2>
+<p>In September 2023 the cheapest model at about GPT-4 level cost $37.50 per million tokens; in November 2026 a model at least that capable cost $0.03. When a substitute for labour becomes 1,321 times cheaper, the wage for the tasks it can do is capped by its cost. Index tasks by <i>i</i>, let a person do task <i>i</i> at cost <i>w</i>e<sup>θ<i>i</i></sup>, where <i>w</i> is the wage and e<sup>−θ<i>i</i></sup> the person’s relative productivity, and let AI do it at cost <i>R</i>. A person keeps the task only if</p>
+<div class="eq"><span><i>w</i> ≤ <i>R</i> e<sup>−θ<i>i</i></sup>.</span><span class="en">(1)</span></div>
+<p class="ni">As <i>R</i> falls, the ceiling falls. Whether people still earn well then depends on four forces: comparative advantage while compute is scarce (Ricardo), new tasks that reinstate labour (Acemoglu and Restrepo, 2019), whether demand holds up when income moves from wages to profits (Say against Keynes), and who owns the AI (market power and distribution).</p>
+<p><b>Objectives.</b> To measure each force with public data and a standard model, and to deliver the work so that a reader can change the assumptions and see the results: (i) the price of capability and its elasticity of demand; (ii) where AI is used; (iii) whether adoption is visible in hiring; (iv) when cheap AI lowers pay in a task model; (v) concentration among AI sellers; (vi) consequences for growth, the labour share and policy; (vii) the exposure of Indian workers, from official microdata.</p>
+
+<p><b>Why this approach.</b> Each method answers one question with the least structure it needs. Prices are tracked for a fixed capability rather than per model, because models improve as they get cheaper. Exposure measures are compared by rank, because they are on different scales. Hiring is tested with an event study, because adoption has a date and a placebo can check it. The labour model separates what AI <i>can</i> do from what it <i>costs</i>, the two things the wage ceiling depends on. Market power is read from shares, because margins are not published. The macro models turn the measured parameters into scenarios, reported across the ranges the data cannot narrow.</p>
+
+<h2><span class="sn">2</span>Data</h2>
+<p>All sources are public except the PLFS unit-level data, used under MoSPI’s data agreement (non-commercial use, no attempt to identify anyone). A manifest records the URL, size and SHA-256 hash of every raw file, so the pipeline can fetch them again; only processed aggregates are published.</p>
+<table class="src">
+  <caption><b>Table 2.</b> Data sources and where they are used (chapter numbers as in Table 1).</caption>
+  <thead><tr><th>Source</th><th>Content</th><th>Ch.</th></tr></thead>
+  <tbody>
+    <tr><td>Epoch AI</td><td>Capabilities Index for 258 models; chips, data centres</td><td>1, 6</td></tr>
+    <tr><td>LiteLLM price file</td><td>39 month-end snapshots of list prices, 2023–26</td><td>1</td></tr>
+    <tr><td>OpenRouter</td><td>Daily tokens by model and firm; prices by host</td><td>1, 5</td></tr>
+    <tr><td>Microsoft, Working with AI</td><td>AI applicability score, 783 occupations</td><td>2, 3, 7</td></tr>
+    <tr><td>Anthropic Economic Index</td><td>Claude usage by occupation and country, 2026</td><td>2, 7</td></tr>
+    <tr><td>BLS OEWS; O*NET</td><td>Employment and wages, 830 occupations; tasks</td><td>2, 4</td></tr>
+    <tr><td>US Census BTOS</td><td>Share of firms using AI, fortnightly</td><td>3</td></tr>
+    <tr><td>Indeed Hiring Lab</td><td>Job postings index by category, 2020–26</td><td>3</td></tr>
+    <tr><td>Penn World Table 11; World Bank</td><td>Labour share, capital, growth, saving; income</td><td>6, 7</td></tr>
+    <tr><td>MoSPI, PLFS 2025</td><td>1,148,634 persons: occupation, pay, contracts</td><td>7</td></tr>
+  </tbody>
+</table>
+
+<h2><span class="sn">3</span>Methods and results</h2>
+
+<h3>3.1 The price of intelligence</h3>
+<p>For each month <i>t</i> and capability threshold <i>k</i>, the price of capability is the lowest list price (input and output tokens weighted 3 to 1) among models whose Epoch Capabilities Index is at least <i>k</i>; 212 of Epoch’s 258 scored models match a price. A log-linear fit gives the halving time ln 2/|<i>b</i>| from ln <i>p<sub>kt</sub></i> = <i>a</i> + <i>bt</i>. For demand I estimate</p>
+<div class="eq"><span>ln <i>Q<sub>mt</sub></i> = β ln <i>P<sub>mt</sub></i> + α<sub><i>m</i></sub> + γ<sub><i>t</i></sub> + ε<sub><i>mt</i></sub></span><span class="en">(2)</span></div>
+<p class="ni">on OpenRouter model-months, so that β comes only from price changes within a model.</p>
+<figure id="fig1"><figcaption><b>Figure 1.</b> Cheapest list price of a model at about GPT-4 level (Epoch Capabilities Index ≥ 120), US dollars per million tokens, log scale, with log-linear trend. Sources: Epoch AI; LiteLLM.</figcaption></figure>
+<p><b>Results.</b> The GPT-4-level price halves every 3.8 months, a fall of 89% a year (Figure 1); other thresholds give 2.6 to 4.4 months. A hedonic index that holds capability fixed ends at 14% of its September 2023 level [6%, 32%]. Token volume on OpenRouter rose 480-fold from January 2025 to November 2026 while the token-weighted price stayed near $1, because use moved to more capable models. But within a model, β = −0.47 [−1.03, 0.09] (58 models): price cuts do not show the elastic demand (|β| &gt; 1) that a Jevons paradox would need. Aggregate growth reflects new users and uses, not proof of Jevons.</p>
+
+<h3>3.2 Where AI is used</h3>
+<p>I map Microsoft’s applicability score (what Copilot completed in 2024) and the Anthropic Economic Index (Claude usage, April and May 2026) to SOC occupations and compute rank correlations with bootstrap intervals, then regress the log usage ratio (usage share over employment share) on applicability with job-zone and major-group effects (robust errors). The measures agree moderately: ρ = 0.45 [0.38, 0.52] across 591 occupations, 0.28 within major groups and 0.80 [0.57, 0.91] across the 22 groups. Each 0.1 of applicability goes with a 2.1-fold usage ratio (coefficient 0.73, SE 0.12). Computer and mathematical jobs are 3.4% of US employment but 23.9% of usage; occupations scoring 0.3 or more hold 10.6% of the wage bill. More applicable jobs show more augmentation and less automation (ρ = −0.21). Exposure is real but concentrated.</p>
+
+<h3>3.3 Adoption in the economy</h3>
+<p>Firm adoption comes from the Census Business Trends and Outlook Survey. For hiring, I assign 830 occupations to Indeed’s 47 US job categories, compute employment-weighted exposure, and compare the most and least exposed thirds in an event study:</p>
+<div class="eq"><span>ln <i>y<sub>ct</sub></i> − ln <i>ȳ<sub>c</sub></i><sup>2022</sup> = Σ<sub><i>τ</i></sub> β<sub><i>τ</i></sub> High<sub><i>c</i></sub>·1[<i>t</i> = <i>τ</i>] + δ<sub><i>t</i></sub> + ε<sub><i>ct</i></sub></span><span class="en">(3)</span></div>
+<p class="ni">with errors clustered by category and a permutation test (10,000 draws).</p>
+<figure id="fig2"><figcaption><b>Figure 2.</b> Job postings in the most and least AI-exposed thirds of US job categories, Jan–Oct 2022 = 100. The vertical line marks ChatGPT’s launch. Source: Indeed Hiring Lab; exposure from Microsoft scores.</figcaption></figure>
+<p><b>Results.</b> The share of firms using AI rose from 17.3% to 25.0% in a year (8.2 points [7.3, 9.1]), from 11.6% in transport to 47.8% in information, and sector adoption tracks exposure (ρ = 0.66). Postings in the most exposed third are 23.8% lower than in the least exposed [−34.9%, −10.7%; permutation <i>p</i> = 0.002], and the result survives dropping software (−21.5%) or all tech categories (−16.3%). But the gap opened from mid-2022, before ChatGPT (Figure 2), while interest rates rose and the post-pandemic hiring boom ended. Firms themselves report little displacement: 2.5% say AI cut headcount, 7.0% that it raised it. This is a pattern, not proof of cause.</p>
+
+<h3>3.4 The labour model</h3>
+<p>Tasks <i>i</i> run from −<i>n</i> to 1; tasks below 0 are new tasks only people can do. AI can do tasks with <i>i</i> ≥ 1 − <i>A</i> at cost <i>R</i> = ρ<i>w</i><sub>0</sub>(1 + η<i>u</i>), which rises with the share <i>u</i> of tasks on AI (compute scarcity). Tasks combine with elasticity of substitution σ, and the wage sets the price of output to one:</p>
+<div class="eq"><span><i>w</i><sup>1−σ</sup> <i>I</i>(<i>i<sub>a</sub></i>) + (1 − <i>i<sub>a</sub></i>) <i>R</i><sup>1−σ</sup> = 1,</span><span class="en">(4)</span></div>
+<div class="eq"><span><i>i<sub>a</sub></i> = max{1 − <i>A</i>, ln(<i>R</i>/<i>w</i>)/θ},</span><span class="en">(5)</span></div>
+<p class="ni">where <i>I</i>(<i>a</i>) = (e<sup><i>ka</i></sup> − e<sup>−<i>kn</i></sup>)/<i>k</i> and <i>k</i> = θ(1 − σ); the labour share is <i>s</i> = <i>w</i><sup>1−σ</sup><i>I</i>(<i>i<sub>a</sub></i>). Figure 5 shows the mechanism.</p>
+<figure id="fig5"><figcaption><b>Figure 5.</b> The task model. A person’s cost per task rises with the task index (comparative advantage); AI does the tasks right of 1 − <i>A</i> where it is cheaper. At a high AI price no task moves; as the price falls, AI takes tasks from the right until the corner, after which a lower price changes nothing about who does what. Here <i>A</i> = 0.5, θ = 1.5.</figcaption></figure>
+<p>Three results follow. (i) With free adoption and fixed labour supply, the real wage never falls below its no-AI level, but the labour share does. (ii) Once <i>R</i> &lt; <i>w</i>e<sup>θ(1−<i>A</i>)</sup>, AI is cheaper on every task it can do (the corner): a lower price no longer changes who does what, and the share <i>A</i> and σ decide the outcome. (iii) Cheaper AI raises the labour share if σ &lt; 1 and lowers it if σ &gt; 1. With <i>A</i> = 18% (Microsoft applicability weighted by wage bill), a million tokens for an hour of work cost $0.09 at GPT-5 level against average US pay of $33.36, or 0.3%. Token prices are far below the ceiling; what binds is the all-in cost of checking and integrating AI work, a parameter of the model.</p>
+
+<h3>3.5 Market structure and power</h3>
+<p>The Herfindahl–Hirschman index HHI = 10,000 Σ<i>s<sub>j</sub></i><sup>2</sup> is computed over firms (model authors mapped to parents) from daily OpenRouter token shares. Under Cournot competition the average Lerner index is HHI/ε. For open-weights models served by several hosts, I regress the log lowest price on the log number of hosts with model and month fixed effects.</p>
+<figure id="fig3"><figcaption><b>Figure 3.</b> Concentration of AI model sales: Herfindahl–Hirschman index by firm, monthly, OpenRouter tokens (top 50 models). Dashed: 1,800, “highly concentrated” in the US merger guidelines.</figcaption></figure>
+<p><b>Results.</b> The HHI fell from 3,072 in January 2025 (Anthropic 51%; 3.3 equal firms’ worth) to 992 in April 2026, then rose to 1,577 in October 2026 (DeepSeek 34%) (Figure 3). The leading firm changed five times in 23 months, and 26 firms reached a 1% share. At a demand elasticity of 2, the October HHI implies a Lerner index of 0.08. Doubling the hosts of an open-weights model goes with a 29% lower price (elasticity −0.49 [−0.63, −0.34], 62 models), as Bertrand competition predicts; closed models show no such effect (−0.04 [−0.11, 0.02]).</p>
+
+<h3>3.6 Macroeconomics and policy</h3>
+<p>Model A is a Solow model with output <i>Y</i> = <i>B A K</i><sup>α</sup><i>X</i><sup>1−α</sup> and <i>X</i> = [(1−<i>g</i>)<i>L</i><sup>ρ</sup> + <i>gC</i><sup>ρ</sup>]<sup>1/ρ</sup>, ρ = (σ−1)/σ, where <i>C</i> is AI compute, growing with a doubling time of 0.7 years that slows by 20% a year (Epoch data). It is calibrated to the Penn World Table (US labour share 58.8%). Model B adds ideas production with research automation (Romer, 1990; Jones, 1995); Model C splits income between workers and owners, who spend 0.95 and 0.58 of each dollar, and lets an automation tax fund a basic income. After 30 years the labour share is 59.5% at σ = 0.5, 58.9% at 1, 57.3% at 1.25, 48.6% at 2 and 37.3% at 3; wages rise in every case, because compute raises labour’s marginal product even when its share falls. With σ = 2.5, a 25% automation tax pays a basic income of 3.7% of GDP and narrows the demand gap from 2.7% to 2.0% of potential output. The welfare-best rate, however, ranges from 12% to 95% across plausible tax-base elasticities and inequality aversion. In the data the US labour share fell from 63.7% (2000) to 56.8% (2023), long before AI compute grew, so the decline cannot be tied to AI.</p>
+
+<h3>3.7 India</h3>
+<p><b>Use.</b> Across 120 countries, log Claude usage per person rises one for one with log GDP per capita (elasticity 0.96 [0.88, 1.04], <i>R</i><sup>2</sup> = 0.81). India’s usage index, 0.305, is 71% of the predicted value, inside the normal scatter, and the gap vanishes once the services share of employment is controlled.</p>
+<p><b>Exposure.</b> I use the PLFS 2025 first-visit file (460,857 workers), treat three-digit NCO-2015 codes as ISCO-08 (99.97% of workers match), link them to US occupations through BLS crosswalks, and express exposure as a percentile of the US workforce. Shares are survey-weighted; pay regressions cluster by first-stage unit.</p>
+<figure id="fig4"><figcaption><b>Figure 4.</b> Indian workers by the exposure of their occupation, in US exposure percentiles (US workers spread evenly, 10% per band). Source: PLFS 2025 unit-level data, MoSPI; Microsoft scores.</figcaption></figure>
+<p><b>Results.</b> The average Indian worker sits at the 28th percentile of US exposure (Figure 4); 70.6% are below the US bottom-third line and 6.3% above the top-third line, against 33% in the US. Exposure is concentrated: 14.0% of urban and 3.0% of rural workers, 26.4% of graduates and 2.7% of others, 19.2% of regular wage workers and 0.3% of casual workers are above the line. A job at the 75th percentile pays 65% more than one at the 25th, but 5.4% after controlling for education and 4.8% after state effects [about 3%, 6%]: the raw gap is mostly the return to schooling. In the most exposed third, 51% of regular wage workers have no written contract (68% in the least exposed third).</p>
+
+<h2><span class="sn">4</span>Economic interpretation</h2>
+<table class="src concepts">
+  <caption><b>Table 3.</b> Economic concepts applied in the project, and where.</caption>
+  <thead><tr><th>Concept</th><th>How it is used</th><th>Ch.</th></tr></thead>
+  <tbody>
+    <tr><td>Derived demand, wage ceiling</td><td>Pay for a task is capped by the cost of its substitute, eq. (1)</td><td>1, 4</td></tr>
+    <tr><td>Comparative advantage</td><td>People keep the tasks where they are relatively best</td><td>4</td></tr>
+    <tr><td>Elasticity of substitution (CES)</td><td>Between tasks, and between compute and labour; sets the labour share</td><td>4, 6</td></tr>
+    <tr><td>Price elasticity; Jevons paradox</td><td>Fixed-effects estimate of demand for tokens</td><td>1</td></tr>
+    <tr><td>Hedonic price index</td><td>Price of AI holding capability fixed</td><td>1</td></tr>
+    <tr><td>Diffusion of innovations</td><td>Firm adoption by sector, size and state</td><td>3</td></tr>
+    <tr><td>Difference in differences</td><td>Event study, placebo and permutation test on postings</td><td>3</td></tr>
+    <tr><td>HHI; Cournot; Bertrand</td><td>Concentration, implied markups, price competition among hosts</td><td>5</td></tr>
+    <tr><td>Solow; Romer and Jones</td><td>Growth with AI capital; ideas with research automation</td><td>6</td></tr>
+    <tr><td>Say’s law against Keynes; MPC</td><td>Demand gap when income moves to owners</td><td>6</td></tr>
+    <tr><td>Automation tax, basic income</td><td>Welfare comparison with inequality aversion</td><td>6</td></tr>
+    <tr><td>Returns to education; informality</td><td>Pay gaps and written contracts by exposure</td><td>7</td></tr>
+  </tbody>
+</table>
+<p><b>Why pay anyone?</b> Because the price of AI is not what decides. In the data and in the models, pay depends on what AI cannot yet do (the share <i>A</i>), on comparative advantage while compute is scarce, on whether automated and human tasks are complements (σ &lt; 1), on new tasks, and on who captures the gains. Price falls act mainly through what becomes feasible, not through the price of tasks already automated.</p>
+<p><b>Distribution, not mass unemployment, is the main risk.</b> With free adoption the models give higher real wages but a lower labour share when compute substitutes for labour. Owners spend less of each dollar, so a shift towards them can open a demand gap. Policy should therefore target the distribution of AI income, through broad ownership, taxation of AI rents and social insurance, while the efficient tax rate is too uncertain (12% to 95%) for a precise rule.</p>
+<p><b>Competition passes on the gains.</b> Concentration among AI sellers fell, then rose, and leadership changes often. Open-weights models served by many hosts price like Bertrand competitors. Competition policy that keeps open models, multiple hosts and switching easy turns cheap intelligence into consumer surplus rather than markups.</p>
+<p><b>India.</b> Low exposure is an effect of the job mix (farming and elementary work), not of protection. Exposure falls on urban, educated, regular wage workers, the base of India’s services exports, and half of them lack written contracts. Three applications follow: skills that complement AI in exposed formal jobs; portable social protection for workers in exposed jobs without contracts; and measurement, since the PLFS could add questions on tasks and AI use to monitor effects as they arrive.</p>
+
+<h2><span class="sn">5</span>Limitations</h2>
+<p>Prices are list prices from one source; a spot check against archived OpenAI pages matched three of four. Usage comes from two platforms, and exposure measures where AI is used, not job loss. The hiring evidence is correlational and its timing is confounded. The models are calibrated scenarios, not forecasts; σ and <i>A</i> are uncertain, and the results are reported across their ranges. The India crosswalk assumes US task content for Indian job titles. OpenRouter covers one marketplace.</p>
+
+<h2><span class="sn">6</span>What was built</h2>
+<p>A Python pipeline that fetches, cleans and analyses the data (72 processed tables); a ten-page website with interactive figures, sliders for every model, a guided reading, a map of 61 economics concepts and a chatbot that answers from the project’s own documents; and a narrated 6-minute video. <b>Use of AI tools:</b> an AI coding assistant (Anthropic’s Claude) helped write code and drafts; the chatbot runs on Google Gemini; the video voice is synthetic (Sarvam AI). Every number here comes from the pipeline’s outputs. <b>Acknowledgements:</b> Lalla Asmaa Alaoui (Hello Agentic) supervised the project. PLFS data: National Statistics Office, MoSPI, Government of India.</p>
+
+<h2 class="refs-h">References</h2>
+<ol class="refs">
+  <li>Acemoglu, D. and P. Restrepo (2018). The race between man and machine. <i>American Economic Review</i> 108(6), 1488–1542.</li>
+  <li>Acemoglu, D. and P. Restrepo (2019). Automation and new tasks. <i>Journal of Economic Perspectives</i> 33(2), 3–30.</li>
+  <li>Cazzaniga, M. et al. (2024). Gen-AI: Artificial intelligence and the future of work. IMF Staff Discussion Note SDN/2024/001.</li>
+  <li>Feenstra, R., R. Inklaar and M. Timmer (2015). The next generation of the Penn World Table. <i>American Economic Review</i> 105(10), 3150–3182.</li>
+  <li>Guerreiro, J., S. Rebelo and P. Teles (2022). Should robots be taxed? <i>Review of Economic Studies</i> 89(1), 279–311.</li>
+  <li>Handa, K. et al. (2025). Which economic tasks are performed with AI? Evidence from millions of Claude conversations. arXiv:2503.04761.</li>
+  <li>Jevons, W. S. (1865). <i>The Coal Question</i>. London: Macmillan.</li>
+  <li>Jones, C. I. (1995). R&amp;D-based models of economic growth. <i>Journal of Political Economy</i> 103(4), 759–784.</li>
+  <li>Karabarbounis, L. and B. Neiman (2014). The global decline of the labor share. <i>Quarterly Journal of Economics</i> 129(1), 61–103.</li>
+  <li>MoSPI (2026). Periodic Labour Force Survey, calendar year 2025, unit-level data. National Statistics Office, Government of India.</li>
+  <li>Romer, P. M. (1990). Endogenous technological change. <i>Journal of Political Economy</i> 98(5), S71–S102.</li>
+  <li>Tomlinson, K., S. Jaffe, W. Wang, S. Counts and S. Suri (2025). Working with AI: measuring the occupational implications of generative AI. arXiv:2507.07935.</li>
+  <li>Trammell, P. and A. Korinek (2023). Economic growth under transformative AI. NBER Working Paper 31815.</li>
+  <li>Data: Epoch AI (2026), AI models and hardware data; LiteLLM model price file; OpenRouter rankings; US Census Bureau, Business Trends and Outlook Survey; Indeed Hiring Lab job postings index; World Bank WDI.</li>
+</ol>
+</main>
+
+<script src="../presentation/deck/data.js"></script>
+<script src="figures.js"></script>
+</body>
+</html>

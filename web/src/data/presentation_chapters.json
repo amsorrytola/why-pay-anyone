@@ -1,0 +1,77 @@
+{
+ "duration": 363.9,
+ "chapters": [
+  {
+   "id": "open",
+   "title": "Opening",
+   "start": 0.0,
+   "text": "If an AI can do a piece of work for a few cents, why would anyone pay a person to do it? Why Pay Anyone? is an economics project on cheap intelligence, carried out as a Lab Based Project at IIT Roorkee with Hello Agentic. It asks what happens to jobs, wages, prices and market power when intelligence becomes cheap."
+  },
+  {
+   "id": "ceiling",
+   "title": "The idea",
+   "start": 25.83,
+   "text": "The starting point is a wage ceiling. For any task an AI can also do, no employer will pay a person more than the AI would cost, allowing for how productive each one is. As the price of AI falls, that ceiling falls with it. Whether people still earn well then depends on four things: comparative advantage while computing power is scarce, the new tasks that cheap intelligence creates, whether demand holds up when wage income falls, and who owns the AI."
+  },
+  {
+   "id": "plan",
+   "title": "The approach",
+   "start": 58.3,
+   "text": "The project tests these ideas in six steps, each built on real data and one standard economic model. Price, use, adoption, a labour model, market power, and the macroeconomy. An India lens then uses government survey microdata."
+  },
+  {
+   "id": "price",
+   "title": "Chapter 1. The price of intelligence",
+   "start": 75.9,
+   "text": "Step one is the price. Matching Epoch AI's capability scores to three years of list prices, the cheapest model at about GPT-4 level fell from $37.50 per million tokens in September 2023 to about 3 cents in November 2026. That price halves roughly every 3.8 months. Did spending rise as prices fell, as Jevons found for coal? Token volumes on OpenRouter grew about 480 times. But when one model cuts its price, the estimated elasticity is about \u22120.47, and its interval includes both zero and \u22121. So the data cannot yet settle it."
+  },
+  {
+   "id": "use",
+   "title": "Chapter 2. Where AI is used",
+   "start": 119.07,
+   "text": "Step two asks where AI is used. Two independent measures, Microsoft's Copilot scores and Anthropic's Claude usage, rank 591 US occupations with a correlation of 0.45, and whole job families with 0.80. Computer and mathematical jobs are 3% of US employment but nearly a quarter of usage. Exposure is real, but concentrated."
+  },
+  {
+   "id": "adoption",
+   "title": "Chapter 3. Adoption in the economy",
+   "start": 146.07,
+   "text": "Step three asks whether it shows up in the economy. The share of US firms using AI rose from 17 to 25 percent in a year. In Indeed job postings, the most exposed third of job categories has about 24 percent fewer postings than the least exposed third, relative to 2022. But the event study shows the gap opening before ChatGPT launched, as interest rates rose and the pandemic hiring boom ended. It is a pattern, not proof."
+  },
+  {
+   "id": "model",
+   "title": "Chapter 4. The labour model",
+   "start": 180.2,
+   "text": "Step four is the core model, a task-based model in the spirit of Acemoglu and Restrepo. People are relatively better at some tasks, AI at others, and each task goes to whichever is cheaper. When firms adopt AI freely, the real wage in this model does not fall, but the labour share does. The price of AI matters only while it is high. Once AI is cheaper on every task it can do, what matters is how much it can do, and whether tasks substitute or complement. Even a million tokens for an hour of work cost well under 1 percent of average US pay, so the token price itself is rarely what binds."
+  },
+  {
+   "id": "market",
+   "title": "Chapter 5. Market structure and power",
+   "start": 223.63,
+   "text": "Step five asks who sells the intelligence. From daily token shares, the Herfindahl\u2013Hirschman index fell from about 3,070 in January 2025 to 990 in April 2026, then rose to about 1,580 by October. The leading firm changed five times in 23 months. And for open-weights models, doubling the number of hosts goes with a price about 29 percent lower, as Bertrand competition predicts."
+  },
+  {
+   "id": "macro",
+   "title": "Chapter 6. Macroeconomics and policy",
+   "start": 253.53,
+   "text": "Step six is the macroeconomy. In a Solow growth model with AI capital, calibrated to the Penn World Table, the labour share falls only if compute substitutes for labour, with an elasticity above one. Because owners save more of each dollar than workers, a shift of income towards them can open a demand gap. An automation tax funding a basic income narrows that gap, but the best tax rate ranges from 12 to 95 percent, depending on assumptions. The honest answer: it depends on parameters we cannot yet measure."
+  },
+  {
+   "id": "india",
+   "title": "Chapter 7. India",
+   "start": 286.0,
+   "text": "Finally, India. Using the 2025 Periodic Labour Force Survey, the average Indian worker sits at the 28th percentile of US exposure. Only 6 percent of Indian workers hold jobs above the US top-third line, against 33 percent in the US: 14 percent in cities, 3 percent in villages. Exposed jobs pay 65 percent more, but almost all of that gap is education. And even in the most exposed third, half of regular wage workers have no written contract."
+  },
+  {
+   "id": "meaning",
+   "title": "What it means",
+   "start": 319.0,
+   "text": "So, why pay anyone? In the data and the models, the price of AI alone does not decide. Pay depends on what AI cannot yet do, on the new tasks it creates, on competition among those who sell it, and on who owns it. The larger risk is not that wages collapse overnight, but that labour's share of income slowly falls. How that income is shared is a policy choice."
+  },
+  {
+   "id": "close",
+   "title": "Closing",
+   "start": 344.13,
+   "text": "Every chart here is live on the website, where you can move the assumptions, switch the data, and ask the built-in assistant about any concept. The full report, the data pipeline and the code are linked there too. Thank you for watching."
+  }
+ ]
+}

@@ -30,13 +30,13 @@ export function Nav() {
           <span className="ui hidden truncate text-[0.84rem] text-ink-soft 2xl:inline">The economics of cheap intelligence</span>
         </Link>
 
-        <nav aria-label="Chapters" className="hidden items-center gap-5 lg:flex">
+        <nav aria-label="Chapters" className="hidden items-center gap-3 lg:flex xl:gap-5">
           {SITE_LINKS.filter((l) => l.href !== "/").map((l) => (
             <Link
               key={l.href}
               href={l.href}
               aria-current={isActive(l.href) ? "page" : undefined}
-              className={`ui whitespace-nowrap py-1 text-[0.9rem] font-semibold no-underline ${
+              className={`ui whitespace-nowrap py-1 text-[0.84rem] font-semibold no-underline xl:text-[0.9rem] ${
                 isActive(l.href) ? "text-ink underline decoration-2 underline-offset-[7px]" : "text-ink-soft hover:text-ink"
               }`}
             >

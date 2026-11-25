@@ -12,6 +12,8 @@ export const SITE_LINKS: SiteLink[] = [
   { href: "/india", label: "India", short: "India", n: "7", q: "How Indian workers use AI, and how exposed they are" },
   { href: "/concepts", label: "Concepts", short: "Concepts", q: "61 economics ideas, in plain words" },
   { href: "/data", label: "Data and method", short: "Data", q: "Every source and its limits" },
+  { href: "/presentation", label: "Video presentation", short: "Video", q: "The whole project in six narrated minutes" },
+  { href: "/report", label: "Report", short: "Report", q: "The five-page written report, as a PDF" },
 ];
 
 export const CITE = "Why Pay Anyone? The Economics of Cheap Intelligence. Lab Based Project, BS-MS Economics, IIT Roorkee (industry track, Hello Agentic), November 2026.";

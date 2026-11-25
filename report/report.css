@@ -1,0 +1,70 @@
+/* The report is set like the website: white paper, black ink, blue for AI, red for people, ochre for owners,
+   Source Serif for reading and Source Sans for data. Printed to A4 PDF by report/build.mjs. */
+:root {
+  --ink: #1b1c1e; --soft: #4b4c50; --faint: #66686d; --rule: #d7d6d0; --paper2: #f4f3ef;
+  --human: #c4432a; --ai: #2c5aa0; --owner: #a8761a;
+  --serif: "Source Serif 4", Georgia, serif; --sans: "Source Sans 3", Arial, sans-serif;
+}
+@page {
+  size: A4;
+  margin: 17mm 15mm 14mm 15mm;
+  @top-left { content: "Why Pay Anyone? The Economics of Cheap Intelligence"; font: 600 7.6pt var(--sans); color: #4b4c50; vertical-align: bottom; padding-bottom: 2.2mm; border-bottom: 0.9pt solid #1b1c1e; }
+  @top-right { content: "Talha Ansari, 23322023"; font: 400 7.6pt var(--sans); color: #4b4c50; vertical-align: bottom; padding-bottom: 2.2mm; border-bottom: 0.9pt solid #1b1c1e; }
+  @bottom-center { content: counter(page) " of " counter(pages); font: 400 7.6pt var(--sans); color: #66686d; }
+}
+@page :first {
+  margin-top: 14mm;
+  @top-left { content: none; border: none; }
+  @top-right { content: none; border: none; }
+}
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font-family: var(--serif); font-size: 9.5pt; line-height: 1.35; color: var(--ink); font-optical-sizing: auto; font-kerning: normal; }
+a { color: var(--ai); text-decoration: none; }
+b { font-weight: 600; }
+p { margin: 0 0 1.6mm; text-align: justify; hyphens: auto; -webkit-hyphens: auto; orphans: 2; widows: 2; }
+p.ni { text-indent: 0; }
+sub, sup { line-height: 0; font-size: 72%; }
+
+/* ---------------------------------------------------------------- title page */
+.cover { break-after: page; }
+.kicker { display: flex; justify-content: space-between; font: 600 8pt var(--sans); color: var(--soft); }
+.rule2 { margin-top: 2mm; border-bottom: 0.5pt solid var(--ink); height: 0; border-top: 1.6pt solid var(--ink); padding-top: 1.1pt; }
+h1 { font-size: 40pt; line-height: 1; font-weight: 600; letter-spacing: -0.015em; margin: 9mm 0 0; }
+.subtitle { font-size: 17pt; font-style: italic; color: var(--soft); margin: 2mm 0 6mm; text-align: left; }
+table { border-collapse: collapse; width: 100%; }
+.people { font: 8.6pt/1.4 var(--sans); margin-bottom: 5mm; border-top: 0.5pt solid var(--rule); }
+.people th { text-align: left; font-weight: 400; color: var(--faint); width: 17mm; vertical-align: top; padding: 1.2mm 0; border-bottom: 0.5pt solid var(--rule); }
+.people td { padding: 1.2mm 0; border-bottom: 0.5pt solid var(--rule); }
+.abstract { margin: 0 0 5mm; }
+.abstract h2 { font: 700 9pt var(--sans); margin: 0 0 1.4mm; }
+.abstract p { font-size: 9.6pt; line-height: 1.38; }
+.kw { font: 8pt/1.4 var(--sans); color: var(--soft); text-align: left; margin-top: 1.4mm; }
+caption { caption-side: top; text-align: left; font: 8pt/1.35 var(--sans); padding-bottom: 1.6mm; color: var(--ink); }
+.glance { font: 7.7pt/1.3 var(--sans); }
+.glance thead th { text-align: left; font-weight: 700; border-top: 1.4pt solid var(--ink); border-bottom: 0.7pt solid var(--ink); padding: 1.2mm 1.6mm 1.2mm 0; }
+.glance td { vertical-align: top; padding: 1.35mm 2mm 1.35mm 0; border-bottom: 0.4pt solid var(--rule); }
+.glance tbody tr:last-child td { border-bottom: 1.4pt solid var(--ink); }
+.glance td.n { font-weight: 700; color: var(--ai); width: 3mm; }
+.glance td:nth-child(2) { width: 30%; }
+.glance td:nth-child(3) { width: 31%; color: var(--soft); }
+
+/* ---------------------------------------------------------------- body: two columns */
+.body { columns: 2; column-gap: 6.5mm; column-rule: 0.4pt solid var(--rule); }
+.body h2 { font: 700 10.4pt/1.2 var(--sans); margin: 3.2mm 0 1.6mm; break-after: avoid; display: flex; gap: 2.2mm; align-items: baseline; }
+.body h2:first-child { margin-top: 0; }
+.body h2 .sn { color: var(--ai); }
+.body h3 { font: 700 9pt/1.2 var(--sans); margin: 2.6mm 0 1.1mm; break-after: avoid; color: var(--ink); }
+.eq { display: flex; justify-content: space-between; align-items: baseline; margin: 1.2mm 0 1.6mm 4mm; font-size: 9.6pt; break-inside: avoid; }
+.eq .en { color: var(--faint); font-family: var(--sans); font-size: 8pt; }
+figure { margin: 2mm 0 3mm; break-inside: avoid; }
+figure svg { display: block; width: 100%; height: auto; }
+figcaption { font: 7.6pt/1.35 var(--sans); color: var(--ink); margin-bottom: 1.2mm; }
+.src { font: 7.4pt/1.28 var(--sans); margin: 1mm 0 2.2mm; break-inside: avoid; }
+.src thead th { text-align: left; font-weight: 700; border-top: 1.2pt solid var(--ink); border-bottom: 0.6pt solid var(--ink); padding: 0.9mm 1.4mm 0.9mm 0; }
+.src td { padding: 0.7mm 1.4mm 0.7mm 0; border-bottom: 0.35pt solid var(--rule); vertical-align: top; }
+.src td:first-child { white-space: nowrap; font-weight: 600; }
+.src td:last-child { white-space: nowrap; color: var(--soft); }
+.src tbody tr:last-child td { border-bottom: 1.2pt solid var(--ink); }
+.refs-h { font: 700 9pt var(--sans) !important; margin-top: 3mm !important; }
+.refs { font: 7.2pt/1.32 var(--sans); color: var(--soft); padding-left: 4mm; margin: 0; }
+.refs li { margin-bottom: 0.7mm; padding-left: 0.6mm; }

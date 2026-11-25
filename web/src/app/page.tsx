@@ -77,6 +77,17 @@ export default function Home() {
           <p className="ui mt-5 border-t border-rule pt-3 text-[0.9rem] text-ink-soft">
             Lab Based Project, BS-MS Economics, IIT Roorkee. Industry track, Hello Agentic. November 2026.
           </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link href="/presentation" className="btn btn-ink">
+              <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
+                <path d="M3 1.5v11l9-5.5z" fill="currentColor" />
+              </svg>
+              Watch the presentation, 6 min
+            </Link>
+            <Link href="/report" className="btn btn-ghost">
+              Read the report, 5 pages
+            </Link>
+          </div>
         </div>
       </header>
 

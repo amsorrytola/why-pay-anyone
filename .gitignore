@@ -13,3 +13,7 @@ __pycache__/
 .next/
 .vercel/
 .DS_Store
+
+# Presentation and report builds (re-made by presentation/render.mjs and report/build.mjs)
+presentation/build/
+report/build/

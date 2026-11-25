@@ -1,0 +1,255 @@
+[
+ {
+  "id": "open",
+  "chapter": "",
+  "segments": [
+   {
+    "text": "If an AI can do a piece of work for a few cents, why would anyone pay a person to do it?"
+   },
+   {
+    "text": "Why Pay Anyone? is an economics project on cheap intelligence, carried out as a Lab Based Project at IIT Roorkee with Hello Agentic."
+   },
+   {
+    "text": "It asks what happens to jobs, wages, prices and market power when intelligence becomes cheap."
+   }
+  ]
+ },
+ {
+  "id": "ceiling",
+  "chapter": "The idea",
+  "segments": [
+   {
+    "text": "The starting point is a wage ceiling."
+   },
+   {
+    "text": "For any task an AI can also do, no employer will pay a person more than the AI would cost, allowing for how productive each one is."
+   },
+   {
+    "text": "As the price of AI falls, that ceiling falls with it."
+   },
+   {
+    "text": "Whether people still earn well then depends on four things:",
+    "pause": 0.12
+   },
+   {
+    "text": "comparative advantage while computing power is scarce,",
+    "pause": 0.12
+   },
+   {
+    "text": "the new tasks that cheap intelligence creates,",
+    "pause": 0.12
+   },
+   {
+    "text": "whether demand holds up when wage income falls,",
+    "pause": 0.12
+   },
+   {
+    "text": "and who owns the AI."
+   }
+  ]
+ },
+ {
+  "id": "plan",
+  "chapter": "The approach",
+  "segments": [
+   {
+    "text": "The project tests these ideas in six steps, each built on real data and one standard economic model."
+   },
+   {
+    "text": "Price, use, adoption, a labour model, market power, and the macroeconomy."
+   },
+   {
+    "text": "An India lens then uses government survey microdata."
+   }
+  ]
+ },
+ {
+  "id": "price",
+  "chapter": "Chapter 1. The price of intelligence",
+  "segments": [
+   {
+    "text": "Step one is the price."
+   },
+   {
+    "text": "Matching Epoch AI's capability scores to three years of list prices, the cheapest model at about GPT-4 level fell from $37.50 per million tokens in September 2023 to about 3 cents in November 2026.",
+    "say": "Matching Epoch AI's capability scores to three years of list prices, the cheapest model at about GPT-4 level fell from thirty-seven dollars fifty per million tokens in September 2023, to about three cents in November 2026."
+   },
+   {
+    "text": "That price halves roughly every 3.8 months."
+   },
+   {
+    "text": "Did spending rise as prices fell, as Jevons found for coal? Token volumes on OpenRouter grew about 480 times.",
+    "say": "Did spending rise as prices fell, as Jevons found for coal? Token volumes on Open Router grew about four hundred and eighty times."
+   },
+   {
+    "text": "But when one model cuts its price, the estimated elasticity is about −0.47, and its interval includes both zero and −1.",
+    "say": "But when one model cuts its price, the estimated elasticity is about minus zero point four seven, and its interval includes both zero and minus one."
+   },
+   {
+    "text": "So the data cannot yet settle it."
+   }
+  ]
+ },
+ {
+  "id": "use",
+  "chapter": "Chapter 2. Where AI is used",
+  "segments": [
+   {
+    "text": "Step two asks where AI is used."
+   },
+   {
+    "text": "Two independent measures, Microsoft's Copilot scores and Anthropic's Claude usage, rank 591 US occupations with a correlation of 0.45, and whole job families with 0.80.",
+    "say": "Two independent measures, Microsoft's Copilot scores and Anthropic's Claude usage, rank five hundred and ninety-one US occupations with a correlation of zero point four five, and whole job families with zero point eight."
+   },
+   {
+    "text": "Computer and mathematical jobs are 3% of US employment but nearly a quarter of usage.",
+    "say": "Computer and mathematical jobs are three percent of US employment, but nearly a quarter of usage."
+   },
+   {
+    "text": "Exposure is real, but concentrated."
+   }
+  ]
+ },
+ {
+  "id": "adoption",
+  "chapter": "Chapter 3. Adoption in the economy",
+  "segments": [
+   {
+    "text": "Step three asks whether it shows up in the economy."
+   },
+   {
+    "text": "The share of US firms using AI rose from 17 to 25 percent in a year."
+   },
+   {
+    "text": "In Indeed job postings, the most exposed third of job categories has about 24 percent fewer postings than the least exposed third, relative to 2022."
+   },
+   {
+    "text": "But the event study shows the gap opening before ChatGPT launched, as interest rates rose and the pandemic hiring boom ended."
+   },
+   {
+    "text": "It is a pattern, not proof."
+   }
+  ]
+ },
+ {
+  "id": "model",
+  "chapter": "Chapter 4. The labour model",
+  "segments": [
+   {
+    "text": "Step four is the core model, a task-based model in the spirit of Acemoglu and Restrepo."
+   },
+   {
+    "text": "People are relatively better at some tasks, AI at others, and each task goes to whichever is cheaper."
+   },
+   {
+    "text": "When firms adopt AI freely, the real wage in this model does not fall, but the labour share does."
+   },
+   {
+    "text": "The price of AI matters only while it is high."
+   },
+   {
+    "text": "Once AI is cheaper on every task it can do, what matters is how much it can do, and whether tasks substitute or complement."
+   },
+   {
+    "text": "Even a million tokens for an hour of work cost well under 1 percent of average US pay, so the token price itself is rarely what binds.",
+    "say": "Even a million tokens for an hour of work cost well under one percent of average US pay, so the token price itself is rarely what binds."
+   }
+  ]
+ },
+ {
+  "id": "market",
+  "chapter": "Chapter 5. Market structure and power",
+  "segments": [
+   {
+    "text": "Step five asks who sells the intelligence."
+   },
+   {
+    "text": "From daily token shares, the Herfindahl–Hirschman index fell from about 3,070 in January 2025 to 990 in April 2026, then rose to about 1,580 by October.",
+    "say": "From daily token shares, the Herfindahl Hirschman index fell from about three thousand and seventy in January 2025, to nine hundred and ninety in April 2026, then rose to about fifteen hundred and eighty by October."
+   },
+   {
+    "text": "The leading firm changed five times in 23 months."
+   },
+   {
+    "text": "And for open-weights models, doubling the number of hosts goes with a price about 29 percent lower, as Bertrand competition predicts."
+   }
+  ]
+ },
+ {
+  "id": "macro",
+  "chapter": "Chapter 6. Macroeconomics and policy",
+  "segments": [
+   {
+    "text": "Step six is the macroeconomy."
+   },
+   {
+    "text": "In a Solow growth model with AI capital, calibrated to the Penn World Table, the labour share falls only if compute substitutes for labour, with an elasticity above one."
+   },
+   {
+    "text": "Because owners save more of each dollar than workers, a shift of income towards them can open a demand gap."
+   },
+   {
+    "text": "An automation tax funding a basic income narrows that gap, but the best tax rate ranges from 12 to 95 percent, depending on assumptions."
+   },
+   {
+    "text": "The honest answer: it depends on parameters we cannot yet measure."
+   }
+  ]
+ },
+ {
+  "id": "india",
+  "chapter": "Chapter 7. India",
+  "segments": [
+   {
+    "text": "Finally, India."
+   },
+   {
+    "text": "Using the 2025 Periodic Labour Force Survey, the average Indian worker sits at the 28th percentile of US exposure.",
+    "say": "Using the 2025 Periodic Labour Force Survey, the average Indian worker sits at the twenty-eighth percentile of US exposure."
+   },
+   {
+    "text": "Only 6 percent of Indian workers hold jobs above the US top-third line, against 33 percent in the US: 14 percent in cities, 3 percent in villages.",
+    "say": "Only six percent of Indian workers hold jobs above the US top-third line, against thirty-three percent in the US. Fourteen percent in cities, three percent in villages."
+   },
+   {
+    "text": "Exposed jobs pay 65 percent more, but almost all of that gap is education."
+   },
+   {
+    "text": "And even in the most exposed third, half of regular wage workers have no written contract."
+   }
+  ]
+ },
+ {
+  "id": "meaning",
+  "chapter": "What it means",
+  "segments": [
+   {
+    "text": "So, why pay anyone?"
+   },
+   {
+    "text": "In the data and the models, the price of AI alone does not decide."
+   },
+   {
+    "text": "Pay depends on what AI cannot yet do, on the new tasks it creates, on competition among those who sell it, and on who owns it."
+   },
+   {
+    "text": "The larger risk is not that wages collapse overnight, but that labour's share of income slowly falls."
+   },
+   {
+    "text": "How that income is shared is a policy choice."
+   }
+  ]
+ },
+ {
+  "id": "close",
+  "chapter": "",
+  "segments": [
+   {
+    "text": "Every chart here is live on the website, where you can move the assumptions, switch the data, and ask the built-in assistant about any concept."
+   },
+   {
+    "text": "The full report, the data pipeline and the code are linked there too. Thank you for watching."
+   }
+  ]
+ }
+]
