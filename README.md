@@ -72,7 +72,7 @@ Keys go in `.env` (copy [.env.example](.env.example)); it is never committed.
 
 ## The chatbot
 
-The site's assistant answers from the project's own documentation (`web/src/content/knowledge.ts`) and the dial settings on screen. The server route tries MiniMax (`MiniMax-M3.1-Flash`) first, then Google Gemini, then an older Gemini model, so one busy provider does not take it down. Keys stay on the server; per-visitor and daily limits apply.
+The site's assistant answers from the project's own documentation (`web/src/content/knowledge.ts`) and the dial settings on screen. Answers stream in as they are written (first words in about 1.5 seconds). The server route tries Gemini 2.5 Flash first, then Gemini 2.5 Flash-Lite, MiniMax (`MiniMax-M3.1-Flash`) and a newer Gemini model; a provider that has not started answering within its deadline is skipped, so one busy provider does not take the chat down. Keys stay on the server; per-visitor and daily limits apply.
 
 ## Principles
 
@@ -83,7 +83,7 @@ The site's assistant answers from the project's own documentation (`web/src/cont
 
 ## Use of AI tools
 
-An AI coding assistant (Anthropic's Claude) helped write the pipeline, the website and drafts of the text. The site's chatbot runs on MiniMax and Google Gemini. The video's voice is synthetic (Sarvam AI, Bulbul v4). All numbers come from the pipeline's outputs.
+An AI coding assistant (Anthropic's Claude) helped write the pipeline, the website and drafts of the text. The site's chatbot runs on Google Gemini, with MiniMax as a backup. The video's voice is synthetic (Sarvam AI, Bulbul v4). All numbers come from the pipeline's outputs.
 
 ## Citation
 

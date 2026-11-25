@@ -39,8 +39,23 @@ export function Chat() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: next.slice(-6), page, state }),
       });
-      const data = await res.json();
-      setMsgs([...next, { role: "assistant", text: data.answer ?? "No answer came back. Try again in a moment." }]);
+      if ((res.headers.get("content-type") ?? "").includes("application/json") || !res.body) {
+        // limits and errors come back as a short JSON message
+        const data = await res.json();
+        setMsgs([...next, { role: "assistant", text: data.answer ?? "No answer came back. Try again in a moment." }]);
+        return;
+      }
+      // the answer streams in; show it as it is written
+      const reader = res.body.getReader();
+      const dec = new TextDecoder();
+      let text = "";
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        text += dec.decode(value, { stream: true });
+        setMsgs([...next, { role: "assistant", text }]);
+      }
+      if (!text.trim()) setMsgs([...next, { role: "assistant", text: "No answer came back. Try again in a moment." }]);
     } catch {
       setMsgs([...next, { role: "assistant", text: "The chat could not be reached. The pages and charts still work; try again in a moment." }]);
     } finally {
@@ -97,7 +112,7 @@ export function Chat() {
                 {m.text.replace(/\*\*/g, "").replace(/^\s*[*-]\s+/gm, "")}
               </div>
             ))}
-            {busy && <div className="ui text-[0.9rem] text-ink-soft">Looking it up&hellip;</div>}
+            {busy && msgs[msgs.length - 1]?.role !== "assistant" && <div className="ui text-[0.9rem] text-ink-soft">Looking it up&hellip;</div>}
             <div ref={endRef} />
           </div>
           <form
