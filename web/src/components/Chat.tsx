@@ -13,6 +13,24 @@ const STARTERS = [
   "What are the biggest limits of this data?",
 ];
 
+/** Send the question. If no reply has started within 12 seconds (a dropped connection), try once more;
+    once the reply has started, allow it 30 seconds to finish. */
+async function post(body: string) {
+  for (let attempt = 0; ; attempt++) {
+    const ctrl = new AbortController();
+    const wait = setTimeout(() => ctrl.abort(), 12000);
+    try {
+      const res = await fetch("/api/chat", { method: "POST", headers: { "Content-Type": "application/json" }, body, signal: ctrl.signal });
+      clearTimeout(wait);
+      setTimeout(() => ctrl.abort(), 30000);
+      return res;
+    } catch (e) {
+      clearTimeout(wait);
+      if (attempt >= 1) throw e;
+    }
+  }
+}
+
 export function Chat() {
   const { page, state } = useChatContext();
   const onJourney = usePathname() === "/journey";
@@ -34,13 +52,7 @@ export function Chat() {
     setInput("");
     setBusy(true);
     try {
-      // never leave the panel waiting: give up after 35 seconds
-      const res = await fetch("/api/chat", {
-        signal: AbortSignal.timeout(35000),
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: next.slice(-6), page, state }),
-      });
+      const res = await post(JSON.stringify({ messages: next.slice(-6), page, state }));
       if ((res.headers.get("content-type") ?? "").includes("application/json") || !res.body) {
         // limits and errors come back as a short JSON message
         const data = await res.json();
