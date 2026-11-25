@@ -409,7 +409,7 @@ export default function M5Page() {
 
         <Card className="mt-5">
           <h3 className="ui mb-3 text-[1.1rem]">{monthLabel(cs.month)}</h3>
-          <div className="flex flex-wrap gap-x-8 gap-y-4">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
             <Stat value={int(cs.hhi)} label="HHI of firm shares (0 to 10,000)" tone="owner" sub={`${int(cs.hhi_low)} to ${int(cs.hhi_high)} allowing for models outside the top 50`} />
             <Stat value={cs.effective_firms.toFixed(1)} label="Equal-sized firms with the same HHI" sub={`${cs.n_firms} firms have any tokens`} />
             <Stat value={pct0(cs.cr1)} label={`Share of the largest firm, ${cs.leader}`} sub={`top four firms: ${pct0(cs.cr4)}`} />
@@ -511,7 +511,7 @@ export default function M5Page() {
           </div>
           <div className="min-w-0 space-y-5">
             <Card>
-              <div className="flex flex-wrap gap-x-8 gap-y-4">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                 <Stat value={`${pctText(mSel.markup * 100)}`} label={`Markup over cost, ${monthLabel(cs.month)} (HHI ${int(cs.hhi)})`} tone="owner" sub={`Lerner index ${mSel.L.toFixed(2)}`} />
                 <Stat value={`${pctText(mMin.markup * 100)}`} label={`Least concentrated month, ${monthLabel(stats.minRow.month)} (HHI ${int(stats.minRow.hhi)})`} sub={`Lerner index ${mMin.L.toFixed(2)}`} />
                 <Stat value={`${pctText(mMax.markup * 100)}`} label={`Most concentrated month, ${monthLabel(stats.maxRow.month)} (HHI ${int(stats.maxRow.hhi)})`} sub={`Lerner index ${mMax.L.toFixed(2)}`} />
@@ -585,7 +585,7 @@ export default function M5Page() {
                 ariaLabel={`Chart of Cournot price, output and margin for one to twelve firms at marginal cost ${cost.toFixed(2)}. With ${nFirms} firms the price is ${cur.P.toFixed(2)}.`}
               />
               <div className="mt-3 overflow-x-auto">
-                <table className="ui w-full min-w-[30rem] border-collapse text-left text-[0.9rem]">
+                <table className="booktabs ui min-w-[30rem] text-[0.9rem]">
                   <caption className="sr-only-ui">Price, output and markup for monopoly, the chosen number of firms, and perfect competition</caption>
                   <thead>
                     <tr className="border-b border-rule text-ink-soft">
@@ -689,7 +689,7 @@ export default function M5Page() {
               <Figure
                 title="The gap between highest and lowest host price"
                 subtitle={`The highest price divided by the lowest, multiplied by this factor when hosts are multiplied by ${kHosts.toFixed(kHosts % 1 === 0 ? 0 : 2)}. Above 1 means the gap widens.`}
-                source="Source: as for the figure on the left."
+                source="Source: as for the previous figure."
               >
                 <IntervalPlot
                   rows={gapRows}
@@ -744,7 +744,7 @@ export default function M5Page() {
                 yFormat={(n) => (n >= 1 ? `$${n}` : `$${+n.toPrecision(2)}`)}
                 ariaLabel={`Scatter of ${hostRows.length} models in ${monthLabel(hostMonth)}: number of hosts against lowest price per million tokens.`}
               />
-              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                 <Stat value={String(hostRows.length)} label={`Models with a price in ${monthLabel(hostMonth)}`} sub={`${openHP.length} open weights, ${closedHP.length} closed`} />
                 <Stat value={openHP.length ? median(openHP.map((r) => r.n_hosts)).toFixed(1) : "none"} label="Median number of hosts, open weights" tone="ai" />
                 <Stat value={closedHP.length ? median(closedHP.map((r) => r.n_hosts)).toFixed(1) : "none"} label="Median number of hosts, closed" tone="ai" />
@@ -757,7 +757,7 @@ export default function M5Page() {
         <details className="ui mt-5 text-[0.92rem]">
           <summary className="cursor-pointer font-semibold">Show the regression numbers</summary>
           <div className="mt-2 overflow-x-auto">
-            <table className="w-full min-w-[34rem] border-collapse text-left">
+            <table className="booktabs ui min-w-[34rem] text-[0.9rem]">
               <thead>
                 <tr className="border-b border-rule text-ink-soft">
                   <th className="py-1.5 pr-3 font-semibold">Models</th>
@@ -839,9 +839,9 @@ export default function M5Page() {
                 ariaLabel={`Reported annualised revenue by company. ${revSeries.map((s) => `${s.label}: ${s.points.length} reports, latest ${revFmt(s.points[s.points.length - 1].v)}`).join("; ")}.`}
               />
             </Figure>
-            <Figure title="Latest report for each company" source="Source: Epoch AI (CC BY). Dates are the dates of the reports, not of the underlying revenue.">
+            <Figure table title="Latest report for each company" source="Source: Epoch AI (CC BY). Dates are the dates of the reports, not of the underlying revenue.">
               <div className="overflow-x-auto">
-                <table className="ui w-full min-w-[34rem] border-collapse text-left text-[0.9rem]">
+                <table className="booktabs ui min-w-[34rem] text-[0.9rem]">
                   <thead>
                     <tr className="border-b border-rule text-ink-soft">
                       <th className="py-1.5 pr-3 font-semibold">Company</th>

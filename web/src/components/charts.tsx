@@ -5,6 +5,12 @@ import { scaleLinear, scaleLog } from "d3-scale";
 import { area, line, stack, stackOffsetExpand, stackOffsetNone, curveMonotoneX } from "d3-shape";
 import { bisector, extent, max, min } from "d3-array";
 
+
+/** Wraps a number formatter so negative numbers get a real minus sign (−) instead of a hyphen. */
+export function minusSign(f: (n: number) => string) {
+  return (n: number) => f(n).replace(/-(?=[\d.$])/g, "−");
+}
+
 export function useWidth<T extends HTMLElement>(): [React.RefObject<T | null>, number] {
   const ref = useRef<T | null>(null);
   const [w, setW] = useState(0); // 0 until measured, so charts render on the client only and never mismatch server HTML
@@ -78,8 +84,8 @@ export function LineChart(props: {
   const [ref, w] = useWidth<HTMLDivElement>();
   const h = props.height ?? 340;
   const rightPad = props.rightPad ?? Math.min(150, w * 0.22);
-  const xf = props.xFormat ?? ((n: number) => String(n));
-  const yf = props.yFormat ?? ((n: number) => String(n));
+  const xf = minusSign(props.xFormat ?? ((n: number) => String(n)));
+  const yf = minusSign(props.yFormat ?? ((n: number) => String(n)));
   const [hoverX, setHoverX] = useState<number | null>(null);
 
   const all = props.series.flatMap((s) => s.points);
@@ -139,20 +145,10 @@ export function LineChart(props: {
           </text>
         ))}
         {props.hlines?.map((l) => (
-          <g key={l.label}>
-            <line x1={M.left} x2={w - M.right - rightPad} y1={y(l.y) as number} y2={y(l.y) as number} stroke={l.color ?? "var(--ink-soft)"} strokeDasharray="5 4" strokeWidth={1.25} />
-            <text x={M.left + 4} y={(y(l.y) as number) - 5} fontSize={12} fill={l.color ?? "var(--ink-soft)"} className="ui">
-              {l.label}
-            </text>
-          </g>
+          <line key={l.label} x1={M.left} x2={w - M.right - rightPad} y1={y(l.y) as number} y2={y(l.y) as number} stroke={l.color ?? "var(--ink-soft)"} strokeDasharray="5 4" strokeWidth={1.25} />
         ))}
         {props.markers?.map((m) => (
-          <g key={m.label}>
-            <line x1={x(m.x)} x2={x(m.x)} y1={M.top} y2={h - M.bottom} stroke="var(--ink-soft)" strokeDasharray="2 3" />
-            <text x={x(m.x) + 5} y={M.top + 11} fontSize={12} fill="var(--ink-soft)" className="ui">
-              {m.label}
-            </text>
-          </g>
+          <line key={m.label} x1={x(m.x)} x2={x(m.x)} y1={M.top} y2={h - M.bottom} stroke="var(--ink-soft)" strokeDasharray="2 3" />
         ))}
         {props.series.map((s) => (
           <g key={s.id}>
@@ -176,6 +172,16 @@ export function LineChart(props: {
             )}
           </g>
         ))}
+        {props.hlines?.map((l) => (
+          <text key={l.label} x={M.left + 4} y={(y(l.y) as number) - 5} fontSize={12} fill={l.color ?? "var(--ink-soft)"} className="ui halo">
+            {l.label}
+          </text>
+        ))}
+        {props.markers?.map((m) => (
+          <text key={m.label} x={x(m.x) + 5} y={M.top + 11} fontSize={12} fill="var(--ink-soft)" className="ui halo">
+            {m.label}
+          </text>
+        ))}
         {hover && hoverX !== null && (
           <g pointerEvents="none">
             <line x1={x(hover[0].p[0])} x2={x(hover[0].p[0])} y1={M.top} y2={h - M.bottom} stroke="var(--ink)" strokeWidth={1} />
@@ -187,7 +193,7 @@ export function LineChart(props: {
       </svg>
       {hover && (
         <div
-          className="ui pointer-events-none absolute z-10 rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(w - 190, Math.max(M.left, x(hover[0].p[0]) + 12)), top: M.top }}
         >
           <div className="font-semibold">{xf(hover[0].p[0])}</div>
@@ -224,8 +230,8 @@ export function Scatter(props: {
   const [ref, w] = useWidth<HTMLDivElement>();
   const h = props.height ?? 420;
   const [hov, setHov] = useState<string | null>(null);
-  const xf = props.xFormat ?? ((n: number) => String(n));
-  const yf = props.yFormat ?? ((n: number) => String(n));
+  const xf = minusSign(props.xFormat ?? ((n: number) => String(n)));
+  const yf = minusSign(props.yFormat ?? ((n: number) => String(n)));
   const pts = props.points;
   const xd = props.xDomain ?? (extent(pts, (p) => p.x) as [number, number]);
   const yd = props.yDomain ?? (extent(pts, (p) => p.y) as [number, number]);
@@ -280,7 +286,7 @@ export function Scatter(props: {
         ))}
       </svg>
       {hp && (
-        <div className="ui pointer-events-none absolute z-10 max-w-[260px] rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md" style={{ left: Math.min(w - 270, Math.max(8, x(hp.x) + 10)), top: Math.max(4, y(hp.y) - 50) }}>
+        <div className="ui pointer-events-none absolute z-10 max-w-[260px] rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]" style={{ left: Math.min(w - 270, Math.max(8, x(hp.x) + 10)), top: Math.max(4, y(hp.y) - 50) }}>
           <div className="font-semibold">{hp.label ?? hp.id}</div>
           {hp.sub && <div className="text-ink-soft">{hp.sub}</div>}
         </div>
@@ -298,10 +304,16 @@ export function HBars(props: {
   ariaLabel: string;
 }) {
   const [ref, w] = useWidth<HTMLDivElement>();
-  const rh = props.rowHeight ?? 28;
-  const lw = Math.min(props.labelWidth ?? 190, w * 0.42);
+  const need = (max(props.items, (d) => d.label.length) ?? 0) * 6.9 + 16;
+  const side = Math.min(Math.max(props.labelWidth ?? 190, need), w * 0.45);
+  // When the longest label would not fit beside the bars, every label goes on its own line above its bar.
+  const stacked = need > side + 1;
+  const lw = stacked ? 0 : side;
+  const bh = (props.rowHeight ?? 28) - 8;
+  const rh = stacked ? bh + 26 : bh + 8;
+  const by = stacked ? 20 : 4;
   const mx = props.max ?? (max(props.items, (d) => d.value) as number);
-  const f = props.format ?? ((n: number) => String(n));
+  const f = minusSign(props.format ?? ((n: number) => String(n)));
   const x = scaleLinear().domain([0, mx]).range([0, w - lw - 70]);
   if (!w) return <div ref={ref} style={{ height: props.items.length * rh + 4 }} />;
   return (
@@ -309,11 +321,11 @@ export function HBars(props: {
       <svg width={w} height={props.items.length * rh + 4} role="img" aria-label={props.ariaLabel}>
         {props.items.map((d, i) => (
           <g key={d.label} transform={`translate(0 ${i * rh})`}>
-            <text x={lw - 8} y={rh / 2 + 4} textAnchor="end" fontSize={13} fill="var(--ink)" className="ui">
-              {d.label.length > Math.floor((lw - 10) / 7.4) ? d.label.slice(0, Math.max(5, Math.floor((lw - 10) / 7.4) - 1)) + "…" : d.label}
+            <text x={stacked ? 0 : lw - 8} y={stacked ? 14 : rh / 2 + 4} textAnchor={stacked ? "start" : "end"} fontSize={13} fill="var(--ink)" className="ui">
+              {d.label}
             </text>
-            <rect x={lw} y={4} width={Math.max(1, x(Math.max(0, d.value)))} height={rh - 8} fill={d.color ?? "var(--ai)"} rx={2} />
-            <text x={lw + Math.max(1, x(Math.max(0, d.value))) + 6} y={rh / 2 + 4} fontSize={12.5} fill="var(--ink-soft)" className="num">
+            <rect x={lw} y={by} width={Math.max(1, x(Math.max(0, d.value)))} height={bh} fill={d.color ?? "var(--ai)"} rx={2} />
+            <text x={lw + Math.max(1, x(Math.max(0, d.value))) + 6} y={by + bh / 2 + 4} fontSize={12.5} fill="var(--ink-soft)" className="num">
               {f(d.value)}
             </text>
           </g>
@@ -335,8 +347,8 @@ export function StackedArea(props: {
   const [ref, w] = useWidth<HTMLDivElement>();
   const h = props.height ?? 340;
   const rightPad = Math.min(130, w * 0.2);
-  const xf = props.xFormat ?? ((n: number) => String(n));
-  const yf = props.yFormat ?? ((n: number) => (props.normalize ? `${Math.round(n * 100)}%` : String(n)));
+  const xf = minusSign(props.xFormat ?? ((n: number) => String(n)));
+  const yf = minusSign(props.yFormat ?? ((n: number) => (props.normalize ? `${Math.round(n * 100)}%` : String(n))));
   const rows = props.xs.map((_, i) => Object.fromEntries(props.series.map((s) => [s.id, s.values[i] ?? 0])));
   const st = stack<Record<string, number>>().keys(props.series.map((s) => s.id)).offset(props.normalize ? stackOffsetExpand : stackOffsetNone)(rows);
   const x = scaleLinear().domain(extent(props.xs) as [number, number]).range([M.left, w - M.right - rightPad]);
@@ -389,7 +401,7 @@ export function StackedArea(props: {
         {hi !== null && <line x1={x(props.xs[hi])} x2={x(props.xs[hi])} y1={M.top} y2={h - M.bottom} stroke="var(--ink)" />}
       </svg>
       {hi !== null && (
-        <div className="ui pointer-events-none absolute z-10 rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md" style={{ left: Math.min(w - 200, x(props.xs[hi]) + 12), top: M.top }}>
+        <div className="ui pointer-events-none absolute z-10 rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]" style={{ left: Math.min(w - 200, x(props.xs[hi]) + 12), top: M.top }}>
           <div className="font-semibold">{xf(props.xs[hi])}</div>
           {[...props.series]
             .map((s, i) => ({ s, v: st[i][hi][1] - st[i][hi][0] }))

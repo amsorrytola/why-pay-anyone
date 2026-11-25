@@ -156,7 +156,7 @@ export default function M6Page() {
                     series={[
                       { id: "l", label: "Workers", color: "var(--human)", values: a.labour_share },
                       { id: "k", label: "Other capital", color: "var(--ink-faint)", values: a.capital_share },
-                      { id: "c", label: "AI compute", color: "var(--ai)", values: a.ai_share },
+                      { id: "c", label: "AI compute owners", color: "var(--owner)", values: a.ai_share },
                     ]}
                     normalize
                     height={300}

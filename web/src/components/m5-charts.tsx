@@ -151,7 +151,7 @@ export function ShareArea(props: {
       )}
       {hv && (
         <div
-          className="ui pointer-events-none absolute z-10 rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(Math.max(8, w - 210), Math.max(L.left, x(xs[hv.i]) + 12)), top: L.top }}
         >
           <div className="font-semibold">{monthLabel(months[hv.i])}</div>
@@ -196,6 +196,14 @@ export function HostScatter(props: {
   const shown = props.dots.find((d) => d.id === showId);
   return (
     <div ref={ref} className="relative w-full">
+      <div className="ui mb-2 flex flex-wrap gap-x-5 gap-y-1 text-[0.86rem] font-semibold" aria-hidden>
+        {props.keys.map((k) => (
+          <span key={k.label} className="inline-flex items-center gap-1.5">
+            <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: k.color, opacity: 0.75 }} />
+            {k.label}
+          </span>
+        ))}
+      </div>
       <svg width={w} height={h} role="img" aria-label={props.ariaLabel}>
         {yTicks.map((t) => (
           <g key={`y${t}`}>
@@ -219,14 +227,6 @@ export function HostScatter(props: {
         <text transform={`translate(14 ${(S.top + h - S.bottom) / 2}) rotate(-90)`} textAnchor="middle" fontSize={13} fill="var(--ink-soft)" className="ui">
           Lowest price, $ per million tokens (log)
         </text>
-        {props.keys.map((k, i) => (
-          <g key={k.label} transform={`translate(${S.left + 10} ${S.top + 12 + i * 18})`}>
-            <circle r={5} fill={k.color} fillOpacity={0.75} />
-            <text x={10} y={4} fontSize={12.5} fontWeight={600} fill="var(--ink)" stroke="var(--surface)" strokeWidth={3} paintOrder="stroke" className="ui">
-              {k.label}
-            </text>
-          </g>
-        ))}
         {props.dots.map((d) => (
           <circle
             key={d.id}
@@ -246,7 +246,7 @@ export function HostScatter(props: {
       </svg>
       {shown && (
         <div
-          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(Math.max(8, w - 260), Math.max(8, x(shown.x) + 12)), top: Math.max(4, y(shown.y) - 62) }}
         >
           <div className="font-semibold">{shown.title}</div>
@@ -334,7 +334,7 @@ export function RevenueDots(props: { series: RevSeries[]; log: boolean; xDomain:
       </svg>
       {shownEntry && (
         <div
-          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(Math.max(8, w - 260), Math.max(8, x(shownEntry.p.t) - 120)), top: Math.max(4, y(shownEntry.p.v) - 58) }}
         >
           <div className="font-semibold">

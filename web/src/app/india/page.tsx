@@ -59,10 +59,14 @@ const MODELS = [
 
 function Dumbbell(props: { rows: { label: string; a: number; b: number }[]; aLabel: string; bLabel: string }) {
   const [ref, w] = useWidth<HTMLDivElement>();
-  const rh = 26;
-  const lw = Math.min(250, w * 0.42);
+  // On narrow screens each job family's name sits on its own line above its pair of dots.
+  const narrow = w > 0 && w < 520;
+  const rh = narrow ? 40 : 26;
+  const lw = narrow ? 8 : Math.min(250, w * 0.42);
+  const dy = narrow ? 29 : rh / 2;
   const mx = Math.max(...props.rows.flatMap((r) => [r.a, r.b])) * 1.08;
   const x = (v: number) => lw + (v / mx) * (w - lw - 24);
+  const clip = (t: string, n: number) => (t.length > n ? t.slice(0, n - 1).trimEnd() + "…" : t);
   if (!w) return <div ref={ref} style={{ height: props.rows.length * rh + 30 }} />;
   return (
     <div ref={ref}>
@@ -75,12 +79,12 @@ function Dumbbell(props: { rows: { label: string; a: number; b: number }[]; aLab
         </g>
         {props.rows.map((r, i) => (
           <g key={r.label} transform={`translate(0 ${30 + i * rh})`}>
-            <text x={lw - 10} y={rh / 2 + 3} textAnchor="end" fontSize={13} className="ui" fill="var(--ink)">
-              {r.label.length > 34 ? r.label.slice(0, 33) + "…" : r.label}
+            <text x={narrow ? 0 : lw - 10} y={narrow ? 14 : rh / 2 + 3} textAnchor={narrow ? "start" : "end"} fontSize={13} className="ui" fill="var(--ink)">
+              {clip(r.label, narrow ? Math.floor(w / 6.9) : Math.floor((lw - 14) / 6.9))}
             </text>
-            <line x1={x(Math.min(r.a, r.b))} x2={x(Math.max(r.a, r.b))} y1={rh / 2} y2={rh / 2} stroke="var(--rule)" strokeWidth={3} />
-            <circle cx={x(r.b)} cy={rh / 2} r={5} fill="var(--ai)" />
-            <circle cx={x(r.a)} cy={rh / 2} r={5} fill="var(--human)" />
+            <line x1={x(Math.min(r.a, r.b))} x2={x(Math.max(r.a, r.b))} y1={dy} y2={dy} stroke="var(--rule)" strokeWidth={3} />
+            <circle cx={x(r.b)} cy={dy} r={5} fill="var(--ai)" />
+            <circle cx={x(r.a)} cy={dy} r={5} fill="var(--human)" />
           </g>
         ))}
       </svg>
@@ -139,6 +143,7 @@ export default function IndiaPage() {
   return (
     <>
       <PageHead
+        id="India"
         title="India: who uses AI, and whose jobs does it touch?"
         question="Part 1 asks whether India uses AI more or less than its income predicts. Part 2 uses India's own labour survey to count how many workers hold jobs that AI is exposed to."
       />
@@ -220,7 +225,7 @@ export default function IndiaPage() {
                     <div className="flex justify-between gap-3">
                       <span>{String(label)}</span>
                       <span className="num">
-                        India {r.india.toFixed(0)}% · world {r.world.toFixed(0)}% · peers {r.peers_p25.toFixed(0)} to {r.peers_p75.toFixed(0)}%
+                        India {r.india.toFixed(0)}%; world {r.world.toFixed(0)}%; peers {r.peers_p25.toFixed(0)} to {r.peers_p75.toFixed(0)}%
                       </span>
                     </div>
                     <div className="relative mt-1 h-2 rounded bg-rule/60">
@@ -249,7 +254,8 @@ export default function IndiaPage() {
                 <li key={b.claim} className="py-2">
                   <div className="font-semibold">{b.claim}</div>
                   <div>
-                    <span className="num">{b.value}</span> <span className="text-ink-soft">{b.unit}</span>
+                    <span className="num">{b.value}</span>{" "}
+                    {b.unit && !/^(text|firms)\b/.test(b.unit) && <span className="text-ink-soft">{b.unit}</span>}
                   </div>
                   <a href={b.url} className="text-[0.85rem]">{b.source}</a>
                   <div className="text-[0.8rem] text-ink-faint">{b.where_found}</div>

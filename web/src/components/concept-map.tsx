@@ -361,7 +361,7 @@ function MapView({
       {selected && (
         <aside
           aria-label="Selected concept"
-          className="sticky bottom-3 z-20 mt-5 max-h-[50vh] overflow-y-auto rounded-[6px] border border-ink bg-surface p-4 shadow-[0_-6px_28px_rgba(17,26,53,0.16)]"
+          className="sticky bottom-3 z-20 mt-5 max-h-[50vh] overflow-y-auto rounded-[3px] border border-ink bg-surface p-4"
         >
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <h3 ref={headingRef} tabIndex={-1} className="text-[1.3rem] outline-offset-4">

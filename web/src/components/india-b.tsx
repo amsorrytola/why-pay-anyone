@@ -92,6 +92,8 @@ function Bins(props: { shares: number[]; line: number }) {
   const maxV = Math.max(20, Math.ceil(peak / 10) * 10);
   if (!w) return <div ref={ref} style={{ height: h }} />;
   const bw = (w - left - 8) / 10;
+  // Narrow bins get one label per boundary (0, 20, ... 100) instead of a range under every bar.
+  const edges = bw < 46;
   const y = (v: number) => top + (h - top - bottom) * (1 - v / maxV);
   const ticks = [0, maxV / 2, maxV];
   return (
@@ -110,21 +112,34 @@ function Bins(props: { shares: number[]; line: number }) {
           return (
             <g key={i}>
               <rect x={left + i * bw + 4} y={y(v)} width={bw - 8} height={Math.max(0, y(0) - y(v))} fill="var(--human)" fillOpacity={exposed ? 0.95 : 0.35} />
-              <text x={left + i * bw + bw / 2} y={y(v) - 5} textAnchor="middle" fontSize={11.5} className="num" fill="var(--ink-soft)">
-                {v >= 10 ? Math.round(v) : v.toFixed(1)}
-              </text>
-              <text x={left + i * bw + bw / 2} y={h - 18} textAnchor="middle" fontSize={11.5} className="ui" fill="var(--ink-soft)">
-                {i * 10}–{i * 10 + 10}
-              </text>
+              {!edges && (
+                <text x={left + i * bw + bw / 2} y={h - 18} textAnchor="middle" fontSize={11.5} className="ui" fill="var(--ink-soft)">
+                  {i * 10}–{i * 10 + 10}
+                </text>
+              )}
             </g>
           );
         })}
+        {edges &&
+          [0, 20, 40, 60, 80, 100].map((e) => (
+            <g key={e}>
+              <line x1={left + (e / 10) * bw} x2={left + (e / 10) * bw} y1={y(0)} y2={y(0) + 4} stroke="var(--ink-soft)" />
+              <text x={left + (e / 10) * bw} y={h - 18} textAnchor="middle" fontSize={11.5} className="ui" fill="var(--ink-soft)">
+                {e}
+              </text>
+            </g>
+          ))}
         <line x1={left} x2={w - 8} y1={y(10)} y2={y(10)} stroke="var(--ai)" strokeWidth={2} strokeDasharray="6 4" />
-        <text x={w - 10} y={y(10) - 6} textAnchor="end" fontSize={12.5} className="ui" fill="var(--ai-deep)">
+        {props.shares.map((v, i) => (
+          <text key={i} x={left + i * bw + bw / 2} y={y(v) - 5} textAnchor="middle" fontSize={11.5} className="num halo" fill="var(--ink-soft)">
+            {v >= 10 ? Math.round(v) : v.toFixed(1)}
+          </text>
+        ))}
+        <text x={w - 10} y={y(10) - 6} textAnchor="end" fontSize={12.5} className="ui halo" fill="var(--ai-deep)">
           US workforce: 10% each
         </text>
         <text x={(left + w) / 2} y={h - 2} textAnchor="middle" fontSize={12.5} className="ui" fill="var(--ink-soft)">
-          Exposure of the job, as a percentile of US workers (0 least, 100 most)
+          {w < 520 ? "Exposure percentile among US workers (0 to 100)" : "Exposure of the job, as a percentile of US workers (0 least, 100 most)"}
         </text>
       </svg>
     </div>
@@ -200,7 +215,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
           x: s,
           y: o.median_monthly_pay_regular as number,
           r: 3 + Math.sqrt(o.share_of_workers_pct) * 3.4,
-          color: s > line ? "var(--ai)" : "var(--human)",
+          color: s > line ? "var(--human)" : "var(--ink-faint)",
           label: o.label,
           sub: `${o.share_of_workers_pct.toFixed(1)}% of Indian workers; median pay ${rupee(o.median_monthly_pay_regular as number)} a month; exposure ${s.toFixed(0)}`,
         } as Pt;
@@ -299,7 +314,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
                   <li key={r.nco3} className="flex justify-between gap-3 py-1.5">
                     <span>{r.label}</span>
                     <span className="num whitespace-nowrap">
-                      {r.share.toFixed(1)}% <span className="text-ink-faint">· score {r.s.toFixed(0)}</span>
+                      {r.share.toFixed(1)}%<span className="ml-2 text-ink-faint">score {r.s.toFixed(0)}</span>
                     </span>
                   </li>
                 ))
@@ -314,7 +329,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
                 <li key={r.nco3} className="flex justify-between gap-3 py-1.5">
                   <span>{r.label}</span>
                   <span className="num whitespace-nowrap">
-                    {r.share.toFixed(1)}% <span className="text-ink-faint">· score {r.s.toFixed(0)}</span>
+                    {r.share.toFixed(1)}%<span className="ml-2 text-ink-faint">score {r.s.toFixed(0)}</span>
                   </span>
                 </li>
               ))}
@@ -341,7 +356,7 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
       <Section className="grid gap-5 lg:grid-cols-2">
         <Figure
           title="Exposure and pay across occupation groups"
-          subtitle="Each bubble is a three-digit occupation group, sized by its share of Indian workers. Blue: above your line. Red: below. Pay is the median monthly pay of regular wage workers in the group."
+          subtitle="Each bubble is a three-digit occupation group, sized by its share of Indian workers. Red: above your line. Grey: below. Pay is the median monthly pay of regular wage workers in the group."
           source="Source: PLFS 2025 (MoSPI), exposure from the measure chosen above. Groups with at least 30 regular-wage earners in the sample."
         >
           <Scatter
@@ -358,11 +373,12 @@ export default function IndiaB(props: { onState: (s: PageState) => void }) {
         </Figure>
         <div className="space-y-5">
           <Figure
+            table
             title="Thirds of Indian workers by exposure"
             subtitle={`Workers ranked by the Microsoft measure and split into three equal groups. The cut points fall at US percentile ${mid.third_lower_cut.toFixed(0)} and ${high.third_lower_cut.toFixed(0)}, because most Indian jobs bunch at the low end.`}
           >
             <div className="overflow-x-auto">
-              <table className="ui w-full text-[0.9rem]">
+              <table className="booktabs ui text-[0.9rem]">
                 <thead>
                   <tr className="border-b border-rule text-left">
                     <th className="py-1.5 pr-2 font-semibold"> </th>

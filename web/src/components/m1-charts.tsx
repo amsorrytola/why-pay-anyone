@@ -153,7 +153,7 @@ export function PriceChart(props: {
         {props.hlines?.map((hl) => (
           <g key={hl.label}>
             <line x1={PM.left} x2={plotR} y1={y(hl.y)} y2={y(hl.y)} stroke="var(--ink-soft)" strokeDasharray="5 4" strokeWidth={1.25} />
-            <text x={PM.left + 4} y={y(hl.y) - 5} fontSize={12} fill="var(--ink-soft)" className="ui">
+            <text x={PM.left + 4} y={y(hl.y) - 5} fontSize={12} fill="var(--ink-soft)" className="ui halo">
               {hl.label}
             </text>
           </g>
@@ -200,7 +200,7 @@ export function PriceChart(props: {
           return (
             <g key={l.id}>
               {src && <circle cx={x(monthX(src.m))} cy={y(src.y)} r={4} fill="var(--surface)" stroke="var(--ink)" strokeWidth={1.5} />}
-              <text x={l.x} y={l.y} textAnchor={l.anchor} fontSize={12} fill="var(--ink)" stroke="var(--surface)" strokeWidth={3} paintOrder="stroke" className="ui">
+              <text x={l.x} y={l.y} textAnchor={l.anchor} fontSize={12} fill="var(--ink)" stroke="var(--surface)" strokeWidth={6} strokeLinejoin="round" paintOrder="stroke" className="ui">
                 {l.text}
               </text>
             </g>
@@ -226,7 +226,7 @@ export function PriceChart(props: {
       </svg>
       {hm && hoverRows.length > 0 && (
         <div
-          className="ui pointer-events-none absolute z-10 max-w-[260px] rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 max-w-[260px] rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(Math.max(8, w - 270), Math.max(PM.left, x(monthX(hm)) + 12)), top: PM.top }}
         >
           <div className="font-semibold">{monthLabel(hm)}</div>
@@ -316,9 +316,11 @@ export function ModelScatter(props: {
         {props.refs.map((r) => (
           <g key={r.label}>
             <line x1={x(r.x)} x2={x(r.x)} y1={SM.top - 6} y2={h - SM.bottom} stroke="var(--ink-faint)" strokeDasharray="2 3" />
-            <text x={x(r.x)} y={SM.top - 9} textAnchor="middle" fontSize={12} fill="var(--ink-soft)" className="ui">
-              {r.label}
-            </text>
+            {!(props.bar && Math.abs(x(r.x) - x(props.bar.x)) < 52) && (
+              <text x={x(r.x)} y={SM.top - 9} textAnchor="middle" fontSize={12} fill="var(--ink-soft)" className="ui">
+                {r.label}
+              </text>
+            )}
           </g>
         ))}
         {props.bar && (
@@ -339,9 +341,6 @@ export function ModelScatter(props: {
           return (
             <g key={f.id}>
               <path d={d} fill="none" stroke={f.color} strokeWidth={2.25} strokeDasharray={f.dashed ? "6 4" : undefined} strokeLinejoin="round" />
-              <text x={x(last[0]) - 6} y={y(last[1]) - 8} textAnchor="end" fontSize={12} fontWeight={600} fill={f.color} stroke="var(--surface)" strokeWidth={3} paintOrder="stroke" className="ui">
-                {f.label}
-              </text>
             </g>
           );
         })}
@@ -362,15 +361,25 @@ export function ModelScatter(props: {
           </g>
         ))}
 
+        {props.frontiers.map((f) => {
+          if (f.pts.length === 0) return null;
+          const last = f.pts[f.pts.length - 1];
+          return (
+            <text key={`fl${f.id}`} x={x(last[0]) - 6} y={y(last[1]) - 8} textAnchor="end" fontSize={12} fontWeight={600} fill={f.color} stroke="var(--surface)" strokeWidth={6} strokeLinejoin="round" paintOrder="stroke" className="ui" pointerEvents="none">
+              {f.label}
+            </text>
+          );
+        })}
+
         {placed.map((l) => (
-          <text key={l.id} x={l.x} y={l.y} textAnchor={l.anchor} fontSize={12} fill="var(--ink)" stroke="var(--surface)" strokeWidth={3} paintOrder="stroke" className="ui" pointerEvents="none">
+          <text key={l.id} x={l.x} y={l.y} textAnchor={l.anchor} fontSize={12} fill="var(--ink)" stroke="var(--surface)" strokeWidth={6} strokeLinejoin="round" paintOrder="stroke" className="ui" pointerEvents="none">
             {l.text}
           </text>
         ))}
       </svg>
       {shown && (
         <div
-          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded border border-rule bg-surface px-2.5 py-1.5 text-[0.82rem] shadow-md"
+          className="ui pointer-events-none absolute z-10 max-w-[250px] rounded-[3px] border border-ink bg-surface px-2.5 py-1.5 text-[0.82rem]"
           style={{ left: Math.min(Math.max(8, w - 260), Math.max(8, x(shown.x) + 12)), top: Math.max(4, y(shown.y) - 62) }}
         >
           <div className="font-semibold">{shown.title}</div>

@@ -204,25 +204,20 @@ export function IntervalPlot(props: {
   ariaLabel: string;
 }) {
   const [ref, w] = useWidth<HTMLDivElement>();
-  const padL = 10;
-  const padR = 14;
+  const padL = 26;
+  const padR = 26;
   const x = scaleLinear().domain(props.domain).range([padL, Math.max(padL + 20, w - padR)]);
   const ticks = props.ticks ?? x.ticks(Math.max(3, Math.floor(w / 80)));
   if (!w) return <div ref={ref} style={{ height: props.rows.length * 54 + 56 }} />;
   const clampX = (v: number) => x(Math.min(props.domain[1], Math.max(props.domain[0], v)));
+  // Grid and reference lines are drawn only inside each row's strip, so they never run through the row labels.
   return (
-    <div ref={ref} className="relative w-full pt-6" role="group" aria-label={props.ariaLabel}>
-      <svg className="pointer-events-none absolute left-0 top-0 h-full w-full" aria-hidden="true">
-        {ticks.map((t) => (
-          <line key={`g${t}`} x1={x(t)} x2={x(t)} y1={22} y2="100%" stroke="var(--rule)" strokeOpacity={0.6} />
-        ))}
+    <div ref={ref} className="relative w-full" role="group" aria-label={props.ariaLabel}>
+      <svg width={w} height={22} aria-hidden="true">
         {props.refs?.map((r) => (
-          <g key={r.label}>
-            <line x1={x(r.x)} x2={x(r.x)} y1={18} y2="100%" stroke="var(--ink-soft)" strokeDasharray="4 3" />
-            <text x={x(r.x)} y={12} textAnchor="middle" fontSize={12} fill="var(--ink-soft)" className="ui">
-              {r.label}
-            </text>
-          </g>
+          <text key={r.label} x={x(r.x)} y={14} textAnchor="middle" fontSize={12} fill="var(--ink-soft)" className="ui">
+            {r.label}
+          </text>
         ))}
       </svg>
       {props.rows.map((r) => (
@@ -237,6 +232,12 @@ export function IntervalPlot(props: {
             </span>
           </div>
           <svg width={w} height={22} aria-hidden="true">
+            {ticks.map((t) => (
+              <line key={`g${t}`} x1={x(t)} x2={x(t)} y1={0} y2={22} stroke="var(--rule)" />
+            ))}
+            {props.refs?.map((rf) => (
+              <line key={rf.label} x1={x(rf.x)} x2={x(rf.x)} y1={0} y2={22} stroke="var(--ink-soft)" strokeDasharray="4 3" />
+            ))}
             <line x1={clampX(r.lo)} x2={clampX(r.hi)} y1={11} y2={11} stroke={r.color} strokeWidth={3.5} strokeLinecap="round" opacity={0.5} />
             <line x1={clampX(r.lo)} x2={clampX(r.lo)} y1={5} y2={17} stroke={r.color} strokeWidth={2} />
             <line x1={clampX(r.hi)} x2={clampX(r.hi)} y1={5} y2={17} stroke={r.color} strokeWidth={2} />

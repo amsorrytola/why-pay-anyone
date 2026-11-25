@@ -26,7 +26,7 @@ Source Serif 4 (optical sizes) for titles and reading text; Source Sans 3 for co
 - **Footer:** chapters, reference links and a "Cite as" line.
 
 ## The flow
-1. **Cover** (`Splash.tsx`, once per session): the headline number counts down from $37.50 to $0.028 while the price line falls; then the title and two doors, "Start the guided reading" or "Go to the report". Skip and Esc always work; a head script hides it before paint once seen; noscript hides it without JavaScript.
+1. **Cover** (`Splash.tsx`, on every visit): the real monthly series of the cheapest GPT-4-level price (Epoch Capabilities Index 120 or more) draws itself as a falling staircase from $37.50 (Sep 2023) to $0.028 (Nov 2026). The price rides the tip of the line and counts down, with the cheapest model and the "times cheaper" ratio under it; a hollow dot marks each new cheapest model. When the line lands, the title rises into the space the fall has emptied, with two doors: "Start the guided reading", and "Go to the report" (or "Continue to chapter n" on a chapter page). A click on the chart skips to the end; Skip and Esc close it; reduced motion shows the end state at once; noscript hides it without JavaScript. The QA scripts mark it seen with `data-splash="seen"` on the html element.
 2. **Home** (`app/page.tsx`): title page, abstract, "How to read this", Table 1 (key figures, from the data), Figure 1 (the task model with dials), contents, the argument in five ideas, notes.
 3. **Guided reading** (`/journey`): 11 steps in 7 chapters; guess a number or make a call, the figure stays blurred until answered, then "You" and "Data" marks and a verdict; chapter rail, Back/Next, arrow keys and swipes; scorecard at the end.
 4. **Chapters** 1 to 6 and India, with previous/next at the foot.

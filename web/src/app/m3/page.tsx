@@ -16,6 +16,7 @@ import eventCoefs from "@/data/m3_event_study_coefs.json";
 import eventSummary from "@/data/m3_event_study_summary.json";
 import groupPaths from "@/data/m3_event_study_group_paths.json";
 import { monthToYear } from "@/lib/format";
+import { signed } from "@/components/m1-shared";
 
 type Nat = { ref_end: string; question_id: number; answer: string; estimate_pct: number; se_pct: number };
 type Grp = { geo_type: string; geo_name: string; ref_end: string; estimate_pct: number; se_pct: number };
@@ -169,7 +170,7 @@ export default function M3Page() {
     "estimated gap in postings, exposed vs less exposed (%)": head?.pct != null ? +head.pct.toFixed(1) : "n/a",
   });
 
-  const f1 = (n: number | null | undefined) => (n == null ? "n/a" : `${n > 0 ? "+" : ""}${n.toFixed(1)}%`);
+  const f1 = (n: number | null | undefined) => (n == null ? "n/a" : `${n > 0 ? "+" : n < 0 ? "−" : ""}${Math.abs(n).toFixed(1)}%`);
 
   return (
     <>
@@ -245,9 +246,7 @@ export default function M3Page() {
           <h4 className="ui mb-1 mt-3 text-[1rem]">New hires</h4>
           <HBars items={snap(10)} format={(v) => `${v.toFixed(1)}%`} max={100} ariaLabel="Effect of AI on hiring" labelWidth={110} rowHeight={24} />
           <p className="ui mt-2 text-[0.88rem] text-ink-soft">
-            Net: {netOf(9) > 0 ? "+" : ""}
-            {netOf(9).toFixed(1)} points for headcount, {netOf(10) > 0 ? "+" : ""}
-            {netOf(10).toFixed(1)} points for hiring. Most firms report no change.
+            Net: {signed(netOf(9), 1)} points for headcount, {signed(netOf(10), 1)} points for hiring. Most firms report no change.
           </p>
         </Figure>
         <Figure

@@ -78,15 +78,15 @@ export function Toggle(props: { label: string; checked: boolean; onChange: (v: b
 /** A set of mutually exclusive options, drawn as joined tabs on a rule. */
 export function Segmented<T extends string>(props: { options: { value: T; label: string }[]; value: T; onChange: (v: T) => void; label: string }) {
   return (
-    <div role="radiogroup" aria-label={props.label} className="hscroll ui inline-flex max-w-full border border-ink text-[0.9rem]" style={{ borderRadius: "var(--radius)" }}>
-      {props.options.map((o, i) => (
+    <div role="radiogroup" aria-label={props.label} className="ui flex w-fit max-w-full flex-wrap pl-px pt-px text-[0.9rem]">
+      {props.options.map((o) => (
         <button
           key={o.value}
           role="radio"
           aria-checked={props.value === o.value}
           onClick={() => props.onChange(o.value)}
-          className={`min-h-[40px] shrink-0 whitespace-nowrap px-3.5 py-1.5 font-semibold transition-colors ${i > 0 ? "border-l border-ink" : ""} ${
-            props.value === o.value ? "bg-ink text-white" : "bg-surface text-ink hover:bg-paper-2"
+          className={`-ml-px -mt-px min-h-[40px] whitespace-nowrap border border-ink px-3.5 py-1.5 font-semibold transition-colors ${
+            props.value === o.value ? "relative bg-ink text-white" : "bg-surface text-ink hover:bg-paper-2"
           }`}
         >
           {o.label}
@@ -119,11 +119,11 @@ export function PresetBar(props: { presets: { id: string; label: string }[]; onP
 /* ------------------------------------------------------------------ figures and notes */
 
 /** A numbered figure, set like a statistical report: a heavy rule, "Figure n." and title, units, the chart, then the source. */
-export function Figure(props: { title: string; subtitle?: string; source?: string; children: ReactNode; className?: string }) {
+export function Figure(props: { title: string; subtitle?: string; source?: string; children: ReactNode; className?: string; table?: boolean }) {
   return (
     <figure className={`rule-top min-w-0 pt-3 ${props.className ?? ""}`}>
       <figcaption className="mb-4">
-        <h3 className="fig-title ui text-[1.02rem] leading-snug">{props.title}</h3>
+        <h3 className={`${props.table ? "tab-title" : "fig-title"} ui text-[1.02rem] leading-snug`}>{props.title}</h3>
         {props.subtitle && <p className="ui mt-1 max-w-[78ch] text-[0.88rem] leading-snug text-ink-soft">{props.subtitle}</p>}
       </figcaption>
       {props.children}
@@ -230,7 +230,7 @@ export function StickyReadout(props: { items: { value: string; label: string; to
 
 /* ------------------------------------------------------------------ page structure */
 
-const CHAPTER: Record<string, string> = { M1: "1", M2: "2", M3: "3", M4: "4", M5: "5", M6: "6" };
+const CHAPTER: Record<string, string> = { M1: "1", M2: "2", M3: "3", M4: "4", M5: "5", M6: "6", India: "7" };
 
 /** A chapter opener: the chapter number set large in the margin, the question as the title, and the standfirst. */
 export function PageHead(props: { id?: string; title: string; question: string; children?: ReactNode }) {

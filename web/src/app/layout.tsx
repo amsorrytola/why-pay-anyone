@@ -8,10 +8,12 @@ import { Chat } from "@/components/Chat";
 import { ChatContextProvider } from "@/components/chat-context";
 import { Splash } from "@/components/Splash";
 import { HideOn } from "@/components/HideOn";
-import fits from "@/data/m1_price_decline_fits.json";
+import capability from "@/data/m1_price_of_capability.json";
 
-const F120 = (fits as { threshold: number; price_first: number; price_last: number }[]).find((f) => f.threshold === 120)!;
-const SPLASH_SEEN = "try{if(sessionStorage.getItem('wpa-splash'))document.documentElement.dataset.splash='seen'}catch(e){}";
+/** The splash draws the cheapest price of GPT-4-level AI (Epoch Capabilities Index 120 or more), month by month. */
+const SPLASH_SERIES = (capability as { threshold: number; month: string; price: number; cheapest_model: string }[])
+  .filter((r) => r.threshold === 120)
+  .map((r) => ({ month: r.month, price: r.price, model: r.cheapest_model }));
 
 const serif = Source_Serif_4({
   variable: "--ff-serif",
@@ -43,13 +45,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: SPLASH_SEEN }} />
         <noscript>
           <style>{"#splash{display:none}"}</style>
         </noscript>
       </head>
       <body className="min-h-screen">
-        <Splash from={F120.price_first} to={F120.price_last} />
+        <Splash series={SPLASH_SERIES} />
         <ChatContextProvider>
           <Nav />
           <main>{children}</main>

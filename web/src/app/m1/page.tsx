@@ -482,7 +482,7 @@ export default function M1Page() {
               {main.asIndex && main.baseMonth !== "2023-09" && (
                 <p className="ui mt-2 text-[0.85rem] text-ink-soft">The interval is the published one (September 2023 = 100) rescaled to start in {monthLabel(main.baseMonth)}, so it is wider than it should be near the start.</p>
               )}
-              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
                 <Stat
                   value={fit ? `${fit.halving_time_months.toFixed(1)} months` : "no trend"}
                   label="Time for the cheapest price to halve, on the trend"
@@ -578,7 +578,7 @@ export default function M1Page() {
                 </li>
                 <li>Dot area: tokens a day on OpenRouter{sc.hasVol ? "; small dots have no usage figure" : " (figures begin in January 2025)"}</li>
               </ul>
-              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
                 <Stat value={String(sc.ms.length)} label={`Models with a price in ${monthLabel(sc.month)}`} sub={`${sc.openCount} open weights, ${sc.closedCount} closed`} />
                 <Stat value={sc.allBest ? usd(sc.allBest.blended) : "none"} label={`Cheapest at or above ${threshold.toFixed(1)}, any model`} tone="ai" sub={sc.allBest?.model} />
                 <Stat value={sc.openBest ? usd(sc.openBest.blended) : "none"} label="Cheapest open-weights model at the bar" sub={sc.openBest?.model} />
@@ -641,7 +641,7 @@ export default function M1Page() {
                 yFormat={(n) => (n >= 1000 ? compact(n) : String(+n.toPrecision(3)))}
                 ariaLabel={`Log-scale chart, each series equal to 100 in ${monthLabel(jv.b.month)}. By ${monthLabel(jv.l.month)} tokens are at ${int(jv.rq * 100)}, the quality-adjusted price at ${int(jv.rp * 100)} and implied spending at ${int(jv.rs * 100)}.`}
               />
-              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4">
                 <Stat value={`${ratioText(jv.rq)}×`} label={`Tokens a day, ${monthLabel(jv.b.month)} to ${monthLabel(jv.l.month)}`} tone="ai" sub={basis === "all" ? "all OpenRouter tokens" : "matched models only"} />
                 <Stat value={`${jv.rp.toFixed(2)}×`} label="Quality-adjusted price over the same months" tone="human" sub={`index ${jv.b.hedonic_index.toFixed(0)} to ${jv.l.hedonic_index.toFixed(0)} (Sep 2023 = 100)`} />
                 <Stat value={`${ratioText(jv.rs)}×`} label="Implied spending, upper bound" tone="owner" sub="matched models, list prices" />
@@ -679,7 +679,7 @@ export default function M1Page() {
               <Figure
                 title="Try a price cut"
                 subtitle="Set a price cut and an elasticity. Tokens bought change by (1 minus the cut) raised to the elasticity; spending is price times tokens."
-                source="A calculation, not data. The estimate and its interval come from the regression on the left."
+                source="A calculation, not data. The estimate and its interval come from the regression in the previous figure."
               >
                 <Slider label="Price cut" value={cut} min={5} max={95} step={1} tone="owner" format={(v) => `${v}%`} onChange={setCut} />
                 <Slider label="Elasticity" value={elast} min={-3} max={0.2} step={0.01} tone="owner" format={(v) => signed(v, 2)} onChange={setElast} />
@@ -697,7 +697,7 @@ export default function M1Page() {
                     onPick={(id) => setElast(id === "est" ? Math.round(elEst.elasticity * 100) / 100 : id === "lo" ? Math.round(elEst.ci_low * 100) / 100 : id === "hi" ? Math.round(elEst.ci_high * 100) / 100 : -1)}
                   />
                 </div>
-                <div className="mt-4 flex flex-wrap gap-x-8 gap-y-3">
+                <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4">
                   <Stat value={`${qMult.toFixed(2)}×`} label="Tokens bought" tone="ai" sub={signedPct(qMult - 1)} />
                   <Stat value={`${sMult.toFixed(2)}×`} label="Total spending" tone="owner" sub={signedPct(sMult - 1)} />
                 </div>

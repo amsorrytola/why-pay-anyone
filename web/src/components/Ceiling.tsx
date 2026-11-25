@@ -63,9 +63,16 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
 
         {/* what AI can do */}
         <rect x={xOf(feasibleStart)} y={m.top} width={Math.max(0, w - m.right - xOf(feasibleStart))} height={ih} fill="var(--ai-soft)" opacity={0.55} />
-        <text x={xOf(feasibleStart) + 8} y={m.top + 16} fontSize={12.5} fontWeight={600} fill="var(--ai-deep)" className="ui">
-          Work AI can do
-        </text>
+        {(() => {
+          // When the band is narrow its label hangs from the right edge instead of running out of the chart.
+          const bandW = w - m.right - xOf(feasibleStart);
+          const tight = bandW < 112;
+          return (
+            <text x={tight ? w - m.right - 6 : xOf(feasibleStart) + 8} y={m.top + 16} textAnchor={tight ? "end" : "start"} fontSize={12.5} fontWeight={600} fill="var(--ai-deep)" className="ui halo">
+              Work AI can do
+            </text>
+          );
+        })()}
         {p.n > 0 && (
           <g>
             <rect x={m.left} y={m.top} width={xOf(0) - m.left} height={ih} fill="var(--human-soft)" opacity={0.55} />
@@ -91,6 +98,7 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
         })}
 
         {/* the ceiling */}
+        <line x1={m.left} x2={w - m.right} y1={yOf(0)} y2={yOf(0)} stroke="var(--ink)" />
         <g className={props.intro ? "ceiling-intro" : undefined} style={{ ["--from" as string]: "-90px" }}>
           <line x1={m.left} x2={w - m.right} y1={yOf(ai)} y2={yOf(ai)} stroke="var(--ai-deep)" strokeWidth={3} />
           <rect
@@ -110,7 +118,6 @@ export function CeilingChart(props: { p: M4Params; r: M4Result; height?: number;
           </text>
         </g>
 
-        <line x1={m.left} x2={w - m.right} y1={yOf(0)} y2={yOf(0)} stroke="var(--ink)" />
         <text x={m.left} y={h - 30} fontSize={12.5} fill="var(--ink-soft)" className="ui">
           {narrow ? "People's best tasks" : "Tasks people are best at"}
         </text>

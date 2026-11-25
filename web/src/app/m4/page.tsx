@@ -143,7 +143,7 @@ export default function M4Page() {
               source="A stylised model, not a forecast. Based on the task framework of Acemoglu and Restrepo; see the method notes below."
             >
               <CeilingChart p={p} r={r} onRhoScale={(f) => set("rho", Math.min(3, Math.max(0.01, p.rho * f)))} />
-              <div className="mt-4 flex flex-wrap gap-x-8 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                 <Stat value={r.unbounded ? "no limit" : mult(r.relWage)} label="Real pay, against a world without AI" tone="human" />
                 <Stat value={pct0(r.labourShare)} label="Share of income paid as wages" tone="human" sub={`${pct0(r.aiIncomeShare)} goes to AI owners`} />
                 <Stat value={pct0(r.aiShare)} label="Of tasks done by AI" tone="ai" />
@@ -210,7 +210,7 @@ export default function M4Page() {
                 GPT-5-level model ({usd(price150.price)}/M)
               </label>
             </div>
-            <div className="flex flex-wrap gap-x-8 gap-y-3">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
               <Stat value={usd(costPerHour)} label="AI tokens for one hour of work" tone="ai" />
               <Stat value={usd(exposure.hourly)} label="Average pay per hour, US" tone="human" />
               <Stat value={tokenRho < 0.001 ? "<0.1%" : `${(tokenRho * 100).toFixed(1)}%`} label="Tokens as a share of pay" />

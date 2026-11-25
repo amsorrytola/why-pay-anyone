@@ -187,7 +187,7 @@ function Term({ concept, children }: { concept: Concept; children: ReactNode }) 
         ref={popRef}
         id={popId}
         data-open={open ? "true" : "false"}
-        className="fixed left-0 top-0 z-50 block w-[26rem] max-w-[calc(100vw-1rem)] panel p-3.5 text-left text-[1rem] font-normal not-italic leading-snug tracking-normal text-ink shadow-[0_8px_30px_rgba(17,26,53,0.18)]"
+        className="fixed left-0 top-0 z-50 block w-[26rem] max-w-[calc(100vw-1rem)] panel p-3.5 text-left text-[1rem] font-normal not-italic leading-snug tracking-normal text-ink !border-ink"
         style={
           open
             ? { visibility: "visible", opacity: 1, transition: "opacity 0.12s ease" }

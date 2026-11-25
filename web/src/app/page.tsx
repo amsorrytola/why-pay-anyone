@@ -120,15 +120,15 @@ export default function Home() {
       <Section>
         <h2 className="tab-title ui text-[1.02rem] font-semibold leading-snug">Key figures</h2>
         <div className="mt-3 overflow-x-auto">
-          <table className="booktabs min-w-[34rem] text-[0.95rem]">
+          <table className="booktabs text-[0.95rem] sm:min-w-[34rem]">
             <thead>
               <tr>
                 <th scope="col">Measure</th>
                 <th scope="col" className="r">
                   Value
                 </th>
-                <th scope="col">Period or sample</th>
-                <th scope="col" className="r">
+                <th scope="col" className="hidden sm:table-cell">Period or sample</th>
+                <th scope="col" className="r hidden sm:table-cell">
                   Chapter
                 </th>
               </tr>
@@ -136,10 +136,15 @@ export default function Home() {
             <tbody>
               {rows.map((x) => (
                 <tr key={x.m}>
-                  <td>{x.m}</td>
+                  <td>
+                    {x.m}
+                    <span className="mt-0.5 block text-[0.84rem] text-ink-soft sm:hidden">
+                      {x.when}. <Link href={x.href}>Chapter {x.ch}</Link>
+                    </span>
+                  </td>
                   <td className="r num">{x.v}</td>
-                  <td className="text-ink-soft">{x.when}</td>
-                  <td className="r">
+                  <td className="hidden text-ink-soft sm:table-cell">{x.when}</td>
+                  <td className="r hidden sm:table-cell">
                     <Link href={x.href}>{x.ch}</Link>
                   </td>
                 </tr>
@@ -155,7 +160,7 @@ export default function Home() {
           <figcaption>
             <h3 className="fig-title ui text-[1.02rem] leading-snug">The ceiling on pay, task by task</h3>
             <p className="ui mt-1 max-w-[80ch] text-[0.88rem] leading-snug text-ink-soft">
-              Each column is a task, from the tasks people are best at (left) to those AI finds easiest (right). Vermilion: done by a person. Blue: done by AI, its cost cut to the AI price. Drag the AI price, or use the dials.
+              Each column is a task, from the tasks people are best at (left) to those AI finds easiest (right). Red: done by a person. Blue: done by AI, its cost cut to the AI price. Drag the AI price, or use the dials.
             </p>
           </figcaption>
           <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
