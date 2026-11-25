@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useChatContext } from "./chat-context";
 
 type Msg = { role: "user" | "assistant"; text: string };
@@ -14,6 +15,7 @@ const STARTERS = [
 
 export function Chat() {
   const { page, state } = useChatContext();
+  const onJourney = usePathname() === "/journey";
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState("");
@@ -52,7 +54,7 @@ export function Chat() {
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls="chat-panel"
-        className="ui fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex items-center gap-2.5 rounded-full bg-gradient-to-r from-ai-deep to-ai px-5 py-3.5 text-[1rem] font-semibold text-white shadow-[0_14px_34px_-10px_rgba(29,56,199,0.75)] transition-transform hover:-translate-y-0.5 sm:right-6"
+        className={`ui fixed ${onJourney ? "bottom-[5.5rem]" : "bottom-[max(1rem,env(safe-area-inset-bottom))]"} right-4 z-40 flex items-center gap-2.5 rounded-full bg-gradient-to-r from-ai-deep to-ai px-5 py-3.5 text-[1rem] font-semibold text-white shadow-[0_14px_34px_-10px_rgba(29,56,199,0.75)] transition-transform hover:-translate-y-0.5 sm:right-6`}
       >
         <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden className="shrink-0">
           <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" fill="currentColor" />

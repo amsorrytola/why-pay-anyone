@@ -11,7 +11,7 @@ export function ModulePager() {
   const path = usePathname();
   const i = ORDER.indexOf(path);
   if (i < 0) return null;
-  const prev = i > 0 ? SITE_LINKS.find((l) => l.href === ORDER[i - 1]) : SITE_LINKS.find((l) => l.href === "/");
+  const prev = i > 0 ? SITE_LINKS.find((l) => l.href === ORDER[i - 1]) : SITE_LINKS.find((l) => l.href === "/journey");
   const next = i < ORDER.length - 1 ? SITE_LINKS.find((l) => l.href === ORDER[i + 1]) : SITE_LINKS.find((l) => l.href === "/concepts");
   const card = (l: (typeof SITE_LINKS)[number] | undefined, dir: "Previous" | "Next") =>
     l ? (

@@ -3,7 +3,7 @@ import { LogoMark, SITE_LINKS } from "@/components/site";
 
 export function Footer() {
   const labs = SITE_LINKS.filter((l) => l.id);
-  const more = SITE_LINKS.filter((l) => !l.id && l.href !== "/");
+  const more = SITE_LINKS.filter((l) => !l.id);
   return (
     <footer className="night on-night mt-16">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">

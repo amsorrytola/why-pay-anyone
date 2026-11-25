@@ -32,3 +32,11 @@ Amber and green are never used for small text on white; use `--human-deep` and `
 
 ## Checking changes
 `node /home/talha/Programs/LBP/tools/bin/qa.mjs <outdir> mobile|desktop <route...>` writes full-page screenshots in segments and prints the horizontal-overflow audit (needs the dev server on port 3100 and the system Chrome). The dev server serves a stale stylesheet after several edits of `globals.css`: delete `web/.next` and restart it.
+
+## The flow (added 2026-11-25)
+1. **Splash** (`components/Splash.tsx`), once per browser session: the price of GPT-4-level AI counts down from $37.50 to $0.028 on a price board while a stepped line falls, then the question appears with two doors: "Start the journey" or "Explore on my own". Skip and Esc always work. A script in the layout's `<head>` hides it before paint when it has been seen; a `<noscript>` rule hides it without JavaScript.
+2. **Home** (`app/page.tsx`): the question, the live model, and "Three ways in" (journey, model, labs).
+3. **Guided journey** (`/journey`, `components/Journey.tsx`): 11 steps in 7 chapters. Each chapter asks the reader to guess a number (slider, then "Lock in my guess") or make a call (choice cards); the chart behind it stays blurred until they answer, then the data reveals with a "You" and "Data" marker and a verdict (spot on, close, off). Chapter rail at the top (clickable), Back and Next at the bottom, arrow keys and swipes. Answers are kept in localStorage; the step is in the URL hash. Ends with "So, why pay anyone?" and a scorecard. Every number is read from the project's own tables.
+4. **Labs** (M1 to M6, India) with a previous/next pager; the journey's chapters each link to their lab.
+
+`tools/bin/journey-qa.mjs` walks the splash and every journey step, answering each question, and screenshots each screen.

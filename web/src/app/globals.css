@@ -321,6 +321,32 @@ input[type="range"].range:active::-webkit-slider-thumb { transform: scale(1.18);
 .hscroll { min-width: 0; max-width: 100%; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .hscroll::-webkit-scrollbar { display: none; }
 
+/* ---------- Splash ---------- */
+#splash { position: fixed; inset: 0; z-index: 100; }
+html[data-splash="seen"] #splash { display: none; }
+@keyframes splash-out { to { opacity: 0; transform: scale(1.03); visibility: hidden; } }
+.splash-out { animation: splash-out 0.6s cubic-bezier(0.7, 0, 0.3, 1) forwards; }
+@keyframes draw-path { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.draw-path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw-path 1.7s cubic-bezier(0.5, 0, 0.2, 1) forwards; animation-delay: var(--d, 0ms); }
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.pop { animation: pop 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; animation-delay: var(--d, 0ms); }
+
+/* ---------- Journey ---------- */
+@keyframes step-in {
+  from { opacity: 0; transform: translateX(calc(var(--dir, 1) * 40px)); }
+  to { opacity: 1; transform: none; }
+}
+.journey-step { animation: step-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.gate { transition: filter 0.7s ease, opacity 0.7s ease; }
+.gate[data-locked="true"] { filter: blur(9px) saturate(0.5); opacity: 0.45; pointer-events: none; user-select: none; }
+.marker { transition: left 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.choice { transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease; }
+.choice:hover:not(:disabled) { transform: translateY(-2px); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }

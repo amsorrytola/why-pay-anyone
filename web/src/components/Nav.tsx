@@ -33,7 +33,7 @@ export function Nav() {
         </Link>
 
         <nav aria-label="Sections" className="hidden items-center gap-0.5 lg:flex">
-          {SITE_LINKS.map((l) => (
+          {SITE_LINKS.filter((l) => l.href !== "/").map((l) => (
             <Link
               key={l.href}
               href={l.href}

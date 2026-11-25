@@ -6,6 +6,12 @@ import { Footer } from "@/components/Footer";
 import { ModulePager } from "@/components/ModulePager";
 import { Chat } from "@/components/Chat";
 import { ChatContextProvider } from "@/components/chat-context";
+import { Splash } from "@/components/Splash";
+import { HideOn } from "@/components/HideOn";
+import fits from "@/data/m1_price_decline_fits.json";
+
+const F120 = (fits as { threshold: number; price_first: number; price_last: number }[]).find((f) => f.threshold === 120)!;
+const SPLASH_SEEN = "try{if(sessionStorage.getItem('wpa-splash'))document.documentElement.dataset.splash='seen'}catch(e){}";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -41,13 +47,22 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SPLASH_SEEN }} />
+        <noscript>
+          <style>{"#splash{display:none}"}</style>
+        </noscript>
+      </head>
       <body className="min-h-screen">
+        <Splash from={F120.price_first} to={F120.price_last} />
         <ChatContextProvider>
           <Nav />
           <main>{children}</main>
           <ModulePager />
-          <Footer />
+          <HideOn paths={["/journey"]}>
+            <Footer />
+          </HideOn>
           <Chat />
         </ChatContextProvider>
       </body>

@@ -20,6 +20,11 @@ type Vol = { month: string; all_tokens_per_day: number };
 type Conc = { month: string; hhi: number; effective_firms: number };
 type Sum = { measure: string; scope: string; label: string; value: number };
 
+const monthLabel = (ym: string) => {
+  const [y, m] = ym.split("-").map(Number);
+  return `${["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1]} ${y}`;
+};
+
 type Tone = "ai" | "human" | "owner" | "ok";
 const TONE_BG: Record<Tone, string> = { ai: "bg-ai-soft text-ai-deep", human: "bg-human-soft text-human-deep", owner: "bg-owner-soft text-owner", ok: "bg-ok-soft text-ok" };
 const TONE_BAR: Record<Tone, string> = { ai: "bg-ai", human: "bg-human", owner: "bg-owner", ok: "bg-ok" };
@@ -168,15 +173,15 @@ export default function Home() {
               An AI can already do a growing list of tasks for a few cents. If it does the work for less, why would anyone pay a person to do it?
             </p>
             <p className="rise mt-4 max-w-[46ch] text-[1.02rem] leading-relaxed text-on-night-soft" style={{ ["--d" as string]: "340ms" }}>
-              This is a lab for that question: public data on prices, usage, jobs and markets, and a small model where you set every dial and watch pay, jobs and shares move.
+              This is a lab for that question: public data on prices, usage, jobs and markets, and a small model where you set every dial. New here? The guided journey takes about eight minutes: you guess, the data answers.
             </p>
             <div className="rise mt-8 flex flex-wrap gap-3" style={{ ["--d" as string]: "420ms" }}>
-              <a href="#model" className="btn btn-light">
+              <Link href="/journey" className="btn btn-light">
+                Start the guided journey
+              </Link>
+              <a href="#model" className="btn btn-ghost">
                 Play with the model
               </a>
-              <Link href="/m1" className="btn btn-ghost">
-                See the evidence
-              </Link>
             </div>
           </div>
 
@@ -213,6 +218,26 @@ export default function Home() {
           <Marquee items={facts} label="Headline figures from the project" seconds={80} />
         </div>
       </section>
+
+      <Section className="pt-12 sm:pt-16">
+        <h2 className="max-w-[20ch]">Three ways in</h2>
+        <ul className="mt-7 grid gap-4 md:grid-cols-3">
+          {[
+            { href: "/journey", t: "Take the guided journey", d: "Seven chapters. Guess the price of AI, the jobs it touches and who gains, then see the data. Ends with your scorecard.", tag: "About 8 minutes", tone: "bg-ai" },
+            { href: "#model", t: "Play with the model", d: "Drag the price of AI and the share of work it can do, and watch pay and the wage share move on the chart above.", tag: "Right here", tone: "bg-human" },
+            { href: "#labs", t: "Open a lab", d: "Six labs and an India lens, each with the full data, every dial, and the caveats. For the professor's deep read.", tag: "Seven labs", tone: "bg-owner" },
+          ].map((w) => (
+            <li key={w.t}>
+              <a href={w.href} data-reveal className="tile panel relative flex h-full flex-col overflow-hidden p-6 no-underline">
+                <span aria-hidden className={`absolute inset-x-0 top-0 h-1.5 ${w.tone}`} />
+                <span className="ui text-[0.82rem] font-semibold text-ink-faint">{w.tag}</span>
+                <span className="serif mt-2 block text-[1.6rem] leading-tight text-ink">{w.t}</span>
+                <span className="mt-2 block text-[0.96rem] leading-relaxed text-ink-soft">{w.d}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Section>
 
       <Section className="pt-14 sm:pt-20">
         <h2 className="max-w-[20ch]">Five ways to answer the question</h2>
@@ -254,7 +279,7 @@ export default function Home() {
               <p className="ui mt-4 text-[0.92rem] text-ink-soft">Usage grew far faster than prices fell, but a model&apos;s own price cuts do not explain it alone.</p>
             </div>
             <div data-reveal className="panel flex flex-col p-5 sm:p-7">
-              <Stat size="lg" value={`${Math.round(cMin.effective_firms)} firms`} label="Equivalent number of equal-sized providers at the least concentrated point" tone="owner" sub={`${cMin.month}; ${Math.round(cEnd.effective_firms)} by ${cEnd.month}`} />
+              <Stat size="lg" value={`${Math.round(cMin.effective_firms)} firms`} label="Equivalent number of equal-sized providers at the least concentrated point" tone="owner" sub={`${monthLabel(cMin.month)}; ${Math.round(cEnd.effective_firms)} by ${monthLabel(cEnd.month)}`} />
               <div className="mt-6">
                 <Spark values={c.map((x) => x.effective_firms)} color="var(--owner)" label="Equivalent number of equal-sized providers over time" />
               </div>
@@ -266,8 +291,8 @@ export default function Home() {
         </div>
       </section>
 
-      <Section className="pt-14 sm:pt-20">
-        <h2 className="max-w-[20ch]">The labs</h2>
+      <Section className="scroll-mt-20 pt-14 sm:pt-20">
+        <h2 id="labs" className="max-w-[20ch] scroll-mt-24">The labs</h2>
         <p className="mt-3 max-w-[54ch] text-ink-soft">Six labs and an India lens. Each starts from one question, shows the data, then lets you change the assumptions.</p>
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {LABS.map((l, i) => (

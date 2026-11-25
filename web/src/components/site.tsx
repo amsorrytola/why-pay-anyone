@@ -1,5 +1,6 @@
 export const SITE_LINKS = [
-  { href: "/", label: "The question", short: "The question", q: "The whole idea on one chart" },
+  { href: "/", label: "Home", short: "Home", q: "The question and the live model" },
+  { href: "/journey", label: "Guided journey", short: "Journey", q: "Seven chapters: guess first, then see the data" },
   { href: "/m1", label: "Prices", short: "Prices", id: "M1", q: "How fast is the price of intelligence falling?" },
   { href: "/m2", label: "Usage", short: "Usage", id: "M2", q: "Which jobs does AI touch?" },
   { href: "/m3", label: "Adoption", short: "Adoption", id: "M3", q: "Are firms using it, and is it in hiring?" },
