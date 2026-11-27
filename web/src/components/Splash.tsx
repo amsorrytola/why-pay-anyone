@@ -68,6 +68,9 @@ function geometry(series: SplashPoint[], w: number, h: number, labelH: number): 
  * as it falls. When the line lands, the title appears in the space the fall has emptied and the reader picks
  * the guided reading or the page they came for. A click on the chart skips to the end; Esc or Skip closes it.
  */
+/** Pages that people open from a direct link (an email, the report's title page): they open straight away, without the cover. */
+const NO_COVER = new Set(["/presentation", "/report"]);
+
 export function Splash({ series }: { series: SplashPoint[] }) {
   const router = useRouter();
   const path = usePathname();
@@ -162,7 +165,7 @@ export function Splash({ series }: { series: SplashPoint[] }) {
 
   // Measure the stage, and measure it again when the window changes size.
   useEffect(() => {
-    if (document.documentElement.dataset.splash === "seen") {
+    if (document.documentElement.dataset.splash === "seen" || NO_COVER.has(window.location.pathname)) {
       setPhase("gone");
       return;
     }
@@ -226,7 +229,7 @@ export function Splash({ series }: { series: SplashPoint[] }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [phase, close]);
 
-  if (phase === "gone") return null;
+  if (phase === "gone" || NO_COVER.has(path)) return null;
 
   const here = SITE_LINKS.find((l) => l.href === path);
   const onJourney = path === "/journey";
